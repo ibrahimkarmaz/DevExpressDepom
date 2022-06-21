@@ -1,0 +1,9 @@
+Surukle = new DragDropProvider(PEAfis);
+            Surukle.EnableDragDrop();
+
+PEAfis: PictureEdit Afis
+DragDropProvider Surekle; Classta tanımlanmalı.
+
+
+Bu Kodlar Ne İşe Yarar ?
+PictureEdit üstüne resim eklemek için kullanılır.
