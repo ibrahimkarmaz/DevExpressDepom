@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders7_RibbonControlKullanimi", "Ders7_RibbonControlKullanimi.csproj", "{AEF207F8-11DB-46C4-9DBA-BDD46655943D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF207F8-11DB-46C4-9DBA-BDD46655943D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF207F8-11DB-46C4-9DBA-BDD46655943D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF207F8-11DB-46C4-9DBA-BDD46655943D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF207F8-11DB-46C4-9DBA-BDD46655943D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF43E7C5-743C-4AFB-938C-41B9540D97DF}
+	EndGlobalSection
+EndGlobal
