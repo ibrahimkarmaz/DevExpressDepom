@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SCAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CalismaTablo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+    <Property Name="Tarih" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BaslangicSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BitisSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DevamsizlikTablosu">
+    <Key>
+      <PropertyRef Name="devamsizlik_id" />
+    </Key>
+    <Property Name="devamsizlik_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="devamsizlik_gunu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GirisTablosu">
+    <Key>
+      <PropertyRef Name="Tcno" />
+    </Key>
+    <Property Name="Tcno" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Parola" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Durum" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="IsBilgiTablo">
+    <Key>
+      <PropertyRef Name="Kod" />
+    </Key>
+    <Property Name="Kod" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Tarih" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BaslamaSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BitisSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Tanim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MusteriTC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="isYapanTC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PersonelTablosu">
+    <Key>
+      <PropertyRef Name="tc" />
+    </Key>
+    <Property Name="tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cinsiyet" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="kayit_tarihi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="maas" Type="Double" />
+  </EntityType>
+  <EntityType Name="StokTablo">
+    <Key>
+      <PropertyRef Name="UrunKodu" />
+    </Key>
+    <Property Name="UrunKodu" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UrunAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UrunKategori" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UrunFiyat" Type="Double" />
+    <Property Name="UrunAdet" Type="Int32" />
+    <Property Name="aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="IsBilgiTabloDetay">
+    <Key>
+      <PropertyRef Name="Kod" />
+    </Key>
+    <Property Name="Kod" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="UrunKod" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+    <Property Name="UrunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AlisAdet" Type="Int32" />
+    <Property Name="AlisFiyat" Type="Double" />
+  </EntityType>
+  <EntityType Name="ilceler">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="sehir" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ilce" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="sehir" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="iller">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sehir" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MusteriTablosu">
+    <Key>
+      <PropertyRef Name="tcno" />
+    </Key>
+    <Property Name="tcno" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cinsiyet" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="il" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ilce" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cep_telefonu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ev_telefonu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="eposta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ev_adresi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="aciklama" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="arsiv" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="SCAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CalismaTabloes" EntityType="Self.CalismaTablo" />
+    <EntitySet Name="DevamsizlikTablosus" EntityType="Self.DevamsizlikTablosu" />
+    <EntitySet Name="GirisTablosus" EntityType="Self.GirisTablosu" />
+    <EntitySet Name="IsBilgiTabloes" EntityType="Self.IsBilgiTablo" />
+    <EntitySet Name="PersonelTablosus" EntityType="Self.PersonelTablosu" />
+    <EntitySet Name="StokTabloes" EntityType="Self.StokTablo" />
+    <EntitySet Name="IsBilgiTabloDetays" EntityType="Self.IsBilgiTabloDetay" />
+    <EntitySet Name="ilcelers" EntityType="Self.ilceler" />
+    <EntitySet Name="illers" EntityType="Self.iller" />
+    <EntitySet Name="MusteriTablosus" EntityType="Self.MusteriTablosu" />
+  </EntityContainer>
+</Schema>

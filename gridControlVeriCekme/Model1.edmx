@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SCAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CalismaTablo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TC" Type="nchar" MaxLength="11" />
+          <Property Name="Tarih" Type="nchar" MaxLength="10" />
+          <Property Name="BaslangicSaat" Type="nchar" MaxLength="10" />
+          <Property Name="BitisSaat" Type="nchar" MaxLength="10" />
+          <Property Name="Aciklama" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="DevamsizlikTablosu">
+          <Key>
+            <PropertyRef Name="devamsizlik_id" />
+          </Key>
+          <Property Name="devamsizlik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tc" Type="varchar" MaxLength="11" />
+          <Property Name="devamsizlik_gunu" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="GirisTablosu">
+          <Key>
+            <PropertyRef Name="Tcno" />
+          </Key>
+          <Property Name="Tcno" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="Parola" Type="varchar" MaxLength="25" />
+          <Property Name="Durum" Type="bit" />
+        </EntityType>
+        <EntityType Name="IsBilgiTablo">
+          <Key>
+            <PropertyRef Name="Kod" />
+          </Key>
+          <Property Name="Kod" Type="nchar" MaxLength="8" Nullable="false" />
+          <Property Name="Tarih" Type="nchar" MaxLength="10" />
+          <Property Name="BaslamaSaat" Type="nchar" MaxLength="10" />
+          <Property Name="BitisSaat" Type="nchar" MaxLength="10" />
+          <Property Name="Tanim" Type="text" />
+          <Property Name="MusteriTC" Type="char" MaxLength="11" />
+          <Property Name="isYapanTC" Type="char" MaxLength="11" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.IsBilgiTabloDetay' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="IsBilgiTabloDetay">
+          <Key>
+            <PropertyRef Name="Kod" />
+          </Key>
+          <Property Name="Kod" Type="nchar" MaxLength="8" Nullable="false" />
+          <Property Name="UrunKod" Type="nchar" MaxLength="8" />
+          <Property Name="UrunAd" Type="varchar" MaxLength="50" />
+          <Property Name="AlisAdet" Type="int" />
+          <Property Name="AlisFiyat" Type="float" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.ilceler' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ilceler">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="sehir" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="ilce" Type="nvarchar" MaxLength="255" />
+          <Property Name="sehir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.iller' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="iller">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sehir" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.MusteriTablosu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="MusteriTablosu">
+          <Key>
+            <PropertyRef Name="tcno" />
+          </Key>
+          <Property Name="tcno" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="ad" Type="varchar" MaxLength="20" />
+          <Property Name="soyad" Type="varchar" MaxLength="20" />
+          <Property Name="cinsiyet" Type="varchar" MaxLength="5" />
+          <Property Name="il" Type="varchar" MaxLength="20" />
+          <Property Name="ilce" Type="varchar" MaxLength="20" />
+          <Property Name="cep_telefonu" Type="varchar" MaxLength="20" />
+          <Property Name="ev_telefonu" Type="varchar" MaxLength="20" />
+          <Property Name="eposta" Type="varchar" MaxLength="50" />
+          <Property Name="ev_adresi" Type="varchar" MaxLength="150" />
+          <Property Name="aciklama" Type="varchar" MaxLength="200" />
+          <Property Name="arsiv" Type="bit" />
+        </EntityType>
+        <EntityType Name="PersonelTablosu">
+          <Key>
+            <PropertyRef Name="tc" />
+          </Key>
+          <Property Name="tc" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="ad" Type="varchar" MaxLength="20" />
+          <Property Name="soyad" Type="varchar" MaxLength="20" />
+          <Property Name="cinsiyet" Type="varchar" MaxLength="5" />
+          <Property Name="tel" Type="varchar" MaxLength="20" />
+          <Property Name="kayit_tarihi" Type="varchar" MaxLength="50" />
+          <Property Name="maas" Type="float" />
+        </EntityType>
+        <EntityType Name="StokTablo">
+          <Key>
+            <PropertyRef Name="UrunKodu" />
+          </Key>
+          <Property Name="UrunKodu" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="UrunAd" Type="varchar" MaxLength="30" />
+          <Property Name="UrunKategori" Type="varchar" MaxLength="30" />
+          <Property Name="UrunFiyat" Type="float" />
+          <Property Name="UrunAdet" Type="int" />
+          <Property Name="aciklama" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityContainer Name="SCAModelStoreContainer">
+          <EntitySet Name="CalismaTablo" EntityType="Self.CalismaTablo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DevamsizlikTablosu" EntityType="Self.DevamsizlikTablosu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GirisTablosu" EntityType="Self.GirisTablosu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsBilgiTablo" EntityType="Self.IsBilgiTablo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PersonelTablosu" EntityType="Self.PersonelTablosu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StokTablo" EntityType="Self.StokTablo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsBilgiTabloDetay" EntityType="Self.IsBilgiTabloDetay" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [IsBilgiTabloDetay].[Kod] AS [Kod], 
+    [IsBilgiTabloDetay].[UrunKod] AS [UrunKod], 
+    [IsBilgiTabloDetay].[UrunAd] AS [UrunAd], 
+    [IsBilgiTabloDetay].[AlisAdet] AS [AlisAdet], 
+    [IsBilgiTabloDetay].[AlisFiyat] AS [AlisFiyat]
+    FROM [dbo].[IsBilgiTabloDetay] AS [IsBilgiTabloDetay]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ilceler" EntityType="Self.ilceler" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ilceler].[id] AS [id], 
+    [ilceler].[ilce] AS [ilce], 
+    [ilceler].[sehir] AS [sehir]
+    FROM [dbo].[ilceler] AS [ilceler]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="iller" EntityType="Self.iller" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [iller].[id] AS [id], 
+    [iller].[sehir] AS [sehir]
+    FROM [dbo].[iller] AS [iller]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MusteriTablosu" EntityType="Self.MusteriTablosu" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [MusteriTablosu].[tcno] AS [tcno], 
+    [MusteriTablosu].[ad] AS [ad], 
+    [MusteriTablosu].[soyad] AS [soyad], 
+    [MusteriTablosu].[cinsiyet] AS [cinsiyet], 
+    [MusteriTablosu].[il] AS [il], 
+    [MusteriTablosu].[ilce] AS [ilce], 
+    [MusteriTablosu].[cep_telefonu] AS [cep_telefonu], 
+    [MusteriTablosu].[ev_telefonu] AS [ev_telefonu], 
+    [MusteriTablosu].[eposta] AS [eposta], 
+    [MusteriTablosu].[ev_adresi] AS [ev_adresi], 
+    [MusteriTablosu].[aciklama] AS [aciklama], 
+    [MusteriTablosu].[arsiv] AS [arsiv]
+    FROM [dbo].[MusteriTablosu] AS [MusteriTablosu]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SCAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CalismaTablo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+          <Property Name="Tarih" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="BaslangicSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="BitisSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DevamsizlikTablosu">
+          <Key>
+            <PropertyRef Name="devamsizlik_id" />
+          </Key>
+          <Property Name="devamsizlik_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="devamsizlik_gunu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="GirisTablosu">
+          <Key>
+            <PropertyRef Name="Tcno" />
+          </Key>
+          <Property Name="Tcno" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Parola" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Durum" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="IsBilgiTablo">
+          <Key>
+            <PropertyRef Name="Kod" />
+          </Key>
+          <Property Name="Kod" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Tarih" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="BaslamaSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="BitisSaat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Tanim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MusteriTC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="isYapanTC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PersonelTablosu">
+          <Key>
+            <PropertyRef Name="tc" />
+          </Key>
+          <Property Name="tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cinsiyet" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="tel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="kayit_tarihi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="maas" Type="Double" />
+        </EntityType>
+        <EntityType Name="StokTablo">
+          <Key>
+            <PropertyRef Name="UrunKodu" />
+          </Key>
+          <Property Name="UrunKodu" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UrunAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="UrunKategori" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="UrunFiyat" Type="Double" />
+          <Property Name="UrunAdet" Type="Int32" />
+          <Property Name="aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="IsBilgiTabloDetay">
+          <Key>
+            <PropertyRef Name="Kod" />
+          </Key>
+          <Property Name="Kod" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="UrunKod" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+          <Property Name="UrunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AlisAdet" Type="Int32" />
+          <Property Name="AlisFiyat" Type="Double" />
+        </EntityType>
+        <EntityType Name="ilceler">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="sehir" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="ilce" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="sehir" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="iller">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sehir" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MusteriTablosu">
+          <Key>
+            <PropertyRef Name="tcno" />
+          </Key>
+          <Property Name="tcno" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cinsiyet" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="il" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ilce" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cep_telefonu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ev_telefonu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="eposta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ev_adresi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="aciklama" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="arsiv" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="SCAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CalismaTabloes" EntityType="Self.CalismaTablo" />
+          <EntitySet Name="DevamsizlikTablosus" EntityType="Self.DevamsizlikTablosu" />
+          <EntitySet Name="GirisTablosus" EntityType="Self.GirisTablosu" />
+          <EntitySet Name="IsBilgiTabloes" EntityType="Self.IsBilgiTablo" />
+          <EntitySet Name="PersonelTablosus" EntityType="Self.PersonelTablosu" />
+          <EntitySet Name="StokTabloes" EntityType="Self.StokTablo" />
+          <EntitySet Name="IsBilgiTabloDetays" EntityType="Self.IsBilgiTabloDetay" />
+          <EntitySet Name="ilcelers" EntityType="Self.ilceler" />
+          <EntitySet Name="illers" EntityType="Self.iller" />
+          <EntitySet Name="MusteriTablosus" EntityType="Self.MusteriTablosu" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SCAModelStoreContainer" CdmEntityContainer="SCAEntities">
+          <EntitySetMapping Name="CalismaTabloes">
+            <EntityTypeMapping TypeName="SCAModel.CalismaTablo">
+              <MappingFragment StoreEntitySet="CalismaTablo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="BaslangicSaat" ColumnName="BaslangicSaat" />
+                <ScalarProperty Name="BitisSaat" ColumnName="BitisSaat" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DevamsizlikTablosus">
+            <EntityTypeMapping TypeName="SCAModel.DevamsizlikTablosu">
+              <MappingFragment StoreEntitySet="DevamsizlikTablosu">
+                <ScalarProperty Name="devamsizlik_id" ColumnName="devamsizlik_id" />
+                <ScalarProperty Name="tc" ColumnName="tc" />
+                <ScalarProperty Name="devamsizlik_gunu" ColumnName="devamsizlik_gunu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GirisTablosus">
+            <EntityTypeMapping TypeName="SCAModel.GirisTablosu">
+              <MappingFragment StoreEntitySet="GirisTablosu">
+                <ScalarProperty Name="Tcno" ColumnName="Tcno" />
+                <ScalarProperty Name="Parola" ColumnName="Parola" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsBilgiTabloes">
+            <EntityTypeMapping TypeName="SCAModel.IsBilgiTablo">
+              <MappingFragment StoreEntitySet="IsBilgiTablo">
+                <ScalarProperty Name="Kod" ColumnName="Kod" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="BaslamaSaat" ColumnName="BaslamaSaat" />
+                <ScalarProperty Name="BitisSaat" ColumnName="BitisSaat" />
+                <ScalarProperty Name="Tanim" ColumnName="Tanim" />
+                <ScalarProperty Name="MusteriTC" ColumnName="MusteriTC" />
+                <ScalarProperty Name="isYapanTC" ColumnName="isYapanTC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PersonelTablosus">
+            <EntityTypeMapping TypeName="SCAModel.PersonelTablosu">
+              <MappingFragment StoreEntitySet="PersonelTablosu">
+                <ScalarProperty Name="tc" ColumnName="tc" />
+                <ScalarProperty Name="ad" ColumnName="ad" />
+                <ScalarProperty Name="soyad" ColumnName="soyad" />
+                <ScalarProperty Name="cinsiyet" ColumnName="cinsiyet" />
+                <ScalarProperty Name="tel" ColumnName="tel" />
+                <ScalarProperty Name="kayit_tarihi" ColumnName="kayit_tarihi" />
+                <ScalarProperty Name="maas" ColumnName="maas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StokTabloes">
+            <EntityTypeMapping TypeName="SCAModel.StokTablo">
+              <MappingFragment StoreEntitySet="StokTablo">
+                <ScalarProperty Name="UrunKodu" ColumnName="UrunKodu" />
+                <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+                <ScalarProperty Name="UrunKategori" ColumnName="UrunKategori" />
+                <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+                <ScalarProperty Name="UrunAdet" ColumnName="UrunAdet" />
+                <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsBilgiTabloDetays">
+            <EntityTypeMapping TypeName="SCAModel.IsBilgiTabloDetay">
+              <MappingFragment StoreEntitySet="IsBilgiTabloDetay">
+                <ScalarProperty Name="Kod" ColumnName="Kod" />
+                <ScalarProperty Name="UrunKod" ColumnName="UrunKod" />
+                <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+                <ScalarProperty Name="AlisAdet" ColumnName="AlisAdet" />
+                <ScalarProperty Name="AlisFiyat" ColumnName="AlisFiyat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ilcelers">
+            <EntityTypeMapping TypeName="SCAModel.ilceler">
+              <MappingFragment StoreEntitySet="ilceler">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ilce" ColumnName="ilce" />
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="illers">
+            <EntityTypeMapping TypeName="SCAModel.iller">
+              <MappingFragment StoreEntitySet="iller">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MusteriTablosus">
+            <EntityTypeMapping TypeName="SCAModel.MusteriTablosu">
+              <MappingFragment StoreEntitySet="MusteriTablosu">
+                <ScalarProperty Name="tcno" ColumnName="tcno" />
+                <ScalarProperty Name="ad" ColumnName="ad" />
+                <ScalarProperty Name="soyad" ColumnName="soyad" />
+                <ScalarProperty Name="cinsiyet" ColumnName="cinsiyet" />
+                <ScalarProperty Name="il" ColumnName="il" />
+                <ScalarProperty Name="ilce" ColumnName="ilce" />
+                <ScalarProperty Name="cep_telefonu" ColumnName="cep_telefonu" />
+                <ScalarProperty Name="ev_telefonu" ColumnName="ev_telefonu" />
+                <ScalarProperty Name="eposta" ColumnName="eposta" />
+                <ScalarProperty Name="ev_adresi" ColumnName="ev_adresi" />
+                <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+                <ScalarProperty Name="arsiv" ColumnName="arsiv" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

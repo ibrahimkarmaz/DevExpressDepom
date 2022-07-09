@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SCAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CalismaTablo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TC" Type="nchar" MaxLength="11" />
+    <Property Name="Tarih" Type="nchar" MaxLength="10" />
+    <Property Name="BaslangicSaat" Type="nchar" MaxLength="10" />
+    <Property Name="BitisSaat" Type="nchar" MaxLength="10" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="DevamsizlikTablosu">
+    <Key>
+      <PropertyRef Name="devamsizlik_id" />
+    </Key>
+    <Property Name="devamsizlik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tc" Type="varchar" MaxLength="11" />
+    <Property Name="devamsizlik_gunu" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GirisTablosu">
+    <Key>
+      <PropertyRef Name="Tcno" />
+    </Key>
+    <Property Name="Tcno" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="Parola" Type="varchar" MaxLength="25" />
+    <Property Name="Durum" Type="bit" />
+  </EntityType>
+  <EntityType Name="IsBilgiTablo">
+    <Key>
+      <PropertyRef Name="Kod" />
+    </Key>
+    <Property Name="Kod" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="Tarih" Type="nchar" MaxLength="10" />
+    <Property Name="BaslamaSaat" Type="nchar" MaxLength="10" />
+    <Property Name="BitisSaat" Type="nchar" MaxLength="10" />
+    <Property Name="Tanim" Type="text" />
+    <Property Name="MusteriTC" Type="char" MaxLength="11" />
+    <Property Name="isYapanTC" Type="char" MaxLength="11" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.IsBilgiTabloDetay' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="IsBilgiTabloDetay">
+    <Key>
+      <PropertyRef Name="Kod" />
+    </Key>
+    <Property Name="Kod" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="UrunKod" Type="nchar" MaxLength="8" />
+    <Property Name="UrunAd" Type="varchar" MaxLength="50" />
+    <Property Name="AlisAdet" Type="int" />
+    <Property Name="AlisFiyat" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.ilceler' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ilceler">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="sehir" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ilce" Type="nvarchar" MaxLength="255" />
+    <Property Name="sehir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.iller' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="iller">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sehir" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SCA.dbo.MusteriTablosu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MusteriTablosu">
+    <Key>
+      <PropertyRef Name="tcno" />
+    </Key>
+    <Property Name="tcno" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="ad" Type="varchar" MaxLength="20" />
+    <Property Name="soyad" Type="varchar" MaxLength="20" />
+    <Property Name="cinsiyet" Type="varchar" MaxLength="5" />
+    <Property Name="il" Type="varchar" MaxLength="20" />
+    <Property Name="ilce" Type="varchar" MaxLength="20" />
+    <Property Name="cep_telefonu" Type="varchar" MaxLength="20" />
+    <Property Name="ev_telefonu" Type="varchar" MaxLength="20" />
+    <Property Name="eposta" Type="varchar" MaxLength="50" />
+    <Property Name="ev_adresi" Type="varchar" MaxLength="150" />
+    <Property Name="aciklama" Type="varchar" MaxLength="200" />
+    <Property Name="arsiv" Type="bit" />
+  </EntityType>
+  <EntityType Name="PersonelTablosu">
+    <Key>
+      <PropertyRef Name="tc" />
+    </Key>
+    <Property Name="tc" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ad" Type="varchar" MaxLength="20" />
+    <Property Name="soyad" Type="varchar" MaxLength="20" />
+    <Property Name="cinsiyet" Type="varchar" MaxLength="5" />
+    <Property Name="tel" Type="varchar" MaxLength="20" />
+    <Property Name="kayit_tarihi" Type="varchar" MaxLength="50" />
+    <Property Name="maas" Type="float" />
+  </EntityType>
+  <EntityType Name="StokTablo">
+    <Key>
+      <PropertyRef Name="UrunKodu" />
+    </Key>
+    <Property Name="UrunKodu" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="UrunAd" Type="varchar" MaxLength="30" />
+    <Property Name="UrunKategori" Type="varchar" MaxLength="30" />
+    <Property Name="UrunFiyat" Type="float" />
+    <Property Name="UrunAdet" Type="int" />
+    <Property Name="aciklama" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="SCAModelStoreContainer">
+    <EntitySet Name="CalismaTablo" EntityType="Self.CalismaTablo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DevamsizlikTablosu" EntityType="Self.DevamsizlikTablosu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GirisTablosu" EntityType="Self.GirisTablosu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IsBilgiTablo" EntityType="Self.IsBilgiTablo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonelTablosu" EntityType="Self.PersonelTablosu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StokTablo" EntityType="Self.StokTablo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IsBilgiTabloDetay" EntityType="Self.IsBilgiTabloDetay" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IsBilgiTabloDetay].[Kod] AS [Kod], 
+    [IsBilgiTabloDetay].[UrunKod] AS [UrunKod], 
+    [IsBilgiTabloDetay].[UrunAd] AS [UrunAd], 
+    [IsBilgiTabloDetay].[AlisAdet] AS [AlisAdet], 
+    [IsBilgiTabloDetay].[AlisFiyat] AS [AlisFiyat]
+    FROM [dbo].[IsBilgiTabloDetay] AS [IsBilgiTabloDetay]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ilceler" EntityType="Self.ilceler" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ilceler].[id] AS [id], 
+    [ilceler].[ilce] AS [ilce], 
+    [ilceler].[sehir] AS [sehir]
+    FROM [dbo].[ilceler] AS [ilceler]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="iller" EntityType="Self.iller" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [iller].[id] AS [id], 
+    [iller].[sehir] AS [sehir]
+    FROM [dbo].[iller] AS [iller]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MusteriTablosu" EntityType="Self.MusteriTablosu" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MusteriTablosu].[tcno] AS [tcno], 
+    [MusteriTablosu].[ad] AS [ad], 
+    [MusteriTablosu].[soyad] AS [soyad], 
+    [MusteriTablosu].[cinsiyet] AS [cinsiyet], 
+    [MusteriTablosu].[il] AS [il], 
+    [MusteriTablosu].[ilce] AS [ilce], 
+    [MusteriTablosu].[cep_telefonu] AS [cep_telefonu], 
+    [MusteriTablosu].[ev_telefonu] AS [ev_telefonu], 
+    [MusteriTablosu].[eposta] AS [eposta], 
+    [MusteriTablosu].[ev_adresi] AS [ev_adresi], 
+    [MusteriTablosu].[aciklama] AS [aciklama], 
+    [MusteriTablosu].[arsiv] AS [arsiv]
+    FROM [dbo].[MusteriTablosu] AS [MusteriTablosu]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
