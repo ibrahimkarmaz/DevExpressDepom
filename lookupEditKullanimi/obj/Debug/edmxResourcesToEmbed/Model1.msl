@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SCAModelStoreContainer" CdmEntityContainer="SCAEntities">
+    <EntitySetMapping Name="CalismaTabloes">
+      <EntityTypeMapping TypeName="SCAModel.CalismaTablo">
+        <MappingFragment StoreEntitySet="CalismaTablo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="BaslangicSaat" ColumnName="BaslangicSaat" />
+          <ScalarProperty Name="BitisSaat" ColumnName="BitisSaat" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DevamsizlikTablosus">
+      <EntityTypeMapping TypeName="SCAModel.DevamsizlikTablosu">
+        <MappingFragment StoreEntitySet="DevamsizlikTablosu">
+          <ScalarProperty Name="devamsizlik_id" ColumnName="devamsizlik_id" />
+          <ScalarProperty Name="tc" ColumnName="tc" />
+          <ScalarProperty Name="devamsizlik_gunu" ColumnName="devamsizlik_gunu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GirisTablosus">
+      <EntityTypeMapping TypeName="SCAModel.GirisTablosu">
+        <MappingFragment StoreEntitySet="GirisTablosu">
+          <ScalarProperty Name="Tcno" ColumnName="Tcno" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IsBilgiTabloes">
+      <EntityTypeMapping TypeName="SCAModel.IsBilgiTablo">
+        <MappingFragment StoreEntitySet="IsBilgiTablo">
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="BaslamaSaat" ColumnName="BaslamaSaat" />
+          <ScalarProperty Name="BitisSaat" ColumnName="BitisSaat" />
+          <ScalarProperty Name="Tanim" ColumnName="Tanim" />
+          <ScalarProperty Name="MusteriTC" ColumnName="MusteriTC" />
+          <ScalarProperty Name="isYapanTC" ColumnName="isYapanTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonelTablosus">
+      <EntityTypeMapping TypeName="SCAModel.PersonelTablosu">
+        <MappingFragment StoreEntitySet="PersonelTablosu">
+          <ScalarProperty Name="tc" ColumnName="tc" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="cinsiyet" ColumnName="cinsiyet" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="kayit_tarihi" ColumnName="kayit_tarihi" />
+          <ScalarProperty Name="maas" ColumnName="maas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StokTabloes">
+      <EntityTypeMapping TypeName="SCAModel.StokTablo">
+        <MappingFragment StoreEntitySet="StokTablo">
+          <ScalarProperty Name="UrunKodu" ColumnName="UrunKodu" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="UrunKategori" ColumnName="UrunKategori" />
+          <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+          <ScalarProperty Name="UrunAdet" ColumnName="UrunAdet" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IsBilgiTabloDetays">
+      <EntityTypeMapping TypeName="SCAModel.IsBilgiTabloDetay">
+        <MappingFragment StoreEntitySet="IsBilgiTabloDetay">
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="UrunKod" ColumnName="UrunKod" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="AlisAdet" ColumnName="AlisAdet" />
+          <ScalarProperty Name="AlisFiyat" ColumnName="AlisFiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ilcelers">
+      <EntityTypeMapping TypeName="SCAModel.ilceler">
+        <MappingFragment StoreEntitySet="ilceler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="illers">
+      <EntityTypeMapping TypeName="SCAModel.iller">
+        <MappingFragment StoreEntitySet="iller">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusteriTablosus">
+      <EntityTypeMapping TypeName="SCAModel.MusteriTablosu">
+        <MappingFragment StoreEntitySet="MusteriTablosu">
+          <ScalarProperty Name="tcno" ColumnName="tcno" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="cinsiyet" ColumnName="cinsiyet" />
+          <ScalarProperty Name="il" ColumnName="il" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="cep_telefonu" ColumnName="cep_telefonu" />
+          <ScalarProperty Name="ev_telefonu" ColumnName="ev_telefonu" />
+          <ScalarProperty Name="eposta" ColumnName="eposta" />
+          <ScalarProperty Name="ev_adresi" ColumnName="ev_adresi" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="arsiv" ColumnName="arsiv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
