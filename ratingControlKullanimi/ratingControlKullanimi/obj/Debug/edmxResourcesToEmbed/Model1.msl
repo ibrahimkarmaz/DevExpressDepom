@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Db_FilmArsivModelStoreContainer" CdmEntityContainer="Db_FilmArsivEntities">
+    <EntitySetMapping Name="Tbl_Filmler">
+      <EntityTypeMapping TypeName="Db_FilmArsivModel.Tbl_Filmler">
+        <MappingFragment StoreEntitySet="Tbl_Filmler">
+          <ScalarProperty Name="FilmID" ColumnName="FilmID" />
+          <ScalarProperty Name="FilmAd" ColumnName="FilmAd" />
+          <ScalarProperty Name="FilmTur" ColumnName="FilmTur" />
+          <ScalarProperty Name="FilmPuan" ColumnName="FilmPuan" />
+          <ScalarProperty Name="FilmKategori" ColumnName="FilmKategori" />
+          <ScalarProperty Name="FilmResim" ColumnName="FilmResim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

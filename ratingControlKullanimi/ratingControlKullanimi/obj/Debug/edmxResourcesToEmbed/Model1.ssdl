@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Db_FilmArsivModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tbl_Filmler">
+    <Key>
+      <PropertyRef Name="FilmID" />
+    </Key>
+    <Property Name="FilmID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FilmAd" Type="varchar" MaxLength="50" />
+    <Property Name="FilmTur" Type="varchar" MaxLength="10" />
+    <Property Name="FilmPuan" Type="float" />
+    <Property Name="FilmKategori" Type="bit" />
+    <Property Name="FilmResim" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="Db_FilmArsivModelStoreContainer">
+    <EntitySet Name="Tbl_Filmler" EntityType="Self.Tbl_Filmler" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

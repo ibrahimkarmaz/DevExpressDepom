@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Db_FilmArsivModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_Filmler">
+    <Key>
+      <PropertyRef Name="FilmID" />
+    </Key>
+    <Property Name="FilmID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FilmAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FilmTur" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FilmPuan" Type="Double" />
+    <Property Name="FilmKategori" Type="Boolean" />
+    <Property Name="FilmResim" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Db_FilmArsivEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_Filmler" EntityType="Self.Tbl_Filmler" />
+  </EntityContainer>
+</Schema>
