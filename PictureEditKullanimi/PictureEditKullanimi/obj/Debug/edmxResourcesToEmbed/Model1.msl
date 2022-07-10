@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBResimIslemleriDVModelStoreContainer" CdmEntityContainer="DBResimIslemleriDVEntities1">
+    <EntitySetMapping Name="TblKisiResims">
+      <EntityTypeMapping TypeName="DBResimIslemleriDVModel.TblKisiResim">
+        <MappingFragment StoreEntitySet="TblKisiResim">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="imageLine" ColumnName="imageLine" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
