@@ -15,5 +15,19 @@ namespace IsTakipSistemi
         {
             InitializeComponent();
         }
+
+        private void DepartmanListesiAltMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.DepartmanlarFrm DepartmanAc = new Pencereler.DepartmanlarFrm();
+            DepartmanAc.MdiParent = this;
+            DepartmanAc.Show();
+        }
+
+        private void PersonelListesiAltMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.FrmPersoneller PersonelListesi = new Pencereler.FrmPersoneller();
+            PersonelListesi.MdiParent = this;
+            PersonelListesi.Show();
+        }
     }
 }

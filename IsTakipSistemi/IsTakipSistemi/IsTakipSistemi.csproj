@@ -41,8 +41,20 @@
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,17 +65,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entitiy\dataBaseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataBaseModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\dataBaseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\dataBaseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataBaseModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\TblDepartmanlar.cs">
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\TblFirmalar.cs">
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\TblGorevler.cs">
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\TblGorevlerDetaylar.cs">
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\TblKullanicilar.cs">
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitiy\TblPersonel.cs">
+      <DependentUpon>dataBaseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pencereler\DepartmanlarFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\DepartmanlarFrm.Designer.cs">
+      <DependentUpon>DepartmanlarFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pencereler\FrmPersoneller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\FrmPersoneller.Designer.cs">
+      <DependentUpon>FrmPersoneller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EntityDeploy Include="Entitiy\dataBaseModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dataBaseModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entitiy\dataBaseModel.edmx.diagram">
+      <DependentUpon>dataBaseModel.edmx</DependentUpon>
+    </None>
     <None Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </None>
+    <EmbeddedResource Include="Pencereler\DepartmanlarFrm.resx">
+      <DependentUpon>DepartmanlarFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pencereler\FrmPersoneller.resx">
+      <DependentUpon>FrmPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +146,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -307,6 +378,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\handtool_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listbox_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencolor_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitiy\dataBaseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dataBaseModel.Context.cs</LastGenOutput>
+      <DependentUpon>dataBaseModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entitiy\dataBaseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dataBaseModel.edmx</DependentUpon>
+      <LastGenOutput>dataBaseModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

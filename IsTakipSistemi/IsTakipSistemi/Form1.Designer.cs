@@ -83,9 +83,9 @@ namespace IsTakipSistemi
             this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.MdiFrm = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MdiFrm)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -152,6 +152,7 @@ namespace IsTakipSistemi
             this.DepartmanListesiAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.chartsshowlegend_16x16;
             this.DepartmanListesiAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.chartsshowlegend_32x32;
             this.DepartmanListesiAltMenu.Name = "DepartmanListesiAltMenu";
+            this.DepartmanListesiAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DepartmanListesiAltMenu_ItemClick);
             // 
             // YeniDepartmanAltMenu
             // 
@@ -184,6 +185,7 @@ namespace IsTakipSistemi
             this.PersonelListesiAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.team_16x16;
             this.PersonelListesiAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.team_32x32;
             this.PersonelListesiAltMenu.Name = "PersonelListesiAltMenu";
+            this.PersonelListesiAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.PersonelListesiAltMenu_ItemClick);
             // 
             // YeniPersonelAltMenu
             // 
@@ -542,9 +544,9 @@ namespace IsTakipSistemi
             this.barButtonItem20.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.news_32x32;
             this.barButtonItem20.Name = "barButtonItem20";
             // 
-            // xtraTabbedMdiManager1
+            // MdiFrm
             // 
-            this.xtraTabbedMdiManager1.MdiParent = this;
+            this.MdiFrm.MdiParent = this;
             // 
             // IsTakipPencere
             // 
@@ -556,7 +558,7 @@ namespace IsTakipSistemi
             this.Name = "IsTakipPencere";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MdiFrm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -617,7 +619,7 @@ namespace IsTakipSistemi
         private DevExpress.XtraBars.BarButtonItem ParolaIslemleriAltMenu;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.BarButtonItem YetkilendirmeAltMenu;
-        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager MdiFrm;
     }
 }
 

@@ -103,6 +103,16 @@ namespace IsTakipSistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_32x322 {
+            get {
+                object obj = ResourceManager.GetObject("add_32x322", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bar_16x16 {
             get {
                 object obj = ResourceManager.GetObject("bar_16x16", resourceCulture);
@@ -236,6 +246,16 @@ namespace IsTakipSistemi.Properties {
         internal static System.Drawing.Bitmap calculatenow_32x32 {
             get {
                 object obj = ResourceManager.GetObject("calculatenow_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -543,6 +563,16 @@ namespace IsTakipSistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap listbox_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("listbox_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap locknavigation_16x16 {
             get {
                 object obj = ResourceManager.GetObject("locknavigation_16x16", resourceCulture);
@@ -626,6 +656,16 @@ namespace IsTakipSistemi.Properties {
         internal static System.Drawing.Bitmap newtask_32x321 {
             get {
                 object obj = ResourceManager.GetObject("newtask_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pencolor_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("pencolor_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

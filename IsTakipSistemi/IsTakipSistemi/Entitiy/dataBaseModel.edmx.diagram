@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="013e8e65dcbf454498f7376729c1a769" Name="Diagram1">
+        <EntityTypeShape EntityType="DbIsTakipModel.TblDepartmanlar" Width="1.5" PointX="0.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbIsTakipModel.TblFirmalar" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbIsTakipModel.TblGorevler" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbIsTakipModel.TblGorevlerDetaylar" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbIsTakipModel.TblKullanicilar" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbIsTakipModel.TblPersonel" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="DbIsTakipModel.FK_TblPersonel_TblDepartmanlar" ManuallyRouted="false" />
+        <AssociationConnector Association="DbIsTakipModel.FK_TblGorevler_TblPersonel" ManuallyRouted="false" />
+        <AssociationConnector Association="DbIsTakipModel.FK_TblGorevler_TblPersonel1" ManuallyRouted="false" />
+        <AssociationConnector Association="DbIsTakipModel.FK_TblGorevlerDetaylar_TblGorevler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbIsTakipModel.FK_TblKullanicilar_TblPersonel" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
