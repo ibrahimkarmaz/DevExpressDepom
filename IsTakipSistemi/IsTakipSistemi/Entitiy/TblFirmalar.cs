@@ -20,8 +20,8 @@ namespace IsTakipSistemi.Entitiy
         public string Telefon { get; set; }
         public string Mail { get; set; }
         public string Sektor { get; set; }
-        public Nullable<int> il { get; set; }
-        public Nullable<int> ilce { get; set; }
+        public string il { get; set; }
+        public string ilce { get; set; }
         public string Adres { get; set; }
     }
 }

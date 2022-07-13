@@ -34,11 +34,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
     <Reference Include="DevExpress.Data.v20.1" />
     <Reference Include="DevExpress.Utils.v20.1" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -65,44 +70,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entitiy\dataBaseModel.Context.cs">
+    <Compile Include="Entitiy\DbIsTakip.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dataBaseModel.Context.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entitiy\dataBaseModel.cs">
+    <Compile Include="Entitiy\DbIsTakip.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entitiy\dataBaseModel.Designer.cs">
+    <Compile Include="Entitiy\DbIsTakip.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dataBaseModel.edmx</DependentUpon>
+      <DependentUpon>DbIsTakip.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entitiy\TblDepartmanlar.cs">
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
     <Compile Include="Entitiy\TblFirmalar.cs">
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
     <Compile Include="Entitiy\TblGorevler.cs">
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
     <Compile Include="Entitiy\TblGorevlerDetaylar.cs">
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
     <Compile Include="Entitiy\TblKullanicilar.cs">
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
     <Compile Include="Entitiy\TblPersonel.cs">
-      <DependentUpon>dataBaseModel.tt</DependentUpon>
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pencereler\FrmPersonelistatistikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\FrmPersonelistatistikler.Designer.cs">
+      <DependentUpon>FrmPersonelistatistikler.cs</DependentUpon>
     </Compile>
     <Compile Include="Pencereler\DepartmanlarFrm.cs">
       <SubType>Form</SubType>
@@ -118,16 +129,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EntityDeploy Include="Entitiy\dataBaseModel.edmx">
+    <EntityDeploy Include="Entitiy\DbIsTakip.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>dataBaseModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>DbIsTakip.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Entitiy\dataBaseModel.edmx.diagram">
-      <DependentUpon>dataBaseModel.edmx</DependentUpon>
+    <None Include="Entitiy\DbIsTakip.edmx.diagram">
+      <DependentUpon>DbIsTakip.edmx</DependentUpon>
     </None>
     <None Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </None>
+    <EmbeddedResource Include="Pencereler\FrmPersonelistatistikler.resx">
+      <DependentUpon>FrmPersonelistatistikler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pencereler\DepartmanlarFrm.resx">
       <DependentUpon>DepartmanlarFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -392,19 +406,19 @@
     <None Include="Resources\pencolor_32x32.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entitiy\dataBaseModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>dataBaseModel.Context.cs</LastGenOutput>
-      <DependentUpon>dataBaseModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Entitiy\dataBaseModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dataBaseModel.edmx</DependentUpon>
-      <LastGenOutput>dataBaseModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Entitiy\DbIsTakip.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbIsTakip.edmx</DependentUpon>
+      <LastGenOutput>DbIsTakip.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entitiy\DbIsTakip.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbIsTakip.edmx</DependentUpon>
+      <LastGenOutput>DbIsTakip.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

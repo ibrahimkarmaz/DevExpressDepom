@@ -18,7 +18,7 @@ namespace IsTakipSistemi.Pencereler
         {
             InitializeComponent();
         }
-        DbIsTakipEntities dataBase = new DbIsTakipEntities();
+        DbIsTakipEntitiesUP1 dataBase = new DbIsTakipEntitiesUP1();
         private void FrmPersoneller_Load(object sender, EventArgs e)
         {
             MPersonelListesi();

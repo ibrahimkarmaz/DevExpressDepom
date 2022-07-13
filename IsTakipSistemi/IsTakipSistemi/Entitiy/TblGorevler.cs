@@ -24,7 +24,7 @@ namespace IsTakipSistemi.Entitiy
         public Nullable<int> GorevVeren { get; set; }
         public Nullable<int> GorevAlan { get; set; }
         public string Aciklama { get; set; }
-        public string Durum { get; set; }
+        public Nullable<bool> Durum { get; set; }
         public Nullable<System.DateTime> Tarih { get; set; }
     
         public virtual TblPersonel TblPersonel { get; set; }

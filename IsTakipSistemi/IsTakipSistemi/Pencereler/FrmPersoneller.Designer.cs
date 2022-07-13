@@ -32,6 +32,14 @@ namespace IsTakipSistemi.Pencereler
             this.GControlPersonel = new DevExpress.XtraGrid.GridControl();
             this.GViewPersonelListe = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GroupControlPersonel = new DevExpress.XtraEditors.GroupControl();
+            this.LUEDepartman = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.TEGORSEL = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.TEMail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.TEPersonelSoyad = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.SBtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.SbtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.SBtnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -40,24 +48,16 @@ namespace IsTakipSistemi.Pencereler
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TEPersonelID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.TEPersonelSoyad = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.TEGORSEL = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.TEMail = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.LUEDepartman = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.GControlPersonel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewPersonelListe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlPersonel)).BeginInit();
             this.GroupControlPersonel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelAd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelSoyad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LUEDepartman.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEGORSEL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LUEDepartman.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelSoyad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // GControlPersonel
@@ -66,7 +66,7 @@ namespace IsTakipSistemi.Pencereler
             this.GControlPersonel.Location = new System.Drawing.Point(0, 0);
             this.GControlPersonel.MainView = this.GViewPersonelListe;
             this.GControlPersonel.Name = "GControlPersonel";
-            this.GControlPersonel.Size = new System.Drawing.Size(678, 442);
+            this.GControlPersonel.Size = new System.Drawing.Size(678, 423);
             this.GControlPersonel.TabIndex = 4;
             this.GControlPersonel.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GViewPersonelListe});
@@ -102,9 +102,85 @@ namespace IsTakipSistemi.Pencereler
             this.GroupControlPersonel.Location = new System.Drawing.Point(678, 0);
             this.GroupControlPersonel.Name = "GroupControlPersonel";
             this.GroupControlPersonel.ShowCaption = false;
-            this.GroupControlPersonel.Size = new System.Drawing.Size(232, 442);
+            this.GroupControlPersonel.Size = new System.Drawing.Size(232, 423);
             this.GroupControlPersonel.TabIndex = 3;
             this.GroupControlPersonel.Text = "groupControl1";
+            // 
+            // LUEDepartman
+            // 
+            this.LUEDepartman.Location = new System.Drawing.Point(87, 139);
+            this.LUEDepartman.Name = "LUEDepartman";
+            this.LUEDepartman.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LUEDepartman.Size = new System.Drawing.Size(133, 20);
+            this.LUEDepartman.TabIndex = 15;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(6, 142);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(57, 13);
+            this.labelControl4.TabIndex = 14;
+            this.labelControl4.Text = "Departman:";
+            // 
+            // TEGORSEL
+            // 
+            this.TEGORSEL.Location = new System.Drawing.Point(87, 113);
+            this.TEGORSEL.Name = "TEGORSEL";
+            this.TEGORSEL.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TEGORSEL.Properties.Appearance.Options.UseFont = true;
+            this.TEGORSEL.Size = new System.Drawing.Size(133, 20);
+            this.TEGORSEL.TabIndex = 13;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(6, 116);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(78, 13);
+            this.labelControl5.TabIndex = 12;
+            this.labelControl5.Text = "Personel Görsel:";
+            // 
+            // TEMail
+            // 
+            this.TEMail.Location = new System.Drawing.Point(87, 87);
+            this.TEMail.Name = "TEMail";
+            this.TEMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TEMail.Properties.Appearance.Options.UseFont = true;
+            this.TEMail.Size = new System.Drawing.Size(133, 20);
+            this.TEMail.TabIndex = 11;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(6, 90);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(66, 13);
+            this.labelControl6.TabIndex = 10;
+            this.labelControl6.Text = "Personel Mail:";
+            // 
+            // TEPersonelSoyad
+            // 
+            this.TEPersonelSoyad.Location = new System.Drawing.Point(87, 61);
+            this.TEPersonelSoyad.Name = "TEPersonelSoyad";
+            this.TEPersonelSoyad.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TEPersonelSoyad.Properties.Appearance.Options.UseFont = true;
+            this.TEPersonelSoyad.Size = new System.Drawing.Size(133, 20);
+            this.TEPersonelSoyad.TabIndex = 9;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(6, 64);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(80, 13);
+            this.labelControl3.TabIndex = 8;
+            this.labelControl3.Text = "Personel Soyadı:";
             // 
             // SBtnGuncelle
             // 
@@ -184,89 +260,13 @@ namespace IsTakipSistemi.Pencereler
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Personel ID";
             // 
-            // TEPersonelSoyad
-            // 
-            this.TEPersonelSoyad.Location = new System.Drawing.Point(87, 61);
-            this.TEPersonelSoyad.Name = "TEPersonelSoyad";
-            this.TEPersonelSoyad.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TEPersonelSoyad.Properties.Appearance.Options.UseFont = true;
-            this.TEPersonelSoyad.Size = new System.Drawing.Size(133, 20);
-            this.TEPersonelSoyad.TabIndex = 9;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(6, 64);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(80, 13);
-            this.labelControl3.TabIndex = 8;
-            this.labelControl3.Text = "Personel Soyadı:";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(6, 142);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(57, 13);
-            this.labelControl4.TabIndex = 14;
-            this.labelControl4.Text = "Departman:";
-            // 
-            // TEGORSEL
-            // 
-            this.TEGORSEL.Location = new System.Drawing.Point(87, 113);
-            this.TEGORSEL.Name = "TEGORSEL";
-            this.TEGORSEL.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TEGORSEL.Properties.Appearance.Options.UseFont = true;
-            this.TEGORSEL.Size = new System.Drawing.Size(133, 20);
-            this.TEGORSEL.TabIndex = 13;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(6, 116);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(78, 13);
-            this.labelControl5.TabIndex = 12;
-            this.labelControl5.Text = "Personel Görsel:";
-            // 
-            // TEMail
-            // 
-            this.TEMail.Location = new System.Drawing.Point(87, 87);
-            this.TEMail.Name = "TEMail";
-            this.TEMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TEMail.Properties.Appearance.Options.UseFont = true;
-            this.TEMail.Size = new System.Drawing.Size(133, 20);
-            this.TEMail.TabIndex = 11;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(6, 90);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(66, 13);
-            this.labelControl6.TabIndex = 10;
-            this.labelControl6.Text = "Personel Mail:";
-            // 
-            // LUEDepartman
-            // 
-            this.LUEDepartman.Location = new System.Drawing.Point(87, 139);
-            this.LUEDepartman.Name = "LUEDepartman";
-            this.LUEDepartman.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.LUEDepartman.Size = new System.Drawing.Size(133, 20);
-            this.LUEDepartman.TabIndex = 15;
-            // 
             // FrmPersoneller
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 442);
+            this.ClientSize = new System.Drawing.Size(910, 423);
             this.Controls.Add(this.GControlPersonel);
             this.Controls.Add(this.GroupControlPersonel);
             this.Name = "FrmPersoneller";
@@ -278,12 +278,12 @@ namespace IsTakipSistemi.Pencereler
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlPersonel)).EndInit();
             this.GroupControlPersonel.ResumeLayout(false);
             this.GroupControlPersonel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelAd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelSoyad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LUEDepartman.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEGORSEL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LUEDepartman.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelSoyad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEPersonelID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

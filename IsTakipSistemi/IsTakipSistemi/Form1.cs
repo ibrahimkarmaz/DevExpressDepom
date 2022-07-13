@@ -29,5 +29,12 @@ namespace IsTakipSistemi
             PersonelListesi.MdiParent = this;
             PersonelListesi.Show();
         }
+
+        private void PersonelIstatistiklerAltMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.FrmPersonelistatistikler istatistikler = new Pencereler.FrmPersonelistatistikler();
+            istatistikler.MdiParent = this;
+            istatistikler.Show();
+        }
     }
 }

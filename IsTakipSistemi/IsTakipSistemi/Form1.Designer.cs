@@ -202,6 +202,7 @@ namespace IsTakipSistemi
             this.PersonelIstatistiklerAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.drilldownonseries_chart_16x16;
             this.PersonelIstatistiklerAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.drilldownonseries_chart_32x32;
             this.PersonelIstatistiklerAltMenu.Name = "PersonelIstatistiklerAltMenu";
+            this.PersonelIstatistiklerAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.PersonelIstatistiklerAltMenu_ItemClick);
             // 
             // FirmaListesiAltMenu
             // 
