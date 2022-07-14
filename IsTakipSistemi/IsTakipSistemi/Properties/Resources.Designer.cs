@@ -113,6 +113,26 @@ namespace IsTakipSistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_32x323 {
+            get {
+                object obj = ResourceManager.GetObject("add_32x323", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AktifIs {
+            get {
+                object obj = ResourceManager.GetObject("AktifIs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bar_16x16 {
             get {
                 object obj = ResourceManager.GetObject("bar_16x16", resourceCulture);
@@ -263,6 +283,16 @@ namespace IsTakipSistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chartsshowlegend_16x16 {
             get {
                 object obj = ResourceManager.GetObject("chartsshowlegend_16x16", resourceCulture);
@@ -363,6 +393,16 @@ namespace IsTakipSistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DepartmanSayisi {
+            get {
+                object obj = ResourceManager.GetObject("DepartmanSayisi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap drilldownonseries_chart_16x16 {
             get {
                 object obj = ResourceManager.GetObject("drilldownonseries_chart_16x16", resourceCulture);
@@ -426,6 +466,26 @@ namespace IsTakipSistemi.Properties {
         internal static System.Drawing.Bitmap Firmalar {
             get {
                 object obj = ResourceManager.GetObject("Firmalar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Firmalar1 {
+            get {
+                object obj = ResourceManager.GetObject("Firmalar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Firmax {
+            get {
+                object obj = ResourceManager.GetObject("Firmax", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -656,6 +716,16 @@ namespace IsTakipSistemi.Properties {
         internal static System.Drawing.Bitmap newtask_32x321 {
             get {
                 object obj = ResourceManager.GetObject("newtask_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PasifIs {
+            get {
+                object obj = ResourceManager.GetObject("PasifIs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -135,7 +135,7 @@ namespace IsTakipSistemi
             this.GorevlerMenu,
             this.AraclarMenu,
             this.RaporlarMenu});
-            this.ribbonControl1.Size = new System.Drawing.Size(824, 169);
+            this.ribbonControl1.Size = new System.Drawing.Size(764, 169);
             // 
             // AnasayfaAltMenu
             // 
@@ -235,6 +235,7 @@ namespace IsTakipSistemi
             this.GorevListesiAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.newtask_16x16;
             this.GorevListesiAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.newtask_32x321;
             this.GorevListesiAltMenu.Name = "GorevListesiAltMenu";
+            this.GorevListesiAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.GorevListesiAltMenu_ItemClick);
             // 
             // YeniGorevTanimlaAltMenu
             // 
@@ -243,6 +244,7 @@ namespace IsTakipSistemi
             this.YeniGorevTanimlaAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.boposition2_16x16;
             this.YeniGorevTanimlaAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.boposition2_32x32;
             this.YeniGorevTanimlaAltMenu.Name = "YeniGorevTanimlaAltMenu";
+            this.YeniGorevTanimlaAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.YeniGorevTanimlaAltMenu_ItemClick);
             // 
             // AktifGorevlerAltMenu
             // 
@@ -281,6 +283,7 @@ namespace IsTakipSistemi
             this.GorevDetaylariAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.bodetails_16x16;
             this.GorevDetaylariAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.bodetails_32x32;
             this.GorevDetaylariAltMenu.Name = "GorevDetaylariAltMenu";
+            this.GorevDetaylariAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.GorevDetaylariAltMenu_ItemClick);
             // 
             // HesapMakinesiAltMenu
             // 
@@ -553,11 +556,12 @@ namespace IsTakipSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 489);
+            this.ClientSize = new System.Drawing.Size(764, 432);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "IsTakipPencere";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.IsTakipPencere_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MdiFrm)).EndInit();
             this.ResumeLayout(false);

@@ -109,6 +109,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pencereler\FrmGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\FrmGorev.Designer.cs">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pencereler\FrmGorevDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\FrmGorevDetay.Designer.cs">
+      <DependentUpon>FrmGorevDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pencereler\FrmGorevListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\FrmGorevListesi.Designer.cs">
+      <DependentUpon>FrmGorevListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pencereler\FrmPersonelistatistikler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +157,15 @@
     <None Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </None>
+    <EmbeddedResource Include="Pencereler\FrmGorev.resx">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pencereler\FrmGorevDetay.resx">
+      <DependentUpon>FrmGorevDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pencereler\FrmGorevListesi.resx">
+      <DependentUpon>FrmGorevListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pencereler\FrmPersonelistatistikler.resx">
       <DependentUpon>FrmPersonelistatistikler.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +436,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\cancel_32x321.png" />
+    <None Include="Resources\add_32x323.png" />
+    <None Include="bin\Debug\image\AktifIs.png" />
+    <None Include="bin\Debug\image\DepartmanSayisi.png" />
+    <None Include="bin\Debug\image\Firmax.png" />
+    <None Include="bin\Debug\image\PasifIs.png" />
     <Content Include="Entitiy\DbIsTakip.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DbIsTakip.edmx</DependentUpon>

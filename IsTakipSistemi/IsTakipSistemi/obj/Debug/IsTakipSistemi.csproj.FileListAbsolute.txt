@@ -152,3 +152,5 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\IsTakipSistemi\IsTakipSi
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\IsTakipSistemi\IsTakipSistemi\bin\Debug\ja\DevExpress.Xpo.v20.1.resources.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\IsTakipSistemi\IsTakipSistemi\bin\Debug\ru\DevExpress.Xpo.v20.1.resources.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\IsTakipSistemi\IsTakipSistemi\obj\Debug\IsTakipSistemi.Pencereler.FrmPersonelistatistikler.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\IsTakipSistemi\IsTakipSistemi\obj\Debug\IsTakipSistemi.Pencereler.FrmGorevListesi.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\IsTakipSistemi\IsTakipSistemi\obj\Debug\IsTakipSistemi.Pencereler.FrmGorev.resources

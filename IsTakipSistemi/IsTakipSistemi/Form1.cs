@@ -36,5 +36,29 @@ namespace IsTakipSistemi
             istatistikler.MdiParent = this;
             istatistikler.Show();
         }
+
+        private void IsTakipPencere_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GorevListesiAltMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.FrmGorevListesi GorevListesi = new Pencereler.FrmGorevListesi();
+            GorevListesi.MdiParent = this;
+            GorevListesi.Show();
+        }
+
+        private void YeniGorevTanimlaAltMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.FrmGorev YeniGorev = new Pencereler.FrmGorev();
+            YeniGorev.ShowDialog();
+        }
+
+        private void GorevDetaylariAltMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.FrmGorevDetay GDetay = new Pencereler.FrmGorevDetay();
+            GDetay.ShowDialog();
+        }
     }
 }
