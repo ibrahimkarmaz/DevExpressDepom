@@ -23,6 +23,7 @@ namespace IsTakipSistemi.Pencereler
         private void FrmGorevDetay_Load(object sender, EventArgs e)
         {
             dataBase.TblGorevlerDetaylars.Load();
+            bindingSource1.DataSource = dataBase.TblGorevlerDetaylars.Local;
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
