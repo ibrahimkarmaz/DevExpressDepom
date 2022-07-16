@@ -25,10 +25,21 @@ namespace IsTakipSistemi.Pencereler
             dataBase.TblGorevlerDetaylars.Load();
             bindingSource1.DataSource = dataBase.TblGorevlerDetaylars.Local;
         }
-
+        //YENİ VERİ EKLEME GÜNCELLEME VB İŞLEMLER İÇİN ; GView'in OptionsView Ayarlarından NewItemRowPosition yeri seçilmeli.
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            dataBase.SaveChanges();
+        }
+
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent();
+            dataBase.SaveChanges();
         }
     }
 }

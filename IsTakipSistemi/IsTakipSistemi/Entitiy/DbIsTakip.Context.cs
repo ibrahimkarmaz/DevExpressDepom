@@ -31,5 +31,6 @@ namespace IsTakipSistemi.Entitiy
         public virtual DbSet<TblGorevlerDetaylar> TblGorevlerDetaylars { get; set; }
         public virtual DbSet<TblKullanicilar> TblKullanicilars { get; set; }
         public virtual DbSet<TblPersonel> TblPersonels { get; set; }
+        public virtual DbSet<TblCagrilar> TblCagrilars { get; set; }
     }
 }

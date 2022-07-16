@@ -144,6 +144,7 @@ namespace IsTakipSistemi
             this.AnasayfaAltMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.home_16x16;
             this.AnasayfaAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.home_32x321;
             this.AnasayfaAltMenu.Name = "AnasayfaAltMenu";
+            this.AnasayfaAltMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AnasayfaAltMenu_ItemClick);
             // 
             // DepartmanListesiAltMenu
             // 

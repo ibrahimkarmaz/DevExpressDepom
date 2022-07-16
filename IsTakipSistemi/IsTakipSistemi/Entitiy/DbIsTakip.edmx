@@ -4,7 +4,18 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TblCagrilar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CagriFirma" Type="int" />
+          <Property Name="Konu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aciklama" Type="nvarchar(max)" />
+          <Property Name="Durum" Type="bit" />
+          <Property Name="Tarih" Type="date" />
+        </EntityType>
         <EntityType Name="TblDepartmanlar">
           <Key>
             <PropertyRef Name="ID" />
@@ -69,6 +80,18 @@
           <Property Name="DepartmanID" Type="int" />
           <Property Name="Arsiv" Type="bit" />
         </EntityType>
+        <Association Name="FK_TblCagrilar_TblFirmalar">
+          <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
+          <End Role="TblCagrilar" Type="Self.TblCagrilar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblFirmalar">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblCagrilar">
+              <PropertyRef Name="CagriFirma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TblGorevler_TblPersonel">
           <End Role="TblPersonel" Type="Self.TblPersonel" Multiplicity="0..1" />
           <End Role="TblGorevler" Type="Self.TblGorevler" Multiplicity="*" />
@@ -130,12 +153,17 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DbIsTakipModelStoreContainer">
+          <EntitySet Name="TblCagrilar" EntityType="Self.TblCagrilar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblDepartmanlar" EntityType="Self.TblDepartmanlar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblFirmalar" EntityType="Self.TblFirmalar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblGorevler" EntityType="Self.TblGorevler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblGorevlerDetaylar" EntityType="Self.TblGorevlerDetaylar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblKullanicilar" EntityType="Self.TblKullanicilar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblPersonel" EntityType="Self.TblPersonel" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TblCagrilar_TblFirmalar" Association="Self.FK_TblCagrilar_TblFirmalar">
+            <End Role="TblFirmalar" EntitySet="TblFirmalar" />
+            <End Role="TblCagrilar" EntitySet="TblCagrilar" />
+          </AssociationSet>
           <AssociationSet Name="FK_TblGorevler_TblPersonel" Association="Self.FK_TblGorevler_TblPersonel">
             <End Role="TblPersonel" EntitySet="TblPersonel" />
             <End Role="TblGorevler" EntitySet="TblGorevler" />
@@ -157,8 +185,7 @@
             <End Role="TblPersonel" EntitySet="TblPersonel" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbIsTakipModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -183,6 +210,7 @@
           <Property Name="il" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="ilce" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TblCagrilars" Relationship="DbIsTakipModel.FK_TblCagrilar_TblFirmalar" FromRole="TblFirmalar" ToRole="TblCagrilar" />
         </EntityType>
         <EntityType Name="TblGorevler">
           <Key>
@@ -323,7 +351,36 @@
             <End Role="TblPersonel" EntitySet="TblPersonels" />
             <End Role="TblKullanicilar" EntitySet="TblKullanicilars" />
           </AssociationSet>
+          <EntitySet Name="TblCagrilars" EntityType="DbIsTakipModel.TblCagrilar" />
+          <AssociationSet Name="FK_TblCagrilar_TblFirmalar" Association="DbIsTakipModel.FK_TblCagrilar_TblFirmalar">
+            <End Role="TblFirmalar" EntitySet="TblFirmalars" />
+            <End Role="TblCagrilar" EntitySet="TblCagrilars" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="TblCagrilar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CagriFirma" Type="Int32" />
+          <Property Name="Konu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="TblFirmalar" Relationship="DbIsTakipModel.FK_TblCagrilar_TblFirmalar" FromRole="TblCagrilar" ToRole="TblFirmalar" />
+          <Property Name="Durum" Type="Boolean" />
+        </EntityType>
+        <Association Name="FK_TblCagrilar_TblFirmalar">
+          <End Type="DbIsTakipModel.TblFirmalar" Role="TblFirmalar" Multiplicity="0..1" />
+          <End Type="DbIsTakipModel.TblCagrilar" Role="TblCagrilar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblFirmalar">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblCagrilar">
+              <PropertyRef Name="CagriFirma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -400,6 +457,18 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="TblCagrilars">
+            <EntityTypeMapping TypeName="DbIsTakipModel.TblCagrilar">
+              <MappingFragment StoreEntitySet="TblCagrilar">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="CagriFirma" ColumnName="CagriFirma" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -414,7 +483,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

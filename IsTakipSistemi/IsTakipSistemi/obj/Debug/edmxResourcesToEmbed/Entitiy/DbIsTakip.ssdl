@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblCagrilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CagriFirma" Type="int" />
+    <Property Name="Konu" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="Durum" Type="bit" />
+    <Property Name="Tarih" Type="date" />
+  </EntityType>
   <EntityType Name="TblDepartmanlar">
     <Key>
       <PropertyRef Name="ID" />
@@ -64,6 +75,18 @@
     <Property Name="DepartmanID" Type="int" />
     <Property Name="Arsiv" Type="bit" />
   </EntityType>
+  <Association Name="FK_TblCagrilar_TblFirmalar">
+    <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
+    <End Role="TblCagrilar" Type="Self.TblCagrilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblFirmalar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TblCagrilar">
+        <PropertyRef Name="CagriFirma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_TblGorevler_TblPersonel">
     <End Role="TblPersonel" Type="Self.TblPersonel" Multiplicity="0..1" />
     <End Role="TblGorevler" Type="Self.TblGorevler" Multiplicity="*" />
@@ -125,12 +148,17 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="DbIsTakipModelStoreContainer">
+    <EntitySet Name="TblCagrilar" EntityType="Self.TblCagrilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblDepartmanlar" EntityType="Self.TblDepartmanlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblFirmalar" EntityType="Self.TblFirmalar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblGorevler" EntityType="Self.TblGorevler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblGorevlerDetaylar" EntityType="Self.TblGorevlerDetaylar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblKullanicilar" EntityType="Self.TblKullanicilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblPersonel" EntityType="Self.TblPersonel" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblCagrilar_TblFirmalar" Association="Self.FK_TblCagrilar_TblFirmalar">
+      <End Role="TblFirmalar" EntitySet="TblFirmalar" />
+      <End Role="TblCagrilar" EntitySet="TblCagrilar" />
+    </AssociationSet>
     <AssociationSet Name="FK_TblGorevler_TblPersonel" Association="Self.FK_TblGorevler_TblPersonel">
       <End Role="TblPersonel" EntitySet="TblPersonel" />
       <End Role="TblGorevler" EntitySet="TblGorevler" />

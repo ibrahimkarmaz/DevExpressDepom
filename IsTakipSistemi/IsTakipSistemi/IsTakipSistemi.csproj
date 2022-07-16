@@ -60,6 +60,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +86,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbIsTakip.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entitiy\TblCagrilar.cs">
+      <DependentUpon>DbIsTakip.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entitiy\TblDepartmanlar.cs">
       <DependentUpon>DbIsTakip.tt</DependentUpon>
     </Compile>
@@ -108,6 +112,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pencereler\FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pencereler\FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Pencereler\FrmGorev.cs">
       <SubType>Form</SubType>
@@ -157,6 +167,9 @@
     <None Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </None>
+    <EmbeddedResource Include="Pencereler\FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pencereler\FrmGorev.resx">
       <DependentUpon>FrmGorev.cs</DependentUpon>
     </EmbeddedResource>
