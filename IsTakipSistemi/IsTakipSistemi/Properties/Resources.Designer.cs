@@ -743,6 +743,26 @@ namespace IsTakipSistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pie_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("pie_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pie_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("pie_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap piestylepie_16x16 {
             get {
                 object obj = ResourceManager.GetObject("piestylepie_16x16", resourceCulture);

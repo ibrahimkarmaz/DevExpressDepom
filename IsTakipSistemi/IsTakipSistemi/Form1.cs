@@ -90,5 +90,11 @@ namespace IsTakipSistemi
             }
            
         }
+        private void SBtnDagilim_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Pencereler.Dagilim ac = new Pencereler.Dagilim();
+            ac.MdiParent = this;
+            ac.Show();
+        }
     }
 }

@@ -61,8 +61,10 @@ namespace IsTakipSistemi
             this.HaritaAltMenu = new DevExpress.XtraBars.BarButtonItem();
             this.ParolaIslemleriAltMenu = new DevExpress.XtraBars.BarButtonItem();
             this.YetkilendirmeAltMenu = new DevExpress.XtraBars.BarButtonItem();
+            this.SBtnDagilim = new DevExpress.XtraBars.BarButtonItem();
             this.AnaSayfaMenu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.DepartmanlarMenu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -123,9 +125,10 @@ namespace IsTakipSistemi
             this.KurlarAltMenu,
             this.HaritaAltMenu,
             this.ParolaIslemleriAltMenu,
-            this.YetkilendirmeAltMenu});
+            this.YetkilendirmeAltMenu,
+            this.SBtnDagilim});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 33;
+            this.ribbonControl1.MaxItemId = 34;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.AnaSayfaMenu,
@@ -381,10 +384,20 @@ namespace IsTakipSistemi
             this.YetkilendirmeAltMenu.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.handtool_32x321;
             this.YetkilendirmeAltMenu.Name = "YetkilendirmeAltMenu";
             // 
+            // SBtnDagilim
+            // 
+            this.SBtnDagilim.Caption = "Sektörlerin İllere Dağılımı";
+            this.SBtnDagilim.Id = 33;
+            this.SBtnDagilim.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.pie_16x16;
+            this.SBtnDagilim.ImageOptions.LargeImage = global::IsTakipSistemi.Properties.Resources.pie_32x32;
+            this.SBtnDagilim.Name = "SBtnDagilim";
+            this.SBtnDagilim.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SBtnDagilim_ItemClick);
+            // 
             // AnaSayfaMenu
             // 
             this.AnaSayfaMenu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup14});
             this.AnaSayfaMenu.ImageOptions.Image = global::IsTakipSistemi.Properties.Resources.home_32x32;
             this.AnaSayfaMenu.Name = "AnaSayfaMenu";
             this.AnaSayfaMenu.Text = "AnaSayfa";
@@ -394,6 +407,12 @@ namespace IsTakipSistemi
             this.ribbonPageGroup1.ItemLinks.Add(this.AnasayfaAltMenu);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "AnaSayfa";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.SBtnDagilim);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
             // 
             // DepartmanlarMenu
             // 
@@ -626,6 +645,8 @@ namespace IsTakipSistemi
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.BarButtonItem YetkilendirmeAltMenu;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager MdiFrm;
+        private DevExpress.XtraBars.BarButtonItem SBtnDagilim;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
     }
 }
 

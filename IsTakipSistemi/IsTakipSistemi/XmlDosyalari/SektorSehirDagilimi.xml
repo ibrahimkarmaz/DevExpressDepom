@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="tr-TR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource Name="SQL Data Source 1" ComponentName="dashboardSqlDataSource1">
+      <Connection Name="localhost_DbIsTakip_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="DESKTOP-5DGSRBQ" />
+          <Parameter Name="database" Value="DbIsTakip" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+        </Parameters>
+      </Connection>
+      <Query Type="SelectQuery" Name="TblFirmalar">
+        <Tables>
+          <Table Name="TblFirmalar" X="30" Y="30" Width="125" Height="242" />
+        </Tables>
+        <Columns>
+          <Column Table="TblFirmalar" Name="Sektor" />
+          <Column Table="TblFirmalar" Name="il" />
+          <Column Table="TblFirmalar" Name="ilce" />
+          <Column Table="TblFirmalar" Name="Ad" />
+        </Columns>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="TblFirmalar">
+            <Field Name="Sektor" Type="String" />
+            <Field Name="il" Type="String" />
+            <Field Name="ilce" Type="String" />
+            <Field Name="Ad" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="SEKTÖRLER" DataSource="dashboardSqlDataSource1" DataMember="TblFirmalar">
+      <InteractivityOptions MasterFilterMode="Single" />
+      <DataItems>
+        <Dimension DataMember="Sektor" DefaultId="DataItem0" />
+        <Measure DataMember="Sektor" Name="SEKTÖR DAĞILIMI" SummaryType="Count" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem1" />
+      </Values>
+    </Pie>
+    <Pie ComponentName="pieDashboardItem2" Name="SEÇİLİ SEKTÖRE AİT ŞEHİR DAĞILIMI" DataSource="dashboardSqlDataSource1" DataMember="TblFirmalar">
+      <DataItems>
+        <Measure DataMember="Sektor" Name="SEKTÖRE AİT ŞEHİR DAĞILIMI" SummaryType="Count" DefaultId="DataItem0" />
+        <Dimension DataMember="il" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem0" />
+      </Values>
+    </Pie>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="pieDashboardItem1" Weight="0.5" />
+      <LayoutItem DashboardItem="pieDashboardItem2" Weight="0.5" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
