@@ -1,0 +1,7 @@
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\bin\Debug\EntitiyLayer.dll.config
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\bin\Debug\EntitiyLayer.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\bin\Debug\EntitiyLayer.pdb
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\obj\Debug\EntitiyLayer.csprojAssemblyReference.cache
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\obj\Debug\EntitiyLayer.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\EntitiyLayer\obj\Debug\EntitiyLayer.pdb

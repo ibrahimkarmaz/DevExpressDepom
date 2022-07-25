@@ -1,0 +1,11 @@
+﻿Tüm katmanlarda olduğu gibi bu katmanada entitiy bilgileri eklendi.
+Diğer katmanları kullanacağımız için tüm katmanları referens yoluyla eklendi.
+
+App.Config dosyasının içine;
+ <connectionStrings>
+    <add name="Context" connectionString="data source=DESKTOP-5DGSRBQ;initial catalog=DbMusteriTP;integrated security=True" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+  Bu DataAccessLayer içindeki Context sınıfındaki tabloları veritabanina eklemeyi sağlar.
+
+  FluentValidator Referansi eklendi.

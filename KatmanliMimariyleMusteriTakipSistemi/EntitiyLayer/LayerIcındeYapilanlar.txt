@@ -1,0 +1,13 @@
+﻿Notlar;
+Tüm katmanlarda;
+Entitiy Framework6 indirildi.
+
+EntitiyLayer Katmanında yapılanlar;
+Entities eklenip içine entitiles yani veritabanindaki tablolar oluşturuldu ve bağlantı adresleri belirlendi.
+
+
+using System.ComponentModel.DataAnnotations;//Key için
+ [Key]
+        public int ID { get; set; }
+
+[StringLength(20)]--> String katmanlarda kaç karakter girileceğini belirtiyoruz eğer belirtmezsek max olarak veritabanında gözüküyor.

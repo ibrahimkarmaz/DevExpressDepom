@@ -1,0 +1,6 @@
+﻿Repostory sınıfından gelen değerlerimi kullanarak ekleme silme güncelleme arama vb işlemler yapıldı.
+
+Fluent Validation yapısı kullanıldı Peki ama ne işe yarıyor;
+Bizim solid kurallarını ezmeden eklenecek veriyi şartlıyor
+Örnek ad en az 2 karakter olmalı
+ad en fazla 20 karakter olmalı vb işlemler

@@ -1,0 +1,15 @@
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntitiyLayer.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntitiyLayer.pdb
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntitiyLayer.dll.config
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\ibrah\source\repos\KatmanliMimariyleMusteriTakipSistemi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

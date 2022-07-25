@@ -1,0 +1,50 @@
+﻿Tüm katmanlarda olduğu gibi bu katmanada entitiy paketi eklendi.
+
+Bu katmanda Tabloları yöneteceğimiz için;
+-Entities ihtiyaçtan dolayı(Veritabanina eklenmesi,Yönetilmesi vb)
+-Referanslara gelip EntitiyLayer Katmanı eklendi.
+
+Context Sınıfı eklendi ve herkese açık olarak public yapıldı.
+Context Sınıfı İçinde;
+Context sınıfını DbContex'e bağlandı(Veritabani işlemleri için (Her türlü))
+DbSet ile bizim hangi tabloda entitiy değişiklik yapacağımızı bilgisi verdik. "public DbSet<Musteri> musteriler { get; set; }"
+burada tablolarda s takisi alabiliyor nedeni ise karışmama durumu.
+
+Bu Entitiy ve Context sınıfını oluşturduktan sonra ilk yapılması gereken Sunum katmanında App.Config içine;
+ <connectionStrings>
+    <add name="Context" connectionString="data source=DESKTOP-5DGSRBQ;initial catalog=DbMusteriTP;integrated security=True" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+  Bu veriler bizim entitis(Tabloları) veritabanina eklememizi sağlar.
+
+
+  Burda Migrations yapısı oluşturuldu yapılanlar;
+    1.Package Manager Console açıldı.
+    2. Enable-Migrations ile bizim EntityLayer katmanındaki entities, DataAccessLayer katmanında Context ve Sunum katmannında App.Config içine yazılan bağlantı cümlesi kontrol edilir.
+    3.Eğer Herhangi bir sorun yok ise;Migrations oluşturulur fakat iş bitmedi.
+    4.Veritabanina yansıma için;Update-Database Console yazıldı.
+
+Abstrack Klasörü içindekiler;
+Abstrack Nedir ?
+  Soyut anlamına geliyor.
+  Arayüzleri tutan yapıdır. Peki arayüz nedir? Bir işlem yapısı ile İşin yapılacağı yer ortasında görev yapan yer gibi.
+
+  Buradaki veriler temel bir yapıda birleşiyor;
+  IRepostory
+
+  Peki interface Repostory Nedir?
+  -Bizim tablolarımızda belirli işlemleri bir araya topladığımız yerdir örnek vermek gerekirse; CRUD İŞLEMLERİ
+  -Bir arada tutumak ne işe yaracak; Entity tek çatı aldınta türetilmesini sağlacak bu kodları tekrar tekrar yazılmayacak
+   ve CLASS ve farkli yapılar üretilmeyecek.
+  
+  Bizim interface lerin DataAccessLayerlarin oluşma sebebi;
+   -Eğer genel yapı dışında(IRepostory) bir işlem yapılacak ise buradan yapıyı çekeriz.
+   Örnek: Bizim Musterilerin ozel bir durumu oldu bu genel yapiyi kullanamayacağımız için Özel yapılara gideriz.
+   
+   Repository Nedir?
+   IRepository ile contextler arasında yapılacaklar işlemleri belirttik bunlara özellik atamamız gerekiyor burada;
+   Repository sınıfı ortaya çıkıyor bu sınıfı oluşturup interface türetilmesini sağlıyoruz. ve özellikleri ekliyoruz.
+   //Generic Repository Pattern-->IRepository arkada çalışırken Repository önce çalışan ve arkada çalışan işlemlere görev oluşturan yapıdır. özetle
+
+
+   Find kismi eklendi.
