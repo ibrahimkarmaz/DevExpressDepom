@@ -1,0 +1,18 @@
+Baþlama Tarihi:11.10.2022
+Bitiþ Tarihi:-
+Proje:MY Ticari Otomasyon Temel Alarak Uyarlama.
+
+Öðrenilenlerin Listesi 
+
+
+Projede 1.Gün;
+-Bilgisayardan kaynaklý hatadan dolayý tablolar veritabanina aktarýlamadý.
+
+Projede 2.Gün;
+-Eksik tablolar eklendi
+-Maping iþlemleri eklendi.
+
+Projede 3.Gün;
+-Gerakli N-Tier alt yapýsý hazýrlandý ve kontrol edildi.
+
+Projede 4.Gün;
