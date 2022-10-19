@@ -51,7 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBankDAL.cs" />
+    <Compile Include="Abstract\IBlandDAL.cs" />
+    <Compile Include="Abstract\ICityDAL.cs" />
+    <Compile Include="Abstract\ICompanyDAL.cs" />
+    <Compile Include="Abstract\ICountyDAL.cs" />
+    <Compile Include="Abstract\ICustomerDAL.cs" />
+    <Compile Include="Abstract\IDNeighborhoodDAL.cs" />
+    <Compile Include="Abstract\IEmployeeDAL.cs" />
+    <Compile Include="Abstract\IExpenseDAL.cs" />
+    <Compile Include="Abstract\IGenericDAL.cs" />
+    <Compile Include="Abstract\IInvoiceDAL.cs" />
+    <Compile Include="Abstract\IInvoiceDetailDAL.cs" />
+    <Compile Include="Abstract\IModelDAL.cs" />
+    <Compile Include="Abstract\INoteMAP.cs" />
+    <Compile Include="Abstract\IProductDAL.cs" />
+    <Compile Include="Abstract\IStockDAL.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="EntityFramework\EFBlandDAL.cs" />
     <Compile Include="Migrations\202210120919480_NewDatabaseTO.cs" />
     <Compile Include="Migrations\202210120919480_NewDatabaseTO.designer.cs">
       <DependentUpon>202210120919480_NewDatabaseTO.cs</DependentUpon>
@@ -112,8 +129,53 @@
     <Compile Include="Migrations\202210131925437_EntityDNeighborhoodAndMapping.designer.cs">
       <DependentUpon>202210131925437_EntityDNeighborhoodAndMapping.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210182107548_BlandAndModelMappings.cs" />
+    <Compile Include="Migrations\202210182107548_BlandAndModelMappings.designer.cs">
+      <DependentUpon>202210182107548_BlandAndModelMappings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210182143096_BlandAndModelMappingsUpdate.cs" />
+    <Compile Include="Migrations\202210182143096_BlandAndModelMappingsUpdate.designer.cs">
+      <DependentUpon>202210182143096_BlandAndModelMappingsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210182152424_BlandAndModelMappingsUpdate2.cs" />
+    <Compile Include="Migrations\202210182152424_BlandAndModelMappingsUpdate2.designer.cs">
+      <DependentUpon>202210182152424_BlandAndModelMappingsUpdate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210182154200_BlandAndModelMappingsUpdate3.cs" />
+    <Compile Include="Migrations\202210182154200_BlandAndModelMappingsUpdate3.designer.cs">
+      <DependentUpon>202210182154200_BlandAndModelMappingsUpdate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191152502_BlandAndModelMappingsUpdate4.cs" />
+    <Compile Include="Migrations\202210191152502_BlandAndModelMappingsUpdate4.designer.cs">
+      <DependentUpon>202210191152502_BlandAndModelMappingsUpdate4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191202070_BlandAndModelMappingsUpdate5.cs" />
+    <Compile Include="Migrations\202210191202070_BlandAndModelMappingsUpdate5.designer.cs">
+      <DependentUpon>202210191202070_BlandAndModelMappingsUpdate5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191205479_BlandAndModelMappingsUpdate6.cs" />
+    <Compile Include="Migrations\202210191205479_BlandAndModelMappingsUpdate6.designer.cs">
+      <DependentUpon>202210191205479_BlandAndModelMappingsUpdate6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191226316_BlandAndModelMappingsUpdate7.cs" />
+    <Compile Include="Migrations\202210191226316_BlandAndModelMappingsUpdate7.designer.cs">
+      <DependentUpon>202210191226316_BlandAndModelMappingsUpdate7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191234104_BlandAndModelMappingsUpdate8.cs" />
+    <Compile Include="Migrations\202210191234104_BlandAndModelMappingsUpdate8.designer.cs">
+      <DependentUpon>202210191234104_BlandAndModelMappingsUpdate8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191239197_BlandAndModelMappingsUpdate9.cs" />
+    <Compile Include="Migrations\202210191239197_BlandAndModelMappingsUpdate9.designer.cs">
+      <DependentUpon>202210191239197_BlandAndModelMappingsUpdate9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210191243417_BlandAndModelMappingsUpdate10.cs" />
+    <Compile Include="Migrations\202210191243417_BlandAndModelMappingsUpdate10.designer.cs">
+      <DependentUpon>202210191243417_BlandAndModelMappingsUpdate10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -171,7 +233,41 @@
     <EmbeddedResource Include="Migrations\202210131925437_EntityDNeighborhoodAndMapping.resx">
       <DependentUpon>202210131925437_EntityDNeighborhoodAndMapping.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210182107548_BlandAndModelMappings.resx">
+      <DependentUpon>202210182107548_BlandAndModelMappings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210182143096_BlandAndModelMappingsUpdate.resx">
+      <DependentUpon>202210182143096_BlandAndModelMappingsUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210182152424_BlandAndModelMappingsUpdate2.resx">
+      <DependentUpon>202210182152424_BlandAndModelMappingsUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210182154200_BlandAndModelMappingsUpdate3.resx">
+      <DependentUpon>202210182154200_BlandAndModelMappingsUpdate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191152502_BlandAndModelMappingsUpdate4.resx">
+      <DependentUpon>202210191152502_BlandAndModelMappingsUpdate4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191202070_BlandAndModelMappingsUpdate5.resx">
+      <DependentUpon>202210191202070_BlandAndModelMappingsUpdate5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191205479_BlandAndModelMappingsUpdate6.resx">
+      <DependentUpon>202210191205479_BlandAndModelMappingsUpdate6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191226316_BlandAndModelMappingsUpdate7.resx">
+      <DependentUpon>202210191226316_BlandAndModelMappingsUpdate7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191234104_BlandAndModelMappingsUpdate8.resx">
+      <DependentUpon>202210191234104_BlandAndModelMappingsUpdate8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191239197_BlandAndModelMappingsUpdate9.resx">
+      <DependentUpon>202210191239197_BlandAndModelMappingsUpdate9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210191243417_BlandAndModelMappingsUpdate10.resx">
+      <DependentUpon>202210191243417_BlandAndModelMappingsUpdate10.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

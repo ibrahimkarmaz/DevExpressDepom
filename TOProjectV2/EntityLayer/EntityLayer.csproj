@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concrete\Bank.cs" />
+    <Compile Include="Concrete\Bland.cs" />
     <Compile Include="Concrete\City.cs" />
     <Compile Include="Concrete\Company.cs" />
     <Compile Include="Concrete\County.cs" />
@@ -61,10 +62,12 @@
     <Compile Include="Concrete\Expense.cs" />
     <Compile Include="Concrete\Invoice.cs" />
     <Compile Include="Concrete\InvoiceDetail.cs" />
+    <Compile Include="Concrete\Model.cs" />
     <Compile Include="Concrete\Note.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="Concrete\Stock.cs" />
     <Compile Include="Mapping\BankMAP.cs" />
+    <Compile Include="Mapping\BlandMAP.cs" />
     <Compile Include="Mapping\CityMAP.cs" />
     <Compile Include="Mapping\CompanyMAP.cs" />
     <Compile Include="Mapping\CountyMAP.cs" />
@@ -74,6 +77,7 @@
     <Compile Include="Mapping\ExpenseMAP.cs" />
     <Compile Include="Mapping\InvoiceDetailMAP.cs" />
     <Compile Include="Mapping\InvoiceMAP.cs" />
+    <Compile Include="Mapping\ModelMAP.cs" />
     <Compile Include="Mapping\NoteMAP.cs" />
     <Compile Include="Mapping\ProductMAP.cs" />
     <Compile Include="Mapping\StockMAP.cs" />

@@ -27,6 +27,8 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new CityMAP());
             modelBuilder.Configurations.Add(new CountyMAP());
             modelBuilder.Configurations.Add(new DNeighborhoodMAP());
+            modelBuilder.Configurations.Add(new BlandMAP());
+            modelBuilder.Configurations.Add(new ModelMAP());
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -41,6 +43,8 @@ namespace DataAccessLayer.Concrete
         public DbSet<City> Citys { get; set; }
         public DbSet<County> Countys { get; set; }
         public DbSet<DNeighborhood> DNeighborhoodMAPs { get; set; }
+        public DbSet<Bland> Blands { get; set; }
+        public DbSet<Model> Models { get; set; }
 
     }
 }

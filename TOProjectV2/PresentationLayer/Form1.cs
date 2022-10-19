@@ -7,14 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PresentationLayer.WinFormList;
 
 namespace PresentationLayer
 {
-    public partial class Form1 : Form
+    public partial class CommercialAutomation : Form
     {
-        public Form1()
+        public CommercialAutomation()
         {
             InitializeComponent();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        ProductWF productWF;
+        private void barProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (productWF==null)
+            {
+                productWF = new ProductWF();
+                productWF.MdiParent = this;
+                productWF.Show();
+            }
+           
+        }
+        ProductTypeList productTypeList;
+        private void barProductTypeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (productTypeList==null)
+            {
+                productTypeList = new ProductTypeList();
+                productTypeList.MdiParent = this;
+                productTypeList.Show();
+            }
         }
     }
 }
