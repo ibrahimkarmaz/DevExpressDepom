@@ -58,6 +58,7 @@
             // 
             // accordionControl1
             // 
+            this.accordionControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement1,
@@ -127,6 +128,7 @@
             // 
             // xtraTabControl1
             // 
+            this.xtraTabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl1.Location = new System.Drawing.Point(238, 0);
             this.xtraTabControl1.Name = "xtraTabControl1";
@@ -196,6 +198,7 @@
             // 
             // ProductWF
             // 
+            this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 458);

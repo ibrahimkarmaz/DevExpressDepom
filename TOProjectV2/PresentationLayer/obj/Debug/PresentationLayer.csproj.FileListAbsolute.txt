@@ -131,4 +131,15 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\Presentation
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\BusinessLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\DataAccessLayer.dll.config
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductTypeList.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.NewBlandWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\FluentValidation.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\FluentValidation.xml
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.BlandTypeList.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.BlandArchiveListWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.BlandUpdateWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ModelWF.ModelNewWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ModelWF.ModelUpdateWF.resources

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,6 +29,11 @@ namespace DataAccessLayer.Repositories
         public List<T> GetAll()
         {
             return _table.ToList();
+        }
+
+        public List<T> GetAll(Expression<Func<T, bool>> filter = null)
+        {
+            return _table.Where(filter).ToList();
         }
 
         public T GetById(int id)

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewBlandWF));
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.TEProductName = new DevExpress.XtraEditors.TextEdit();
+            this.TEBlandName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.listBoxBland = new DevExpress.XtraEditors.ListBoxControl();
             this.SBtnListAdd = new DevExpress.XtraEditors.SimpleButton();
@@ -38,10 +38,11 @@
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.SBCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.SBtnSave = new DevExpress.XtraEditors.SimpleButton();
             this.SBtnBlandRemove = new DevExpress.XtraEditors.SimpleButton();
+            this.SBtnBlandListClear = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TEProductName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEBlandName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxBland)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.SuspendLayout();
@@ -60,13 +61,13 @@
             this.pictureEdit1.Size = new System.Drawing.Size(24, 25);
             this.pictureEdit1.TabIndex = 19;
             // 
-            // TEProductName
+            // TEBlandName
             // 
-            this.TEProductName.Location = new System.Drawing.Point(107, 12);
-            this.TEProductName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TEProductName.Name = "TEProductName";
-            this.TEProductName.Size = new System.Drawing.Size(233, 30);
-            this.TEProductName.TabIndex = 18;
+            this.TEBlandName.Location = new System.Drawing.Point(107, 12);
+            this.TEBlandName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TEBlandName.Name = "TEBlandName";
+            this.TEBlandName.Size = new System.Drawing.Size(233, 30);
+            this.TEBlandName.TabIndex = 18;
             // 
             // labelControl1
             // 
@@ -88,23 +89,27 @@
             // 
             // SBtnListAdd
             // 
-            this.SBtnListAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBSave.ImageOptions.Image")));
+            this.SBtnListAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnListAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnListAdd.ImageOptions.Image")));
             this.SBtnListAdd.Location = new System.Drawing.Point(109, 99);
             this.SBtnListAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnListAdd.Name = "SBtnListAdd";
             this.SBtnListAdd.Size = new System.Drawing.Size(231, 39);
             this.SBtnListAdd.TabIndex = 21;
             this.SBtnListAdd.Text = "Listeye Ekle";
+            this.SBtnListAdd.Click += new System.EventHandler(this.SBtnListAdd_Click);
             // 
             // SBtnBlandlListSave
             // 
-            this.SBtnBlandlListSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.SBtnBlandlListSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnBlandlListSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnBlandlListSave.ImageOptions.Image")));
             this.SBtnBlandlListSave.Location = new System.Drawing.Point(109, 366);
             this.SBtnBlandlListSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnBlandlListSave.Name = "SBtnBlandlListSave";
             this.SBtnBlandlListSave.Size = new System.Drawing.Size(233, 39);
             this.SBtnBlandlListSave.TabIndex = 22;
-            this.SBtnBlandlListSave.Text = "Türlerin Tümünü Kaydet";
+            this.SBtnBlandlListSave.Text = "Markaların Tümünü Kaydet";
+            this.SBtnBlandlListSave.Click += new System.EventHandler(this.SBtnBlandlListSave_Click);
             // 
             // pictureEdit2
             // 
@@ -133,6 +138,7 @@
             // 
             // SBCancel
             // 
+            this.SBCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBCancel.ImageOptions.Image")));
             this.SBCancel.Location = new System.Drawing.Point(107, 48);
             this.SBCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -142,47 +148,63 @@
             this.SBCancel.Text = "İptal Et";
             this.SBCancel.Click += new System.EventHandler(this.SBCancel_Click);
             // 
-            // simpleButton2
+            // SBtnSave
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(210, 48);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(130, 39);
-            this.simpleButton2.TabIndex = 26;
-            this.simpleButton2.Text = "Kaydet";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            this.SBtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnSave.ImageOptions.Image")));
+            this.SBtnSave.Location = new System.Drawing.Point(210, 48);
+            this.SBtnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SBtnSave.Name = "SBtnSave";
+            this.SBtnSave.Size = new System.Drawing.Size(130, 39);
+            this.SBtnSave.TabIndex = 26;
+            this.SBtnSave.Text = "Kaydet";
+            this.SBtnSave.Click += new System.EventHandler(this.SBtnSave_Click);
             // 
             // SBtnBlandRemove
             // 
-            this.SBtnBlandRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.SBtnBlandRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnBlandRemove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnBlandRemove.ImageOptions.Image")));
             this.SBtnBlandRemove.Location = new System.Drawing.Point(107, 411);
             this.SBtnBlandRemove.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnBlandRemove.Name = "SBtnBlandRemove";
             this.SBtnBlandRemove.Size = new System.Drawing.Size(233, 39);
             this.SBtnBlandRemove.TabIndex = 28;
-            this.SBtnBlandRemove.Text = "Seçili Türü Sil";
+            this.SBtnBlandRemove.Text = "Seçili Markayı Sil";
+            this.SBtnBlandRemove.Click += new System.EventHandler(this.SBtnBlandRemove_Click);
+            // 
+            // SBtnBlandListClear
+            // 
+            this.SBtnBlandListClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnBlandListClear.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnBlandListClear.ImageOptions.Image")));
+            this.SBtnBlandListClear.Location = new System.Drawing.Point(109, 456);
+            this.SBtnBlandListClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SBtnBlandListClear.Name = "SBtnBlandListClear";
+            this.SBtnBlandListClear.Size = new System.Drawing.Size(233, 39);
+            this.SBtnBlandListClear.TabIndex = 29;
+            this.SBtnBlandListClear.Text = "Listeyi Temizle";
+            this.SBtnBlandListClear.Click += new System.EventHandler(this.SBtnBlandListClear_Click);
             // 
             // NewBlandWF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 463);
+            this.ClientSize = new System.Drawing.Size(354, 507);
+            this.Controls.Add(this.SBtnBlandListClear);
             this.Controls.Add(this.SBtnBlandRemove);
             this.Controls.Add(this.SBCancel);
-            this.Controls.Add(this.simpleButton2);
+            this.Controls.Add(this.SBtnSave);
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.SBtnBlandlListSave);
             this.Controls.Add(this.SBtnListAdd);
             this.Controls.Add(this.listBoxBland);
             this.Controls.Add(this.pictureEdit1);
-            this.Controls.Add(this.TEProductName);
+            this.Controls.Add(this.TEBlandName);
             this.Controls.Add(this.labelControl1);
             this.Name = "NewBlandWF";
-            this.Text = "YENİ TÜR";
+            this.Text = "YENİ MARKA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TEProductName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEBlandName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxBland)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -193,7 +215,7 @@
         #endregion
 
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.TextEdit TEProductName;
+        private DevExpress.XtraEditors.TextEdit TEBlandName;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.ListBoxControl listBoxBland;
         private DevExpress.XtraEditors.SimpleButton SBtnListAdd;
@@ -201,7 +223,8 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.SimpleButton SBCancel;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton SBtnSave;
         private DevExpress.XtraEditors.SimpleButton SBtnBlandRemove;
+        private DevExpress.XtraEditors.SimpleButton SBtnBlandListClear;
     }
 }

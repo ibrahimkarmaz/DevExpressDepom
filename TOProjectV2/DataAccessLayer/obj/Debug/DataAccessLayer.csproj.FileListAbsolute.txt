@@ -71,3 +71,4 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLa
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.BlandAndModelMappingsUpdate8.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.BlandAndModelMappingsUpdate9.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.BlandAndModelMappingsUpdate10.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.BlandAndModelColumnAddArchive.resources

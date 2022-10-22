@@ -47,6 +47,7 @@ namespace EntityLayer.Mapping
             this.Property(z => z.ModelID).HasColumnName("ModelID");
             this.Property(z => z.ModelName).HasColumnName("ModelName");
             this.Property(z => z.ModelYear).HasColumnName("ModelYear");
+            this.Property(z => z.ModelArchive).HasColumnName("ModelArchive");
 
 
             //VERİ TİPLERİ

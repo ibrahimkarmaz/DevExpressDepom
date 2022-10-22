@@ -11,6 +11,8 @@ namespace EntityLayer.Concrete
         public int BlandID { get; set; }
         public string BlandName { get; set; }
 
+        public bool BlandArchive { get; set; }
+
         public ICollection<Model> Models { get; set; }
     }
 }

@@ -26,12 +26,14 @@ namespace EntityLayer.Mapping
 
             //BOŞ GEÇİLEMEZ
             this.Property(c => c.BlandName).IsRequired();
+            this.Property(c => c.BlandArchive).IsRequired();
 
             //ALAN ADLARI
             //DİKKAT:ALAN ADLARI x İÇİNDEKİ GİBİ DEVAM EDER EĞER x YANLIŞLIKLA ALAN ADI
             //DEĞİŞİRSE BURADA TOPARLARIZ.
             this.Property(z => z.BlandID).HasColumnName("BlandID");
             this.Property(z => z.BlandName).HasColumnName("BlandName");
+            this.Property(z => z.BlandArchive).HasColumnName("BlandArchive");
         }
     }
 }

@@ -62,8 +62,11 @@
   <ItemGroup>
     <Compile Include="Abstract\IBlandService.cs" />
     <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\IModelService.cs" />
     <Compile Include="Concrete\BlandManager.cs" />
+    <Compile Include="Concrete\ModelManager.cs" />
     <Compile Include="FluentValidation\BlandValidator.cs" />
+    <Compile Include="FluentValidation\ModelValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

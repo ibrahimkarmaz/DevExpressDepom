@@ -4,6 +4,8 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +23,16 @@ namespace BusinessLayer.Concrete
         public List<Bland> GetAllList()
         {
             return _blandDAL.GetAll();
+        }
+
+        public List<Bland> GetAllList(Expression<Func<Bland, bool>> filter = null)
+        {
+            return _blandDAL.GetAll(filter);
+        }
+
+        public bool GetByBlandName(Expression<Func<Bland, bool>> filter = null)
+        {
+            return _blandDAL.GetByBlandName(filter);
         }
 
         public Bland GetById(int id)

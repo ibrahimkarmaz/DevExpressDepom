@@ -212,6 +212,7 @@
             // 
             // SBSave
             // 
+            this.SBSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBSave.ImageOptions.Image")));
             this.SBSave.Location = new System.Drawing.Point(222, 428);
             this.SBSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -222,6 +223,7 @@
             // 
             // SBCancel
             // 
+            this.SBCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBCancel.ImageOptions.Image")));
             this.SBCancel.Location = new System.Drawing.Point(119, 428);
             this.SBCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -379,7 +381,6 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.TEProductName);
             this.Controls.Add(this.labelControl1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ProductAddWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
