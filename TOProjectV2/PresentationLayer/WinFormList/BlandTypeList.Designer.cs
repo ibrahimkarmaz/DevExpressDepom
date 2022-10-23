@@ -43,6 +43,7 @@
             this.accordionControlModelDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlModelArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlModelList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GViewBland = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ColumnBlandID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnBlandName = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -52,7 +53,6 @@
             this.ColumnModelID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnModelName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnModelYear = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewBland)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GControlBland)).BeginInit();
@@ -192,6 +192,14 @@
             this.accordionControlModelList.Text = "MODEL LİSTESİ";
             this.accordionControlModelList.Click += new System.EventHandler(this.accordionControlModelList_Click);
             // 
+            // accordionControlArchive
+            // 
+            this.accordionControlArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlArchive.ImageOptions.Image")));
+            this.accordionControlArchive.Name = "accordionControlArchive";
+            this.accordionControlArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlArchive.Text = "MODEL ARŞİV LİSTESİ";
+            this.accordionControlArchive.Click += new System.EventHandler(this.accordionControlArchive_Click);
+            // 
             // GViewBland
             // 
             this.GViewBland.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -278,13 +286,6 @@
             this.ColumnModelYear.Visible = true;
             this.ColumnModelYear.VisibleIndex = 2;
             this.ColumnModelYear.Width = 198;
-            // 
-            // accordionControlArchive
-            // 
-            this.accordionControlArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
-            this.accordionControlArchive.Name = "accordionControlArchive";
-            this.accordionControlArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlArchive.Text = "MODEL ARŞİV LİSTESİ";
             // 
             // BlandTypeList
             // 

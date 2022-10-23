@@ -223,5 +223,21 @@ namespace PresentationLayer.WinFormList
                 XtraMessageBox.Show("LÜTFEN MODEL SEÇİNİZ...", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void accordionControlArchive_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                blandIDWithModelNew = (int)GViewBland.GetRowCellValue(GViewBland.FocusedRowHandle, GViewBland.Columns[0]);
+                ModelArchiveListWF modelArchiveListWF = new ModelArchiveListWF();
+                modelArchiveListWF.ShowDialog();
+                ModelGetAllListBlandID();
+            }
+            catch (Exception)
+            {
+                blandIDWithModelNew = -1;
+                XtraMessageBox.Show("LÜTFEN MODEL SEÇİNİZ...", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

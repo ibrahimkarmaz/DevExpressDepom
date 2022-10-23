@@ -34,14 +34,14 @@
             this.SBtnArchiveQuit = new DevExpress.XtraEditors.SimpleButton();
             this.LabelBland = new DevExpress.XtraEditors.LabelControl();
             this.GControlModel = new DevExpress.XtraGrid.GridControl();
-            this.GViewBland = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.GViewModel = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ColumnModelID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnModelName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnModelYear = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlModel)).BeginInit();
             this.GroupControlModel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GControlModel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewBland)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewModel)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupControlModel
@@ -66,6 +66,7 @@
             this.SBCancel.Size = new System.Drawing.Size(97, 39);
             this.SBCancel.TabIndex = 29;
             this.SBCancel.Text = "İptal Et";
+            this.SBCancel.Click += new System.EventHandler(this.SBCancel_Click);
             // 
             // SBtnArchiveQuit
             // 
@@ -78,6 +79,7 @@
             this.SBtnArchiveQuit.Size = new System.Drawing.Size(211, 39);
             this.SBtnArchiveQuit.TabIndex = 28;
             this.SBtnArchiveQuit.Text = "Modeli Arşivden Çıkar";
+            this.SBtnArchiveQuit.Click += new System.EventHandler(this.SBtnArchiveQuit_Click);
             // 
             // LabelBland
             // 
@@ -97,26 +99,27 @@
             // 
             this.GControlModel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GControlModel.Location = new System.Drawing.Point(0, 51);
-            this.GControlModel.MainView = this.GViewBland;
+            this.GControlModel.MainView = this.GViewModel;
             this.GControlModel.Name = "GControlModel";
             this.GControlModel.Size = new System.Drawing.Size(553, 339);
             this.GControlModel.TabIndex = 8;
             this.GControlModel.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewBland});
+            this.GViewModel});
             // 
-            // GViewBland
+            // GViewModel
             // 
-            this.GViewBland.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.GViewModel.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.ColumnModelID,
             this.ColumnModelName,
             this.ColumnModelYear});
-            this.GViewBland.GridControl = this.GControlModel;
-            this.GViewBland.Name = "GViewBland";
-            this.GViewBland.OptionsView.ShowGroupPanel = false;
+            this.GViewModel.GridControl = this.GControlModel;
+            this.GViewModel.Name = "GViewModel";
+            this.GViewModel.OptionsView.ShowGroupPanel = false;
             // 
             // ColumnModelID
             // 
             this.ColumnModelID.Caption = "Model ID";
+            this.ColumnModelID.FieldName = "ModelID";
             this.ColumnModelID.Name = "ColumnModelID";
             this.ColumnModelID.Visible = true;
             this.ColumnModelID.VisibleIndex = 0;
@@ -125,6 +128,7 @@
             // ColumnModelName
             // 
             this.ColumnModelName.Caption = "Model Adı";
+            this.ColumnModelName.FieldName = "ModelName";
             this.ColumnModelName.Name = "ColumnModelName";
             this.ColumnModelName.Visible = true;
             this.ColumnModelName.VisibleIndex = 1;
@@ -133,6 +137,7 @@
             // ColumnModelYear
             // 
             this.ColumnModelYear.Caption = "Model Yılı";
+            this.ColumnModelYear.FieldName = "ModelYear";
             this.ColumnModelYear.Name = "ColumnModelYear";
             this.ColumnModelYear.Visible = true;
             this.ColumnModelYear.VisibleIndex = 2;
@@ -149,10 +154,11 @@
             this.Name = "ModelArchiveListWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModelArchiveListWF";
+            this.Load += new System.EventHandler(this.ModelArchiveListWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlModel)).EndInit();
             this.GroupControlModel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GControlModel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewBland)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewModel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -164,7 +170,7 @@
         private DevExpress.XtraEditors.SimpleButton SBtnArchiveQuit;
         private DevExpress.XtraEditors.LabelControl LabelBland;
         private DevExpress.XtraGrid.GridControl GControlModel;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewBland;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewModel;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnModelID;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnModelName;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnModelYear;
