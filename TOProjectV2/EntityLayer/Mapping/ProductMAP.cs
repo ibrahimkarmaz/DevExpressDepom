@@ -30,17 +30,18 @@ namespace EntityLayer.Mapping
             //EN FAZLA KARAKTER SAYILARI
 
             this.Property(x => x.ProductName).HasMaxLength(20);
-            this.Property(x => x.ProductBland).HasMaxLength(20);
-            this.Property(x => x.ProductModel).HasMaxLength(20);
-            this.Property(x => x.ProductYear).HasMaxLength(4);
+            this.Property(x => x.ProductDetails).HasMaxLength(200);
+            //this.Property(x => x.ProductBland).HasMaxLength(20);
+           // this.Property(x => x.ProductModel).HasMaxLength(20);
+           // this.Property(x => x.ProductYear).HasMaxLength(4);
 
 
             //BOŞ GEÇİLEMEZ ALANLAR
 
             this.Property(y => y.ProductName).IsRequired();
-            this.Property(y => y.ProductBland).IsRequired();
-            this.Property(y => y.ProductModel).IsRequired();
-            this.Property(y => y.ProductYear).IsRequired();
+            //this.Property(y => y.ProductBland).IsRequired();
+          //  this.Property(y => y.ProductModel).IsRequired();
+           // this.Property(y => y.ProductYear).IsRequired();
             this.Property(y => y.ProductPiece).IsRequired();
             this.Property(y => y.ProductPurchasePrice).IsRequired();
             this.Property(y => y.ProductSalePrice).IsRequired();
@@ -54,9 +55,9 @@ namespace EntityLayer.Mapping
 
             this.Property(z => z.ProductID).HasColumnName("ProductID");
             this.Property(z => z.ProductName).HasColumnName("ProductName");
-            this.Property(z => z.ProductBland).HasColumnName("ProductBland");
-            this.Property(z => z.ProductModel).HasColumnName("ProductModel");
-            this.Property(z => z.ProductYear).HasColumnName("ProductYear");
+            //this.Property(z => z.ProductBland).HasColumnName("ProductBland");
+           // this.Property(z => z.ProductModel).HasColumnName("ProductModel");
+           // this.Property(z => z.ProductYear).HasColumnName("ProductYear");
             this.Property(z => z.ProductPiece).HasColumnName("ProductPiece");
             this.Property(z => z.ProductPurchasePrice).HasColumnName("ProductPurchasePrice");
             this.Property(z => z.ProductSalePrice).HasColumnName("ProductSalePrice");
@@ -64,7 +65,7 @@ namespace EntityLayer.Mapping
 
 
             //VERİ TİPLERİ
-            this.Property(d => d.ProductYear).HasColumnType("char");
+           // this.Property(d => d.ProductYear).HasColumnType("char");
 
             //VERİ AYARLARI
             // HasPrecision decimal(18,2) columntype kullanmak yerine bu kullanılır.

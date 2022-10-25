@@ -1,4 +1,4 @@
-﻿namespace PresentationLayer.WinFormList
+﻿namespace PresentationLayer.WinFormList.ProductWF
 {
     partial class ProductWF
     {
@@ -41,7 +41,7 @@
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.TabPageProduct = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
@@ -51,7 +51,7 @@
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.xtraTabPage1.SuspendLayout();
+            this.TabPageProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -69,8 +69,8 @@
             this.accordionControl1.RootDisplayMode = DevExpress.XtraBars.Navigation.AccordionControlRootDisplayMode.Footer;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Fluent;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(238, 458);
-            this.accordionControl1.TabIndex = 2;
+            this.accordionControl1.Size = new System.Drawing.Size(260, 457);
+            this.accordionControl1.TabIndex = 4;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // accordionControlElement1
@@ -130,13 +130,13 @@
             // 
             this.xtraTabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(238, 0);
+            this.xtraTabControl1.Location = new System.Drawing.Point(260, 0);
             this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage2;
-            this.xtraTabControl1.Size = new System.Drawing.Size(830, 458);
-            this.xtraTabControl1.TabIndex = 3;
+            this.xtraTabControl1.SelectedTabPage = this.TabPageProduct;
+            this.xtraTabControl1.Size = new System.Drawing.Size(842, 457);
+            this.xtraTabControl1.TabIndex = 6;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
+            this.TabPageProduct,
             this.xtraTabPage2,
             this.xtraTabPage3});
             // 
@@ -144,7 +144,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.gridControl2);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(828, 427);
+            this.xtraTabPage2.Size = new System.Drawing.Size(782, 426);
             this.xtraTabPage2.Text = "ÜRÜN DURUMLARI";
             // 
             // gridControl2
@@ -153,7 +153,7 @@
             this.gridControl2.Location = new System.Drawing.Point(0, 0);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(828, 427);
+            this.gridControl2.Size = new System.Drawing.Size(782, 426);
             this.gridControl2.TabIndex = 1;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -165,12 +165,12 @@
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // xtraTabPage1
+            // TabPageProduct
             // 
-            this.xtraTabPage1.Controls.Add(this.gridControl1);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(828, 427);
-            this.xtraTabPage1.Text = "ÜRÜNLER LİSTESİ";
+            this.TabPageProduct.Controls.Add(this.gridControl1);
+            this.TabPageProduct.Name = "TabPageProduct";
+            this.TabPageProduct.Size = new System.Drawing.Size(840, 426);
+            this.TabPageProduct.Text = "ÜRÜNLER LİSTESİ";
             // 
             // gridControl1
             // 
@@ -178,7 +178,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(828, 427);
+            this.gridControl1.Size = new System.Drawing.Size(840, 426);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -193,28 +193,26 @@
             // xtraTabPage3
             // 
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(828, 427);
+            this.xtraTabPage3.Size = new System.Drawing.Size(840, 426);
             this.xtraTabPage3.Text = "ÜRÜNLER ARŞİVİ";
             // 
             // ProductWF
             // 
-            this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 458);
+            this.ClientSize = new System.Drawing.Size(1102, 457);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.accordionControl1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "ProductWF";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ÜRÜNLER PENCERESİ";
+            this.Text = "ProductWF";
+            this.Load += new System.EventHandler(this.ProductWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.xtraTabPage1.ResumeLayout(false);
+            this.TabPageProduct.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
@@ -222,6 +220,7 @@
         }
 
         #endregion
+
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlProductNewAdd;
@@ -229,14 +228,14 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage TabPageProduct;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
     }
 }

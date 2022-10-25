@@ -13,8 +13,9 @@ namespace EntityLayer.Concrete
         public string ModelName { get; set; }
         public string ModelYear { get; set; }
         public bool ModelArchive { get; set; }
-
         public int BlandID { get; set; }
         public Bland Bland { get; set; }
+        public ICollection<Product> Products { get; set; }
+       
     }
 }

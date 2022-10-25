@@ -25,7 +25,7 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLaye
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\FluentValidation.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\EntityLayer.dll.config
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
@@ -39,4 +39,4 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLaye
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\BusinessLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\DataAccessLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\EntityLayer.pdb

@@ -83,6 +83,7 @@
   <ItemGroup>
     <Compile Include="CommonValidationControls\BlandCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\ModelCommonValidationControl.cs" />
+    <Compile Include="CommonValidationControls\ProductCommonValidationControl.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,22 +128,22 @@
     <Compile Include="WinFormList\NewBlandWF.Designer.cs">
       <DependentUpon>NewBlandWF.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinFormList\ProductAddWF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WinFormList\ProductAddWF.Designer.cs">
-      <DependentUpon>ProductAddWF.cs</DependentUpon>
-    </Compile>
     <Compile Include="WinFormList\BlandTypeList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WinFormList\BlandTypeList.Designer.cs">
       <DependentUpon>BlandTypeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinFormList\ProductWF.cs">
+    <Compile Include="WinFormList\ProductWF\ProductAddXWF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormList\ProductWF.Designer.cs">
+    <Compile Include="WinFormList\ProductWF\ProductAddXWF.Designer.cs">
+      <DependentUpon>ProductAddXWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductWF.Designer.cs">
       <DependentUpon>ProductWF.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -176,13 +177,13 @@
     <EmbeddedResource Include="WinFormList\NewBlandWF.resx">
       <DependentUpon>NewBlandWF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinFormList\ProductAddWF.resx">
-      <DependentUpon>ProductAddWF.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BlandTypeList.resx">
       <DependentUpon>BlandTypeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinFormList\ProductWF.resx">
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductAddXWF.resx">
+      <DependentUpon>ProductAddXWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductWF.resx">
       <DependentUpon>ProductWF.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

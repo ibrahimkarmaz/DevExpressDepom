@@ -8,9 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PresentationLayer.WinFormList;
 
-namespace PresentationLayer.WinFormList
+namespace PresentationLayer.WinFormList.ProductWF
 {
     public partial class ProductWF : DevExpress.XtraEditors.XtraForm
     {
@@ -18,10 +17,16 @@ namespace PresentationLayer.WinFormList
         {
             InitializeComponent();
         }
+
+        private void ProductWF_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void accordionControlProductNewAdd_Click(object sender, EventArgs e)
         {
-            ProductAddWF productAddWF = new ProductAddWF();
-            productAddWF.ShowDialog();
+            ProductAddXWF productAdd = new ProductAddXWF();
+            productAdd.ShowDialog();
         }
     }
 }

@@ -14,5 +14,6 @@ namespace EntityLayer.Concrete
         public bool BlandArchive { get; set; }
 
         public ICollection<Model> Models { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 }
