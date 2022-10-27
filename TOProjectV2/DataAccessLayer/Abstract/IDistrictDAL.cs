@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ICityDAL:IGenericDAL<City>
+    public interface IDistrictDAL:IGenericDAL<District>
     {
-
     }
 }

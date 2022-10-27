@@ -88,9 +88,10 @@ namespace PresentationLayer.WinFormList.ProductWF
                 product.BlandID = (int)LUEBland.EditValue;
                 product.ModelID = (int)LUEModel.EditValue;
                 product.ProductPiece = Convert.ToInt32(CBEPiece.SelectedItem);
-                product.ProductPurchasePrice = Convert.ToDecimal(TEPurchasePrice.Text);
-                product.ProductSalePrice = Convert.ToDecimal(TESalesPrice.Text);
+                product.ProductPurchasePrice = Convert.ToDecimal(TEPurchasePrice.Text.Replace('.', ','));
+                product.ProductSalePrice = Convert.ToDecimal(TESalesPrice.Text.Replace('.', ','));
                 product.ProductDetails = MMEDetails.Text;
+                product.ProductArchive = true;
                 if (new ProductCommonValidationControl().ProductValidatorAndMessage(product))
                 {
                     _productManager.TAdd(product);

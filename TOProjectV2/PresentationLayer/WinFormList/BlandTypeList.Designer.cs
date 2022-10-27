@@ -214,19 +214,23 @@
             // 
             this.ColumnBlandID.Caption = "Marka ID";
             this.ColumnBlandID.FieldName = "BlandID";
+            this.ColumnBlandID.ImageOptions.Alignment = System.Drawing.StringAlignment.Far;
+            this.ColumnBlandID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBlandID.ImageOptions.Image")));
             this.ColumnBlandID.Name = "ColumnBlandID";
             this.ColumnBlandID.Visible = true;
             this.ColumnBlandID.VisibleIndex = 0;
-            this.ColumnBlandID.Width = 85;
+            this.ColumnBlandID.Width = 90;
             // 
             // ColumnBlandName
             // 
             this.ColumnBlandName.Caption = "Marka Adı";
             this.ColumnBlandName.FieldName = "BlandName";
+            this.ColumnBlandName.ImageOptions.Alignment = System.Drawing.StringAlignment.Far;
+            this.ColumnBlandName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBlandName.ImageOptions.Image")));
             this.ColumnBlandName.Name = "ColumnBlandName";
             this.ColumnBlandName.Visible = true;
             this.ColumnBlandName.VisibleIndex = 1;
-            this.ColumnBlandName.Width = 263;
+            this.ColumnBlandName.Width = 258;
             // 
             // GControlBland
             // 
@@ -264,6 +268,8 @@
             // 
             this.ColumnModelID.Caption = "Model ID";
             this.ColumnModelID.FieldName = "ModelID";
+            this.ColumnModelID.ImageOptions.Alignment = System.Drawing.StringAlignment.Far;
+            this.ColumnModelID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnModelID.ImageOptions.Image")));
             this.ColumnModelID.Name = "ColumnModelID";
             this.ColumnModelID.Visible = true;
             this.ColumnModelID.VisibleIndex = 0;
@@ -273,6 +279,8 @@
             // 
             this.ColumnModelName.Caption = "Model Adı";
             this.ColumnModelName.FieldName = "ModelName";
+            this.ColumnModelName.ImageOptions.Alignment = System.Drawing.StringAlignment.Far;
+            this.ColumnModelName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnModelName.ImageOptions.Image")));
             this.ColumnModelName.Name = "ColumnModelName";
             this.ColumnModelName.Visible = true;
             this.ColumnModelName.VisibleIndex = 1;
@@ -282,6 +290,8 @@
             // 
             this.ColumnModelYear.Caption = "Model Yılı";
             this.ColumnModelYear.FieldName = "ModelYear";
+            this.ColumnModelYear.ImageOptions.Alignment = System.Drawing.StringAlignment.Far;
+            this.ColumnModelYear.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnModelYear.ImageOptions.Image")));
             this.ColumnModelYear.Name = "ColumnModelYear";
             this.ColumnModelYear.Visible = true;
             this.ColumnModelYear.VisibleIndex = 2;

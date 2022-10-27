@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.DTO;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,11 @@ namespace BusinessLayer.Concrete
         public Product GetById(int id)
         {
             return _productDAL.GetById(id);
+        }
+
+        public List<ProductINBlandAndModelDTO> ProductGetList(Expression<Func<ProductINBlandAndModelDTO, bool>> filter = null)
+        {
+            return _productDAL.ProductGetList(filter);
         }
 
         public void TAdd(Product t)

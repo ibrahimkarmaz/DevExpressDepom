@@ -140,6 +140,18 @@
     <Compile Include="WinFormList\ProductWF\ProductAddXWF.Designer.cs">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductStockUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductStockUpdateWF.Designer.cs">
+      <DependentUpon>ProductStockUpdateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductUpdateWF.Designer.cs">
+      <DependentUpon>ProductUpdateWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ProductWF\ProductWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +194,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductAddXWF.resx">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductStockUpdateWF.resx">
+      <DependentUpon>ProductStockUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductUpdateWF.resx">
+      <DependentUpon>ProductUpdateWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductWF.resx">
       <DependentUpon>ProductWF.cs</DependentUpon>

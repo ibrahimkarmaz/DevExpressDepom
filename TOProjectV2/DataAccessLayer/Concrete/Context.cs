@@ -24,11 +24,10 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new NoteMAP());
             modelBuilder.Configurations.Add(new ExpenseMAP());
             modelBuilder.Configurations.Add(new ProductMAP());
-            modelBuilder.Configurations.Add(new CityMAP());
             modelBuilder.Configurations.Add(new CountyMAP());
-            modelBuilder.Configurations.Add(new DNeighborhoodMAP());
             modelBuilder.Configurations.Add(new BlandMAP());
             modelBuilder.Configurations.Add(new ModelMAP());
+            modelBuilder.Configurations.Add(new DistrictMAP());
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -40,11 +39,10 @@ namespace DataAccessLayer.Concrete
         public DbSet<Note> Notes { get; set; }
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<City> Citys { get; set; }
         public DbSet<County> Countys { get; set; }
-        public DbSet<DNeighborhood> DNeighborhoodMAPs { get; set; }
         public DbSet<Bland> Blands { get; set; }
         public DbSet<Model> Models { get; set; }
+        public DbSet<District> Districts { get; set; }
 
     }
 }

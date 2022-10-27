@@ -29,11 +29,13 @@ C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\DataAcce
 C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityCityAndMapping.resources
 C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityCountyAndMapping.resources
 C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityDNeighborhoodAndMapping.resources
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\DataAccessLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityFramework.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityLayer.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityLayer.dll.config
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityFramework.xml
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
@@ -68,11 +70,18 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLa
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductBlandPKUpdate.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductModelPKFKUpdate.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductYearDELETE.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductNewColumnProductDetails.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductDecimalUpdateTypeDouble.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\bin\Debug\EntityLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductNewColumnProductDetails.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ProductPriceDoubleTypeSetDecimal.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.CountyUpdateColumnDelete.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.DPDeleteEntity.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.DeleteCity.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.DisColumnEdit.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.DisColumnEdit2.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewMAPDistinct.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.UpdateDis.resources

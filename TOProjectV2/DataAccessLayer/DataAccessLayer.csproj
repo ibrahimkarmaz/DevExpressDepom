@@ -53,11 +53,10 @@
   <ItemGroup>
     <Compile Include="Abstract\IBankDAL.cs" />
     <Compile Include="Abstract\IBlandDAL.cs" />
-    <Compile Include="Abstract\ICityDAL.cs" />
     <Compile Include="Abstract\ICompanyDAL.cs" />
     <Compile Include="Abstract\ICountyDAL.cs" />
     <Compile Include="Abstract\ICustomerDAL.cs" />
-    <Compile Include="Abstract\IDNeighborhoodDAL.cs" />
+    <Compile Include="Abstract\IDistrictDAL.cs" />
     <Compile Include="Abstract\IEmployeeDAL.cs" />
     <Compile Include="Abstract\IExpenseDAL.cs" />
     <Compile Include="Abstract\IGenericDAL.cs" />
@@ -196,6 +195,42 @@
     <Compile Include="Migrations\202210251805382_ProductNewColumnProductDetails.designer.cs">
       <DependentUpon>202210251805382_ProductNewColumnProductDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210270529044_ProductDecimalUpdateTypeDouble.cs" />
+    <Compile Include="Migrations\202210270529044_ProductDecimalUpdateTypeDouble.designer.cs">
+      <DependentUpon>202210270529044_ProductDecimalUpdateTypeDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210270552316_ProductPriceDoubleTypeSetDecimal.cs" />
+    <Compile Include="Migrations\202210270552316_ProductPriceDoubleTypeSetDecimal.designer.cs">
+      <DependentUpon>202210270552316_ProductPriceDoubleTypeSetDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210271923335_CountyUpdateColumnDelete.cs" />
+    <Compile Include="Migrations\202210271923335_CountyUpdateColumnDelete.designer.cs">
+      <DependentUpon>202210271923335_CountyUpdateColumnDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210271926432_DPDeleteEntity.cs" />
+    <Compile Include="Migrations\202210271926432_DPDeleteEntity.designer.cs">
+      <DependentUpon>202210271926432_DPDeleteEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210271929190_DeleteCity.cs" />
+    <Compile Include="Migrations\202210271929190_DeleteCity.designer.cs">
+      <DependentUpon>202210271929190_DeleteCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210271934464_DisColumnEdit.cs" />
+    <Compile Include="Migrations\202210271934464_DisColumnEdit.designer.cs">
+      <DependentUpon>202210271934464_DisColumnEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210271936556_DisColumnEdit2.cs" />
+    <Compile Include="Migrations\202210271936556_DisColumnEdit2.designer.cs">
+      <DependentUpon>202210271936556_DisColumnEdit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210271951052_NewMAPDistinct.cs" />
+    <Compile Include="Migrations\202210271951052_NewMAPDistinct.designer.cs">
+      <DependentUpon>202210271951052_NewMAPDistinct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210272006122_UpdateDis.cs" />
+    <Compile Include="Migrations\202210272006122_UpdateDis.designer.cs">
+      <DependentUpon>202210272006122_UpdateDis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -303,6 +338,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210251805382_ProductNewColumnProductDetails.resx">
       <DependentUpon>202210251805382_ProductNewColumnProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210270529044_ProductDecimalUpdateTypeDouble.resx">
+      <DependentUpon>202210270529044_ProductDecimalUpdateTypeDouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210270552316_ProductPriceDoubleTypeSetDecimal.resx">
+      <DependentUpon>202210270552316_ProductPriceDoubleTypeSetDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210271923335_CountyUpdateColumnDelete.resx">
+      <DependentUpon>202210271923335_CountyUpdateColumnDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210271926432_DPDeleteEntity.resx">
+      <DependentUpon>202210271926432_DPDeleteEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210271929190_DeleteCity.resx">
+      <DependentUpon>202210271929190_DeleteCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210271934464_DisColumnEdit.resx">
+      <DependentUpon>202210271934464_DisColumnEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210271936556_DisColumnEdit2.resx">
+      <DependentUpon>202210271936556_DisColumnEdit2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210271951052_NewMAPDistinct.resx">
+      <DependentUpon>202210271951052_NewMAPDistinct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210272006122_UpdateDis.resx">
+      <DependentUpon>202210272006122_UpdateDis.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

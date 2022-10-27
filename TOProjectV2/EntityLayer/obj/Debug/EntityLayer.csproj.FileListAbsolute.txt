@@ -10,8 +10,9 @@ C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\EntityLa
 C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\Visual Studio 2022\Project\TOProjectV2\EntityLayer\obj\Debug\EntityLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityFramework.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityFramework.xml
@@ -21,4 +22,3 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\obj\Debug\EntityLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\EntityLayer\bin\Debug\EntityLayer.pdb

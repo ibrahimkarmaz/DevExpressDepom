@@ -33,6 +33,9 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\Presentation
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ModelWF.ModelUpdateWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.NewBlandWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.BlandTypeList.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductAddXWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductUpdateWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.exe.licenses
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
@@ -139,8 +142,7 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\Presentation
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\de\DevExpress.XtraTreeList.v22.1.resources.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\es\DevExpress.XtraTreeList.v22.1.resources.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\bin\Debug\ja\DevExpress.XtraTreeList.v22.1.resources.dll
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductAddXWF.resources
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductStockUpdateWF.resources

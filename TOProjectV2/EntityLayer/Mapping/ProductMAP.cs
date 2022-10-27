@@ -71,6 +71,14 @@ namespace EntityLayer.Mapping
             // HasPrecision decimal(18,2) columntype kullanmak yerine bu kullanılır.
             this.Property(d => d.ProductPurchasePrice).HasPrecision(18, 2);
             this.Property(d => d.ProductSalePrice).HasPrecision(18, 2);
+
+            /*DİKKAT: BURADA DECİMALLA İLGİLİ BİR SORUN OLUŞTUR
+             *SORUN 12,45 SAYISINI VERİTABANİNA 1245 OLARAK KAYIT YAPILIYOR.
+             *
+             *
+             *ÇÖZÜLDÜ NEDENİ:
+             *TextEDİT'te . koyuyordu onu yenileyip , yaptık.
+             */
         }
     }
 }

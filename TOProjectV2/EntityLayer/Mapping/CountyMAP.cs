@@ -27,7 +27,6 @@ namespace EntityLayer.Mapping
 
             //EN FAZLA KARAKTER SAYILARI
             this.Property(x => x.CountyName).HasMaxLength(60).IsUnicode();
-            this.Property(x => x.CityName).HasMaxLength(55).IsUnicode();
 
 
             //BOŞ GEÇİLEMEZ ALANLAR
@@ -40,9 +39,7 @@ namespace EntityLayer.Mapping
             //DEĞİŞİRSE BURADA TOPARLARIZ.
 
             this.Property(z => z.CountyID).HasColumnName("CountyID");
-            this.Property(z => z.CityID).HasColumnName("CityID");
             this.Property(z => z.CountyName).HasColumnName("CountyName");
-            this.Property(z => z.CityName).HasColumnName("CityName");
 
 
             //VERİ TİPLERİ
