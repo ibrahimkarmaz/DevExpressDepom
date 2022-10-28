@@ -2,12 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ICountyDAL:IGenericDAL<County>
+    public interface ICountyDAL
     {
+        List<County> CountyGetAll(Expression<Func<County,bool>> filter=null);
     }
 }

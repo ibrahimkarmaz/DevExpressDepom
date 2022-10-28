@@ -69,6 +69,9 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
     <Compile Include="EntityFramework\EFBlandDAL.cs" />
+    <Compile Include="EntityFramework\EFCountyDAL.cs" />
+    <Compile Include="EntityFramework\EFCustomerDAL.cs" />
+    <Compile Include="EntityFramework\EFDistrictDAL.cs" />
     <Compile Include="EntityFramework\EFModelDAL.cs" />
     <Compile Include="EntityFramework\EFProductDAL.cs" />
     <Compile Include="Migrations\202210120919480_NewDatabaseTO.cs" />
@@ -231,6 +234,18 @@
     <Compile Include="Migrations\202210272006122_UpdateDis.designer.cs">
       <DependentUpon>202210272006122_UpdateDis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210280952004_CustomerEntityAndMappingUPDATE.cs" />
+    <Compile Include="Migrations\202210280952004_CustomerEntityAndMappingUPDATE.designer.cs">
+      <DependentUpon>202210280952004_CustomerEntityAndMappingUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210281953005_CustomerAndCountyPKFK.cs" />
+    <Compile Include="Migrations\202210281953005_CustomerAndCountyPKFK.designer.cs">
+      <DependentUpon>202210281953005_CustomerAndCountyPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210281957538_CustomerAndDistrictPKFK.cs" />
+    <Compile Include="Migrations\202210281957538_CustomerAndDistrictPKFK.designer.cs">
+      <DependentUpon>202210281957538_CustomerAndDistrictPKFK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -365,6 +380,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210272006122_UpdateDis.resx">
       <DependentUpon>202210272006122_UpdateDis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210280952004_CustomerEntityAndMappingUPDATE.resx">
+      <DependentUpon>202210280952004_CustomerEntityAndMappingUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210281953005_CustomerAndCountyPKFK.resx">
+      <DependentUpon>202210281953005_CustomerAndCountyPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210281957538_CustomerAndDistrictPKFK.resx">
+      <DependentUpon>202210281957538_CustomerAndDistrictPKFK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

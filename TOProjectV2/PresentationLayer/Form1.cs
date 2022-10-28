@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PresentationLayer.WinFormList;
+using PresentationLayer.WinFormList.CustomerWF;
 using PresentationLayer.WinFormList.ProductWF;
 
 namespace PresentationLayer
@@ -41,6 +42,16 @@ namespace PresentationLayer
                 productTypeList = new BlandTypeList();
                 productTypeList.MdiParent = this;
                 productTypeList.Show();
+            }
+        }
+        CustomerWF customerWF;
+        private void barCustomers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (customerWF==null || customerWF.IsDisposed)
+            {
+                customerWF = new CustomerWF();
+                customerWF.MdiParent = this;
+                customerWF.Show();
             }
         }
     }

@@ -146,3 +146,5 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\Presentation
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductStockUpdateWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.CustomerWF.CustomerAddWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.CustomerWF.CustomerWF.resources

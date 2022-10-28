@@ -12,5 +12,6 @@ namespace EntityLayer.Concrete
         public string CountyName { get; set; }
 
         public ICollection<District> Districts { get; set; }
+        public ICollection<Customer> Customers { get; set; }
     }
 }

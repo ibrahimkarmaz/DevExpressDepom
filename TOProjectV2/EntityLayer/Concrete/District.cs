@@ -13,5 +13,6 @@ namespace EntityLayer.Concrete
 
         public int CountyID { get; set; }
         public County County { get; set; }
+        public ICollection<Customer> Customers { get; set; }
     }
 }

@@ -112,7 +112,7 @@
             this.ribbonFinance,
             this.ribbonRaportandChart,
             this.ribbonSettin});
-            this.ribbonControlAutomation.Size = new System.Drawing.Size(1146, 200);
+            this.ribbonControlAutomation.Size = new System.Drawing.Size(1146, 207);
             // 
             // barProducts
             // 
@@ -138,6 +138,7 @@
             this.barCustomers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCustomers.ImageOptions.Image")));
             this.barCustomers.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCustomers.ImageOptions.LargeImage")));
             this.barCustomers.Name = "barCustomers";
+            this.barCustomers.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCustomers_ItemClick);
             // 
             // barCompanys
             // 

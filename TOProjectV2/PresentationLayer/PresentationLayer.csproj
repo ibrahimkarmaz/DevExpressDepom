@@ -104,6 +104,18 @@
     <Compile Include="WinFormList\BlandUpdateWF.Designer.cs">
       <DependentUpon>BlandUpdateWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\CustomerWF\CustomerAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CustomerWF\CustomerAddWF.Designer.cs">
+      <DependentUpon>CustomerAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CustomerWF\CustomerWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CustomerWF\CustomerWF.Designer.cs">
+      <DependentUpon>CustomerWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ModelWF\ModelArchiveListWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +188,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BlandUpdateWF.resx">
       <DependentUpon>BlandUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CustomerWF\CustomerAddWF.resx">
+      <DependentUpon>CustomerAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CustomerWF\CustomerWF.resx">
+      <DependentUpon>CustomerWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ModelWF\ModelArchiveListWF.resx">
       <DependentUpon>ModelArchiveListWF.cs</DependentUpon>

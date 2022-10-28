@@ -61,13 +61,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IBlandService.cs" />
+    <Compile Include="Abstract\ICountyService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IDistrictService.cs" />
     <Compile Include="Abstract\IGenericService.cs" />
     <Compile Include="Abstract\IModelService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Concrete\BlandManager.cs" />
+    <Compile Include="Concrete\CountyManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\DistrictManager.cs" />
     <Compile Include="Concrete\ModelManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="FluentValidation\BlandValidator.cs" />
+    <Compile Include="FluentValidation\CustomerValidator.cs" />
     <Compile Include="FluentValidation\ModelValidator.cs" />
     <Compile Include="FluentValidation\ProductValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
