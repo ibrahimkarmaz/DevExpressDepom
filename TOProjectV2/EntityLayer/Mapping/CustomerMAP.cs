@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -59,6 +60,7 @@ namespace EntityLayer.Mapping
             this.Property(y => y.CustomerArchive).IsRequired();
             this.Property(y => y.CustomerGender).IsRequired();
             this.Property(y => y.CustomerDateOfBirth).IsRequired();
+
 
 
 

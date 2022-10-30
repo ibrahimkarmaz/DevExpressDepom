@@ -112,7 +112,7 @@
             this.ribbonFinance,
             this.ribbonRaportandChart,
             this.ribbonSettin});
-            this.ribbonControlAutomation.Size = new System.Drawing.Size(1146, 207);
+            this.ribbonControlAutomation.Size = new System.Drawing.Size(1146, 221);
             // 
             // barProducts
             // 
@@ -261,6 +261,7 @@
             this.ribbonHome.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup8,
             this.ribbonPageGroup10});
+            this.ribbonHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonHome.ImageOptions.Image")));
             this.ribbonHome.Name = "ribbonHome";
             this.ribbonHome.Text = "ANASAYFA";
             // 
@@ -284,6 +285,7 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup11,
             this.ribbonPageGroup13});
+            this.ribbonProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonProduct.ImageOptions.Image")));
             this.ribbonProduct.Name = "ribbonProduct";
             this.ribbonProduct.Text = "ÜRÜNLER";
             // 
@@ -310,6 +312,7 @@
             // 
             this.ribbonCustomer.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2});
+            this.ribbonCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonCustomer.ImageOptions.Image")));
             this.ribbonCustomer.Name = "ribbonCustomer";
             this.ribbonCustomer.Text = "MÜŞTERİLER";
             // 
@@ -324,6 +327,8 @@
             // 
             this.ribbonCompany.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
+            this.ribbonCompany.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonCompany.ImageOptions.Image")));
+            this.ribbonCompany.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
             this.ribbonCompany.Name = "ribbonCompany";
             this.ribbonCompany.Text = "FİRMALAR";
             // 
@@ -337,6 +342,7 @@
             // 
             this.ribbonEmployee.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5});
+            this.ribbonEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonEmployee.ImageOptions.Image")));
             this.ribbonEmployee.Name = "ribbonEmployee";
             this.ribbonEmployee.Text = "PERSONELLER";
             // 
@@ -352,6 +358,7 @@
             this.ribbonPageGroup6,
             this.ribbonPageGroup7,
             this.ribbonPageGroup9});
+            this.ribbonFinance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonFinance.ImageOptions.Image")));
             this.ribbonFinance.Name = "ribbonFinance";
             this.ribbonFinance.Text = "FİNANS";
             // 
@@ -377,6 +384,7 @@
             // 
             this.ribbonRaportandChart.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup4});
+            this.ribbonRaportandChart.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonRaportandChart.ImageOptions.Image")));
             this.ribbonRaportandChart.Name = "ribbonRaportandChart";
             this.ribbonRaportandChart.Text = "RAPORLAR & GRAFİKLER";
             // 
@@ -389,6 +397,7 @@
             // 
             this.ribbonSettin.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup12});
+            this.ribbonSettin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonSettin.ImageOptions.Image")));
             this.ribbonSettin.Name = "ribbonSettin";
             this.ribbonSettin.Text = "AYARLAR";
             // 

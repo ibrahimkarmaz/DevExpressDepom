@@ -12,8 +12,8 @@ namespace EntityLayer.Concrete
         public string CustomerTC { get; set; }
         public string CustomerName { get; set; }
         public string CustomerSurName { get; set; }
-        public bool CustomerGender { get; set; }
-        public DateTime CustomerDateOfBirth { get; set; }
+        public bool? CustomerGender { get; set; }
+        public DateTime? CustomerDateOfBirth { get; set; }
         public string CustomerMobilePhone { get; set; }
         public string CustomerOfficePhone { get; set; }
         public string CustomerMail { get; set; }
@@ -23,10 +23,10 @@ namespace EntityLayer.Concrete
 
         public bool CustomerArchive { get; set; }
 
-        public int CountyID { get; set; }
+        public int? CountyID { get; set; }
         public County County { get; set; }
 
-        public int DistrictID { get; set; }
+        public int? DistrictID { get; set; }
         public District District { get; set; }
     }
 }

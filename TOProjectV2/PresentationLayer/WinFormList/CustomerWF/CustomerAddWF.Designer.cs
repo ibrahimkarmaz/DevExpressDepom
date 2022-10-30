@@ -54,12 +54,12 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.DateEdit();
+            this.TEBirthOfDate = new DevExpress.XtraEditors.DateEdit();
             this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.TEMobilePhone = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.TEOfficePhone = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
             this.TEMail = new DevExpress.XtraEditors.TextEdit();
@@ -68,8 +68,8 @@
             this.TETaxNumber = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.SBtnApploval = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.SBtnOfficePhoneControl = new DevExpress.XtraEditors.SimpleButton();
+            this.SBtnMobilePhoneControl = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.LUEDistrict.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LUECounty.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CBEGender.Properties)).BeginInit();
@@ -85,12 +85,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TELasName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEBirthOfDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEBirthOfDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEMobilePhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEOfficePhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
@@ -108,10 +108,11 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("DistrictName", "İlçe Adı")});
             this.LUEDistrict.Properties.DisplayMember = "DistrictName";
             this.LUEDistrict.Properties.NullText = "İlçe Seçiniz";
+            this.LUEDistrict.Properties.NullValuePrompt = "İlçe Seçiniz";
             this.LUEDistrict.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoSearch;
             this.LUEDistrict.Properties.ValueMember = "DistrictID";
             this.LUEDistrict.Size = new System.Drawing.Size(233, 30);
-            this.LUEDistrict.TabIndex = 81;
+            this.LUEDistrict.TabIndex = 10;
             // 
             // LUECounty
             // 
@@ -124,24 +125,27 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CountyName", "İL ADI")});
             this.LUECounty.Properties.DisplayMember = "CountyName";
             this.LUECounty.Properties.NullText = "İl Seçiniz";
+            this.LUECounty.Properties.NullValuePrompt = "İl Seçiniz";
             this.LUECounty.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoSearch;
             this.LUECounty.Properties.ValueMember = "CountyID";
             this.LUECounty.Size = new System.Drawing.Size(233, 30);
-            this.LUECounty.TabIndex = 80;
+            this.LUECounty.TabIndex = 9;
             this.LUECounty.EditValueChanged += new System.EventHandler(this.LUECounty_EditValueChanged);
             // 
             // CBEGender
             // 
-            this.CBEGender.EditValue = "Cinsiyet Seçiniz";
+            this.CBEGender.EditValue = "";
             this.CBEGender.Location = new System.Drawing.Point(139, 116);
             this.CBEGender.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CBEGender.Name = "CBEGender";
             this.CBEGender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.CBEGender.Properties.DropDownRows = 10;
+            this.CBEGender.Properties.NullText = "Cinsiyet Seçiniz";
+            this.CBEGender.Properties.NullValuePrompt = "Cinsiyet Seçiniz";
             this.CBEGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.CBEGender.Size = new System.Drawing.Size(233, 30);
-            this.CBEGender.TabIndex = 79;
+            this.CBEGender.TabIndex = 4;
             // 
             // pictureEdit8
             // 
@@ -205,9 +209,10 @@
             this.MMEHomeAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MMEHomeAddress.Name = "MMEHomeAddress";
             this.MMEHomeAddress.Properties.NullText = "Örnek:Akasya Mah. Selimiye Cad. Sanatlar Sok. No:24 Daire:4 ";
+            this.MMEHomeAddress.Properties.NullValuePrompt = "Örnek:Akasya Mah. Selimiye Cad. Sanatlar Sok. No:24 Daire:4 ";
             this.MMEHomeAddress.Properties.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.MMEHomeAddress.Size = new System.Drawing.Size(320, 120);
-            this.MMEHomeAddress.TabIndex = 71;
+            this.MMEHomeAddress.TabIndex = 11;
             // 
             // SBCancel
             // 
@@ -217,7 +222,7 @@
             this.SBCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBCancel.Name = "SBCancel";
             this.SBCancel.Size = new System.Drawing.Size(97, 39);
-            this.SBCancel.TabIndex = 70;
+            this.SBCancel.TabIndex = 14;
             this.SBCancel.Text = "İptal Et";
             this.SBCancel.Click += new System.EventHandler(this.SBCancel_Click);
             // 
@@ -229,8 +234,9 @@
             this.SBtnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnSave.Name = "SBtnSave";
             this.SBtnSave.Size = new System.Drawing.Size(130, 39);
-            this.SBtnSave.TabIndex = 69;
+            this.SBtnSave.TabIndex = 13;
             this.SBtnSave.Text = "Kaydet";
+            this.SBtnSave.Click += new System.EventHandler(this.SBtnSave_Click);
             // 
             // pictureEdit1
             // 
@@ -290,8 +296,9 @@
             this.TETC.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.TETC.Properties.MaskSettings.Set("mask", "00000000000");
             this.TETC.Properties.NullText = "T.C Kimlik Numarasını Giriniz";
+            this.TETC.Properties.NullValuePrompt = "T.C Kimlik Numarasını Giriniz";
             this.TETC.Size = new System.Drawing.Size(189, 30);
-            this.TETC.TabIndex = 57;
+            this.TETC.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -321,11 +328,11 @@
             this.TEFirstName.Location = new System.Drawing.Point(139, 44);
             this.TEFirstName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TEFirstName.Name = "TEFirstName";
-            this.TEFirstName.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.TEFirstName.Properties.MaskSettings.Set("mask", "00000000000");
+            this.TEFirstName.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TEFirstName.Properties.NullText = "Adını Giriniz";
+            this.TEFirstName.Properties.NullValuePrompt = "Adını Giriniz";
             this.TEFirstName.Size = new System.Drawing.Size(233, 30);
-            this.TEFirstName.TabIndex = 83;
+            this.TEFirstName.TabIndex = 2;
             // 
             // labelControl9
             // 
@@ -355,11 +362,11 @@
             this.TELasName.Location = new System.Drawing.Point(139, 80);
             this.TELasName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TELasName.Name = "TELasName";
-            this.TELasName.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.TELasName.Properties.MaskSettings.Set("mask", "00000000000");
+            this.TELasName.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TELasName.Properties.NullText = "Soyadını Giriniz";
+            this.TELasName.Properties.NullValuePrompt = "Soyadını Giriniz";
             this.TELasName.Size = new System.Drawing.Size(233, 30);
-            this.TELasName.TabIndex = 86;
+            this.TELasName.TabIndex = 3;
             // 
             // labelControl10
             // 
@@ -393,24 +400,25 @@
             this.labelControl11.TabIndex = 88;
             this.labelControl11.Text = "Doğum Tarihi:";
             // 
-            // textEdit3
+            // TEBirthOfDate
             // 
-            this.textEdit3.EditValue = null;
-            this.textEdit3.Location = new System.Drawing.Point(139, 152);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.TEBirthOfDate.EditValue = null;
+            this.TEBirthOfDate.Location = new System.Drawing.Point(139, 152);
+            this.TEBirthOfDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TEBirthOfDate.Name = "TEBirthOfDate";
+            this.TEBirthOfDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.TEBirthOfDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit3.Properties.DisplayFormat.FormatString = "";
-            this.textEdit3.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.textEdit3.Properties.EditFormat.FormatString = "";
-            this.textEdit3.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.textEdit3.Properties.MaskSettings.Set("mask", "");
-            this.textEdit3.Properties.NullText = "Doğum Tarihi Giriniz/Seçiniz";
-            this.textEdit3.Size = new System.Drawing.Size(233, 30);
-            this.textEdit3.TabIndex = 89;
+            this.TEBirthOfDate.Properties.DisplayFormat.FormatString = "";
+            this.TEBirthOfDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.TEBirthOfDate.Properties.EditFormat.FormatString = "";
+            this.TEBirthOfDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.TEBirthOfDate.Properties.MaskSettings.Set("mask", "");
+            this.TEBirthOfDate.Properties.NullText = "Doğum Tarihi Giriniz/Seçiniz";
+            this.TEBirthOfDate.Properties.NullValuePrompt = "Doğum Tarihi Giriniz/Seçiniz";
+            this.TEBirthOfDate.Size = new System.Drawing.Size(233, 30);
+            this.TEBirthOfDate.TabIndex = 5;
             // 
             // pictureEdit12
             // 
@@ -426,16 +434,17 @@
             this.pictureEdit12.Size = new System.Drawing.Size(24, 25);
             this.pictureEdit12.TabIndex = 93;
             // 
-            // textEdit4
+            // TEMobilePhone
             // 
-            this.textEdit4.Location = new System.Drawing.Point(139, 188);
-            this.textEdit4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.textEdit4.Properties.MaskSettings.Set("mask", "(000) 000-0000");
-            this.textEdit4.Properties.NullText = "Cep Telefonunu Giriniz";
-            this.textEdit4.Size = new System.Drawing.Size(233, 30);
-            this.textEdit4.TabIndex = 92;
+            this.TEMobilePhone.Location = new System.Drawing.Point(139, 188);
+            this.TEMobilePhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TEMobilePhone.Name = "TEMobilePhone";
+            this.TEMobilePhone.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.TEMobilePhone.Properties.MaskSettings.Set("mask", "(000) 000-0000");
+            this.TEMobilePhone.Properties.NullText = "Cep Telefonunu Giriniz";
+            this.TEMobilePhone.Properties.NullValuePrompt = "Cep Telefonunu Giriniz";
+            this.TEMobilePhone.Size = new System.Drawing.Size(189, 30);
+            this.TEMobilePhone.TabIndex = 6;
             // 
             // labelControl12
             // 
@@ -460,16 +469,17 @@
             this.pictureEdit13.Size = new System.Drawing.Size(24, 25);
             this.pictureEdit13.TabIndex = 96;
             // 
-            // textEdit5
+            // TEOfficePhone
             // 
-            this.textEdit5.Location = new System.Drawing.Point(139, 224);
-            this.textEdit5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.textEdit5.Properties.MaskSettings.Set("mask", "(000) 000-0000");
-            this.textEdit5.Properties.NullText = "İş Telefonunu Giriniz";
-            this.textEdit5.Size = new System.Drawing.Size(189, 30);
-            this.textEdit5.TabIndex = 95;
+            this.TEOfficePhone.Location = new System.Drawing.Point(139, 224);
+            this.TEOfficePhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TEOfficePhone.Name = "TEOfficePhone";
+            this.TEOfficePhone.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.TEOfficePhone.Properties.MaskSettings.Set("mask", "(000) 000-0000");
+            this.TEOfficePhone.Properties.NullText = "İş Telefonunu Giriniz";
+            this.TEOfficePhone.Properties.NullValuePrompt = "İş Telefonunu Giriniz";
+            this.TEOfficePhone.Size = new System.Drawing.Size(189, 30);
+            this.TEOfficePhone.TabIndex = 7;
             // 
             // labelControl13
             // 
@@ -503,8 +513,9 @@
             this.TEMail.Properties.MaskSettings.Set("mask", "((((\\w+-*)|(-*\\w+))+\\.*((\\w+-*)|(-*\\w+))+)|(((\\w+-*)|(-*\\w+))+))+@((((\\w+-*)|(-*\\" +
         "w+))+\\.*((\\w+-*)|(-*\\w+))+)|(((\\w+-*)|(-*\\w+))+))+\\.[A-Za-z]+");
             this.TEMail.Properties.NullText = "E-Posta Adresini Giriniz";
-            this.TEMail.Size = new System.Drawing.Size(189, 30);
-            this.TEMail.TabIndex = 98;
+            this.TEMail.Properties.NullValuePrompt = "E-Posta Adresini Giriniz";
+            this.TEMail.Size = new System.Drawing.Size(232, 30);
+            this.TEMail.TabIndex = 8;
             // 
             // labelControl14
             // 
@@ -531,14 +542,15 @@
             // 
             // TETaxNumber
             // 
-            this.TETaxNumber.Location = new System.Drawing.Point(148, 515);
+            this.TETaxNumber.Location = new System.Drawing.Point(139, 515);
             this.TETaxNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TETaxNumber.Name = "TETaxNumber";
-            this.TETaxNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.TETaxNumber.Properties.MaskSettings.Set("mask", "00000000000");
+            this.TETaxNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TETaxNumber.Properties.MaskSettings.Set("mask", "[0-7]+");
             this.TETaxNumber.Properties.NullText = "Vergi Numarasını Giriniz";
-            this.TETaxNumber.Size = new System.Drawing.Size(224, 30);
-            this.TETaxNumber.TabIndex = 101;
+            this.TETaxNumber.Properties.NullValuePrompt = "Vergi Numarasını Giriniz";
+            this.TETaxNumber.Size = new System.Drawing.Size(233, 30);
+            this.TETaxNumber.TabIndex = 12;
             // 
             // labelControl4
             // 
@@ -560,33 +572,33 @@
             this.SBtnApploval.TabIndex = 103;
             this.SBtnApploval.Click += new System.EventHandler(this.SBtnApploval_Click);
             // 
-            // simpleButton1
+            // SBtnOfficePhoneControl
             // 
-            this.simpleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(335, 223);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(37, 30);
-            this.simpleButton1.TabIndex = 104;
+            this.SBtnOfficePhoneControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnOfficePhoneControl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.SBtnOfficePhoneControl.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.SBtnOfficePhoneControl.Location = new System.Drawing.Point(335, 223);
+            this.SBtnOfficePhoneControl.Name = "SBtnOfficePhoneControl";
+            this.SBtnOfficePhoneControl.Size = new System.Drawing.Size(37, 30);
+            this.SBtnOfficePhoneControl.TabIndex = 104;
             // 
-            // simpleButton2
+            // SBtnMobilePhoneControl
             // 
-            this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(335, 259);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(37, 30);
-            this.simpleButton2.TabIndex = 105;
+            this.SBtnMobilePhoneControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnMobilePhoneControl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.SBtnMobilePhoneControl.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.SBtnMobilePhoneControl.Location = new System.Drawing.Point(335, 187);
+            this.SBtnMobilePhoneControl.Name = "SBtnMobilePhoneControl";
+            this.SBtnMobilePhoneControl.Size = new System.Drawing.Size(37, 30);
+            this.SBtnMobilePhoneControl.TabIndex = 106;
             // 
             // CustomerAddWF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 599);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.SBtnMobilePhoneControl);
+            this.Controls.Add(this.SBtnOfficePhoneControl);
             this.Controls.Add(this.SBtnApploval);
             this.Controls.Add(this.pictureEdit4);
             this.Controls.Add(this.TETaxNumber);
@@ -595,10 +607,10 @@
             this.Controls.Add(this.TEMail);
             this.Controls.Add(this.labelControl14);
             this.Controls.Add(this.pictureEdit13);
-            this.Controls.Add(this.textEdit5);
+            this.Controls.Add(this.TEOfficePhone);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.pictureEdit12);
-            this.Controls.Add(this.textEdit4);
+            this.Controls.Add(this.TEMobilePhone);
             this.Controls.Add(this.labelControl12);
             this.Controls.Add(this.pictureEdit11);
             this.Controls.Add(this.labelControl11);
@@ -625,7 +637,7 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.TETC);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.textEdit3);
+            this.Controls.Add(this.TEBirthOfDate);
             this.Name = "CustomerAddWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YENİ MÜŞTERİ";
@@ -645,12 +657,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TELasName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEBirthOfDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEBirthOfDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEMobilePhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEOfficePhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
@@ -687,12 +699,12 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.PictureEdit pictureEdit11;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.DateEdit textEdit3;
+        private DevExpress.XtraEditors.DateEdit TEBirthOfDate;
         private DevExpress.XtraEditors.PictureEdit pictureEdit12;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit TEMobilePhone;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.PictureEdit pictureEdit13;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit TEOfficePhone;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.PictureEdit pictureEdit14;
         private DevExpress.XtraEditors.TextEdit TEMail;
@@ -701,7 +713,7 @@
         private DevExpress.XtraEditors.TextEdit TETaxNumber;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.SimpleButton SBtnApploval;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton SBtnOfficePhoneControl;
+        private DevExpress.XtraEditors.SimpleButton SBtnMobilePhoneControl;
     }
 }

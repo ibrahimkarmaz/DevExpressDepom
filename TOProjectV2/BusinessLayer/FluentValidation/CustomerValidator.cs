@@ -33,6 +33,11 @@ namespace BusinessLayer.FluentValidation
 
             RuleFor(x=>x.CustomerMail).NotEmpty().WithMessage("MÜŞTERİ E-POSTA ADRESİ BOŞ GEÇİLEMEZ.");
 
+
+            RuleFor(x => x.CountyID).NotEmpty().WithMessage("MÜŞTERİ İL BİLGİSİ SEÇİLMELİ.");
+            RuleFor(x => x.DistrictID).NotEmpty().WithMessage("MÜŞTERİ İLÇE BİLGİSİ SEÇİLMELİ.");
+
+
             RuleFor(x => x.CustomerHomeAddress).NotEmpty().WithMessage("MÜŞTERİ EV ADRESİ BOŞ GEÇİLEMEZ.");
             RuleFor(x => x.CustomerHomeAddress).MinimumLength(20).WithMessage("MÜŞTERİ EV ADRESİ EN AZ 20 KARAKTER İÇERMELİDİR.");
             RuleFor(x => x.CustomerHomeAddress).MaximumLength(250).WithMessage("MÜŞTERİ  EV ADRESİ EN FAZLA 250 KARAKTER İÇERMELİDİR.");
@@ -41,8 +46,7 @@ namespace BusinessLayer.FluentValidation
             RuleFor(x => x.CustomerTaxNumber).MinimumLength(10).WithMessage("MÜŞTERİ VERGİ NUMARASI EN AZ 10 KARAKTER İÇERMELİDİR.");
             RuleFor(x => x.CustomerTaxNumber).MaximumLength(30).WithMessage("MÜŞTERİ  VERGİ NUMARASI EN FAZLA 30 KARAKTER İÇERMELİDİR.");
 
-            RuleFor(x => x.CustomerArchive).NotEmpty().WithMessage("MÜŞTERİ ARŞİV DURUMU BOŞ GEÇİLEMEZ.");
-
+            RuleFor(x => x.CustomerMail).EmailAddress().WithMessage("MÜŞTERİ E-POSTA ADRESİ EKSİK VEYA HATALI.");
 
         }
     }

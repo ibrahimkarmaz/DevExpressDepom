@@ -40,3 +40,5 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLaye
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\AutoMapper.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\AutoMapper.xml

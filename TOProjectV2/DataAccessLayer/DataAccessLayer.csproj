@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -67,6 +70,8 @@
     <Compile Include="Abstract\IProductDAL.cs" />
     <Compile Include="Abstract\IStockDAL.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="DTO\AutoMapperProfiles.cs" />
+    <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
     <Compile Include="EntityFramework\EFBlandDAL.cs" />
     <Compile Include="EntityFramework\EFCountyDAL.cs" />
@@ -246,6 +251,14 @@
     <Compile Include="Migrations\202210281957538_CustomerAndDistrictPKFK.designer.cs">
       <DependentUpon>202210281957538_CustomerAndDistrictPKFK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210292117232_CustomerDateAndGenderQueryAdd.cs" />
+    <Compile Include="Migrations\202210292117232_CustomerDateAndGenderQueryAdd.designer.cs">
+      <DependentUpon>202210292117232_CustomerDateAndGenderQueryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210292120433_CustomerDateAndGenderQueryAdd2.cs" />
+    <Compile Include="Migrations\202210292120433_CustomerDateAndGenderQueryAdd2.designer.cs">
+      <DependentUpon>202210292120433_CustomerDateAndGenderQueryAdd2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -389,6 +402,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210281957538_CustomerAndDistrictPKFK.resx">
       <DependentUpon>202210281957538_CustomerAndDistrictPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210292117232_CustomerDateAndGenderQueryAdd.resx">
+      <DependentUpon>202210292117232_CustomerDateAndGenderQueryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210292120433_CustomerDateAndGenderQueryAdd2.resx">
+      <DependentUpon>202210292120433_CustomerDateAndGenderQueryAdd2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
