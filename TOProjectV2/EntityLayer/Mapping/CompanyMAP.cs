@@ -18,7 +18,6 @@ namespace EntityLayer.Mapping
             //TABLO ADI
             this.ToTable("Companies");
 
-
             //BİRİNCİ ANAHTAR VE YABANCI ANAHTAR KISITLAMALARI
 
             this.HasKey(x => x.CompanyID);
@@ -27,7 +26,7 @@ namespace EntityLayer.Mapping
             this.HasIndex(x => x.CompanyPhone1).IsUnique();
             this.HasIndex(x => x.CompanyMail).IsUnique();
             this.HasIndex(x => x.CompanyFax).IsUnique();
-
+            this.HasIndex(x => x.CompanyOfficialTC).IsUnique();
 
 
             //EN FAZLA KARAKTER SAYILARI
@@ -43,6 +42,10 @@ namespace EntityLayer.Mapping
             this.Property(x => x.CompanyCounty).HasMaxLength(20);
             this.Property(x => x.CompanyTaxOffice).HasMaxLength(30);
             this.Property(x => x.CompanyAddress).HasMaxLength(250);
+            this.Property(x => x.CompanySpecialCode1).HasMaxLength(10);
+            this.Property(x => x.CompanySpecialCode2).HasMaxLength(10);
+            this.Property(x => x.CompanySpecialCode3).HasMaxLength(10);
+            this.Property(x => x.CompanyOfficialTC).HasMaxLength(11);
 
 
             //BOŞ GEÇİLEMEZ ALANLAR
@@ -54,11 +57,12 @@ namespace EntityLayer.Mapping
             this.Property(y => y.CompanyCounty).IsRequired();
             this.Property(y => y.CompanyTaxOffice).IsRequired();
             this.Property(y => y.CompanyAddress).IsRequired();
+            this.Property(y => y.CompanyOfficialTC).IsRequired();
 
 
 
             //ALAN ADLARI
-            //DİKKAT:ALAN ADLARI CUSTOMER İÇİNDEKİ GİBİ DEVAM EDER EĞER CUSTOMERDA YANLIŞLIKLA ALAN ADI
+            //DİKKAT:ALAN ADLARI x İÇİNDEKİ GİBİ DEVAM EDER EĞER x YANLIŞLIKLA ALAN ADI
             //DEĞİŞİRSE BURADA TOPARLARIZ.
 
             this.Property(z => z.CompanyID).HasColumnName("CompanyID");
@@ -75,6 +79,11 @@ namespace EntityLayer.Mapping
             this.Property(z => z.CompanyTaxOffice).HasColumnName("CompanyTaxOffice");
             this.Property(z => z.CompanyAddress).HasColumnName("CompanyAddress");
             this.Property(z => z.CompanyArchive).HasColumnName("CompanyArchive");
+            this.Property(z => z.CompanyOfficialTC).HasColumnName("CompanyOfficialTC");
+            this.Property(z => z.CompanySpecialCode1).HasColumnName("CompanySpecialCode1");
+            this.Property(z => z.CompanySpecialCode2).HasColumnName("CompanySpecialCode2");
+            this.Property(z => z.CompanySpecialCode3).HasColumnName("CompanySpecialCode3");
+
 
 
             //VERİ TİPLERİ

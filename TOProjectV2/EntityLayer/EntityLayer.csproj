@@ -64,6 +64,7 @@
     <Compile Include="Concrete\Model.cs" />
     <Compile Include="Concrete\Note.cs" />
     <Compile Include="Concrete\Product.cs" />
+    <Compile Include="Concrete\Sector.cs" />
     <Compile Include="Concrete\Stock.cs" />
     <Compile Include="Mapping\BankMAP.cs" />
     <Compile Include="Mapping\BlandMAP.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Mapping\ModelMAP.cs" />
     <Compile Include="Mapping\NoteMAP.cs" />
     <Compile Include="Mapping\ProductMAP.cs" />
+    <Compile Include="Mapping\SectorMAP.cs" />
     <Compile Include="Mapping\StockMAP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

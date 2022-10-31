@@ -142,7 +142,7 @@
             this.accordionControlCustomerArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerArchive.ImageOptions.Image")));
             this.accordionControlCustomerArchive.Name = "accordionControlCustomerArchive";
             this.accordionControlCustomerArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerArchive.Text = "ÜRÜN BİLGİLERİNİ ARŞİVLE";
+            this.accordionControlCustomerArchive.Text = "MÜŞTERİ BİLGİLERİNİ ARŞİVLE";
             this.accordionControlCustomerArchive.Click += new System.EventHandler(this.accordionControlCustomerArchive_Click);
             // 
             // accordionControlCustomerList

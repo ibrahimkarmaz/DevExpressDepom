@@ -36,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -87,6 +88,7 @@
     <Compile Include="CommonValidationControls\CustomerCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\ModelCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\ProductCommonValidationControl.cs" />
+    <Compile Include="CommonValidationControls\SectorCommonValidationControl.cs" />
     <Compile Include="Connected Services\TCInformationControl\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -184,6 +186,24 @@
     <Compile Include="WinFormList\ProductWF\ProductWF.Designer.cs">
       <DependentUpon>ProductWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\SectorWF\SectorAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\SectorWF\SectorAddWF.Designer.cs">
+      <DependentUpon>SectorAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\SectorWF\SectorUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\SectorWF\SectorUpdateWF.Designer.cs">
+      <DependentUpon>SectorUpdateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\SectorWF\SectorWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\SectorWF\SectorWF.Designer.cs">
+      <DependentUpon>SectorWF.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +216,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="WinFormList\BlandArchiveListWF.resx">
       <DependentUpon>BlandArchiveListWF.cs</DependentUpon>
@@ -238,6 +259,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductWF.resx">
       <DependentUpon>ProductWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\SectorWF\SectorAddWF.resx">
+      <DependentUpon>SectorAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\SectorWF\SectorUpdateWF.resx">
+      <DependentUpon>SectorUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\SectorWF\SectorWF.resx">
+      <DependentUpon>SectorWF.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\TCInformationControl\KPSPublic.wsdl" />
     <None Include="Connected Services\TCInformationControl\PresentationLayer.TCInformationControl.TCKimlikNoDogrulaResponse.datasource">
@@ -288,6 +318,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Image\Common\Clound32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Image\Common\Sumer32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

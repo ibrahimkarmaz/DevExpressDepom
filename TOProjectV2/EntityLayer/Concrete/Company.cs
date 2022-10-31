@@ -10,6 +10,7 @@ namespace EntityLayer.Concrete
     {
         public int CompanyID { get; set; }
         public string CompanyName { get; set; }
+        public string CompanyOfficialTC { get; set; }
         public string CompanyOfficialNameSurName { get; set; }
         public string CompanyOfficialStatus { get; set; }
         public string CompanyPhone1 { get; set; }
@@ -21,6 +22,9 @@ namespace EntityLayer.Concrete
         public string CompanyCounty { get; set; }
         public string CompanyTaxOffice { get; set; }
         public string CompanyAddress { get; set; }
+        public string CompanySpecialCode1 { get; set; }
+        public string CompanySpecialCode2 { get; set; }
+        public string CompanySpecialCode3 { get; set; }
         public bool CompanyArchive { get; set; }
     }
 }

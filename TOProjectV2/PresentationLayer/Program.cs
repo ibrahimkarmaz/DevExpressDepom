@@ -13,7 +13,10 @@ namespace PresentationLayer
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {//https://www.youtube.com/watch?v=SUXvAHw6osw
+            DevExpress.UserSkins.BonusSkins.Register();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new CommercialAutomation());

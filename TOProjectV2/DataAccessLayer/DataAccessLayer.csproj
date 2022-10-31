@@ -68,6 +68,7 @@
     <Compile Include="Abstract\IModelDAL.cs" />
     <Compile Include="Abstract\INoteMAP.cs" />
     <Compile Include="Abstract\IProductDAL.cs" />
+    <Compile Include="Abstract\ISectorDAL.cs" />
     <Compile Include="Abstract\IStockDAL.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="DTO\AutoMapperProfiles.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="EntityFramework\EFDistrictDAL.cs" />
     <Compile Include="EntityFramework\EFModelDAL.cs" />
     <Compile Include="EntityFramework\EFProductDAL.cs" />
+    <Compile Include="EntityFramework\EFSectorDAL.cs" />
     <Compile Include="Migrations\202210120919480_NewDatabaseTO.cs" />
     <Compile Include="Migrations\202210120919480_NewDatabaseTO.designer.cs">
       <DependentUpon>202210120919480_NewDatabaseTO.cs</DependentUpon>
@@ -259,6 +261,22 @@
     <Compile Include="Migrations\202210292120433_CustomerDateAndGenderQueryAdd2.designer.cs">
       <DependentUpon>202210292120433_CustomerDateAndGenderQueryAdd2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210311608220_EntitySectorCreateAndMAP.cs" />
+    <Compile Include="Migrations\202210311608220_EntitySectorCreateAndMAP.designer.cs">
+      <DependentUpon>202210311608220_EntitySectorCreateAndMAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210311940091_SectorEntityColumnTypeSetUPDATE.cs" />
+    <Compile Include="Migrations\202210311940091_SectorEntityColumnTypeSetUPDATE.designer.cs">
+      <DependentUpon>202210311940091_SectorEntityColumnTypeSetUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210312143533_CampanyNewColumns.cs" />
+    <Compile Include="Migrations\202210312143533_CampanyNewColumns.designer.cs">
+      <DependentUpon>202210312143533_CampanyNewColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210312149288_CampanyMapSet.cs" />
+    <Compile Include="Migrations\202210312149288_CampanyMapSet.designer.cs">
+      <DependentUpon>202210312149288_CampanyMapSet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -408,6 +426,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210292120433_CustomerDateAndGenderQueryAdd2.resx">
       <DependentUpon>202210292120433_CustomerDateAndGenderQueryAdd2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210311608220_EntitySectorCreateAndMAP.resx">
+      <DependentUpon>202210311608220_EntitySectorCreateAndMAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210311940091_SectorEntityColumnTypeSetUPDATE.resx">
+      <DependentUpon>202210311940091_SectorEntityColumnTypeSetUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210312143533_CampanyNewColumns.resx">
+      <DependentUpon>202210312143533_CampanyNewColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210312149288_CampanyMapSet.resx">
+      <DependentUpon>202210312149288_CampanyMapSet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

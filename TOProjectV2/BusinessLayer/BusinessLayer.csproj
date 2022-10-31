@@ -67,16 +67,19 @@
     <Compile Include="Abstract\IGenericService.cs" />
     <Compile Include="Abstract\IModelService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Abstract\ISectorService.cs" />
     <Compile Include="Concrete\BlandManager.cs" />
     <Compile Include="Concrete\CountyManager.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
     <Compile Include="Concrete\DistrictManager.cs" />
     <Compile Include="Concrete\ModelManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
+    <Compile Include="Concrete\SectorManager.cs" />
     <Compile Include="FluentValidation\BlandValidator.cs" />
     <Compile Include="FluentValidation\CustomerValidator.cs" />
     <Compile Include="FluentValidation\ModelValidator.cs" />
     <Compile Include="FluentValidation\ProductValidator.cs" />
+    <Compile Include="FluentValidation\SectorValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
