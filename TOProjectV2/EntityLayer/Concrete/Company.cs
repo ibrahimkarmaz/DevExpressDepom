@@ -18,13 +18,17 @@ namespace EntityLayer.Concrete
         public string CompanyPhone3 { get; set; }
         public string CompanyMail { get; set; }
         public string CompanyFax { get; set; }
-        public string CompanyTown { get; set; }
-        public string CompanyCounty { get; set; }
         public string CompanyTaxOffice { get; set; }
         public string CompanyAddress { get; set; }
-        public string CompanySpecialCode1 { get; set; }
-        public string CompanySpecialCode2 { get; set; }
-        public string CompanySpecialCode3 { get; set; }
         public bool CompanyArchive { get; set; }
+
+        public int SectorID { get; set; }
+        public Sector Sector { get; set; }
+
+        public int CountyID { get; set; }
+        public County County { get; set; }
+
+        public int DistrictID { get; set; }
+        public District District { get; set; }
     }
 }

@@ -53,6 +53,7 @@
             this.barSkins = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
+            this.BarSector = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -65,6 +66,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonCompany = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonEmployee = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonFinance = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -77,8 +79,6 @@
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.BarSector = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -162,6 +162,7 @@
             this.barCompanys.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCompanys.ImageOptions.Image")));
             this.barCompanys.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCompanys.ImageOptions.LargeImage")));
             this.barCompanys.Name = "barCompanys";
+            this.barCompanys.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCompanys_ItemClick);
             // 
             // barEmployees
             // 
@@ -306,6 +307,15 @@
             this.barSubItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem2.ImageOptions.LargeImage")));
             this.barSubItem2.Name = "barSubItem2";
             // 
+            // BarSector
+            // 
+            this.BarSector.Caption = "SEKTÖRLER";
+            this.BarSector.Id = 22;
+            this.BarSector.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarSector.ImageOptions.Image")));
+            this.BarSector.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarSector.ImageOptions.LargeImage")));
+            this.BarSector.Name = "BarSector";
+            this.BarSector.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarSector_ItemClick);
+            // 
             // ribbonHome
             // 
             this.ribbonHome.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -396,6 +406,12 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
+            // ribbonPageGroup15
+            // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.BarSector);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
+            // 
             // ribbonEmployee
             // 
             this.ribbonEmployee.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -476,21 +492,6 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // ribbonPageGroup15
-            // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.BarSector);
-            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
-            // 
-            // BarSector
-            // 
-            this.BarSector.Caption = "SEKTÖRLER";
-            this.BarSector.Id = 22;
-            this.BarSector.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.BarSector.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.BarSector.Name = "BarSector";
-            this.BarSector.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarSector_ItemClick);
             // 
             // CommercialAutomation
             // 

@@ -15,6 +15,7 @@ using PresentationLayer.WinFormList.ProductWF;
 using DevExpress.XtraBars.Helpers;
 using DevExpress.LookAndFeel;
 using PresentationLayer.WinFormList.SectorWF;
+using PresentationLayer.WinFormList.CompanyWF;
 
 namespace PresentationLayer
 {
@@ -112,6 +113,16 @@ namespace PresentationLayer
                 sectorWF.Show();
             }
 
+        }
+        CompanyWF companyWF;
+        private void barCompanys_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (companyWF==null || companyWF.IsDisposed)
+            {
+                companyWF = new CompanyWF();
+                companyWF.MdiParent = this;
+                companyWF.Show();
+            }
         }
     }
 }

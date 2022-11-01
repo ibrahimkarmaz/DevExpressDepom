@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IBlandService.cs" />
+    <Compile Include="Abstract\ICompanyService.cs" />
     <Compile Include="Abstract\ICountyService.cs" />
     <Compile Include="Abstract\ICustomerService.cs" />
     <Compile Include="Abstract\IDistrictService.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\ISectorService.cs" />
     <Compile Include="Concrete\BlandManager.cs" />
+    <Compile Include="Concrete\CompanyManager.cs" />
     <Compile Include="Concrete\CountyManager.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
     <Compile Include="Concrete\DistrictManager.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Concrete\SectorManager.cs" />
     <Compile Include="FluentValidation\BlandValidator.cs" />
+    <Compile Include="FluentValidation\CompanyValidator.cs" />
     <Compile Include="FluentValidation\CustomerValidator.cs" />
     <Compile Include="FluentValidation\ModelValidator.cs" />
     <Compile Include="FluentValidation\ProductValidator.cs" />

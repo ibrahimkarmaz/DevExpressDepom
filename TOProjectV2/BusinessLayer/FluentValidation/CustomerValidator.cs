@@ -12,12 +12,12 @@ namespace BusinessLayer.FluentValidation
     {
         public CustomerValidator()
         {
-            RuleFor(x => x.CustomerTC).NotEmpty().WithMessage("T.C KİMLİK NUMARASI BOŞ GEÇİLEMEZ.");
-            RuleFor(x => x.CustomerTC).Length(11).WithMessage("T.C KİMLİK NUMARASI EKSİKTİR.");
+            RuleFor(x => x.CustomerTC).NotEmpty().WithMessage("T.C KİMLİK NUMARASI BOŞ GEÇİLEMEZ.")
+                .Length(11).WithMessage("T.C KİMLİK NUMARASI EKSİKTİR.");
 
-            RuleFor(x => x.CustomerName).NotEmpty().WithMessage("MÜŞTERİ ADI BOŞ GEÇİLEMEZ.");
-            RuleFor(x => x.CustomerName).MinimumLength(2).WithMessage("MÜŞTERİ ADI EN AZ 2 KARAKTER İÇERMELİDİR.");
-            RuleFor(x => x.CustomerName).MaximumLength(20).WithMessage("MÜŞTERİ ADI EN FAZLA 20 KARAKTER İÇERMELİDİR.");
+            RuleFor(x => x.CustomerName).NotEmpty().WithMessage("MÜŞTERİ ADI BOŞ GEÇİLEMEZ.")
+                .MinimumLength(2).WithMessage("MÜŞTERİ ADI EN AZ 2 KARAKTER İÇERMELİDİR.")
+                .MaximumLength(20).WithMessage("MÜŞTERİ ADI EN FAZLA 20 KARAKTER İÇERMELİDİR.");
 
             RuleFor(x => x.CustomerSurName).NotEmpty().WithMessage("MÜŞTERİ SOYADI BOŞ GEÇİLEMEZ.");
             RuleFor(x => x.CustomerSurName).MinimumLength(2).WithMessage("MÜŞTERİ SOYADI EN AZ 2 KARAKTER İÇERMELİDİR.");

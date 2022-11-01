@@ -13,5 +13,7 @@ namespace EntityLayer.Concrete
 
         public ICollection<District> Districts { get; set; }
         public ICollection<Customer> Customers { get; set; }
+        public ICollection<Company> Companys { get; set; }
+
     }
 }

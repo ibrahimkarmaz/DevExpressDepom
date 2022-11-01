@@ -11,5 +11,6 @@ namespace EntityLayer.Concrete
         public int SectorID { get; set; }
         public string SectorName { get; set; }
         public bool SectorArchive { get; set; }
+        public ICollection<Company> Companys { get; set; }
     }
 }

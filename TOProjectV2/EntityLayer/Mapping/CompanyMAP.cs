@@ -38,27 +38,30 @@ namespace EntityLayer.Mapping
             this.Property(x => x.CompanyPhone3).HasMaxLength(15);
             this.Property(x => x.CompanyMail).HasMaxLength(40);
             this.Property(x => x.CompanyFax).HasMaxLength(15);
-            this.Property(x => x.CompanyTown).HasMaxLength(13);
-            this.Property(x => x.CompanyCounty).HasMaxLength(20);
             this.Property(x => x.CompanyTaxOffice).HasMaxLength(30);
             this.Property(x => x.CompanyAddress).HasMaxLength(250);
-            this.Property(x => x.CompanySpecialCode1).HasMaxLength(10);
-            this.Property(x => x.CompanySpecialCode2).HasMaxLength(10);
-            this.Property(x => x.CompanySpecialCode3).HasMaxLength(10);
             this.Property(x => x.CompanyOfficialTC).HasMaxLength(11);
 
+            /*this.Property(x => x.CompanyTown).HasMaxLength(13);
+            this.Property(x => x.CompanyCounty).HasMaxLength(20);
+            this.Property(x => x.CompanySpecialCode1).HasMaxLength(10);
+            this.Property(x => x.CompanySpecialCode2).HasMaxLength(10);
+            this.Property(x => x.CompanySpecialCode3).HasMaxLength(10);*/
 
             //BOŞ GEÇİLEMEZ ALANLAR
 
             this.Property(y => y.CompanyOfficialNameSurName).IsRequired();
             this.Property(y => y.CompanyPhone1).IsRequired();
             this.Property(y => y.CompanyMail).IsRequired();
-            this.Property(y => y.CompanyTown).IsRequired();
-            this.Property(y => y.CompanyCounty).IsRequired();
             this.Property(y => y.CompanyTaxOffice).IsRequired();
             this.Property(y => y.CompanyAddress).IsRequired();
             this.Property(y => y.CompanyOfficialTC).IsRequired();
+            this.Property(y => y.CountyID).IsRequired();
+            this.Property(y => y.DistrictID).IsRequired();
+            this.Property(y => y.SectorID).IsRequired();
 
+            // this.Property(y => y.CompanyTown).IsRequired();
+            // this.Property(y => y.CompanyCounty).IsRequired();
 
 
             //ALAN ADLARI
@@ -74,15 +77,21 @@ namespace EntityLayer.Mapping
             this.Property(z => z.CompanyPhone3).HasColumnName("CompanyPhone3");
             this.Property(z => z.CompanyMail).HasColumnName("CompanyMail");
             this.Property(z => z.CompanyFax).HasColumnName("CompanyFax");
-            this.Property(z => z.CompanyTown).HasColumnName("CompanyTown");
-            this.Property(z => z.CompanyCounty).HasColumnName("CompanyCounty");
+       
             this.Property(z => z.CompanyTaxOffice).HasColumnName("CompanyTaxOffice");
             this.Property(z => z.CompanyAddress).HasColumnName("CompanyAddress");
             this.Property(z => z.CompanyArchive).HasColumnName("CompanyArchive");
             this.Property(z => z.CompanyOfficialTC).HasColumnName("CompanyOfficialTC");
+            this.Property(z => z.CountyID).HasColumnName("CountyID");
+            this.Property(z => z.DistrictID).HasColumnName("DistrictID");
+            this.Property(z => z.SectorID).HasColumnName("SectorID");
+
+
+            /*this.Property(z => z.CompanyTown).HasColumnName("CompanyTown");
+            this.Property(z => z.CompanyCounty).HasColumnName("CompanyCounty");
             this.Property(z => z.CompanySpecialCode1).HasColumnName("CompanySpecialCode1");
             this.Property(z => z.CompanySpecialCode2).HasColumnName("CompanySpecialCode2");
-            this.Property(z => z.CompanySpecialCode3).HasColumnName("CompanySpecialCode3");
+            this.Property(z => z.CompanySpecialCode3).HasColumnName("CompanySpecialCode3");*/
 
 
 

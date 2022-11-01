@@ -75,6 +75,7 @@
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
     <Compile Include="EntityFramework\EFBlandDAL.cs" />
+    <Compile Include="EntityFramework\EFCompanyDAL.cs" />
     <Compile Include="EntityFramework\EFCountyDAL.cs" />
     <Compile Include="EntityFramework\EFCustomerDAL.cs" />
     <Compile Include="EntityFramework\EFDistrictDAL.cs" />
@@ -277,6 +278,34 @@
     <Compile Include="Migrations\202210312149288_CampanyMapSet.designer.cs">
       <DependentUpon>202210312149288_CampanyMapSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211011542035_RemoveColumnsCampanyEntity.cs" />
+    <Compile Include="Migrations\202211011542035_RemoveColumnsCampanyEntity.designer.cs">
+      <DependentUpon>202211011542035_RemoveColumnsCampanyEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211011545134_CampanyColumnsRemoveCountyAndTown.cs" />
+    <Compile Include="Migrations\202211011545134_CampanyColumnsRemoveCountyAndTown.designer.cs">
+      <DependentUpon>202211011545134_CampanyColumnsRemoveCountyAndTown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211011548281_CompanyAndCountyPKFK.cs" />
+    <Compile Include="Migrations\202211011548281_CompanyAndCountyPKFK.designer.cs">
+      <DependentUpon>202211011548281_CompanyAndCountyPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211011550311_CompanyAndDistrictFKPK.cs" />
+    <Compile Include="Migrations\202211011550311_CompanyAndDistrictFKPK.designer.cs">
+      <DependentUpon>202211011550311_CompanyAndDistrictFKPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211011553388_CompanyMAPUpdate.cs" />
+    <Compile Include="Migrations\202211011553388_CompanyMAPUpdate.designer.cs">
+      <DependentUpon>202211011553388_CompanyMAPUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211012206116_CompanyAndSectorPKFK.cs" />
+    <Compile Include="Migrations\202211012206116_CompanyAndSectorPKFK.designer.cs">
+      <DependentUpon>202211012206116_CompanyAndSectorPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211012208075_CompanyAndSectorMapUPDATE.cs" />
+    <Compile Include="Migrations\202211012208075_CompanyAndSectorMapUPDATE.designer.cs">
+      <DependentUpon>202211012208075_CompanyAndSectorMapUPDATE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -438,6 +467,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210312149288_CampanyMapSet.resx">
       <DependentUpon>202210312149288_CampanyMapSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211011542035_RemoveColumnsCampanyEntity.resx">
+      <DependentUpon>202211011542035_RemoveColumnsCampanyEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211011545134_CampanyColumnsRemoveCountyAndTown.resx">
+      <DependentUpon>202211011545134_CampanyColumnsRemoveCountyAndTown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211011548281_CompanyAndCountyPKFK.resx">
+      <DependentUpon>202211011548281_CompanyAndCountyPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211011550311_CompanyAndDistrictFKPK.resx">
+      <DependentUpon>202211011550311_CompanyAndDistrictFKPK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211011553388_CompanyMAPUpdate.resx">
+      <DependentUpon>202211011553388_CompanyMAPUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211012206116_CompanyAndSectorPKFK.resx">
+      <DependentUpon>202211012206116_CompanyAndSectorPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211012208075_CompanyAndSectorMapUPDATE.resx">
+      <DependentUpon>202211012208075_CompanyAndSectorMapUPDATE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
