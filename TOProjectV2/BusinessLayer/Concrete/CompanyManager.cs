@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.DTO;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,11 @@ namespace BusinessLayer.Concrete
         public CompanyManager(ICompanyDAL companyDAL)
         {
             _companyDAL = companyDAL;
+        }
+
+        public List<CompanyINCountyDistrintAndSectorDTO> CompanyGetList(Expression<Func<CompanyINCountyDistrintAndSectorDTO, bool>> filter = null)
+        {
+           return _companyDAL.CompanyGetList(filter);
         }
 
         public List<Company> GetAllList()

@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonValidationControls\BlandCommonValidationControl.cs" />
+    <Compile Include="CommonValidationControls\CompanyCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CustomerCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\ModelCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\ProductCommonValidationControl.cs" />
@@ -119,6 +120,18 @@
     </Compile>
     <Compile Include="WinFormList\CompanyWF\CompanyAddWF.Designer.cs">
       <DependentUpon>CompanyAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CompanyWF\CompanyGetAllListWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CompanyWF\CompanyGetAllListWF.Designer.cs">
+      <DependentUpon>CompanyGetAllListWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CompanyWF\CompanyUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CompanyWF\CompanyUpdateWF.Designer.cs">
+      <DependentUpon>CompanyUpdateWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\CompanyWF\CompanyWF.cs">
       <SubType>Form</SubType>
@@ -238,6 +251,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyAddWF.resx">
       <DependentUpon>CompanyAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CompanyWF\CompanyGetAllListWF.resx">
+      <DependentUpon>CompanyGetAllListWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CompanyWF\CompanyUpdateWF.resx">
+      <DependentUpon>CompanyUpdateWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyWF.resx">
       <DependentUpon>CompanyWF.cs</DependentUpon>

@@ -22,13 +22,13 @@ namespace EntityLayer.Concrete
         public string CompanyAddress { get; set; }
         public bool CompanyArchive { get; set; }
 
-        public int SectorID { get; set; }
+        public int? SectorID { get; set; }
         public Sector Sector { get; set; }
 
-        public int CountyID { get; set; }
+        public int? CountyID { get; set; }
         public County County { get; set; }
 
-        public int DistrictID { get; set; }
+        public int? DistrictID { get; set; }
         public District District { get; set; }
     }
 }
