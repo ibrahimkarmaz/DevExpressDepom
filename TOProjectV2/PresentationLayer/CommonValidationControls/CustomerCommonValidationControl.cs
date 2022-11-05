@@ -15,7 +15,7 @@ namespace PresentationLayer.CommonValidationControls
     {
         public bool CustomerValidatorAndMessage(Customer customer)
         {
-            CustomerValidator blandValidator = new CustomerValidator();
+            CustomerValidator blandValidator = new CustomerValidator(customer.CustomerTC);
             ValidationResult result = blandValidator.Validate(customer);//BURAYA DİKKAT KÜTÜPHANE OLARAK:using FluentValidation.Results;
             if (result.IsValid)//EĞER TRUE İSE HATA YOK DEMEKTİR.
                 return true;

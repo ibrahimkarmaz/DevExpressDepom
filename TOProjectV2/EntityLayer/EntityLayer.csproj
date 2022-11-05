@@ -56,6 +56,7 @@
     <Compile Include="Concrete\Company.cs" />
     <Compile Include="Concrete\County.cs" />
     <Compile Include="Concrete\Customer.cs" />
+    <Compile Include="Concrete\Department.cs" />
     <Compile Include="Concrete\District.cs" />
     <Compile Include="Concrete\Employee.cs" />
     <Compile Include="Concrete\Expense.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Mapping\CompanyMAP.cs" />
     <Compile Include="Mapping\CountyMAP.cs" />
     <Compile Include="Mapping\CustomerMAP.cs" />
+    <Compile Include="Mapping\DepartmentMAP.cs" />
     <Compile Include="Mapping\DistrictMAP.cs" />
     <Compile Include="Mapping\EmployeeMAP.cs" />
     <Compile Include="Mapping\ExpenseMAP.cs" />

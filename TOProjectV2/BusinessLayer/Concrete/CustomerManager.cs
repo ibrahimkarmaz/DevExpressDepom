@@ -40,6 +40,11 @@ namespace BusinessLayer.Concrete
             return _customerDAL.GetById(id);
         }
 
+        public bool GetByTC(Expression<Func<Customer, bool>> filter = null)
+        {
+          return  _customerDAL.GetByTC(filter);
+        }
+
         public void TAdd(Customer t)
         {
             _customerDAL.Insert(t);

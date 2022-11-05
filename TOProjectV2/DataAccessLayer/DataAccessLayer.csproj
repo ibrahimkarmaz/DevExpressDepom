@@ -59,6 +59,7 @@
     <Compile Include="Abstract\ICompanyDAL.cs" />
     <Compile Include="Abstract\ICountyDAL.cs" />
     <Compile Include="Abstract\ICustomerDAL.cs" />
+    <Compile Include="Abstract\IDepartmentDAL.cs" />
     <Compile Include="Abstract\IDistrictDAL.cs" />
     <Compile Include="Abstract\IEmployeeDAL.cs" />
     <Compile Include="Abstract\IExpenseDAL.cs" />
@@ -74,12 +75,15 @@
     <Compile Include="DTO\AutoMapperProfiles.cs" />
     <Compile Include="DTO\CompanyINCountyDistrintAndSectorDTO.cs" />
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
+    <Compile Include="DTO\EmployeeINCountyDistrintAndDepartmentDTO.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
     <Compile Include="EntityFramework\EFBlandDAL.cs" />
     <Compile Include="EntityFramework\EFCompanyDAL.cs" />
     <Compile Include="EntityFramework\EFCountyDAL.cs" />
     <Compile Include="EntityFramework\EFCustomerDAL.cs" />
+    <Compile Include="EntityFramework\EFDepartmentDAL.cs" />
     <Compile Include="EntityFramework\EFDistrictDAL.cs" />
+    <Compile Include="EntityFramework\EFEmployeeDAL.cs" />
     <Compile Include="EntityFramework\EFModelDAL.cs" />
     <Compile Include="EntityFramework\EFProductDAL.cs" />
     <Compile Include="EntityFramework\EFSectorDAL.cs" />
@@ -311,6 +315,30 @@
     <Compile Include="Migrations\202211020905036_CompanyQueAdd.designer.cs">
       <DependentUpon>202211020905036_CompanyQueAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211031000056_NewEntityDepartmenAndMap.cs" />
+    <Compile Include="Migrations\202211031000056_NewEntityDepartmenAndMap.designer.cs">
+      <DependentUpon>202211031000056_NewEntityDepartmenAndMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211031905416_DepartmentAndEmployeeJoinPKFK.cs" />
+    <Compile Include="Migrations\202211031905416_DepartmentAndEmployeeJoinPKFK.designer.cs">
+      <DependentUpon>202211031905416_DepartmentAndEmployeeJoinPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211031912461_EmployeeWithCountyAndDistrictFKPK.cs" />
+    <Compile Include="Migrations\202211031912461_EmployeeWithCountyAndDistrictFKPK.designer.cs">
+      <DependentUpon>202211031912461_EmployeeWithCountyAndDistrictFKPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211031928415_EmployeeNewColumnNameEmployeeImageUPDATE.cs" />
+    <Compile Include="Migrations\202211031928415_EmployeeNewColumnNameEmployeeImageUPDATE.designer.cs">
+      <DependentUpon>202211031928415_EmployeeNewColumnNameEmployeeImageUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211031930448_EmployeeNewColumnNameEmployeeImageUPDATE2.cs" />
+    <Compile Include="Migrations\202211031930448_EmployeeNewColumnNameEmployeeImageUPDATE2.designer.cs">
+      <DependentUpon>202211031930448_EmployeeNewColumnNameEmployeeImageUPDATE2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211032119489_NewColumnEmployeeUPDATE.cs" />
+    <Compile Include="Migrations\202211032119489_NewColumnEmployeeUPDATE.designer.cs">
+      <DependentUpon>202211032119489_NewColumnEmployeeUPDATE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -496,6 +524,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211020905036_CompanyQueAdd.resx">
       <DependentUpon>202211020905036_CompanyQueAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211031000056_NewEntityDepartmenAndMap.resx">
+      <DependentUpon>202211031000056_NewEntityDepartmenAndMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211031905416_DepartmentAndEmployeeJoinPKFK.resx">
+      <DependentUpon>202211031905416_DepartmentAndEmployeeJoinPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211031912461_EmployeeWithCountyAndDistrictFKPK.resx">
+      <DependentUpon>202211031912461_EmployeeWithCountyAndDistrictFKPK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211031928415_EmployeeNewColumnNameEmployeeImageUPDATE.resx">
+      <DependentUpon>202211031928415_EmployeeNewColumnNameEmployeeImageUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211031930448_EmployeeNewColumnNameEmployeeImageUPDATE2.resx">
+      <DependentUpon>202211031930448_EmployeeNewColumnNameEmployeeImageUPDATE2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211032119489_NewColumnEmployeeUPDATE.resx">
+      <DependentUpon>202211032119489_NewColumnEmployeeUPDATE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

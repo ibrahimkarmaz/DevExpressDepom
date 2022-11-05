@@ -194,7 +194,7 @@
             this.xtraTabCustomerControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.xtraTabCustomerControl.SelectedTabPage = this.TabPageCustomer;
             this.xtraTabCustomerControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabCustomerControl.Size = new System.Drawing.Size(908, 486);
+            this.xtraTabCustomerControl.Size = new System.Drawing.Size(936, 486);
             this.xtraTabCustomerControl.TabIndex = 7;
             this.xtraTabCustomerControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.TabPageCustomer,
@@ -207,7 +207,7 @@
             this.TabPageCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomer.ImageOptions.Image")));
             this.TabPageCustomer.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
             this.TabPageCustomer.Name = "TabPageCustomer";
-            this.TabPageCustomer.Size = new System.Drawing.Size(906, 442);
+            this.TabPageCustomer.Size = new System.Drawing.Size(934, 442);
             this.TabPageCustomer.Text = "ÜRÜNLER LİSTESİ";
             // 
             // GControlCustomer
@@ -216,7 +216,7 @@
             this.GControlCustomer.Location = new System.Drawing.Point(0, 0);
             this.GControlCustomer.MainView = this.GViewCustomer;
             this.GControlCustomer.Name = "GControlCustomer";
-            this.GControlCustomer.Size = new System.Drawing.Size(906, 442);
+            this.GControlCustomer.Size = new System.Drawing.Size(934, 442);
             this.GControlCustomer.TabIndex = 0;
             this.GControlCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GViewCustomer});
@@ -548,7 +548,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 486);
+            this.ClientSize = new System.Drawing.Size(1196, 486);
             this.Controls.Add(this.xtraTabCustomerControl);
             this.Controls.Add(this.accordionControl1);
             this.Name = "CustomerWF";

@@ -12,5 +12,6 @@ namespace DataAccessLayer.Abstract
     public interface ICustomerDAL:IGenericDAL<Customer>
     {
         List<CustomerINCountyAndDistrintDTO> CustomerGetList(Expression<Func<CustomerINCountyAndDistrintDTO,bool>> filter=null);
+        bool GetByTC(Expression<Func<Customer, bool>> filter = null);
     }
 }

@@ -87,6 +87,8 @@
     <Compile Include="CommonValidationControls\BlandCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\CompanyCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CustomerCommonValidationControl.cs" />
+    <Compile Include="CommonValidationControls\DepartmentCommonValidatorControl.cs" />
+    <Compile Include="CommonValidationControls\EmployeeCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\ModelCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\ProductCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\SectorCommonValidationControl.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JointTransactions\DragDropProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WinFormList\BlandArchiveListWF.cs">
@@ -156,6 +159,48 @@
     </Compile>
     <Compile Include="WinFormList\CustomerWF\CustomerWF.Designer.cs">
       <DependentUpon>CustomerWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\DepartmentWF\DepartmentAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\DepartmentWF\DepartmentAddWF.Designer.cs">
+      <DependentUpon>DepartmentAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\DepartmentWF\DepartmentUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\DepartmentWF\DepartmentUpdateWF.Designer.cs">
+      <DependentUpon>DepartmentUpdateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\DepartmentWF\DepartmentWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\DepartmentWF\DepartmentWF.Designer.cs">
+      <DependentUpon>DepartmentWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeAddWF.Designer.cs">
+      <DependentUpon>EmployeeAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeExpandWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeExpandWF.Designer.cs">
+      <DependentUpon>EmployeeExpandWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeUpdateWF.Designer.cs">
+      <DependentUpon>EmployeeUpdateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeWF.Designer.cs">
+      <DependentUpon>EmployeeWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\ModelWF\ModelArchiveListWF.cs">
       <SubType>Form</SubType>
@@ -270,6 +315,27 @@
     <EmbeddedResource Include="WinFormList\CustomerWF\CustomerWF.resx">
       <DependentUpon>CustomerWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\DepartmentWF\DepartmentAddWF.resx">
+      <DependentUpon>DepartmentAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\DepartmentWF\DepartmentUpdateWF.resx">
+      <DependentUpon>DepartmentUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\DepartmentWF\DepartmentWF.resx">
+      <DependentUpon>DepartmentWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeAddWF.resx">
+      <DependentUpon>EmployeeAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeExpandWF.resx">
+      <DependentUpon>EmployeeExpandWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeUpdateWF.resx">
+      <DependentUpon>EmployeeUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeWF.resx">
+      <DependentUpon>EmployeeWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ModelWF\ModelArchiveListWF.resx">
       <DependentUpon>ModelArchiveListWF.cs</DependentUpon>
     </EmbeddedResource>
@@ -362,6 +428,7 @@
   <ItemGroup>
     <None Include="bin\Debug\Image\Common\Sumer32.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

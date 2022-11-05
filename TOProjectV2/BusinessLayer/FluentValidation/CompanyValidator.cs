@@ -36,7 +36,8 @@ namespace BusinessLayer.FluentValidation
 
             RuleFor(x => x.CompanyMail).NotEmpty().WithMessage("FİRMA E-POSTA ADRESİ BOŞ GEÇİLEMEZ.")
                 .MinimumLength(10).WithMessage("FİRMA E-POSTA ADRESİ EN AZ 10 KARAKTERLİ OLMALI.")
-                .MaximumLength(40).WithMessage("FİRMA E-POSTA ADRESİ EN FAZLA 40 KARAKTER OLMALI.");
+                .MaximumLength(40).WithMessage("FİRMA E-POSTA ADRESİ EN FAZLA 40 KARAKTER OLMALI.")
+                .EmailAddress().WithMessage("FİRMA E-POSTA ADRESİ FORMATA UYGUN DEĞİLDİR.");//EN SON EKLENEN
 
             RuleFor(x => x.CompanyFax).NotEmpty().WithMessage("FİRMA FAX NUMARASI BOŞ GEÇİLEMEZ.")
                 .MaximumLength(15).WithMessage("FİRMA FAX NUMARASI EN FAZLA 15 KARAKTERLİ OLMALI.");

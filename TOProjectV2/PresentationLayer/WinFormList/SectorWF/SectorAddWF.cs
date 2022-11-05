@@ -49,7 +49,6 @@ namespace PresentationLayer.WinFormList.SectorWF
 
         private void SBtnListAdd_Click(object sender, EventArgs e)
         {
-
             sector = new Sector();
             sector.SectorName = TESectorName.Text;
             sector.SectorArchive = true;
@@ -65,9 +64,6 @@ namespace PresentationLayer.WinFormList.SectorWF
                     XtraMessageBox.Show("SECTÖR LİSTEDE MEVCUTTUR.", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-
-
-           
         }
 
         private void SBtnSectorListClear_Click(object sender, EventArgs e)

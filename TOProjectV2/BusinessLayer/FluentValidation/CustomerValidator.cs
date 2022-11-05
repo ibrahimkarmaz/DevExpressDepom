@@ -1,4 +1,6 @@
-﻿using EntityLayer.Concrete;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -10,18 +12,31 @@ namespace BusinessLayer.FluentValidation
 {
     public class CustomerValidator:AbstractValidator<Customer>
     {
-        public CustomerValidator()
+        CustomerManager _customerManager = new CustomerManager(new EFCustomerDAL());
+        public CustomerValidator(string TC)
         {
             RuleFor(x => x.CustomerTC).NotEmpty().WithMessage("T.C KİMLİK NUMARASI BOŞ GEÇİLEMEZ.")
                 .Length(11).WithMessage("T.C KİMLİK NUMARASI EKSİKTİR.");
 
+            if (_customerManager.GetByTC(x => x.CustomerTC.ToLower() == TC.ToLower() && x.CustomerArchive == false))
+            {
+                RuleFor(w => w.CustomerTC).NotEqual(TC)
+                                       .WithMessage("MÜŞTERİ T.C SİSTEMDE KAYITLIDIR.\nKAYIT ARŞİVDEDİR. ÇIKARMAK İÇİN ARŞİV BÖLÜMÜNÜ KONTROL EDİNİZ.");
+            }
+            else if (_customerManager.GetByTC(x => x.CustomerTC.ToLower() == TC.ToLower() && x.CustomerArchive == true))
+            {
+                RuleFor(w => w.CustomerTC).NotEqual(TC)
+                                       .WithMessage("MÜŞTERİ T.C SİSTEMDE KAYITLIDIR.");
+            }
+
+
             RuleFor(x => x.CustomerName).NotEmpty().WithMessage("MÜŞTERİ ADI BOŞ GEÇİLEMEZ.")
                 .MinimumLength(2).WithMessage("MÜŞTERİ ADI EN AZ 2 KARAKTER İÇERMELİDİR.")
-                .MaximumLength(20).WithMessage("MÜŞTERİ ADI EN FAZLA 20 KARAKTER İÇERMELİDİR.");
+                .MaximumLength(20).WithMessage("MÜŞTERİ ADI EN FAZLA 20 KARAKTER OLMALI.");
 
             RuleFor(x => x.CustomerSurName).NotEmpty().WithMessage("MÜŞTERİ SOYADI BOŞ GEÇİLEMEZ.");
             RuleFor(x => x.CustomerSurName).MinimumLength(2).WithMessage("MÜŞTERİ SOYADI EN AZ 2 KARAKTER İÇERMELİDİR.");
-            RuleFor(x => x.CustomerSurName).MaximumLength(20).WithMessage("MÜŞTERİ SOYADI EN FAZLA 20 KARAKTER İÇERMELİDİR.");
+            RuleFor(x => x.CustomerSurName).MaximumLength(20).WithMessage("MÜŞTERİ SOYADI EN FAZLA 20 KARAKTER OLMALI.");
 
             RuleFor(x => x.CustomerGender).NotEmpty().WithMessage("MÜŞTERİ CİNSİYETİ BOŞ GEÇİLEMEZ.");
 
@@ -40,11 +55,11 @@ namespace BusinessLayer.FluentValidation
 
             RuleFor(x => x.CustomerHomeAddress).NotEmpty().WithMessage("MÜŞTERİ EV ADRESİ BOŞ GEÇİLEMEZ.");
             RuleFor(x => x.CustomerHomeAddress).MinimumLength(20).WithMessage("MÜŞTERİ EV ADRESİ EN AZ 20 KARAKTER İÇERMELİDİR.");
-            RuleFor(x => x.CustomerHomeAddress).MaximumLength(250).WithMessage("MÜŞTERİ  EV ADRESİ EN FAZLA 250 KARAKTER İÇERMELİDİR.");
+            RuleFor(x => x.CustomerHomeAddress).MaximumLength(250).WithMessage("MÜŞTERİ  EV ADRESİ EN FAZLA 250 KARAKTER OLMALI.");
 
             RuleFor(x => x.CustomerTaxNumber).NotEmpty().WithMessage("MÜŞTERİ VERGİ NUMARASI BOŞ GEÇİLEMEZ.");
             RuleFor(x => x.CustomerTaxNumber).MinimumLength(10).WithMessage("MÜŞTERİ VERGİ NUMARASI EN AZ 10 KARAKTER İÇERMELİDİR.");
-            RuleFor(x => x.CustomerTaxNumber).MaximumLength(30).WithMessage("MÜŞTERİ  VERGİ NUMARASI EN FAZLA 30 KARAKTER İÇERMELİDİR.");
+            RuleFor(x => x.CustomerTaxNumber).MaximumLength(30).WithMessage("MÜŞTERİ  VERGİ NUMARASI EN FAZLA 30 KARAKTER OLMALI.");
 
             RuleFor(x => x.CustomerMail).EmailAddress().WithMessage("MÜŞTERİ E-POSTA ADRESİ EKSİK VEYA HATALI.");
 

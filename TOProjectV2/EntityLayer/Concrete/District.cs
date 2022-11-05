@@ -15,5 +15,6 @@ namespace EntityLayer.Concrete
         public County County { get; set; }
         public ICollection<Customer> Customers { get; set; }
         public ICollection<Company> Companys { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace BusinessLayer.Abstract
 {
     public interface ICustomerService:IGenericService<Customer>
     {
+        bool GetByTC(Expression<Func<Customer, bool>> filter = null);
         List<CustomerINCountyAndDistrintDTO> CustomerGetList(Expression<Func<CustomerINCountyAndDistrintDTO, bool>> filter = null);
     }
 }

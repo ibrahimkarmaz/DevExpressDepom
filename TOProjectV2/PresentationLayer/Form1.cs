@@ -16,6 +16,10 @@ using DevExpress.XtraBars.Helpers;
 using DevExpress.LookAndFeel;
 using PresentationLayer.WinFormList.SectorWF;
 using PresentationLayer.WinFormList.CompanyWF;
+using PresentationLayer.WinFormList.DepartmenWF;
+using PresentationLayer.WinFormList.EmployeeWF;
+using EntityLayer.Concrete;
+using PresentationLayer.WinFormList.DepartmentWF;
 
 namespace PresentationLayer
 {
@@ -122,6 +126,27 @@ namespace PresentationLayer
                 companyWF = new CompanyWF();
                 companyWF.MdiParent = this;
                 companyWF.Show();
+            }
+        }
+        DepartmentWF departmentWF;
+        private void barButtonDepartment_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (departmentWF==null || departmentWF.IsDisposed)
+            {
+                departmentWF = new DepartmentWF();
+                departmentWF.MdiParent = this;
+                departmentWF.Show();
+            }
+
+        }
+        EmployeeWF employeeWF;
+        private void barEmployees_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (employeeWF==null || employeeWF.IsDisposed)
+            {
+                employeeWF = new EmployeeWF();
+                employeeWF.MdiParent = this;
+                employeeWF.Show();
             }
         }
     }

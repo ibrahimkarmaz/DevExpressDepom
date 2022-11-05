@@ -41,5 +41,17 @@ namespace DataAccessLayer.EntityFramework
                         CustomerArchive=customer.CustomerArchive
                     }).Where(filter).ToList();
         }
+
+        public bool GetByTC(Expression<Func<Customer, bool>> filter = null)
+        {
+            if (_context.Customers.Where(filter).ToList().Count() > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

@@ -37,10 +37,11 @@ namespace EntityLayer.Mapping
             this.Property(x => x.EmployeePhone).HasMaxLength(15);
             this.Property(x => x.EmployeeTC).HasMaxLength(11);
             this.Property(x => x.EmployeeMail).HasMaxLength(40);
-            this.Property(x => x.EmployeeTown).HasMaxLength(13);
-            this.Property(x => x.EmployeeCounty).HasMaxLength(20);
+            //this.Property(x => x.EmployeeTown).HasMaxLength(13);
+            //this.Property(x => x.EmployeeCounty).HasMaxLength(20);
             this.Property(x => x.EmployeeHomeAddress).HasMaxLength(250);
-            this.Property(x => x.EmployeeTask).HasMaxLength(20);
+            this.Property(x => x.EmployeeImage).HasMaxLength(250);
+            //this.Property(x => x.EmployeeTask).HasMaxLength(20);
 
 
             //BOŞ GEÇİLEMEZ ALANLAR
@@ -49,10 +50,12 @@ namespace EntityLayer.Mapping
             this.Property(y => y.EmployeeSurName).IsRequired();
             this.Property(y => y.EmployeePhone).IsRequired();
             this.Property(y => y.EmployeeTC).IsRequired();
-            this.Property(y => y.EmployeeTown).IsRequired();
-            this.Property(y => y.EmployeeCounty).IsRequired();
+            this.Property(y => y.EmployeeGender).IsRequired();
+            this.Property(y => y.EmployeeDateOfBirth).IsRequired();
+           // this.Property(y => y.EmployeeTown).IsRequired();
+            //this.Property(y => y.EmployeeCounty).IsRequired();
             this.Property(y => y.EmployeeHomeAddress).IsRequired();
-            this.Property(y => y.EmployeeTask).IsRequired();
+            //this.Property(y => y.EmployeeTask).IsRequired();
             this.Property(y => y.EmployeeArchive).IsRequired();
 
 
@@ -62,15 +65,18 @@ namespace EntityLayer.Mapping
             //DEĞİŞİRSE BURADA TOPARLARIZ.
 
             this.Property(z => z.EmployeeID).HasColumnName("EmployeeID");
+            this.Property(z => z.EmployeeImage).HasColumnName("EmployeeImage");
             this.Property(z => z.EmployeeTC).HasColumnName("EmployeeTC");
             this.Property(z => z.EmployeeName).HasColumnName("EmployeeName");
             this.Property(z => z.EmployeeSurName).HasColumnName("EmployeeSurName");
+            this.Property(z => z.EmployeeGender).HasColumnName("EmployeeGender");
+            this.Property(z => z.EmployeeDateOfBirth).HasColumnName("EmployeeDateOfBirth");
             this.Property(z => z.EmployeePhone).HasColumnName("EmployeePhone");
             this.Property(z => z.EmployeeMail).HasColumnName("EmployeeMail");
-            this.Property(z => z.EmployeeTown).HasColumnName("EmployeeTown");
-            this.Property(z => z.EmployeeCounty).HasColumnName("EmployeeCounty");
+            this.Property(z => z.CountyID).HasColumnName("CountyID");
+            this.Property(z => z.DistrictID).HasColumnName("DistrictID");
             this.Property(z => z.EmployeeHomeAddress).HasColumnName("EmployeeHomeAddress");
-            this.Property(z => z.EmployeeTask).HasColumnName("EmployeeTask");
+            this.Property(z => z.DepartmentID).HasColumnName("DepartmentID");
             this.Property(z => z.EmployeeArchive).HasColumnName("EmployeeArchive");
 
 

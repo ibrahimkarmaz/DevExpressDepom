@@ -54,6 +54,7 @@
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
             this.BarSector = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonDepartment = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -69,6 +70,7 @@
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonEmployee = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonFinance = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -111,9 +113,10 @@
             this.BarWeather,
             this.barSkins,
             this.barSubItem2,
-            this.BarSector});
+            this.BarSector,
+            this.barButtonDepartment});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 23;
+            this.ribbonControlAutomation.MaxItemId = 24;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonHome,
@@ -171,6 +174,7 @@
             this.barEmployees.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barEmployees.ImageOptions.Image")));
             this.barEmployees.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barEmployees.ImageOptions.LargeImage")));
             this.barEmployees.Name = "barEmployees";
+            this.barEmployees.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barEmployees_ItemClick);
             // 
             // barExpenses
             // 
@@ -316,6 +320,15 @@
             this.BarSector.Name = "BarSector";
             this.BarSector.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarSector_ItemClick);
             // 
+            // barButtonDepartment
+            // 
+            this.barButtonDepartment.Caption = "DEPARTMANLAR";
+            this.barButtonDepartment.Id = 23;
+            this.barButtonDepartment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonDepartment.ImageOptions.Image")));
+            this.barButtonDepartment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonDepartment.ImageOptions.LargeImage")));
+            this.barButtonDepartment.Name = "barButtonDepartment";
+            this.barButtonDepartment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonDepartment_ItemClick);
+            // 
             // ribbonHome
             // 
             this.ribbonHome.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -415,7 +428,8 @@
             // ribbonEmployee
             // 
             this.ribbonEmployee.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup16});
             this.ribbonEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonEmployee.ImageOptions.Image")));
             this.ribbonEmployee.Name = "ribbonEmployee";
             this.ribbonEmployee.Text = "PERSONELLER";
@@ -425,6 +439,12 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.barEmployees);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "ribbonPageGroup5";
+            // 
+            // ribbonPageGroup16
+            // 
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonDepartment);
+            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
+            this.ribbonPageGroup16.Text = "ribbonPageGroup16";
             // 
             // ribbonFinance
             // 
@@ -564,6 +584,8 @@
         private DevExpress.XtraBars.BarSubItem barSubItem2;
         private DevExpress.XtraBars.BarButtonItem BarSector;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
+        private DevExpress.XtraBars.BarButtonItem barButtonDepartment;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
     }
 }
 

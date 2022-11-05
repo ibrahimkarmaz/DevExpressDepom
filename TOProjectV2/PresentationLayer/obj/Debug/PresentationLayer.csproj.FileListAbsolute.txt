@@ -159,3 +159,10 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\Presentation
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.CompanyWF.CompanyWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.CompanyWF.CompanyGetAllListWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.CompanyWF.CompanyUpdateWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.DepartmenWF.DepartmentAddWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.DepartmentWF.DepartmentUpdateWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.DepartmentWF.DepartmentWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.EmployeeWF.EmployeeWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.EmployeeWF.EmployeeAddWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.EmployeeWF.EmployeeUpdateWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.EmployeeWF.EmployeeExpandWF.resources
