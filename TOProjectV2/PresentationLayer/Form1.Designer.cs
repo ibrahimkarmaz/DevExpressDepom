@@ -55,10 +55,12 @@
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
             this.BarSector = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonDepartment = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonTranslate = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonProduct = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -114,9 +116,10 @@
             this.barSkins,
             this.barSubItem2,
             this.BarSector,
-            this.barButtonDepartment});
+            this.barButtonDepartment,
+            this.barButtonTranslate});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 24;
+            this.ribbonControlAutomation.MaxItemId = 25;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonHome,
@@ -242,6 +245,7 @@
             this.barEmployeeDirectory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barEmployeeDirectory.ImageOptions.Image")));
             this.barEmployeeDirectory.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barEmployeeDirectory.ImageOptions.LargeImage")));
             this.barEmployeeDirectory.Name = "barEmployeeDirectory";
+            this.barEmployeeDirectory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barEmployeeDirectory_ItemClick);
             // 
             // barInvoice
             // 
@@ -329,10 +333,20 @@
             this.barButtonDepartment.Name = "barButtonDepartment";
             this.barButtonDepartment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonDepartment_ItemClick);
             // 
+            // barButtonTranslate
+            // 
+            this.barButtonTranslate.Caption = "ÇEVİRİ";
+            this.barButtonTranslate.Id = 24;
+            this.barButtonTranslate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonTranslate.ImageOptions.Image")));
+            this.barButtonTranslate.Name = "barButtonTranslate";
+            this.barButtonTranslate.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonTranslate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonTranslate_ItemClick);
+            // 
             // ribbonHome
             // 
             this.ribbonHome.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup14,
+            this.ribbonPageGroup17,
             this.ribbonPageGroup8,
             this.ribbonPageGroup10});
             this.ribbonHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonHome.ImageOptions.Image")));
@@ -358,6 +372,12 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.barEmployeeDirectory);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "REHBERLER";
+            // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonTranslate);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            this.ribbonPageGroup17.Text = "ÇEVİRİ";
             // 
             // ribbonProduct
             // 
@@ -586,6 +606,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.BarButtonItem barButtonDepartment;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
+        private DevExpress.XtraBars.BarButtonItem barButtonTranslate;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
     }
 }
 

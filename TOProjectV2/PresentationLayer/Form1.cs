@@ -20,6 +20,7 @@ using PresentationLayer.WinFormList.DepartmenWF;
 using PresentationLayer.WinFormList.EmployeeWF;
 using EntityLayer.Concrete;
 using PresentationLayer.WinFormList.DepartmentWF;
+using PresentationLayer.WinFormList.GuidesWF;
 
 namespace PresentationLayer
 {
@@ -148,6 +149,22 @@ namespace PresentationLayer
                 employeeWF.MdiParent = this;
                 employeeWF.Show();
             }
+        }
+        EmployeeGuideWF employeeGuideWF;
+        private void barEmployeeDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (employeeGuideWF==null || employeeGuideWF.IsDisposed)
+            {
+                employeeGuideWF = new EmployeeGuideWF();
+                employeeGuideWF.MdiParent = this;
+                employeeGuideWF.Show();
+            }
+        }
+
+        private void barButtonTranslate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            TranslateWF translateWF = new TranslateWF();
+            translateWF.ShowDialog();
         }
     }
 }
