@@ -108,6 +108,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="JointTransactions\DragDropProvider.cs" />
+    <Compile Include="JointTransactions\MailMessegeApi.cs" />
+    <Compile Include="JointTransactions\SmsService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WinFormList\BlandArchiveListWF.cs">
@@ -206,11 +208,47 @@
     <Compile Include="WinFormList\EmployeeWF\EmployeeWF.Designer.cs">
       <DependentUpon>EmployeeWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.Designer.cs">
+      <DependentUpon>ExpenseHeaderAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseWF.Designer.cs">
+      <DependentUpon>ExpenseWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\CompanyGuideWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\CompanyGuideWF.Designer.cs">
+      <DependentUpon>CompanyGuideWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\CustomerGuideWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\CustomerGuideWF.Designer.cs">
+      <DependentUpon>CustomerGuideWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\GuidesWF\EmployeeGuideWF.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WinFormList\GuidesWF\EmployeeGuideWF.Designer.cs">
       <DependentUpon>EmployeeGuideWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\SendMailWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\SendMailWF.Designer.cs">
+      <DependentUpon>SendMailWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\SMSSenderWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\GuidesWF\SMSSenderWF.Designer.cs">
+      <DependentUpon>SMSSenderWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\GuidesWF\TranslateWF.cs">
       <SubType>Form</SubType>
@@ -352,8 +390,26 @@
     <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeWF.resx">
       <DependentUpon>EmployeeWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.resx">
+      <DependentUpon>ExpenseHeaderAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseWF.resx">
+      <DependentUpon>ExpenseWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\GuidesWF\CompanyGuideWF.resx">
+      <DependentUpon>CompanyGuideWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\GuidesWF\CustomerGuideWF.resx">
+      <DependentUpon>CustomerGuideWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\GuidesWF\EmployeeGuideWF.resx">
       <DependentUpon>EmployeeGuideWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\GuidesWF\SendMailWF.resx">
+      <DependentUpon>SendMailWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\GuidesWF\SMSSenderWF.resx">
+      <DependentUpon>SMSSenderWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\GuidesWF\TranslateWF.resx">
       <DependentUpon>TranslateWF.cs</DependentUpon>

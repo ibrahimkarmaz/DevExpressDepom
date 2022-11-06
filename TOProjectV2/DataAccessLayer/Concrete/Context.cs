@@ -30,6 +30,7 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new DistrictMAP());
             modelBuilder.Configurations.Add(new SectorMAP());
             modelBuilder.Configurations.Add(new DepartmentMAP());
+            modelBuilder.Configurations.Add(new ExpenseHeaderMAP());
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -47,6 +48,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<District> Districts { get; set; }
         public DbSet<Sector> Sectors { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<ExpenseHeader> ExpenseHeaders { get; set; }
 
     }
 }

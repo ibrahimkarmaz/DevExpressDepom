@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeGuideWF));
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeGuideWF));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -39,12 +39,8 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.GControlEmployee = new DevExpress.XtraGrid.GridControl();
+            this.repositoryItemBtnMail = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.repositoryItemBtnSms = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.GViewEmployee = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ColumnEmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnDepartment = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -54,32 +50,64 @@
             this.ColumnMobilePhone = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnEmployeeMail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnMail = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemBtnMail = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridColumnSms = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemBtnSms = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.gridColumnSearch = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemBtnSearch = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlEmployee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewEmployee)).BeginInit();
+            this.GControlEmployee = new DevExpress.XtraGrid.GridControl();
+            this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn5 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn6 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn7 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn8 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewField_gridColumn9 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBtnMail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBtnSms)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBtnSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).BeginInit();
             this.SuspendLayout();
             // 
-            // GControlEmployee
+            // repositoryItemBtnMail
             // 
-            this.GControlEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlEmployee.Location = new System.Drawing.Point(0, 0);
-            this.GControlEmployee.MainView = this.GViewEmployee;
-            this.GControlEmployee.Name = "GControlEmployee";
-            this.GControlEmployee.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemBtnMail,
-            this.repositoryItemBtnSms,
-            this.repositoryItemBtnSearch});
-            this.GControlEmployee.Size = new System.Drawing.Size(1220, 503);
-            this.GControlEmployee.TabIndex = 2;
-            this.GControlEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewEmployee});
+            this.repositoryItemBtnMail.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.repositoryItemBtnMail.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemBtnMail.Name = "repositoryItemBtnMail";
+            this.repositoryItemBtnMail.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repositoryItemBtnMail.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
+            // 
+            // repositoryItemBtnSms
+            // 
+            this.repositoryItemBtnSms.AutoHeight = false;
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            this.repositoryItemBtnSms.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemBtnSms.Name = "repositoryItemBtnSms";
+            this.repositoryItemBtnSms.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repositoryItemBtnSms.Click += new System.EventHandler(this.repositoryItemBtnSms_Click);
             // 
             // GViewEmployee
             // 
@@ -92,8 +120,7 @@
             this.ColumnMobilePhone,
             this.ColumnEmployeeMail,
             this.gridColumnMail,
-            this.gridColumnSms,
-            this.gridColumnSearch});
+            this.gridColumnSms});
             this.GViewEmployee.DetailHeight = 303;
             this.GViewEmployee.GridControl = this.GControlEmployee;
             this.GViewEmployee.Name = "GViewEmployee";
@@ -157,7 +184,7 @@
             // 
             // ColumnMobilePhone
             // 
-            this.ColumnMobilePhone.Caption = "Telefon:";
+            this.ColumnMobilePhone.Caption = "Telefon";
             this.ColumnMobilePhone.FieldName = "EmployeePhone";
             this.ColumnMobilePhone.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnMobilePhone.ImageOptions.Image")));
             this.ColumnMobilePhone.Name = "ColumnMobilePhone";
@@ -186,16 +213,6 @@
             this.gridColumnMail.VisibleIndex = 7;
             this.gridColumnMail.Width = 46;
             // 
-            // repositoryItemBtnMail
-            // 
-            this.repositoryItemBtnMail.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            this.repositoryItemBtnMail.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.repositoryItemBtnMail.Name = "repositoryItemBtnMail";
-            this.repositoryItemBtnMail.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.repositoryItemBtnMail.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
-            // 
             // gridColumnSms
             // 
             this.gridColumnSms.ColumnEdit = this.repositoryItemBtnSms;
@@ -205,32 +222,214 @@
             this.gridColumnSms.VisibleIndex = 8;
             this.gridColumnSms.Width = 46;
             // 
-            // repositoryItemBtnSms
+            // GControlEmployee
             // 
-            this.repositoryItemBtnSms.AutoHeight = false;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
-            this.repositoryItemBtnSms.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.repositoryItemBtnSms.Name = "repositoryItemBtnSms";
-            this.repositoryItemBtnSms.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.GControlEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlEmployee.Location = new System.Drawing.Point(0, 0);
+            this.GControlEmployee.MainView = this.GViewEmployee;
+            this.GControlEmployee.Name = "GControlEmployee";
+            this.GControlEmployee.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemBtnMail,
+            this.repositoryItemBtnSms});
+            this.GControlEmployee.Size = new System.Drawing.Size(1220, 503);
+            this.GControlEmployee.TabIndex = 2;
+            this.GControlEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewEmployee,
+            this.layoutView1});
             // 
-            // gridColumnSearch
+            // layoutView1
             // 
-            this.gridColumnSearch.ColumnEdit = this.repositoryItemBtnSearch;
-            this.gridColumnSearch.MinWidth = 10;
-            this.gridColumnSearch.Name = "gridColumnSearch";
-            this.gridColumnSearch.Visible = true;
-            this.gridColumnSearch.VisibleIndex = 9;
-            this.gridColumnSearch.Width = 46;
+            this.layoutView1.Appearance.FieldCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.layoutView1.Appearance.FieldCaption.Options.UseFont = true;
+            this.layoutView1.CardMinSize = new System.Drawing.Size(235, 388);
+            this.layoutView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.LayoutViewColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9});
+            this.layoutView1.DetailHeight = 303;
+            this.layoutView1.GridControl = this.GControlEmployee;
+            this.layoutView1.Name = "layoutView1";
+            this.layoutView1.OptionsView.ShowCardBorderIfCaptionHidden = false;
+            this.layoutView1.OptionsView.ShowCardCaption = false;
+            this.layoutView1.OptionsView.ShowCardFieldBorders = true;
+            this.layoutView1.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.MultiRow;
+            this.layoutView1.TemplateCard = this.layoutViewCard1;
             // 
-            // repositoryItemBtnSearch
+            // gridColumn1
             // 
-            this.repositoryItemBtnSearch.AutoHeight = false;
-            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
-            this.repositoryItemBtnSearch.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.repositoryItemBtnSearch.Name = "repositoryItemBtnSearch";
-            this.repositoryItemBtnSearch.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.gridColumn1.Caption = "ID";
+            this.gridColumn1.FieldName = "EmployeeID";
+            this.gridColumn1.LayoutViewField = this.layoutViewField_gridColumn1;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
+            this.gridColumn1.Width = 120;
+            // 
+            // layoutViewField_gridColumn1
+            // 
+            this.layoutViewField_gridColumn1.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn1.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_gridColumn1.Name = "layoutViewField_gridColumn1";
+            this.layoutViewField_gridColumn1.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn1.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Departman Adı";
+            this.gridColumn2.FieldName = "DepartmentName";
+            this.gridColumn2.LayoutViewField = this.layoutViewField_gridColumn2;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.ReadOnly = true;
+            this.gridColumn2.Width = 170;
+            // 
+            // layoutViewField_gridColumn2
+            // 
+            this.layoutViewField_gridColumn2.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn2.Location = new System.Drawing.Point(0, 36);
+            this.layoutViewField_gridColumn2.Name = "layoutViewField_gridColumn2";
+            this.layoutViewField_gridColumn2.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn2.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Adı";
+            this.gridColumn3.FieldName = "EmployeeName";
+            this.gridColumn3.LayoutViewField = this.layoutViewField_gridColumn3;
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.ReadOnly = true;
+            this.gridColumn3.Width = 158;
+            // 
+            // layoutViewField_gridColumn3
+            // 
+            this.layoutViewField_gridColumn3.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn3.Location = new System.Drawing.Point(0, 72);
+            this.layoutViewField_gridColumn3.Name = "layoutViewField_gridColumn3";
+            this.layoutViewField_gridColumn3.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn3.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Soyadı";
+            this.gridColumn4.FieldName = "EmployeeSurName";
+            this.gridColumn4.LayoutViewField = this.layoutViewField_gridColumn4;
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.ReadOnly = true;
+            this.gridColumn4.Width = 163;
+            // 
+            // layoutViewField_gridColumn4
+            // 
+            this.layoutViewField_gridColumn4.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn4.Location = new System.Drawing.Point(0, 108);
+            this.layoutViewField_gridColumn4.Name = "layoutViewField_gridColumn4";
+            this.layoutViewField_gridColumn4.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn4.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Cinsiyet";
+            this.gridColumn5.FieldName = "EmployeeGender";
+            this.gridColumn5.LayoutViewField = this.layoutViewField_gridColumn5;
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.ReadOnly = true;
+            this.gridColumn5.Width = 117;
+            // 
+            // layoutViewField_gridColumn5
+            // 
+            this.layoutViewField_gridColumn5.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn5.Location = new System.Drawing.Point(0, 144);
+            this.layoutViewField_gridColumn5.Name = "layoutViewField_gridColumn5";
+            this.layoutViewField_gridColumn5.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn5.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Telefon";
+            this.gridColumn6.FieldName = "EmployeePhone";
+            this.gridColumn6.LayoutViewField = this.layoutViewField_gridColumn6;
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.ReadOnly = true;
+            this.gridColumn6.Width = 138;
+            // 
+            // layoutViewField_gridColumn6
+            // 
+            this.layoutViewField_gridColumn6.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn6.Location = new System.Drawing.Point(0, 180);
+            this.layoutViewField_gridColumn6.Name = "layoutViewField_gridColumn6";
+            this.layoutViewField_gridColumn6.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn6.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "E-Posta Adresi";
+            this.gridColumn7.FieldName = "EmployeeMail";
+            this.gridColumn7.LayoutViewField = this.layoutViewField_gridColumn7;
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.ReadOnly = true;
+            this.gridColumn7.Width = 156;
+            // 
+            // layoutViewField_gridColumn7
+            // 
+            this.layoutViewField_gridColumn7.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn7.Location = new System.Drawing.Point(0, 216);
+            this.layoutViewField_gridColumn7.Name = "layoutViewField_gridColumn7";
+            this.layoutViewField_gridColumn7.Size = new System.Drawing.Size(209, 36);
+            this.layoutViewField_gridColumn7.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.ColumnEdit = this.repositoryItemBtnMail;
+            this.gridColumn8.LayoutViewField = this.layoutViewField_gridColumn8;
+            this.gridColumn8.MinWidth = 10;
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Width = 46;
+            // 
+            // layoutViewField_gridColumn8
+            // 
+            this.layoutViewField_gridColumn8.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn8.Location = new System.Drawing.Point(0, 252);
+            this.layoutViewField_gridColumn8.Name = "layoutViewField_gridColumn8";
+            this.layoutViewField_gridColumn8.Size = new System.Drawing.Size(209, 38);
+            this.layoutViewField_gridColumn8.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.ColumnEdit = this.repositoryItemBtnSms;
+            this.gridColumn9.LayoutViewField = this.layoutViewField_gridColumn9;
+            this.gridColumn9.MinWidth = 10;
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Width = 46;
+            // 
+            // layoutViewField_gridColumn9
+            // 
+            this.layoutViewField_gridColumn9.EditorPreferredWidth = 113;
+            this.layoutViewField_gridColumn9.Location = new System.Drawing.Point(0, 290);
+            this.layoutViewField_gridColumn9.Name = "layoutViewField_gridColumn9";
+            this.layoutViewField_gridColumn9.Size = new System.Drawing.Size(209, 72);
+            this.layoutViewField_gridColumn9.TextSize = new System.Drawing.Size(85, 15);
+            // 
+            // layoutViewCard1
+            // 
+            this.layoutViewCard1.CustomizationFormText = "TemplateCard";
+            this.layoutViewCard1.GroupBordersVisible = false;
+            this.layoutViewCard1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_gridColumn1,
+            this.layoutViewField_gridColumn2,
+            this.layoutViewField_gridColumn3,
+            this.layoutViewField_gridColumn4,
+            this.layoutViewField_gridColumn5,
+            this.layoutViewField_gridColumn6,
+            this.layoutViewField_gridColumn7,
+            this.layoutViewField_gridColumn8,
+            this.layoutViewField_gridColumn9});
+            this.layoutViewCard1.Name = "layoutViewCard1";
+            this.layoutViewCard1.OptionsItemText.TextToControlDistance = 5;
+            this.layoutViewCard1.Text = "TemplateCard";
             // 
             // EmployeeGuideWF
             // 
@@ -242,19 +441,31 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PERSONEL REHBERİ";
             this.Load += new System.EventHandler(this.EmployeeGuideWF_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlEmployee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewEmployee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBtnMail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBtnSms)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBtnSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_gridColumn9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl GControlEmployee;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemBtnMail;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemBtnSms;
         private DevExpress.XtraGrid.Views.Grid.GridView GViewEmployee;
+        public DevExpress.XtraGrid.Columns.GridColumn ColumnEmployeeID;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnDepartment;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnEmployeeName;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnEmployeeSurName;
@@ -262,11 +473,27 @@
         private DevExpress.XtraGrid.Columns.GridColumn ColumnMobilePhone;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnEmployeeMail;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnMail;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemBtnMail;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnSms;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnSearch;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemBtnSms;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemBtnSearch;
-        public DevExpress.XtraGrid.Columns.GridColumn ColumnEmployeeID;
+        private DevExpress.XtraGrid.GridControl GControlEmployee;
+        private DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn1;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn1;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn2;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn2;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn3;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn3;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn4;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn4;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn5;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn5;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn6;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn6;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn7;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn7;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn8;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn8;
+        private DevExpress.XtraGrid.Columns.LayoutViewColumn gridColumn9;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_gridColumn9;
+        private DevExpress.XtraGrid.Views.Layout.LayoutViewCard layoutViewCard1;
     }
 }

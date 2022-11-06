@@ -58,9 +58,9 @@
             this.barButtonTranslate = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonProduct = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -186,6 +186,7 @@
             this.barExpenses.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barExpenses.ImageOptions.Image")));
             this.barExpenses.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barExpenses.ImageOptions.LargeImage")));
             this.barExpenses.Name = "barExpenses";
+            this.barExpenses.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barExpenses_ItemClick);
             // 
             // barSafe
             // 
@@ -230,6 +231,7 @@
             this.barCustomerDirectory.Id = 12;
             this.barCustomerDirectory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCustomerDirectory.ImageOptions.Image")));
             this.barCustomerDirectory.Name = "barCustomerDirectory";
+            this.barCustomerDirectory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCustomerDirectory_ItemClick);
             // 
             // barCompanyDirectory
             // 
@@ -237,6 +239,7 @@
             this.barCompanyDirectory.Id = 13;
             this.barCompanyDirectory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCompanyDirectory.ImageOptions.Image")));
             this.barCompanyDirectory.Name = "barCompanyDirectory";
+            this.barCompanyDirectory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCompanyDirectory_ItemClick);
             // 
             // barEmployeeDirectory
             // 
@@ -359,6 +362,12 @@
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
             this.ribbonPageGroup14.Text = "HAVA DURUMU";
             // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonTranslate);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            this.ribbonPageGroup17.Text = "ÇEVİRİ";
+            // 
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.barNote);
@@ -372,12 +381,6 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.barEmployeeDirectory);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "REHBERLER";
-            // 
-            // ribbonPageGroup17
-            // 
-            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonTranslate);
-            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
-            this.ribbonPageGroup17.Text = "ÇEVİRİ";
             // 
             // ribbonProduct
             // 

@@ -21,6 +21,7 @@ using PresentationLayer.WinFormList.EmployeeWF;
 using EntityLayer.Concrete;
 using PresentationLayer.WinFormList.DepartmentWF;
 using PresentationLayer.WinFormList.GuidesWF;
+using PresentationLayer.WinFormList.ExpenseWF;
 
 namespace PresentationLayer
 {
@@ -165,6 +166,36 @@ namespace PresentationLayer
         {
             TranslateWF translateWF = new TranslateWF();
             translateWF.ShowDialog();
+        }
+        CustomerGuideWF customerGuideWF;
+        private void barCustomerDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (customerGuideWF==null || customerGuideWF.IsDisposed)
+            {
+                customerGuideWF = new CustomerGuideWF();
+                customerGuideWF.MdiParent = this;
+                customerGuideWF.Show();
+            }
+        }
+        CompanyGuideWF companyGuideWF;
+        private void barCompanyDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (companyGuideWF==null || companyGuideWF.IsDisposed)
+            {
+                companyGuideWF = new CompanyGuideWF();
+                companyGuideWF.MdiParent = this;
+                companyGuideWF.Show();
+            }
+        }
+        ExpenseWF expenseWF;
+        private void barExpenses_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (expenseWF==null || expenseWF.IsDisposed)
+            {
+                expenseWF = new ExpenseWF();
+                expenseWF.MdiParent = this;
+                expenseWF.Show();
+            }
         }
     }
 }

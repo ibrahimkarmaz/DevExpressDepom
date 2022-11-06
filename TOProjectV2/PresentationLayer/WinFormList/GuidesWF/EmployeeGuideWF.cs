@@ -31,7 +31,28 @@ namespace PresentationLayer.WinFormList.GuidesWF
 
         private void repositoryItemButtonEdit1_Click(object sender, EventArgs e)
         {
-            XtraMessageBox.Show(GViewEmployee.GetRowCellValue(GViewEmployee.FocusedRowHandle, GViewEmployee.Columns[1]).ToString());
+            SendMailWF.BuyerMail= GViewEmployee.GetRowCellValue(GViewEmployee.FocusedRowHandle, GViewEmployee.Columns[6]).ToString();
+            SendMailWF sendMailWF = new SendMailWF();
+            sendMailWF.ShowDialog();
+        }
+        private void SmsOpenWindow(int ColumnIndex)//ALAN INDEXSINA GÖRE BİLGİ ÇEKİLİR VE PENCERE AÇILIR.
+        {
+            try
+            {
+                SMSSenderWF.PhoneInfo = GViewEmployee.GetRowCellValue(GViewEmployee.FocusedRowHandle, GViewEmployee.Columns[ColumnIndex]).ToString();
+                SMSSenderWF SmsApi = new SMSSenderWF();
+                SmsApi.ShowDialog();
+            }
+            catch (Exception)
+            {
+                SMSSenderWF.PhoneInfo = "";
+                XtraMessageBox.Show("İŞLEM BAŞARISIZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void repositoryItemBtnSms_Click(object sender, EventArgs e)
+        {
+
+            SmsOpenWindow(5);
         }
     }
 }
