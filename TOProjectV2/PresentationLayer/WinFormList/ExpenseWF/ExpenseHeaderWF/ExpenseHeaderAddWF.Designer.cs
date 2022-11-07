@@ -42,7 +42,7 @@
             this.SBtnSave = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.DEStopDate = new DevExpress.XtraEditors.DateEdit();
+            this.TEStopDate = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEExpenseHeader.Properties)).BeginInit();
@@ -51,8 +51,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MMEDetails.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DEStopDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DEStopDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEStopDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEStopDate.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl11
@@ -189,6 +189,7 @@
             this.SBtnSave.Size = new System.Drawing.Size(130, 39);
             this.SBtnSave.TabIndex = 106;
             this.SBtnSave.Text = "Kaydet";
+            this.SBtnSave.Click += new System.EventHandler(this.SBtnSave_Click);
             // 
             // pictureEdit1
             // 
@@ -213,25 +214,25 @@
             this.labelControl1.TabIndex = 109;
             this.labelControl1.Text = "Bitiş Tarihi:";
             // 
-            // DEStopDate
+            // TEStopDate
             // 
-            this.DEStopDate.EditValue = null;
-            this.DEStopDate.Location = new System.Drawing.Point(151, 82);
-            this.DEStopDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.DEStopDate.Name = "DEStopDate";
-            this.DEStopDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.TEStopDate.EditValue = null;
+            this.TEStopDate.Location = new System.Drawing.Point(151, 82);
+            this.TEStopDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TEStopDate.Name = "TEStopDate";
+            this.TEStopDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DEStopDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.TEStopDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DEStopDate.Properties.DisplayFormat.FormatString = "";
-            this.DEStopDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.DEStopDate.Properties.EditFormat.FormatString = "";
-            this.DEStopDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.DEStopDate.Properties.MaskSettings.Set("mask", "");
-            this.DEStopDate.Properties.NullText = "Giderler Bitiş Tarihi";
-            this.DEStopDate.Properties.NullValuePrompt = "Giderler Bitiş Tarihi";
-            this.DEStopDate.Size = new System.Drawing.Size(233, 30);
-            this.DEStopDate.TabIndex = 108;
+            this.TEStopDate.Properties.DisplayFormat.FormatString = "";
+            this.TEStopDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.TEStopDate.Properties.EditFormat.FormatString = "";
+            this.TEStopDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.TEStopDate.Properties.MaskSettings.Set("mask", "");
+            this.TEStopDate.Properties.NullText = "Giderler Bitiş Tarihi";
+            this.TEStopDate.Properties.NullValuePrompt = "Giderler Bitiş Tarihi";
+            this.TEStopDate.Size = new System.Drawing.Size(233, 30);
+            this.TEStopDate.TabIndex = 108;
             // 
             // ExpenseHeaderAddWF
             // 
@@ -240,7 +241,7 @@
             this.ClientSize = new System.Drawing.Size(396, 313);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.DEStopDate);
+            this.Controls.Add(this.TEStopDate);
             this.Controls.Add(this.SBCancel);
             this.Controls.Add(this.SBtnSave);
             this.Controls.Add(this.pictureEdit8);
@@ -253,6 +254,7 @@
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.TEStartDate);
             this.Name = "ExpenseHeaderAddWF";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YENİ GİDER BAŞLIĞI";
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
@@ -262,8 +264,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MMEDetails.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DEStopDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DEStopDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEStopDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TEStopDate.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,6 +286,6 @@
         private DevExpress.XtraEditors.SimpleButton SBtnSave;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.DateEdit DEStopDate;
+        private DevExpress.XtraEditors.DateEdit TEStopDate;
     }
 }

@@ -22,7 +22,7 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new InvoiceMAP());
             modelBuilder.Configurations.Add(new InvoiceDetailMAP());
             modelBuilder.Configurations.Add(new NoteMAP());
-            modelBuilder.Configurations.Add(new ExpenseMAP());
+          //  modelBuilder.Configurations.Add(new ExpenseMAP());
             modelBuilder.Configurations.Add(new ProductMAP());
             modelBuilder.Configurations.Add(new CountyMAP());
             modelBuilder.Configurations.Add(new BlandMAP());
@@ -31,6 +31,7 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new SectorMAP());
             modelBuilder.Configurations.Add(new DepartmentMAP());
             modelBuilder.Configurations.Add(new ExpenseHeaderMAP());
+            modelBuilder.Configurations.Add(new ExpenseContentMAP());
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -40,7 +41,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
         public DbSet<Note> Notes { get; set; }
-        public DbSet<Expense> Expenses { get; set; }
+     //   public DbSet<Expense> Expenses { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<County> Countys { get; set; }
         public DbSet<Bland> Blands { get; set; }
@@ -49,6 +50,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Sector> Sectors { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<ExpenseHeader> ExpenseHeaders { get; set; }
+        public DbSet<ExpenseContent> ExpenseContents { get; set; }
 
     }
 }

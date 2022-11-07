@@ -15,28 +15,28 @@ namespace EntityLayer.Mapping
             //NOT:BURASI CLASSLAR ÜZERİNDE KISITLAMALARI AYARLAR.
 
             //TABLO ADI
-            this.ToTable("ExorenseHeaders");
+            this.ToTable("ExprenseHeaders");
 
 
             //BİRİNCİ ANAHTAR VE YABANCI ANAHTAR KISITLAMALARI
 
-            this.HasKey(x => x.ExorenseHeaderID);
+            this.HasKey(x => x.ExprenseHeaderID);
 
             //BENZERSİZ ALANLAR
-            this.HasIndex(x => x.ExorenseHeaderName).IsUnique();
+            this.HasIndex(x => x.ExprenseHeaderName).IsUnique();
 
 
             //EN FAZLA KARAKTER SAYILARI
 
-            this.Property(x => x.ExorenseHeaderName).HasMaxLength(30);
-            this.Property(x => x.ExorenseHeaderDetail).HasMaxLength(250);
+            this.Property(x => x.ExprenseHeaderName).HasMaxLength(30);
+            this.Property(x => x.ExprenseHeaderDetail).HasMaxLength(250);
 
 
             //BOŞ GEÇİLEMEZ ALANLAR
 
-            this.Property(y => y.ExorenseHeaderName).IsRequired();
-            this.Property(y => y.ExorenseHeaderStartDate).IsRequired();
-            this.Property(y => y.ExorenseHeaderStopDate).IsRequired();
+            this.Property(y => y.ExprenseHeaderName).IsRequired();
+            this.Property(y => y.ExprenseHeaderStartDate).IsRequired();
+            this.Property(y => y.ExprenseHeaderStopDate).IsRequired();
 
 
 
@@ -44,11 +44,11 @@ namespace EntityLayer.Mapping
             //DİKKAT:ALAN ADLARI CUSTOMER İÇİNDEKİ GİBİ DEVAM EDER EĞER CUSTOMERDA YANLIŞLIKLA ALAN ADI
             //DEĞİŞİRSE BURADA TOPARLARIZ.
 
-            this.Property(z => z.ExorenseHeaderID).HasColumnName("ExorenseHeaderID");
-            this.Property(z => z.ExorenseHeaderName).HasColumnName("ExorenseHeaderName");
-            this.Property(z => z.ExorenseHeaderStartDate).HasColumnName("ExorenseHeaderStartDate");
-            this.Property(z => z.ExorenseHeaderStopDate).HasColumnName("ExorenseHeaderStopDate");
-            this.Property(z => z.ExorenseHeaderDetail).HasColumnName("ExorenseHeaderDetail");
+            this.Property(z => z.ExprenseHeaderID).HasColumnName("ExprenseHeaderID");
+            this.Property(z => z.ExprenseHeaderName).HasColumnName("ExprenseHeaderName");
+            this.Property(z => z.ExprenseHeaderStartDate).HasColumnName("ExprenseHeaderStartDate");
+            this.Property(z => z.ExprenseHeaderStopDate).HasColumnName("ExprenseHeaderStopDate");
+            this.Property(z => z.ExprenseHeaderDetail).HasColumnName("ExprenseHeaderDetail");
             this.Property(z => z.ExpenseHeaderArchive).HasColumnName("ExpenseHeaderArchive");
 
 

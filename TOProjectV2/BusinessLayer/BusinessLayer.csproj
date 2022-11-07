@@ -67,6 +67,7 @@
     <Compile Include="Abstract\IDepartmentService.cs" />
     <Compile Include="Abstract\IDistrictService.cs" />
     <Compile Include="Abstract\IEmployeeService.cs" />
+    <Compile Include="Abstract\IExpenseContentService.cs" />
     <Compile Include="Abstract\IExpenseHeaderService.cs" />
     <Compile Include="Abstract\IGenericService.cs" />
     <Compile Include="Abstract\IModelService.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Concrete\DepartmentManager.cs" />
     <Compile Include="Concrete\DistrictManager.cs" />
     <Compile Include="Concrete\EmployeeManager.cs" />
+    <Compile Include="Concrete\ExpenseContentManager.cs" />
     <Compile Include="Concrete\ExpenseHeaderManager.cs" />
     <Compile Include="Concrete\ModelManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
@@ -88,6 +90,7 @@
     <Compile Include="FluentValidation\CustomerValidator.cs" />
     <Compile Include="FluentValidation\DepartmentValidator.cs" />
     <Compile Include="FluentValidation\EmployeeValidator.cs" />
+    <Compile Include="FluentValidation\ExpenseContentValidator.cs" />
     <Compile Include="FluentValidation\ExpenseHeaderValidator.cs" />
     <Compile Include="FluentValidation\ModelValidator.cs" />
     <Compile Include="FluentValidation\ProductValidator.cs" />

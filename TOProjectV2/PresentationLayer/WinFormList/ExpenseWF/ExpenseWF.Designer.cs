@@ -29,429 +29,50 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpenseWF));
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnDistrict = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnHomeAddress = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnTaxNumber = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TabPageCustomerArchive = new DevExpress.XtraTab.XtraTabPage();
-            this.GControlCustomerArchive = new DevExpress.XtraGrid.GridControl();
-            this.GViewCustomerArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCounty = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.xtraTabCustomerControl = new DevExpress.XtraTab.XtraTabControl();
-            this.TabPageCustomer = new DevExpress.XtraTab.XtraTabPage();
-            this.GControlCustomer = new DevExpress.XtraGrid.GridControl();
-            this.GViewCustomer = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ColumnCustomerID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCustomerTC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCustomerName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCustomerSurName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCustomerGender = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCustomerDateOfBirth = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnMobilePhone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnOfficePhone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCustomerMail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlCustomerProcess = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlExpenseHeaderProcess = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlNewExpenseHeader = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCustomerUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCustomerDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCustomerArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCustomerList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlExpenseHeaderUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlExpenseHeaderDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlExpenseHeaderrArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlExpenseHeaderList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCustomerArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCustomerArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.TabPageCustomerArchive.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCustomerArchive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCustomerArchive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabCustomerControl)).BeginInit();
-            this.xtraTabCustomerControl.SuspendLayout();
-            this.TabPageCustomer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCustomer)).BeginInit();
+            this.accordionControlArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlExpenseHeaderArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.GControlExpenseHeader = new DevExpress.XtraGrid.GridControl();
+            this.GViewExpenseHeader = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ColumnExprenseHeaderID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderStopDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderDetail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
+            this.TabPageExpenseHeader = new DevExpress.XtraTab.XtraTabPage();
+            this.TabPageExpenseHeaderArchive = new DevExpress.XtraTab.XtraTabPage();
+            this.GControlArchive = new DevExpress.XtraGrid.GridControl();
+            this.GViewArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ColumnID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnStopDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnDetails = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).BeginInit();
+            this.xtraTabControl.SuspendLayout();
+            this.TabPageExpenseHeader.SuspendLayout();
+            this.TabPageExpenseHeaderArchive.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlArchive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewArchive)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gridColumn13
-            // 
-            this.gridColumn13.Caption = "Vergi Numarası";
-            this.gridColumn13.FieldName = "CustomerTaxNumber";
-            this.gridColumn13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn13.ImageOptions.Image")));
-            this.gridColumn13.Name = "gridColumn13";
-            this.gridColumn13.Visible = true;
-            this.gridColumn13.VisibleIndex = 12;
-            this.gridColumn13.Width = 129;
-            // 
-            // ColumnDistrict
-            // 
-            this.ColumnDistrict.Caption = "İlçe";
-            this.ColumnDistrict.FieldName = "DistrictName";
-            this.ColumnDistrict.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnDistrict.ImageOptions.Image")));
-            this.ColumnDistrict.Name = "ColumnDistrict";
-            this.ColumnDistrict.Visible = true;
-            this.ColumnDistrict.VisibleIndex = 10;
-            this.ColumnDistrict.Width = 63;
-            // 
-            // ColumnHomeAddress
-            // 
-            this.ColumnHomeAddress.Caption = "Ev Adresi";
-            this.ColumnHomeAddress.FieldName = "CustomerHomeAddress";
-            this.ColumnHomeAddress.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnHomeAddress.ImageOptions.Image")));
-            this.ColumnHomeAddress.Name = "ColumnHomeAddress";
-            this.ColumnHomeAddress.Visible = true;
-            this.ColumnHomeAddress.VisibleIndex = 11;
-            this.ColumnHomeAddress.Width = 63;
-            // 
-            // ColumnTaxNumber
-            // 
-            this.ColumnTaxNumber.Caption = "Vergi Numarası";
-            this.ColumnTaxNumber.FieldName = "CustomerTaxNumber";
-            this.ColumnTaxNumber.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnTaxNumber.ImageOptions.Image")));
-            this.ColumnTaxNumber.Name = "ColumnTaxNumber";
-            this.ColumnTaxNumber.Visible = true;
-            this.ColumnTaxNumber.VisibleIndex = 12;
-            this.ColumnTaxNumber.Width = 129;
-            // 
-            // TabPageCustomerArchive
-            // 
-            this.TabPageCustomerArchive.Controls.Add(this.GControlCustomerArchive);
-            this.TabPageCustomerArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomerArchive.ImageOptions.Image")));
-            this.TabPageCustomerArchive.Name = "TabPageCustomerArchive";
-            this.TabPageCustomerArchive.Size = new System.Drawing.Size(934, 442);
-            this.TabPageCustomerArchive.Text = "ÜRÜNLER ARŞİV LİSTESİ";
-            // 
-            // GControlCustomerArchive
-            // 
-            this.GControlCustomerArchive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlCustomerArchive.Location = new System.Drawing.Point(0, 0);
-            this.GControlCustomerArchive.MainView = this.GViewCustomerArchive;
-            this.GControlCustomerArchive.Name = "GControlCustomerArchive";
-            this.GControlCustomerArchive.Size = new System.Drawing.Size(934, 442);
-            this.GControlCustomerArchive.TabIndex = 1;
-            this.GControlCustomerArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewCustomerArchive});
-            // 
-            // GViewCustomerArchive
-            // 
-            this.GViewCustomerArchive.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13});
-            this.GViewCustomerArchive.DetailHeight = 303;
-            this.GViewCustomerArchive.GridControl = this.GControlCustomerArchive;
-            this.GViewCustomerArchive.Name = "GViewCustomerArchive";
-            this.GViewCustomerArchive.OptionsBehavior.Editable = false;
-            this.GViewCustomerArchive.OptionsBehavior.ReadOnly = true;
-            this.GViewCustomerArchive.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "ID";
-            this.gridColumn1.FieldName = "CustomerID";
-            this.gridColumn1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn1.ImageOptions.Image")));
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 46;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "T.C KİMLİK NO";
-            this.gridColumn2.FieldName = "CustomerTC";
-            this.gridColumn2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn2.ImageOptions.Image")));
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 66;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Adı";
-            this.gridColumn3.FieldName = "CustomerName";
-            this.gridColumn3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn3.ImageOptions.Image")));
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 66;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "Soyadı";
-            this.gridColumn4.FieldName = "CustomerSurName";
-            this.gridColumn4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn4.ImageOptions.Image")));
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 65;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Cinsiyet";
-            this.gridColumn5.FieldName = "CustomerGender";
-            this.gridColumn5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn5.ImageOptions.Image")));
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 63;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "Doğum Tarihi";
-            this.gridColumn6.FieldName = "CustomerDateOfBirth";
-            this.gridColumn6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn6.ImageOptions.Image")));
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 63;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "Cep Telefonu";
-            this.gridColumn7.FieldName = "CustomerMobilePhone";
-            this.gridColumn7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn7.ImageOptions.Image")));
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
-            this.gridColumn7.Width = 63;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "İş Telefonu";
-            this.gridColumn8.FieldName = "CustomerOfficePhone";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 7;
-            this.gridColumn8.Width = 63;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "E-Posta Adresi";
-            this.gridColumn9.FieldName = "CustomerMail";
-            this.gridColumn9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn9.ImageOptions.Image")));
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
-            this.gridColumn9.Width = 63;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.Caption = "İl";
-            this.gridColumn10.FieldName = "CountyName";
-            this.gridColumn10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn10.ImageOptions.Image")));
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 9;
-            this.gridColumn10.Width = 63;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.Caption = "İlçe";
-            this.gridColumn11.FieldName = "DistrictName";
-            this.gridColumn11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn11.ImageOptions.Image")));
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 10;
-            this.gridColumn11.Width = 63;
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.Caption = "Ev Adresi";
-            this.gridColumn12.FieldName = "CustomerHomeAddress";
-            this.gridColumn12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn12.ImageOptions.Image")));
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 11;
-            this.gridColumn12.Width = 63;
-            // 
-            // ColumnCounty
-            // 
-            this.ColumnCounty.Caption = "İl";
-            this.ColumnCounty.FieldName = "CountyName";
-            this.ColumnCounty.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCounty.ImageOptions.Image")));
-            this.ColumnCounty.Name = "ColumnCounty";
-            this.ColumnCounty.Visible = true;
-            this.ColumnCounty.VisibleIndex = 9;
-            this.ColumnCounty.Width = 63;
-            // 
-            // xtraTabCustomerControl
-            // 
-            this.xtraTabCustomerControl.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.Teal;
-            this.xtraTabCustomerControl.AppearancePage.HeaderActive.Options.UseBackColor = true;
-            this.xtraTabCustomerControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.xtraTabCustomerControl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.xtraTabCustomerControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabCustomerControl.Location = new System.Drawing.Point(260, 0);
-            this.xtraTabCustomerControl.MultiLine = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabCustomerControl.Name = "xtraTabCustomerControl";
-            this.xtraTabCustomerControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
-            this.xtraTabCustomerControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.xtraTabCustomerControl.SelectedTabPage = this.TabPageCustomer;
-            this.xtraTabCustomerControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabCustomerControl.Size = new System.Drawing.Size(892, 494);
-            this.xtraTabCustomerControl.TabIndex = 9;
-            this.xtraTabCustomerControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.TabPageCustomer,
-            this.TabPageCustomerArchive});
-            // 
-            // TabPageCustomer
-            // 
-            this.TabPageCustomer.Controls.Add(this.GControlCustomer);
-            this.TabPageCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomer.ImageOptions.Image")));
-            this.TabPageCustomer.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
-            this.TabPageCustomer.Name = "TabPageCustomer";
-            this.TabPageCustomer.Size = new System.Drawing.Size(890, 450);
-            this.TabPageCustomer.Text = "ÜRÜNLER LİSTESİ";
-            // 
-            // GControlCustomer
-            // 
-            this.GControlCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlCustomer.Location = new System.Drawing.Point(0, 0);
-            this.GControlCustomer.MainView = this.GViewCustomer;
-            this.GControlCustomer.Name = "GControlCustomer";
-            this.GControlCustomer.Size = new System.Drawing.Size(890, 450);
-            this.GControlCustomer.TabIndex = 0;
-            this.GControlCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewCustomer});
-            // 
-            // GViewCustomer
-            // 
-            this.GViewCustomer.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColumnCustomerID,
-            this.ColumnCustomerTC,
-            this.ColumnCustomerName,
-            this.ColumnCustomerSurName,
-            this.ColumnCustomerGender,
-            this.ColumnCustomerDateOfBirth,
-            this.ColumnMobilePhone,
-            this.ColumnOfficePhone,
-            this.ColumnCustomerMail,
-            this.ColumnCounty,
-            this.ColumnDistrict,
-            this.ColumnHomeAddress,
-            this.ColumnTaxNumber});
-            this.GViewCustomer.DetailHeight = 303;
-            this.GViewCustomer.GridControl = this.GControlCustomer;
-            this.GViewCustomer.Name = "GViewCustomer";
-            this.GViewCustomer.OptionsBehavior.Editable = false;
-            this.GViewCustomer.OptionsBehavior.ReadOnly = true;
-            this.GViewCustomer.OptionsView.ShowGroupPanel = false;
-            // 
-            // ColumnCustomerID
-            // 
-            this.ColumnCustomerID.Caption = "ID";
-            this.ColumnCustomerID.FieldName = "CustomerID";
-            this.ColumnCustomerID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerID.ImageOptions.Image")));
-            this.ColumnCustomerID.Name = "ColumnCustomerID";
-            this.ColumnCustomerID.Visible = true;
-            this.ColumnCustomerID.VisibleIndex = 0;
-            this.ColumnCustomerID.Width = 46;
-            // 
-            // ColumnCustomerTC
-            // 
-            this.ColumnCustomerTC.Caption = "T.C KİMLİK NO";
-            this.ColumnCustomerTC.FieldName = "CustomerTC";
-            this.ColumnCustomerTC.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerTC.ImageOptions.Image")));
-            this.ColumnCustomerTC.Name = "ColumnCustomerTC";
-            this.ColumnCustomerTC.Visible = true;
-            this.ColumnCustomerTC.VisibleIndex = 1;
-            this.ColumnCustomerTC.Width = 66;
-            // 
-            // ColumnCustomerName
-            // 
-            this.ColumnCustomerName.Caption = "Adı";
-            this.ColumnCustomerName.FieldName = "CustomerName";
-            this.ColumnCustomerName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerName.ImageOptions.Image")));
-            this.ColumnCustomerName.Name = "ColumnCustomerName";
-            this.ColumnCustomerName.Visible = true;
-            this.ColumnCustomerName.VisibleIndex = 2;
-            this.ColumnCustomerName.Width = 66;
-            // 
-            // ColumnCustomerSurName
-            // 
-            this.ColumnCustomerSurName.Caption = "Soyadı";
-            this.ColumnCustomerSurName.FieldName = "CustomerSurName";
-            this.ColumnCustomerSurName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerSurName.ImageOptions.Image")));
-            this.ColumnCustomerSurName.Name = "ColumnCustomerSurName";
-            this.ColumnCustomerSurName.Visible = true;
-            this.ColumnCustomerSurName.VisibleIndex = 3;
-            this.ColumnCustomerSurName.Width = 65;
-            // 
-            // ColumnCustomerGender
-            // 
-            this.ColumnCustomerGender.Caption = "Cinsiyet";
-            this.ColumnCustomerGender.FieldName = "CustomerGender";
-            this.ColumnCustomerGender.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerGender.ImageOptions.Image")));
-            this.ColumnCustomerGender.Name = "ColumnCustomerGender";
-            this.ColumnCustomerGender.Visible = true;
-            this.ColumnCustomerGender.VisibleIndex = 4;
-            this.ColumnCustomerGender.Width = 63;
-            // 
-            // ColumnCustomerDateOfBirth
-            // 
-            this.ColumnCustomerDateOfBirth.Caption = "Doğum Tarihi";
-            this.ColumnCustomerDateOfBirth.FieldName = "CustomerDateOfBirth";
-            this.ColumnCustomerDateOfBirth.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerDateOfBirth.ImageOptions.Image")));
-            this.ColumnCustomerDateOfBirth.Name = "ColumnCustomerDateOfBirth";
-            this.ColumnCustomerDateOfBirth.Visible = true;
-            this.ColumnCustomerDateOfBirth.VisibleIndex = 5;
-            this.ColumnCustomerDateOfBirth.Width = 63;
-            // 
-            // ColumnMobilePhone
-            // 
-            this.ColumnMobilePhone.Caption = "Cep Telefonu";
-            this.ColumnMobilePhone.FieldName = "CustomerMobilePhone";
-            this.ColumnMobilePhone.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnMobilePhone.ImageOptions.Image")));
-            this.ColumnMobilePhone.Name = "ColumnMobilePhone";
-            this.ColumnMobilePhone.Visible = true;
-            this.ColumnMobilePhone.VisibleIndex = 6;
-            this.ColumnMobilePhone.Width = 63;
-            // 
-            // ColumnOfficePhone
-            // 
-            this.ColumnOfficePhone.Caption = "İş Telefonu";
-            this.ColumnOfficePhone.FieldName = "CustomerOfficePhone";
-            this.ColumnOfficePhone.Name = "ColumnOfficePhone";
-            this.ColumnOfficePhone.Visible = true;
-            this.ColumnOfficePhone.VisibleIndex = 7;
-            this.ColumnOfficePhone.Width = 63;
-            // 
-            // ColumnCustomerMail
-            // 
-            this.ColumnCustomerMail.Caption = "E-Posta Adresi";
-            this.ColumnCustomerMail.FieldName = "CustomerMail";
-            this.ColumnCustomerMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCustomerMail.ImageOptions.Image")));
-            this.ColumnCustomerMail.Name = "ColumnCustomerMail";
-            this.ColumnCustomerMail.Visible = true;
-            this.ColumnCustomerMail.VisibleIndex = 8;
-            this.ColumnCustomerMail.Width = 63;
             // 
             // accordionControl1
             // 
             this.accordionControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlCustomerProcess,
+            this.accordionControlExpenseHeaderProcess,
             this.accordionControlArchive});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
@@ -462,145 +83,329 @@
             this.accordionControl1.TabIndex = 8;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
-            // accordionControlCustomerProcess
+            // accordionControlExpenseHeaderProcess
             // 
-            this.accordionControlCustomerProcess.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlExpenseHeaderProcess.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlNewExpenseHeader,
-            this.accordionControlCustomerUpdate,
-            this.accordionControlCustomerDelete,
-            this.accordionControlCustomerArchive,
-            this.accordionControlCustomerList});
-            this.accordionControlCustomerProcess.Expanded = true;
-            this.accordionControlCustomerProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerProcess.ImageOptions.Image")));
-            this.accordionControlCustomerProcess.Name = "accordionControlCustomerProcess";
-            this.accordionControlCustomerProcess.Text = "MÜŞTERİ İŞLEMLERİ";
+            this.accordionControlExpenseHeaderUpdate,
+            this.accordionControlExpenseHeaderDelete,
+            this.accordionControlExpenseHeaderrArchive,
+            this.accordionControlExpenseHeaderList});
+            this.accordionControlExpenseHeaderProcess.Expanded = true;
+            this.accordionControlExpenseHeaderProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerProcess.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderProcess.Name = "accordionControlExpenseHeaderProcess";
+            this.accordionControlExpenseHeaderProcess.Text = "GİDER BAŞLIĞI İŞLEMLERİ";
+            this.accordionControlExpenseHeaderProcess.Click += new System.EventHandler(this.accordionControlExpenseHeaderProcess_Click);
             // 
             // accordionControlNewExpenseHeader
             // 
-            this.accordionControlNewExpenseHeader.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlNewCustomer.ImageOptions.Image")));
+            this.accordionControlNewExpenseHeader.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlNewExpenseHeader.ImageOptions.Image")));
             this.accordionControlNewExpenseHeader.Name = "accordionControlNewExpenseHeader";
             this.accordionControlNewExpenseHeader.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlNewExpenseHeader.Text = "YENİ GİDER BAŞLIĞI";
             this.accordionControlNewExpenseHeader.Click += new System.EventHandler(this.accordionControlNewExpenseHeader_Click);
             // 
-            // accordionControlCustomerUpdate
+            // accordionControlExpenseHeaderUpdate
             // 
-            this.accordionControlCustomerUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerUpdate.ImageOptions.Image")));
-            this.accordionControlCustomerUpdate.Name = "accordionControlCustomerUpdate";
-            this.accordionControlCustomerUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerUpdate.Text = "MÜŞTERİ BİLGİLERİNİ DÜZENLE";
+            this.accordionControlExpenseHeaderUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderUpdate.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderUpdate.Name = "accordionControlExpenseHeaderUpdate";
+            this.accordionControlExpenseHeaderUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlExpenseHeaderUpdate.Text = "GİDER BAŞLIĞI BİLGİLERİNİ DÜZENLE";
+            this.accordionControlExpenseHeaderUpdate.Click += new System.EventHandler(this.accordionControlExpenseHeaderUpdate_Click);
             // 
-            // accordionControlCustomerDelete
+            // accordionControlExpenseHeaderDelete
             // 
-            this.accordionControlCustomerDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerDelete.ImageOptions.Image")));
-            this.accordionControlCustomerDelete.Name = "accordionControlCustomerDelete";
-            this.accordionControlCustomerDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerDelete.Text = "MÜŞTERİ BİLGİLERİNİ SİL";
+            this.accordionControlExpenseHeaderDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderDelete.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderDelete.Name = "accordionControlExpenseHeaderDelete";
+            this.accordionControlExpenseHeaderDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlExpenseHeaderDelete.Text = "GİDER BAŞLIĞI BİLGİLERİNİ SİL";
+            this.accordionControlExpenseHeaderDelete.Click += new System.EventHandler(this.accordionControlExpenseHeaderDelete_Click);
             // 
-            // accordionControlCustomerArchive
+            // accordionControlExpenseHeaderrArchive
             // 
-            this.accordionControlCustomerArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerArchive.ImageOptions.Image")));
-            this.accordionControlCustomerArchive.Name = "accordionControlCustomerArchive";
-            this.accordionControlCustomerArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerArchive.Text = "MÜŞTERİ BİLGİLERİNİ ARŞİVLE";
+            this.accordionControlExpenseHeaderrArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderrArchive.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderrArchive.Name = "accordionControlExpenseHeaderrArchive";
+            this.accordionControlExpenseHeaderrArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlExpenseHeaderrArchive.Text = "GİDER BAŞLIĞI BİLGİLERİNİ ARŞİVLE";
+            this.accordionControlExpenseHeaderrArchive.Click += new System.EventHandler(this.accordionControlExpenseHeaderrArchive_Click);
             // 
-            // accordionControlCustomerList
+            // accordionControlExpenseHeaderList
             // 
-            this.accordionControlCustomerList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerList.ImageOptions.Image")));
-            this.accordionControlCustomerList.Name = "accordionControlCustomerList";
-            this.accordionControlCustomerList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerList.Text = "MÜŞTERİ LİSTESİ";
+            this.accordionControlExpenseHeaderList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderList.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderList.Name = "accordionControlExpenseHeaderList";
+            this.accordionControlExpenseHeaderList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlExpenseHeaderList.Text = "GİDER BAŞLIĞI LİSTESİ";
+            this.accordionControlExpenseHeaderList.Click += new System.EventHandler(this.accordionControlExpenseHeaderList_Click);
             // 
             // accordionControlArchive
             // 
             this.accordionControlArchive.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlCustomerArchiveQuit,
-            this.accordionControlCustomerArchiveList});
+            this.accordionControlArchiveQuit,
+            this.accordionControlExpenseHeaderArchiveList});
             this.accordionControlArchive.Expanded = true;
             this.accordionControlArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlArchive.ImageOptions.Image")));
             this.accordionControlArchive.Name = "accordionControlArchive";
-            this.accordionControlArchive.Text = "MÜŞTERİ ARŞİV İŞLEMLERİ";
+            this.accordionControlArchive.Text = "GİDER BAŞLIĞI ARŞİV İŞLEMLERİ";
+            this.accordionControlArchive.Click += new System.EventHandler(this.accordionControlArchive_Click);
             // 
-            // accordionControlCustomerArchiveQuit
+            // accordionControlArchiveQuit
             // 
-            this.accordionControlCustomerArchiveQuit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerArchiveQuit.ImageOptions.Image")));
-            this.accordionControlCustomerArchiveQuit.Name = "accordionControlCustomerArchiveQuit";
-            this.accordionControlCustomerArchiveQuit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerArchiveQuit.Text = "MÜŞTERİYİ ARŞİVDEN ÇIKAR";
+            this.accordionControlArchiveQuit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlArchiveQuit.ImageOptions.Image")));
+            this.accordionControlArchiveQuit.Name = "accordionControlArchiveQuit";
+            this.accordionControlArchiveQuit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlArchiveQuit.Text = "GİDER BAŞLIĞI ARŞİVDEN ÇIKAR";
+            this.accordionControlArchiveQuit.Click += new System.EventHandler(this.accordionControlArchiveQuit_Click);
             // 
-            // accordionControlCustomerArchiveList
+            // accordionControlExpenseHeaderArchiveList
             // 
-            this.accordionControlCustomerArchiveList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerArchiveList.ImageOptions.Image")));
-            this.accordionControlCustomerArchiveList.Name = "accordionControlCustomerArchiveList";
-            this.accordionControlCustomerArchiveList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCustomerArchiveList.Text = "MÜŞTERİ ARŞİV LİSTESİ";
+            this.accordionControlExpenseHeaderArchiveList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderArchiveList.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderArchiveList.Name = "accordionControlExpenseHeaderArchiveList";
+            this.accordionControlExpenseHeaderArchiveList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlExpenseHeaderArchiveList.Text = "GİDER BAŞLIĞI ARŞİV LİSTESİ";
+            this.accordionControlExpenseHeaderArchiveList.Click += new System.EventHandler(this.accordionControlExpenseHeaderArchiveList_Click);
+            // 
+            // GControlExpenseHeader
+            // 
+            this.GControlExpenseHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlExpenseHeader.Location = new System.Drawing.Point(0, 0);
+            this.GControlExpenseHeader.MainView = this.GViewExpenseHeader;
+            this.GControlExpenseHeader.Name = "GControlExpenseHeader";
+            this.GControlExpenseHeader.Size = new System.Drawing.Size(962, 450);
+            this.GControlExpenseHeader.TabIndex = 9;
+            this.GControlExpenseHeader.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewExpenseHeader});
+            this.GControlExpenseHeader.Click += new System.EventHandler(this.GControlCustomer_Click);
+            // 
+            // GViewExpenseHeader
+            // 
+            this.GViewExpenseHeader.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ColumnExprenseHeaderID,
+            this.ColumnExprenseHeaderName,
+            this.ColumnExprenseHeaderStartDate,
+            this.ColumnExprenseHeaderStopDate,
+            this.ColumnExprenseHeaderDetail});
+            this.GViewExpenseHeader.DetailHeight = 303;
+            this.GViewExpenseHeader.GridControl = this.GControlExpenseHeader;
+            this.GViewExpenseHeader.Name = "GViewExpenseHeader";
+            this.GViewExpenseHeader.OptionsBehavior.Editable = false;
+            this.GViewExpenseHeader.OptionsBehavior.ReadOnly = true;
+            this.GViewExpenseHeader.OptionsView.ShowGroupPanel = false;
+            // 
+            // ColumnExprenseHeaderID
+            // 
+            this.ColumnExprenseHeaderID.Caption = "ID";
+            this.ColumnExprenseHeaderID.FieldName = "ExprenseHeaderID";
+            this.ColumnExprenseHeaderID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderID.ImageOptions.Image")));
+            this.ColumnExprenseHeaderID.Name = "ColumnExprenseHeaderID";
+            this.ColumnExprenseHeaderID.Visible = true;
+            this.ColumnExprenseHeaderID.VisibleIndex = 0;
+            this.ColumnExprenseHeaderID.Width = 50;
+            // 
+            // ColumnExprenseHeaderName
+            // 
+            this.ColumnExprenseHeaderName.Caption = "Gider Başlığı";
+            this.ColumnExprenseHeaderName.FieldName = "ExprenseHeaderName";
+            this.ColumnExprenseHeaderName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderName.ImageOptions.Image")));
+            this.ColumnExprenseHeaderName.Name = "ColumnExprenseHeaderName";
+            this.ColumnExprenseHeaderName.Visible = true;
+            this.ColumnExprenseHeaderName.VisibleIndex = 1;
+            this.ColumnExprenseHeaderName.Width = 120;
+            // 
+            // ColumnExprenseHeaderStartDate
+            // 
+            this.ColumnExprenseHeaderStartDate.Caption = "Başlangıç Tarihi";
+            this.ColumnExprenseHeaderStartDate.FieldName = "ExprenseHeaderStartDate";
+            this.ColumnExprenseHeaderStartDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderStartDate.ImageOptions.Image")));
+            this.ColumnExprenseHeaderStartDate.Name = "ColumnExprenseHeaderStartDate";
+            this.ColumnExprenseHeaderStartDate.Visible = true;
+            this.ColumnExprenseHeaderStartDate.VisibleIndex = 2;
+            this.ColumnExprenseHeaderStartDate.Width = 120;
+            // 
+            // ColumnExprenseHeaderStopDate
+            // 
+            this.ColumnExprenseHeaderStopDate.Caption = "Bitiş Tarihi";
+            this.ColumnExprenseHeaderStopDate.FieldName = "ExprenseHeaderStopDate";
+            this.ColumnExprenseHeaderStopDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderStopDate.ImageOptions.Image")));
+            this.ColumnExprenseHeaderStopDate.Name = "ColumnExprenseHeaderStopDate";
+            this.ColumnExprenseHeaderStopDate.Visible = true;
+            this.ColumnExprenseHeaderStopDate.VisibleIndex = 3;
+            this.ColumnExprenseHeaderStopDate.Width = 120;
+            // 
+            // ColumnExprenseHeaderDetail
+            // 
+            this.ColumnExprenseHeaderDetail.Caption = "Detaylar";
+            this.ColumnExprenseHeaderDetail.FieldName = "ExprenseHeaderDetail";
+            this.ColumnExprenseHeaderDetail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderDetail.ImageOptions.Image")));
+            this.ColumnExprenseHeaderDetail.Name = "ColumnExprenseHeaderDetail";
+            this.ColumnExprenseHeaderDetail.Visible = true;
+            this.ColumnExprenseHeaderDetail.VisibleIndex = 4;
+            this.ColumnExprenseHeaderDetail.Width = 150;
+            // 
+            // xtraTabControl
+            // 
+            this.xtraTabControl.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.Teal;
+            this.xtraTabControl.AppearancePage.HeaderActive.Options.UseBackColor = true;
+            this.xtraTabControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.xtraTabControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.xtraTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl.Location = new System.Drawing.Point(260, 0);
+            this.xtraTabControl.MultiLine = DevExpress.Utils.DefaultBoolean.True;
+            this.xtraTabControl.Name = "xtraTabControl";
+            this.xtraTabControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
+            this.xtraTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.xtraTabControl.SelectedTabPage = this.TabPageExpenseHeader;
+            this.xtraTabControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
+            this.xtraTabControl.Size = new System.Drawing.Size(964, 494);
+            this.xtraTabControl.TabIndex = 10;
+            this.xtraTabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.TabPageExpenseHeader,
+            this.TabPageExpenseHeaderArchive});
+            this.xtraTabControl.Click += new System.EventHandler(this.xtraTabControl_Click);
+            // 
+            // TabPageExpenseHeader
+            // 
+            this.TabPageExpenseHeader.Controls.Add(this.GControlExpenseHeader);
+            this.TabPageExpenseHeader.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomer.ImageOptions.Image")));
+            this.TabPageExpenseHeader.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
+            this.TabPageExpenseHeader.Name = "TabPageExpenseHeader";
+            this.TabPageExpenseHeader.Size = new System.Drawing.Size(962, 450);
+            this.TabPageExpenseHeader.Text = "GİDER BAŞLIĞI LİSTESİ";
+            // 
+            // TabPageExpenseHeaderArchive
+            // 
+            this.TabPageExpenseHeaderArchive.Controls.Add(this.GControlArchive);
+            this.TabPageExpenseHeaderArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomerArchive.ImageOptions.Image")));
+            this.TabPageExpenseHeaderArchive.Name = "TabPageExpenseHeaderArchive";
+            this.TabPageExpenseHeaderArchive.Size = new System.Drawing.Size(962, 450);
+            this.TabPageExpenseHeaderArchive.Text = "GİDER BAŞLIĞI ARŞİV LİSTESİ";
+            // 
+            // GControlArchive
+            // 
+            this.GControlArchive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlArchive.Location = new System.Drawing.Point(0, 0);
+            this.GControlArchive.MainView = this.GViewArchive;
+            this.GControlArchive.Name = "GControlArchive";
+            this.GControlArchive.Size = new System.Drawing.Size(962, 450);
+            this.GControlArchive.TabIndex = 10;
+            this.GControlArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewArchive});
+            // 
+            // GViewArchive
+            // 
+            this.GViewArchive.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ColumnID,
+            this.ColumnName,
+            this.ColumnStartDate,
+            this.ColumnStopDate,
+            this.ColumnDetails});
+            this.GViewArchive.DetailHeight = 303;
+            this.GViewArchive.GridControl = this.GControlArchive;
+            this.GViewArchive.Name = "GViewArchive";
+            this.GViewArchive.OptionsBehavior.Editable = false;
+            this.GViewArchive.OptionsBehavior.ReadOnly = true;
+            this.GViewArchive.OptionsView.ShowGroupPanel = false;
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.Caption = "ID";
+            this.ColumnID.FieldName = "ExprenseHeaderID";
+            this.ColumnID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnID.ImageOptions.Image")));
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.Visible = true;
+            this.ColumnID.VisibleIndex = 0;
+            this.ColumnID.Width = 50;
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.Caption = "Gider Başlığı";
+            this.ColumnName.FieldName = "ExprenseHeaderName";
+            this.ColumnName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnName.ImageOptions.Image")));
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.Visible = true;
+            this.ColumnName.VisibleIndex = 1;
+            this.ColumnName.Width = 120;
+            // 
+            // ColumnStartDate
+            // 
+            this.ColumnStartDate.Caption = "Başlangıç Tarihi";
+            this.ColumnStartDate.FieldName = "ExprenseHeaderStartDate";
+            this.ColumnStartDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnStartDate.ImageOptions.Image")));
+            this.ColumnStartDate.Name = "ColumnStartDate";
+            this.ColumnStartDate.Visible = true;
+            this.ColumnStartDate.VisibleIndex = 2;
+            this.ColumnStartDate.Width = 120;
+            // 
+            // ColumnStopDate
+            // 
+            this.ColumnStopDate.Caption = "Bitiş Tarihi";
+            this.ColumnStopDate.FieldName = "ExprenseHeaderStopDate";
+            this.ColumnStopDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnStopDate.ImageOptions.Image")));
+            this.ColumnStopDate.Name = "ColumnStopDate";
+            this.ColumnStopDate.Visible = true;
+            this.ColumnStopDate.VisibleIndex = 3;
+            this.ColumnStopDate.Width = 120;
+            // 
+            // ColumnDetails
+            // 
+            this.ColumnDetails.Caption = "Detaylar";
+            this.ColumnDetails.FieldName = "ExprenseHeaderDetail";
+            this.ColumnDetails.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnDetails.ImageOptions.Image")));
+            this.ColumnDetails.Name = "ColumnDetails";
+            this.ColumnDetails.Visible = true;
+            this.ColumnDetails.VisibleIndex = 4;
+            this.ColumnDetails.Width = 150;
             // 
             // ExpenseWF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 494);
-            this.Controls.Add(this.xtraTabCustomerControl);
+            this.ClientSize = new System.Drawing.Size(1224, 494);
+            this.Controls.Add(this.xtraTabControl);
             this.Controls.Add(this.accordionControl1);
             this.Name = "ExpenseWF";
-            this.Text = "ExpenseWF";
-            this.TabPageCustomerArchive.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCustomerArchive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCustomerArchive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabCustomerControl)).EndInit();
-            this.xtraTabCustomerControl.ResumeLayout(false);
-            this.TabPageCustomer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCustomer)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "GİDER BAŞLIĞI İŞLEMLERİ";
+            this.Load += new System.EventHandler(this.ExpenseWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).EndInit();
+            this.xtraTabControl.ResumeLayout(false);
+            this.TabPageExpenseHeader.ResumeLayout(false);
+            this.TabPageExpenseHeaderArchive.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GControlArchive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewArchive)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnDistrict;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnHomeAddress;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnTaxNumber;
-        private DevExpress.XtraTab.XtraTabPage TabPageCustomerArchive;
-        private DevExpress.XtraGrid.GridControl GControlCustomerArchive;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewCustomerArchive;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCounty;
-        private DevExpress.XtraTab.XtraTabControl xtraTabCustomerControl;
-        private DevExpress.XtraTab.XtraTabPage TabPageCustomer;
-        private DevExpress.XtraGrid.GridControl GControlCustomer;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewCustomer;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerID;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerTC;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerSurName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerGender;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerDateOfBirth;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnMobilePhone;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnOfficePhone;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCustomerMail;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerProcess;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderProcess;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlNewExpenseHeader;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerUpdate;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerDelete;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerArchive;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerList;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderUpdate;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderDelete;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderrArchive;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderList;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlArchive;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerArchiveQuit;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCustomerArchiveList;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlArchiveQuit;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderArchiveList;
+        private DevExpress.XtraGrid.GridControl GControlExpenseHeader;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewExpenseHeader;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderID;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderStartDate;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderStopDate;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderDetail;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl;
+        private DevExpress.XtraTab.XtraTabPage TabPageExpenseHeader;
+        private DevExpress.XtraTab.XtraTabPage TabPageExpenseHeaderArchive;
+        private DevExpress.XtraGrid.GridControl GControlArchive;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewArchive;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnID;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnStartDate;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnStopDate;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnDetails;
     }
 }

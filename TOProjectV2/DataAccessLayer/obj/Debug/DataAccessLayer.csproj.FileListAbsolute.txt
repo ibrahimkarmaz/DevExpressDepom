@@ -112,3 +112,11 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLa
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewColumnEmployeeUPDATE.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewEntityAndMAPThemExpenseHeaderAndMAP.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ExpenseHeaderNewColumnAndMap.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityExpenseHeaderUPDATE.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityExpenseHeaderUPDATE2.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityExpenseHeaderUPDATE3.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityExpenseHeaderUPDATE4.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewEntityExpenseContentAndMAP.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewEntityExpenseContentAndMAP2.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewExpenseHeaderAndContextPKFK.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.DELETEEntityExpense.resources

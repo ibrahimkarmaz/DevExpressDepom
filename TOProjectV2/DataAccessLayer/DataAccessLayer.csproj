@@ -62,7 +62,7 @@
     <Compile Include="Abstract\IDepartmentDAL.cs" />
     <Compile Include="Abstract\IDistrictDAL.cs" />
     <Compile Include="Abstract\IEmployeeDAL.cs" />
-    <Compile Include="Abstract\IExpenseDAL.cs" />
+    <Compile Include="Abstract\IExpenseContentDAL.cs" />
     <Compile Include="Abstract\IExpenseHeaderDAL.cs" />
     <Compile Include="Abstract\IGenericDAL.cs" />
     <Compile Include="Abstract\IInvoiceDAL.cs" />
@@ -85,6 +85,7 @@
     <Compile Include="EntityFramework\EFDepartmentDAL.cs" />
     <Compile Include="EntityFramework\EFDistrictDAL.cs" />
     <Compile Include="EntityFramework\EFEmployeeDAL.cs" />
+    <Compile Include="EntityFramework\EFExpenseContentDAL.cs" />
     <Compile Include="EntityFramework\EFExpenseHeaderDAL.cs" />
     <Compile Include="EntityFramework\EFModelDAL.cs" />
     <Compile Include="EntityFramework\EFProductDAL.cs" />
@@ -349,6 +350,38 @@
     <Compile Include="Migrations\202211061918560_ExpenseHeaderNewColumnAndMap.designer.cs">
       <DependentUpon>202211061918560_ExpenseHeaderNewColumnAndMap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211071229460_EntityExpenseHeaderUPDATE.cs" />
+    <Compile Include="Migrations\202211071229460_EntityExpenseHeaderUPDATE.designer.cs">
+      <DependentUpon>202211071229460_EntityExpenseHeaderUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071235528_EntityExpenseHeaderUPDATE2.cs" />
+    <Compile Include="Migrations\202211071235528_EntityExpenseHeaderUPDATE2.designer.cs">
+      <DependentUpon>202211071235528_EntityExpenseHeaderUPDATE2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071254491_EntityExpenseHeaderUPDATE3.cs" />
+    <Compile Include="Migrations\202211071254491_EntityExpenseHeaderUPDATE3.designer.cs">
+      <DependentUpon>202211071254491_EntityExpenseHeaderUPDATE3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071256095_EntityExpenseHeaderUPDATE4.cs" />
+    <Compile Include="Migrations\202211071256095_EntityExpenseHeaderUPDATE4.designer.cs">
+      <DependentUpon>202211071256095_EntityExpenseHeaderUPDATE4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071808399_NewEntityExpenseContentAndMAP.cs" />
+    <Compile Include="Migrations\202211071808399_NewEntityExpenseContentAndMAP.designer.cs">
+      <DependentUpon>202211071808399_NewEntityExpenseContentAndMAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071810305_NewEntityExpenseContentAndMAP2.cs" />
+    <Compile Include="Migrations\202211071810305_NewEntityExpenseContentAndMAP2.designer.cs">
+      <DependentUpon>202211071810305_NewEntityExpenseContentAndMAP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071817287_NewExpenseHeaderAndContextPKFK.cs" />
+    <Compile Include="Migrations\202211071817287_NewExpenseHeaderAndContextPKFK.designer.cs">
+      <DependentUpon>202211071817287_NewExpenseHeaderAndContextPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211071826489_DELETEEntityExpense.cs" />
+    <Compile Include="Migrations\202211071826489_DELETEEntityExpense.designer.cs">
+      <DependentUpon>202211071826489_DELETEEntityExpense.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -558,6 +591,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211061918560_ExpenseHeaderNewColumnAndMap.resx">
       <DependentUpon>202211061918560_ExpenseHeaderNewColumnAndMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071229460_EntityExpenseHeaderUPDATE.resx">
+      <DependentUpon>202211071229460_EntityExpenseHeaderUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071235528_EntityExpenseHeaderUPDATE2.resx">
+      <DependentUpon>202211071235528_EntityExpenseHeaderUPDATE2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071254491_EntityExpenseHeaderUPDATE3.resx">
+      <DependentUpon>202211071254491_EntityExpenseHeaderUPDATE3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071256095_EntityExpenseHeaderUPDATE4.resx">
+      <DependentUpon>202211071256095_EntityExpenseHeaderUPDATE4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071808399_NewEntityExpenseContentAndMAP.resx">
+      <DependentUpon>202211071808399_NewEntityExpenseContentAndMAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071810305_NewEntityExpenseContentAndMAP2.resx">
+      <DependentUpon>202211071810305_NewEntityExpenseContentAndMAP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071817287_NewExpenseHeaderAndContextPKFK.resx">
+      <DependentUpon>202211071817287_NewExpenseHeaderAndContextPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211071826489_DELETEEntityExpense.resx">
+      <DependentUpon>202211071826489_DELETEEntityExpense.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

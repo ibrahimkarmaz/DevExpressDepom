@@ -8,11 +8,13 @@ namespace EntityLayer.Concrete
 {
     public class ExpenseHeader
     {
-        public int ExorenseHeaderID { get; set; }
-        public string ExorenseHeaderName { get; set; }
-        public DateTime? ExorenseHeaderStartDate { get; set; }
-        public DateTime? ExorenseHeaderStopDate { get; set; }
-        public string ExorenseHeaderDetail { get; set; }
+        public int ExprenseHeaderID { get; set; }
+        public string ExprenseHeaderName { get; set; }
+        public DateTime? ExprenseHeaderStartDate { get; set; }
+        public DateTime? ExprenseHeaderStopDate { get; set; }
+        public string ExprenseHeaderDetail { get; set; }
         public bool ExpenseHeaderArchive { get; set; }
+
+        public ICollection<ExpenseContent> ExpenseContents { get; set; }
     }
 }

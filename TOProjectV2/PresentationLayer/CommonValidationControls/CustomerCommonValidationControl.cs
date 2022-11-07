@@ -17,11 +17,7 @@ namespace PresentationLayer.CommonValidationControls
         {
             CustomerValidator blandValidator = new CustomerValidator(customer.CustomerTC);
             ValidationResult result = blandValidator.Validate(customer);//BURAYA DİKKAT KÜTÜPHANE OLARAK:using FluentValidation.Results;
-            if (result.IsValid)//EĞER TRUE İSE HATA YOK DEMEKTİR.
-                return true;
-            else
-                XtraMessageBox.Show(result.Errors[0].ToString(), "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            return false;
+            return (new AAAValidatorCommonArea().CheckAndRotate(result));
 
         }
     }
