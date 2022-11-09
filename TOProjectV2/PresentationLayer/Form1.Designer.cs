@@ -75,7 +75,7 @@
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonFinance = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.TabExpense = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonRaportandChart = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -83,6 +83,7 @@
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barButtonItemExpenseContent = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -117,9 +118,10 @@
             this.barSubItem2,
             this.BarSector,
             this.barButtonDepartment,
-            this.barButtonTranslate});
+            this.barButtonTranslate,
+            this.barButtonItemExpenseContent});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 25;
+            this.ribbonControlAutomation.MaxItemId = 26;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonHome,
@@ -181,7 +183,7 @@
             // 
             // barExpenses
             // 
-            this.barExpenses.Caption = "GİDERLER";
+            this.barExpenses.Caption = "GİDER BAŞLIĞI";
             this.barExpenses.Id = 6;
             this.barExpenses.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barExpenses.ImageOptions.Image")));
             this.barExpenses.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barExpenses.ImageOptions.LargeImage")));
@@ -473,7 +475,7 @@
             // 
             this.ribbonFinance.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup6,
-            this.ribbonPageGroup7,
+            this.TabExpense,
             this.ribbonPageGroup9});
             this.ribbonFinance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonFinance.ImageOptions.Image")));
             this.ribbonFinance.Name = "ribbonFinance";
@@ -485,11 +487,12 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.Text = "ribbonPageGroup6";
             // 
-            // ribbonPageGroup7
+            // TabExpense
             // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barExpenses);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            this.TabExpense.ItemLinks.Add(this.barExpenses);
+            this.TabExpense.ItemLinks.Add(this.barButtonItemExpenseContent);
+            this.TabExpense.Name = "TabExpense";
+            this.TabExpense.Text = "GİDERLER";
             // 
             // ribbonPageGroup9
             // 
@@ -535,6 +538,15 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // barButtonItemExpenseContent
+            // 
+            this.barButtonItemExpenseContent.Caption = "GİDER İÇERİĞİ";
+            this.barButtonItemExpenseContent.Id = 25;
+            this.barButtonItemExpenseContent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItemExpenseContent.Name = "barButtonItemExpenseContent";
+            this.barButtonItemExpenseContent.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItemExpenseContent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemExpenseContent_ItemClick);
             // 
             // CommercialAutomation
             // 
@@ -590,7 +602,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonFinance;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup TabExpense;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonRaportandChart;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
@@ -611,6 +623,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private DevExpress.XtraBars.BarButtonItem barButtonTranslate;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
+        private DevExpress.XtraBars.BarButtonItem barButtonItemExpenseContent;
     }
 }
 

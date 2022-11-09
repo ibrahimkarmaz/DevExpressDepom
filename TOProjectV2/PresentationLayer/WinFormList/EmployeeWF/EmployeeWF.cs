@@ -110,7 +110,6 @@ namespace PresentationLayer.WinFormList.EmployeeWF
 
         private void GViewEmployee_CustomUnboundColumnData(object sender, CustomColumnDataEventArgs e)
         {
-
             if (e.Column.FieldName == "Image" && e.IsGetData)
             {
                 GridView view = sender as GridView;

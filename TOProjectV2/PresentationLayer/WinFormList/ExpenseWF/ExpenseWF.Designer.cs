@@ -39,32 +39,34 @@
             this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlExpenseHeaderArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.GControlExpenseHeader = new DevExpress.XtraGrid.GridControl();
-            this.GViewExpenseHeader = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ColumnExprenseHeaderID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnExprenseHeaderName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnExprenseHeaderStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnExprenseHeaderStopDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnExprenseHeaderDetail = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
-            this.TabPageExpenseHeader = new DevExpress.XtraTab.XtraTabPage();
             this.TabPageExpenseHeaderArchive = new DevExpress.XtraTab.XtraTabPage();
             this.GControlArchive = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GViewArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ColumnID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnStopDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnDetails = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TabPageExpenseHeader = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
+            this.GViewExpenseHeader = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ColumnExprenseHeaderID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderStopDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExprenseHeaderDetail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GControlExpenseHeader = new DevExpress.XtraGrid.GridControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeader)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).BeginInit();
-            this.xtraTabControl.SuspendLayout();
-            this.TabPageExpenseHeader.SuspendLayout();
             this.TabPageExpenseHeaderArchive.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GControlArchive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewArchive)).BeginInit();
+            this.TabPageExpenseHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).BeginInit();
+            this.xtraTabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeader)).BeginInit();
             this.SuspendLayout();
             // 
             // accordionControl1
@@ -92,7 +94,7 @@
             this.accordionControlExpenseHeaderrArchive,
             this.accordionControlExpenseHeaderList});
             this.accordionControlExpenseHeaderProcess.Expanded = true;
-            this.accordionControlExpenseHeaderProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCustomerProcess.ImageOptions.Image")));
+            this.accordionControlExpenseHeaderProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderProcess.ImageOptions.Image")));
             this.accordionControlExpenseHeaderProcess.Name = "accordionControlExpenseHeaderProcess";
             this.accordionControlExpenseHeaderProcess.Text = "GİDER BAŞLIĞI İŞLEMLERİ";
             this.accordionControlExpenseHeaderProcess.Click += new System.EventHandler(this.accordionControlExpenseHeaderProcess_Click);
@@ -164,117 +166,10 @@
             this.accordionControlExpenseHeaderArchiveList.Text = "GİDER BAŞLIĞI ARŞİV LİSTESİ";
             this.accordionControlExpenseHeaderArchiveList.Click += new System.EventHandler(this.accordionControlExpenseHeaderArchiveList_Click);
             // 
-            // GControlExpenseHeader
-            // 
-            this.GControlExpenseHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlExpenseHeader.Location = new System.Drawing.Point(0, 0);
-            this.GControlExpenseHeader.MainView = this.GViewExpenseHeader;
-            this.GControlExpenseHeader.Name = "GControlExpenseHeader";
-            this.GControlExpenseHeader.Size = new System.Drawing.Size(962, 450);
-            this.GControlExpenseHeader.TabIndex = 9;
-            this.GControlExpenseHeader.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewExpenseHeader});
-            this.GControlExpenseHeader.Click += new System.EventHandler(this.GControlCustomer_Click);
-            // 
-            // GViewExpenseHeader
-            // 
-            this.GViewExpenseHeader.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColumnExprenseHeaderID,
-            this.ColumnExprenseHeaderName,
-            this.ColumnExprenseHeaderStartDate,
-            this.ColumnExprenseHeaderStopDate,
-            this.ColumnExprenseHeaderDetail});
-            this.GViewExpenseHeader.DetailHeight = 303;
-            this.GViewExpenseHeader.GridControl = this.GControlExpenseHeader;
-            this.GViewExpenseHeader.Name = "GViewExpenseHeader";
-            this.GViewExpenseHeader.OptionsBehavior.Editable = false;
-            this.GViewExpenseHeader.OptionsBehavior.ReadOnly = true;
-            this.GViewExpenseHeader.OptionsView.ShowGroupPanel = false;
-            // 
-            // ColumnExprenseHeaderID
-            // 
-            this.ColumnExprenseHeaderID.Caption = "ID";
-            this.ColumnExprenseHeaderID.FieldName = "ExprenseHeaderID";
-            this.ColumnExprenseHeaderID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderID.ImageOptions.Image")));
-            this.ColumnExprenseHeaderID.Name = "ColumnExprenseHeaderID";
-            this.ColumnExprenseHeaderID.Visible = true;
-            this.ColumnExprenseHeaderID.VisibleIndex = 0;
-            this.ColumnExprenseHeaderID.Width = 50;
-            // 
-            // ColumnExprenseHeaderName
-            // 
-            this.ColumnExprenseHeaderName.Caption = "Gider Başlığı";
-            this.ColumnExprenseHeaderName.FieldName = "ExprenseHeaderName";
-            this.ColumnExprenseHeaderName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderName.ImageOptions.Image")));
-            this.ColumnExprenseHeaderName.Name = "ColumnExprenseHeaderName";
-            this.ColumnExprenseHeaderName.Visible = true;
-            this.ColumnExprenseHeaderName.VisibleIndex = 1;
-            this.ColumnExprenseHeaderName.Width = 120;
-            // 
-            // ColumnExprenseHeaderStartDate
-            // 
-            this.ColumnExprenseHeaderStartDate.Caption = "Başlangıç Tarihi";
-            this.ColumnExprenseHeaderStartDate.FieldName = "ExprenseHeaderStartDate";
-            this.ColumnExprenseHeaderStartDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderStartDate.ImageOptions.Image")));
-            this.ColumnExprenseHeaderStartDate.Name = "ColumnExprenseHeaderStartDate";
-            this.ColumnExprenseHeaderStartDate.Visible = true;
-            this.ColumnExprenseHeaderStartDate.VisibleIndex = 2;
-            this.ColumnExprenseHeaderStartDate.Width = 120;
-            // 
-            // ColumnExprenseHeaderStopDate
-            // 
-            this.ColumnExprenseHeaderStopDate.Caption = "Bitiş Tarihi";
-            this.ColumnExprenseHeaderStopDate.FieldName = "ExprenseHeaderStopDate";
-            this.ColumnExprenseHeaderStopDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderStopDate.ImageOptions.Image")));
-            this.ColumnExprenseHeaderStopDate.Name = "ColumnExprenseHeaderStopDate";
-            this.ColumnExprenseHeaderStopDate.Visible = true;
-            this.ColumnExprenseHeaderStopDate.VisibleIndex = 3;
-            this.ColumnExprenseHeaderStopDate.Width = 120;
-            // 
-            // ColumnExprenseHeaderDetail
-            // 
-            this.ColumnExprenseHeaderDetail.Caption = "Detaylar";
-            this.ColumnExprenseHeaderDetail.FieldName = "ExprenseHeaderDetail";
-            this.ColumnExprenseHeaderDetail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderDetail.ImageOptions.Image")));
-            this.ColumnExprenseHeaderDetail.Name = "ColumnExprenseHeaderDetail";
-            this.ColumnExprenseHeaderDetail.Visible = true;
-            this.ColumnExprenseHeaderDetail.VisibleIndex = 4;
-            this.ColumnExprenseHeaderDetail.Width = 150;
-            // 
-            // xtraTabControl
-            // 
-            this.xtraTabControl.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.Teal;
-            this.xtraTabControl.AppearancePage.HeaderActive.Options.UseBackColor = true;
-            this.xtraTabControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.xtraTabControl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.xtraTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl.Location = new System.Drawing.Point(260, 0);
-            this.xtraTabControl.MultiLine = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabControl.Name = "xtraTabControl";
-            this.xtraTabControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
-            this.xtraTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.xtraTabControl.SelectedTabPage = this.TabPageExpenseHeader;
-            this.xtraTabControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabControl.Size = new System.Drawing.Size(964, 494);
-            this.xtraTabControl.TabIndex = 10;
-            this.xtraTabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.TabPageExpenseHeader,
-            this.TabPageExpenseHeaderArchive});
-            this.xtraTabControl.Click += new System.EventHandler(this.xtraTabControl_Click);
-            // 
-            // TabPageExpenseHeader
-            // 
-            this.TabPageExpenseHeader.Controls.Add(this.GControlExpenseHeader);
-            this.TabPageExpenseHeader.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomer.ImageOptions.Image")));
-            this.TabPageExpenseHeader.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
-            this.TabPageExpenseHeader.Name = "TabPageExpenseHeader";
-            this.TabPageExpenseHeader.Size = new System.Drawing.Size(962, 450);
-            this.TabPageExpenseHeader.Text = "GİDER BAŞLIĞI LİSTESİ";
-            // 
             // TabPageExpenseHeaderArchive
             // 
             this.TabPageExpenseHeaderArchive.Controls.Add(this.GControlArchive);
-            this.TabPageExpenseHeaderArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCustomerArchive.ImageOptions.Image")));
+            this.TabPageExpenseHeaderArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageExpenseHeaderArchive.ImageOptions.Image")));
             this.TabPageExpenseHeaderArchive.Name = "TabPageExpenseHeaderArchive";
             this.TabPageExpenseHeaderArchive.Size = new System.Drawing.Size(962, 450);
             this.TabPageExpenseHeaderArchive.Text = "GİDER BAŞLIĞI ARŞİV LİSTESİ";
@@ -289,6 +184,11 @@
             this.GControlArchive.TabIndex = 10;
             this.GControlArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GViewArchive});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.GControlArchive;
+            this.gridView1.Name = "gridView1";
             // 
             // GViewArchive
             // 
@@ -355,6 +255,113 @@
             this.ColumnDetails.VisibleIndex = 4;
             this.ColumnDetails.Width = 150;
             // 
+            // TabPageExpenseHeader
+            // 
+            this.TabPageExpenseHeader.Controls.Add(this.GControlExpenseHeader);
+            this.TabPageExpenseHeader.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageExpenseHeader.ImageOptions.Image")));
+            this.TabPageExpenseHeader.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
+            this.TabPageExpenseHeader.Name = "TabPageExpenseHeader";
+            this.TabPageExpenseHeader.Size = new System.Drawing.Size(962, 450);
+            this.TabPageExpenseHeader.Text = "GİDER BAŞLIĞI LİSTESİ";
+            // 
+            // xtraTabControl
+            // 
+            this.xtraTabControl.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.Teal;
+            this.xtraTabControl.AppearancePage.HeaderActive.Options.UseBackColor = true;
+            this.xtraTabControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.xtraTabControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.xtraTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl.Location = new System.Drawing.Point(260, 0);
+            this.xtraTabControl.MultiLine = DevExpress.Utils.DefaultBoolean.True;
+            this.xtraTabControl.Name = "xtraTabControl";
+            this.xtraTabControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
+            this.xtraTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.xtraTabControl.SelectedTabPage = this.TabPageExpenseHeader;
+            this.xtraTabControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
+            this.xtraTabControl.Size = new System.Drawing.Size(964, 494);
+            this.xtraTabControl.TabIndex = 10;
+            this.xtraTabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.TabPageExpenseHeader,
+            this.TabPageExpenseHeaderArchive});
+            this.xtraTabControl.Click += new System.EventHandler(this.xtraTabControl_Click);
+            // 
+            // GViewExpenseHeader
+            // 
+            this.GViewExpenseHeader.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ColumnExprenseHeaderID,
+            this.ColumnExprenseHeaderName,
+            this.ColumnExprenseHeaderStartDate,
+            this.ColumnExprenseHeaderStopDate,
+            this.ColumnExprenseHeaderDetail});
+            this.GViewExpenseHeader.DetailHeight = 303;
+            this.GViewExpenseHeader.GridControl = this.GControlExpenseHeader;
+            this.GViewExpenseHeader.Name = "GViewExpenseHeader";
+            this.GViewExpenseHeader.OptionsBehavior.Editable = false;
+            this.GViewExpenseHeader.OptionsBehavior.ReadOnly = true;
+            this.GViewExpenseHeader.OptionsView.ShowGroupPanel = false;
+            // 
+            // ColumnExprenseHeaderID
+            // 
+            this.ColumnExprenseHeaderID.Caption = "ID";
+            this.ColumnExprenseHeaderID.FieldName = "ExprenseHeaderID";
+            this.ColumnExprenseHeaderID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderID.ImageOptions.Image")));
+            this.ColumnExprenseHeaderID.Name = "ColumnExprenseHeaderID";
+            this.ColumnExprenseHeaderID.Visible = true;
+            this.ColumnExprenseHeaderID.VisibleIndex = 0;
+            this.ColumnExprenseHeaderID.Width = 50;
+            // 
+            // ColumnExprenseHeaderName
+            // 
+            this.ColumnExprenseHeaderName.Caption = "Gider Başlığı";
+            this.ColumnExprenseHeaderName.FieldName = "ExprenseHeaderName";
+            this.ColumnExprenseHeaderName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderName.ImageOptions.Image")));
+            this.ColumnExprenseHeaderName.Name = "ColumnExprenseHeaderName";
+            this.ColumnExprenseHeaderName.Visible = true;
+            this.ColumnExprenseHeaderName.VisibleIndex = 1;
+            this.ColumnExprenseHeaderName.Width = 120;
+            // 
+            // ColumnExprenseHeaderStartDate
+            // 
+            this.ColumnExprenseHeaderStartDate.Caption = "Başlangıç Tarihi";
+            this.ColumnExprenseHeaderStartDate.FieldName = "ExprenseHeaderStartDate";
+            this.ColumnExprenseHeaderStartDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderStartDate.ImageOptions.Image")));
+            this.ColumnExprenseHeaderStartDate.Name = "ColumnExprenseHeaderStartDate";
+            this.ColumnExprenseHeaderStartDate.Visible = true;
+            this.ColumnExprenseHeaderStartDate.VisibleIndex = 2;
+            this.ColumnExprenseHeaderStartDate.Width = 120;
+            // 
+            // ColumnExprenseHeaderStopDate
+            // 
+            this.ColumnExprenseHeaderStopDate.Caption = "Bitiş Tarihi";
+            this.ColumnExprenseHeaderStopDate.FieldName = "ExprenseHeaderStopDate";
+            this.ColumnExprenseHeaderStopDate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderStopDate.ImageOptions.Image")));
+            this.ColumnExprenseHeaderStopDate.Name = "ColumnExprenseHeaderStopDate";
+            this.ColumnExprenseHeaderStopDate.Visible = true;
+            this.ColumnExprenseHeaderStopDate.VisibleIndex = 3;
+            this.ColumnExprenseHeaderStopDate.Width = 120;
+            // 
+            // ColumnExprenseHeaderDetail
+            // 
+            this.ColumnExprenseHeaderDetail.Caption = "Detaylar";
+            this.ColumnExprenseHeaderDetail.FieldName = "ExprenseHeaderDetail";
+            this.ColumnExprenseHeaderDetail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnExprenseHeaderDetail.ImageOptions.Image")));
+            this.ColumnExprenseHeaderDetail.Name = "ColumnExprenseHeaderDetail";
+            this.ColumnExprenseHeaderDetail.Visible = true;
+            this.ColumnExprenseHeaderDetail.VisibleIndex = 4;
+            this.ColumnExprenseHeaderDetail.Width = 150;
+            // 
+            // GControlExpenseHeader
+            // 
+            this.GControlExpenseHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlExpenseHeader.Location = new System.Drawing.Point(0, 0);
+            this.GControlExpenseHeader.MainView = this.GViewExpenseHeader;
+            this.GControlExpenseHeader.Name = "GControlExpenseHeader";
+            this.GControlExpenseHeader.Size = new System.Drawing.Size(962, 450);
+            this.GControlExpenseHeader.TabIndex = 9;
+            this.GControlExpenseHeader.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewExpenseHeader});
+            this.GControlExpenseHeader.Click += new System.EventHandler(this.GControlCustomer_Click);
+            // 
             // ExpenseWF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -367,14 +374,15 @@
             this.Text = "GİDER BAŞLIĞI İŞLEMLERİ";
             this.Load += new System.EventHandler(this.ExpenseWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeader)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).EndInit();
-            this.xtraTabControl.ResumeLayout(false);
-            this.TabPageExpenseHeader.ResumeLayout(false);
             this.TabPageExpenseHeaderArchive.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GControlArchive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewArchive)).EndInit();
+            this.TabPageExpenseHeader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).EndInit();
+            this.xtraTabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeader)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,15 +398,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlArchive;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlArchiveQuit;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlExpenseHeaderArchiveList;
-        private DevExpress.XtraGrid.GridControl GControlExpenseHeader;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewExpenseHeader;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderID;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderStartDate;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderStopDate;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderDetail;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl;
-        private DevExpress.XtraTab.XtraTabPage TabPageExpenseHeader;
         private DevExpress.XtraTab.XtraTabPage TabPageExpenseHeaderArchive;
         private DevExpress.XtraGrid.GridControl GControlArchive;
         private DevExpress.XtraGrid.Views.Grid.GridView GViewArchive;
@@ -407,5 +406,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn ColumnStartDate;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnStopDate;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnDetails;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraTab.XtraTabPage TabPageExpenseHeader;
+        private DevExpress.XtraGrid.GridControl GControlExpenseHeader;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewExpenseHeader;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderID;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderStartDate;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderStopDate;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnExprenseHeaderDetail;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl;
     }
 }

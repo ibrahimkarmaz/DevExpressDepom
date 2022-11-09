@@ -12,6 +12,7 @@ namespace BusinessLayer.FluentValidation
     {
         public ExpenseContentValidator()
         {
+            RuleFor(x => x.ExprenseHeaderID).NotEmpty().WithMessage("GİDER BAŞLIĞI BOŞ GEÇİLEMEZ.");
             RuleFor(x => x.ExpenseContentTitle).NotEmpty().WithMessage("GİDER ADI BOŞ GEÇİLEMEZ.")
               .MinimumLength(2).WithMessage("GİDER ADI EN AZ 2 KARAKTER İÇERMELİDİR.")
               .MaximumLength(30).WithMessage("GİDER ADI EN FAZLA 30 KARAKTER OLMALI.");

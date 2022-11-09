@@ -208,7 +208,7 @@
             this.GViewBland.GridControl = this.GControlBland;
             this.GViewBland.Name = "GViewBland";
             this.GViewBland.OptionsView.ShowGroupPanel = false;
-            this.GViewBland.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.GViewBland_RowClick);
+            this.GViewBland.Click += new System.EventHandler(this.GViewBland_Click);
             // 
             // ColumnBlandID
             // 

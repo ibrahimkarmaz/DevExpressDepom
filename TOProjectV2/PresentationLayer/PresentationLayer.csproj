@@ -212,6 +212,30 @@
     <Compile Include="WinFormList\EmployeeWF\EmployeeWF.Designer.cs">
       <DependentUpon>EmployeeWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentAddWF.Designer.cs">
+      <DependentUpon>ExpenseContentAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentUpdateWF.Designer.cs">
+      <DependentUpon>ExpenseContentUpdateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentWF.Designer.cs">
+      <DependentUpon>ExpenseContentWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseHeaderArchiveINExpenseContentWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseHeaderArchiveINExpenseContentWF.Designer.cs">
+      <DependentUpon>ExpenseHeaderArchiveINExpenseContentWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -399,6 +423,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeWF.resx">
       <DependentUpon>EmployeeWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentAddWF.resx">
+      <DependentUpon>ExpenseContentAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentUpdateWF.resx">
+      <DependentUpon>ExpenseContentUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentWF.resx">
+      <DependentUpon>ExpenseContentWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseHeaderArchiveINExpenseContentWF.resx">
+      <DependentUpon>ExpenseHeaderArchiveINExpenseContentWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.resx">
       <DependentUpon>ExpenseHeaderAddWF.cs</DependentUpon>

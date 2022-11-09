@@ -382,6 +382,10 @@
     <Compile Include="Migrations\202211071826489_DELETEEntityExpense.designer.cs">
       <DependentUpon>202211071826489_DELETEEntityExpense.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211081840024_ExpenseContentQueAddUPDATE.cs" />
+    <Compile Include="Migrations\202211081840024_ExpenseContentQueAddUPDATE.designer.cs">
+      <DependentUpon>202211081840024_ExpenseContentQueAddUPDATE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -615,6 +619,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211071826489_DELETEEntityExpense.resx">
       <DependentUpon>202211071826489_DELETEEntityExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211081840024_ExpenseContentQueAddUPDATE.resx">
+      <DependentUpon>202211081840024_ExpenseContentQueAddUPDATE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

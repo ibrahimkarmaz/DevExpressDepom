@@ -22,6 +22,7 @@ using EntityLayer.Concrete;
 using PresentationLayer.WinFormList.DepartmentWF;
 using PresentationLayer.WinFormList.GuidesWF;
 using PresentationLayer.WinFormList.ExpenseWF;
+using PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF;
 
 namespace PresentationLayer
 {
@@ -195,6 +196,16 @@ namespace PresentationLayer
                 expenseWF = new ExpenseWF();
                 expenseWF.MdiParent = this;
                 expenseWF.Show();
+            }
+        }
+        ExpenseContentWF expenseContentWF;
+        private void barButtonItemExpenseContent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (expenseContentWF == null || expenseContentWF.IsDisposed)
+            {
+                expenseContentWF = new ExpenseContentWF();
+                expenseContentWF.MdiParent = this;
+                expenseContentWF.Show();
             }
         }
     }

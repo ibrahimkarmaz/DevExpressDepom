@@ -133,11 +133,6 @@ namespace PresentationLayer.WinFormList
             }
         }
 
-        private void GViewBland_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
-        {
-            ModelGetAllListBlandID();
-        }
-
         public static int blandIDWithModelNew = -1;
         public static int ModelID = -1;
         private void accordionControlModelNew_Click(object sender, EventArgs e)
@@ -238,6 +233,11 @@ namespace PresentationLayer.WinFormList
                 blandIDWithModelNew = -1;
                 XtraMessageBox.Show("LÜTFEN MODEL SEÇİNİZ...", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void GViewBland_Click(object sender, EventArgs e)
+        {
+            ModelGetAllListBlandID();
         }
     }
 }

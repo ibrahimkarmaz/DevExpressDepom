@@ -17,7 +17,7 @@ namespace EntityLayer.Concrete
         public string ExpenseContentNote { get; set; }
         public bool ExpenseContentArchive { get; set; }
 
-        public int ExprenseHeaderID { get; set; }
+        public int? ExprenseHeaderID { get; set; }
         public ExpenseHeader ExpenseHeader { get; set; }
 
     }
