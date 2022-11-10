@@ -230,10 +230,10 @@
     <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentWF.Designer.cs">
       <DependentUpon>ExpenseContentWF.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseHeaderArchiveINExpenseContentWF.cs">
+    <Compile Include="WinFormList\ExpenseWF\ExpenseHeaderArchiveINExpenseContentWF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseHeaderArchiveINExpenseContentWF.Designer.cs">
+    <Compile Include="WinFormList\ExpenseWF\ExpenseHeaderArchiveINExpenseContentWF.Designer.cs">
       <DependentUpon>ExpenseHeaderArchiveINExpenseContentWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.cs">
@@ -433,7 +433,7 @@
     <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseContentWF.resx">
       <DependentUpon>ExpenseContentWF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseContentWF\ExpenseHeaderArchiveINExpenseContentWF.resx">
+    <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseHeaderArchiveINExpenseContentWF.resx">
       <DependentUpon>ExpenseHeaderArchiveINExpenseContentWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseHeaderWF\ExpenseHeaderAddWF.resx">

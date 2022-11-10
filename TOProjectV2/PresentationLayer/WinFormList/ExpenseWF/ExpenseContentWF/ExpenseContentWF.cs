@@ -272,9 +272,11 @@ namespace PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF
             GetAllExpenseContentWithExpenseHeaderIDArchive();
         }
 
-        private void repositoryItemBtnExpenseContent_Click(object sender, EventArgs e)
+        private void repositoryItemButtonEdit2_Click(object sender, EventArgs e)
         {
-
+            ExpenseHeaderArchiveINExpenseContentWF.ExpenseContentID = (int)GViewExpenseHeaderArchive.GetRowCellValue(GViewExpenseHeaderArchive.FocusedRowHandle, GViewExpenseHeaderArchive.Columns[0]);
+            ExpenseHeaderArchiveINExpenseContentWF expenseHeaderArchiveINExpenseContentWF = new ExpenseHeaderArchiveINExpenseContentWF();
+            expenseHeaderArchiveINExpenseContentWF.ShowDialog();
         }
     }
 }

@@ -29,13 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpenseContentWF));
-            DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpenseContentWF));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.accordionControlExpenseContentArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -47,6 +52,16 @@
             this.accordionControlExpenseContentProcess = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.TabPageExpenseContentArchive = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.GControlExpenseHeaderArchive = new DevExpress.XtraGrid.GridControl();
+            this.GViewExpenseHeaderArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnExpenseContent = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.TabPageExpenseContent = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControlExpenseContent = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPageExpenseHeader = new DevExpress.XtraTab.XtraTabPage();
@@ -79,17 +94,14 @@
             this.ColumnExprenseHeaderDetail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.GControlExpenseHeaderArchive = new DevExpress.XtraGrid.GridControl();
-            this.GViewExpenseHeaderArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnExpenseContent = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.TabPageExpenseContentArchive.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeaderArchive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeaderArchive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
             this.TabPageExpenseContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlExpenseContent)).BeginInit();
             this.xtraTabControlExpenseContent.SuspendLayout();
@@ -105,16 +117,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).BeginInit();
             this.xtraTabControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeaderArchive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeaderArchive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // repositoryItemButtonEdit1
+            // 
+            this.repositoryItemButtonEdit1.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
+            this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // accordionControlExpenseContentArchiveList
             // 
-            this.accordionControlExpenseContentArchiveList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderArchiveList.ImageOptions.Image")));
+            this.accordionControlExpenseContentArchiveList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseContentArchiveList.ImageOptions.Image")));
             this.accordionControlExpenseContentArchiveList.Name = "accordionControlExpenseContentArchiveList";
             this.accordionControlExpenseContentArchiveList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlExpenseContentArchiveList.Text = "GİDER ARŞİV LİSTESİ";
@@ -140,7 +156,7 @@
             // 
             // accordionControlExpenseContentList
             // 
-            this.accordionControlExpenseContentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderList.ImageOptions.Image")));
+            this.accordionControlExpenseContentList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseContentList.ImageOptions.Image")));
             this.accordionControlExpenseContentList.Name = "accordionControlExpenseContentList";
             this.accordionControlExpenseContentList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlExpenseContentList.Text = "GİDER LİSTESİ";
@@ -148,7 +164,7 @@
             // 
             // accordionControlExpenseContentArchive
             // 
-            this.accordionControlExpenseContentArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderrArchive.ImageOptions.Image")));
+            this.accordionControlExpenseContentArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseContentArchive.ImageOptions.Image")));
             this.accordionControlExpenseContentArchive.Name = "accordionControlExpenseContentArchive";
             this.accordionControlExpenseContentArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlExpenseContentArchive.Text = "GİDER  BİLGİLERİNİ ARŞİVLE";
@@ -156,7 +172,7 @@
             // 
             // accordionControlExpenseContentDelete
             // 
-            this.accordionControlExpenseContentDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderDelete.ImageOptions.Image")));
+            this.accordionControlExpenseContentDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseContentDelete.ImageOptions.Image")));
             this.accordionControlExpenseContentDelete.Name = "accordionControlExpenseContentDelete";
             this.accordionControlExpenseContentDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlExpenseContentDelete.Text = "GİDER BİLGİLERİNİ SİL";
@@ -187,7 +203,7 @@
             this.accordionControlExpenseContentArchive,
             this.accordionControlExpenseContentList});
             this.accordionControlExpenseContentProcess.Expanded = true;
-            this.accordionControlExpenseContentProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseHeaderProcess.ImageOptions.Image")));
+            this.accordionControlExpenseContentProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlExpenseContentProcess.ImageOptions.Image")));
             this.accordionControlExpenseContentProcess.Name = "accordionControlExpenseContentProcess";
             this.accordionControlExpenseContentProcess.Text = "GİDER BAŞLIĞI İŞLEMLERİ";
             // 
@@ -210,16 +226,131 @@
             // TabPageExpenseContentArchive
             // 
             this.TabPageExpenseContentArchive.Controls.Add(this.groupControl1);
-            this.TabPageExpenseContentArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageExpenseHeaderArchive.ImageOptions.Image")));
+            this.TabPageExpenseContentArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageExpenseContentArchive.ImageOptions.Image")));
             this.TabPageExpenseContentArchive.Name = "TabPageExpenseContentArchive";
             this.TabPageExpenseContentArchive.Size = new System.Drawing.Size(907, 465);
             this.TabPageExpenseContentArchive.Text = "GİDER BAŞLIĞI ARŞİV LİSTESİ";
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.AppearanceCaption.Options.UseTextOptions = true;
+            this.groupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.groupControl1.AppearanceCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.groupControl1.Controls.Add(this.GControlExpenseHeaderArchive);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(907, 465);
+            this.groupControl1.TabIndex = 11;
+            this.groupControl1.Text = "ARŞİV GİDER BAŞLIĞI İŞLEMLERİ";
+            // 
+            // GControlExpenseHeaderArchive
+            // 
+            this.GControlExpenseHeaderArchive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlExpenseHeaderArchive.Location = new System.Drawing.Point(2, 29);
+            this.GControlExpenseHeaderArchive.MainView = this.GViewExpenseHeaderArchive;
+            this.GControlExpenseHeaderArchive.Name = "GControlExpenseHeaderArchive";
+            this.GControlExpenseHeaderArchive.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEdit2});
+            this.GControlExpenseHeaderArchive.Size = new System.Drawing.Size(903, 434);
+            this.GControlExpenseHeaderArchive.TabIndex = 12;
+            this.GControlExpenseHeaderArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewExpenseHeaderArchive});
+            // 
+            // GViewExpenseHeaderArchive
+            // 
+            this.GViewExpenseHeaderArchive.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12,
+            this.ColumnExpenseContent});
+            this.GViewExpenseHeaderArchive.DetailHeight = 303;
+            this.GViewExpenseHeaderArchive.GridControl = this.GControlExpenseHeaderArchive;
+            this.GViewExpenseHeaderArchive.Name = "GViewExpenseHeaderArchive";
+            this.GViewExpenseHeaderArchive.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "ID";
+            this.gridColumn8.FieldName = "ExprenseHeaderID";
+            this.gridColumn8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn8.ImageOptions.Image")));
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.ReadOnly = true;
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 0;
+            this.gridColumn8.Width = 61;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Gider Başlığı";
+            this.gridColumn9.FieldName = "ExprenseHeaderName";
+            this.gridColumn9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn9.ImageOptions.Image")));
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.ReadOnly = true;
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 1;
+            this.gridColumn9.Width = 147;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "Başlangıç Tarihi";
+            this.gridColumn10.FieldName = "ExprenseHeaderStartDate";
+            this.gridColumn10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn10.ImageOptions.Image")));
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.ReadOnly = true;
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 2;
+            this.gridColumn10.Width = 147;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "Bitiş Tarihi";
+            this.gridColumn11.FieldName = "ExprenseHeaderStopDate";
+            this.gridColumn11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn11.ImageOptions.Image")));
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.ReadOnly = true;
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 3;
+            this.gridColumn11.Width = 147;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "Detaylar";
+            this.gridColumn12.FieldName = "ExprenseHeaderDetail";
+            this.gridColumn12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn12.ImageOptions.Image")));
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.OptionsColumn.ReadOnly = true;
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 4;
+            this.gridColumn12.Width = 184;
+            // 
+            // ColumnExpenseContent
+            // 
+            this.ColumnExpenseContent.ColumnEdit = this.repositoryItemButtonEdit2;
+            this.ColumnExpenseContent.Name = "ColumnExpenseContent";
+            this.ColumnExpenseContent.Visible = true;
+            this.ColumnExpenseContent.VisibleIndex = 5;
+            this.ColumnExpenseContent.Width = 50;
+            // 
+            // repositoryItemButtonEdit2
+            // 
+            this.repositoryItemButtonEdit2.AutoHeight = false;
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            this.repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit2";
+            this.repositoryItemButtonEdit2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repositoryItemButtonEdit2.Click += new System.EventHandler(this.repositoryItemButtonEdit2_Click);
             // 
             // TabPageExpenseContent
             // 
             this.TabPageExpenseContent.Controls.Add(this.xtraTabControlExpenseContent);
             this.TabPageExpenseContent.Controls.Add(this.groupControlExpenseHeader);
-            this.TabPageExpenseContent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageExpenseHeader.ImageOptions.Image")));
+            this.TabPageExpenseContent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageExpenseContent.ImageOptions.Image")));
             this.TabPageExpenseContent.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
             this.TabPageExpenseContent.Name = "TabPageExpenseContent";
             this.TabPageExpenseContent.Size = new System.Drawing.Size(907, 465);
@@ -377,8 +508,6 @@
             this.GViewExpenseContentArchive.DetailHeight = 303;
             this.GViewExpenseContentArchive.GridControl = this.GControlExpenseContentArchive;
             this.GViewExpenseContentArchive.Name = "GViewExpenseContentArchive";
-            this.GViewExpenseContentArchive.OptionsBehavior.Editable = false;
-            this.GViewExpenseContentArchive.OptionsBehavior.ReadOnly = true;
             this.GViewExpenseContentArchive.OptionsView.ShowGroupPanel = false;
             this.GViewExpenseContentArchive.CustomUnboundColumnData += new DevExpress.XtraGrid.Views.Base.CustomColumnDataEventHandler(this.GViewExpenseContentArchive_CustomUnboundColumnData);
             // 
@@ -565,111 +694,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // groupControl1
-            // 
-            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.AppearanceCaption.Options.UseTextOptions = true;
-            this.groupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.groupControl1.AppearanceCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.groupControl1.Controls.Add(this.GControlExpenseHeaderArchive);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(907, 465);
-            this.groupControl1.TabIndex = 11;
-            this.groupControl1.Text = "ARŞİV GİDER BAŞLIĞI İŞLEMLERİ";
-            // 
-            // GControlExpenseHeaderArchive
-            // 
-            this.GControlExpenseHeaderArchive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlExpenseHeaderArchive.Location = new System.Drawing.Point(2, 29);
-            this.GControlExpenseHeaderArchive.MainView = this.GViewExpenseHeaderArchive;
-            this.GControlExpenseHeaderArchive.Name = "GControlExpenseHeaderArchive";
-            this.GControlExpenseHeaderArchive.Size = new System.Drawing.Size(903, 434);
-            this.GControlExpenseHeaderArchive.TabIndex = 12;
-            this.GControlExpenseHeaderArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewExpenseHeaderArchive});
-            // 
-            // GViewExpenseHeaderArchive
-            // 
-            this.GViewExpenseHeaderArchive.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.ColumnExpenseContent});
-            this.GViewExpenseHeaderArchive.DetailHeight = 303;
-            this.GViewExpenseHeaderArchive.GridControl = this.GControlExpenseHeaderArchive;
-            this.GViewExpenseHeaderArchive.Name = "GViewExpenseHeaderArchive";
-            this.GViewExpenseHeaderArchive.OptionsBehavior.Editable = false;
-            this.GViewExpenseHeaderArchive.OptionsBehavior.ReadOnly = true;
-            this.GViewExpenseHeaderArchive.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "ID";
-            this.gridColumn8.FieldName = "ExprenseHeaderID";
-            this.gridColumn8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn8.ImageOptions.Image")));
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 0;
-            this.gridColumn8.Width = 61;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "Gider Başlığı";
-            this.gridColumn9.FieldName = "ExprenseHeaderName";
-            this.gridColumn9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn9.ImageOptions.Image")));
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 1;
-            this.gridColumn9.Width = 147;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.Caption = "Başlangıç Tarihi";
-            this.gridColumn10.FieldName = "ExprenseHeaderStartDate";
-            this.gridColumn10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn10.ImageOptions.Image")));
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 2;
-            this.gridColumn10.Width = 147;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.Caption = "Bitiş Tarihi";
-            this.gridColumn11.FieldName = "ExprenseHeaderStopDate";
-            this.gridColumn11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn11.ImageOptions.Image")));
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 3;
-            this.gridColumn11.Width = 147;
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.Caption = "Detaylar";
-            this.gridColumn12.FieldName = "ExprenseHeaderDetail";
-            this.gridColumn12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn12.ImageOptions.Image")));
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 4;
-            this.gridColumn12.Width = 184;
-            // 
-            // ColumnExpenseContent
-            // 
-            repositoryItemButtonEdit1.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.ColumnExpenseContent.ColumnEdit = repositoryItemButtonEdit1;
-            this.ColumnExpenseContent.Name = "ColumnExpenseContent";
-            this.ColumnExpenseContent.Visible = true;
-            this.ColumnExpenseContent.VisibleIndex = 5;
-            this.ColumnExpenseContent.Width = 50;
-            // 
             // ExpenseContentWF
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -683,8 +707,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ExpenseContentWF";
             this.Load += new System.EventHandler(this.ExpenseContentWF_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             this.TabPageExpenseContentArchive.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeaderArchive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeaderArchive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
             this.TabPageExpenseContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlExpenseContent)).EndInit();
             this.xtraTabControlExpenseContent.ResumeLayout(false);
@@ -700,11 +730,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).EndInit();
             this.xtraTabControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlExpenseHeaderArchive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewExpenseHeaderArchive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -762,5 +787,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnExpenseContent;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2;
     }
 }
