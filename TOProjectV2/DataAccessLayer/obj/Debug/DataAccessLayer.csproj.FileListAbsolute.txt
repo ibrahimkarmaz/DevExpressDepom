@@ -121,3 +121,11 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLa
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.NewExpenseHeaderAndContextPKFK.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.DELETEEntityExpense.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.ExpenseContentQueAddUPDATE.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankAndCountyPKFK.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankAndDistrictPKFK.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankUPDATE1.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankAndCompanyFKPKAndMAPUPDATE.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankMAPUPDATE.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankMAPUPDATE2.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankMAPUPDATE3.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.EntityBankQueUPDATE.resources

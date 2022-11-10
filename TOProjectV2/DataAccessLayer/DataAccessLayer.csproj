@@ -386,6 +386,38 @@
     <Compile Include="Migrations\202211081840024_ExpenseContentQueAddUPDATE.designer.cs">
       <DependentUpon>202211081840024_ExpenseContentQueAddUPDATE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211101948218_EntityBankAndCountyPKFK.cs" />
+    <Compile Include="Migrations\202211101948218_EntityBankAndCountyPKFK.designer.cs">
+      <DependentUpon>202211101948218_EntityBankAndCountyPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211101950232_EntityBankAndDistrictPKFK.cs" />
+    <Compile Include="Migrations\202211101950232_EntityBankAndDistrictPKFK.designer.cs">
+      <DependentUpon>202211101950232_EntityBankAndDistrictPKFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211101958006_EntityBankUPDATE1.cs" />
+    <Compile Include="Migrations\202211101958006_EntityBankUPDATE1.designer.cs">
+      <DependentUpon>202211101958006_EntityBankUPDATE1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211102003395_EntityBankAndCompanyFKPKAndMAPUPDATE.cs" />
+    <Compile Include="Migrations\202211102003395_EntityBankAndCompanyFKPKAndMAPUPDATE.designer.cs">
+      <DependentUpon>202211102003395_EntityBankAndCompanyFKPKAndMAPUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211102113580_EntityBankMAPUPDATE.cs" />
+    <Compile Include="Migrations\202211102113580_EntityBankMAPUPDATE.designer.cs">
+      <DependentUpon>202211102113580_EntityBankMAPUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211102136553_EntityBankMAPUPDATE2.cs" />
+    <Compile Include="Migrations\202211102136553_EntityBankMAPUPDATE2.designer.cs">
+      <DependentUpon>202211102136553_EntityBankMAPUPDATE2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211102252415_EntityBankMAPUPDATE3.cs" />
+    <Compile Include="Migrations\202211102252415_EntityBankMAPUPDATE3.designer.cs">
+      <DependentUpon>202211102252415_EntityBankMAPUPDATE3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211102301490_EntityBankQueUPDATE.cs" />
+    <Compile Include="Migrations\202211102301490_EntityBankQueUPDATE.designer.cs">
+      <DependentUpon>202211102301490_EntityBankQueUPDATE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -622,6 +654,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211081840024_ExpenseContentQueAddUPDATE.resx">
       <DependentUpon>202211081840024_ExpenseContentQueAddUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211101948218_EntityBankAndCountyPKFK.resx">
+      <DependentUpon>202211101948218_EntityBankAndCountyPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211101950232_EntityBankAndDistrictPKFK.resx">
+      <DependentUpon>202211101950232_EntityBankAndDistrictPKFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211101958006_EntityBankUPDATE1.resx">
+      <DependentUpon>202211101958006_EntityBankUPDATE1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211102003395_EntityBankAndCompanyFKPKAndMAPUPDATE.resx">
+      <DependentUpon>202211102003395_EntityBankAndCompanyFKPKAndMAPUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211102113580_EntityBankMAPUPDATE.resx">
+      <DependentUpon>202211102113580_EntityBankMAPUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211102136553_EntityBankMAPUPDATE2.resx">
+      <DependentUpon>202211102136553_EntityBankMAPUPDATE2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211102252415_EntityBankMAPUPDATE3.resx">
+      <DependentUpon>202211102252415_EntityBankMAPUPDATE3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211102301490_EntityBankQueUPDATE.resx">
+      <DependentUpon>202211102301490_EntityBankQueUPDATE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

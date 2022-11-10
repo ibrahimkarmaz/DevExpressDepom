@@ -274,9 +274,31 @@ namespace PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF
 
         private void repositoryItemButtonEdit2_Click(object sender, EventArgs e)
         {
-            ExpenseHeaderArchiveINExpenseContentWF.ExpenseContentID = (int)GViewExpenseHeaderArchive.GetRowCellValue(GViewExpenseHeaderArchive.FocusedRowHandle, GViewExpenseHeaderArchive.Columns[0]);
+            ExpenseHeaderArchiveINExpenseContentWF.ExpenseHeaderID = (int)GViewExpenseHeaderArchive.GetRowCellValue(GViewExpenseHeaderArchive.FocusedRowHandle, GViewExpenseHeaderArchive.Columns[0]);
             ExpenseHeaderArchiveINExpenseContentWF expenseHeaderArchiveINExpenseContentWF = new ExpenseHeaderArchiveINExpenseContentWF();
             expenseHeaderArchiveINExpenseContentWF.ShowDialog();
+        }
+
+        private void xtraTabControlExpenseContent_Click(object sender, EventArgs e)
+        {
+            if (xtraTabControlExpenseContent.SelectedTabPage == xtraTabPageExpenseHeader)
+            {
+                accordionControl1.ActiveGroup = accordionControlExpenseContentProcess;
+            }
+            else
+            {
+                accordionControl1.ActiveGroup = accordionControlArchive;
+            }
+        }
+
+        private void accordionControlExpenseContentProcess_Click(object sender, EventArgs e)
+        {
+            xtraTabControlExpenseContent.SelectedTabPage = xtraTabPageExpenseHeader;
+        }
+
+        private void accordionControlArchive_Click(object sender, EventArgs e)
+        {
+            xtraTabControlExpenseContent.SelectedTabPage = xtraTabPageExpenseHeaderArchive;
         }
     }
 }

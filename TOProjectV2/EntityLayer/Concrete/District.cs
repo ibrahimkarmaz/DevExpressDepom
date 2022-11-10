@@ -16,5 +16,6 @@ namespace EntityLayer.Concrete
         public ICollection<Customer> Customers { get; set; }
         public ICollection<Company> Companys { get; set; }
         public ICollection<Employee> Employees { get; set; }
+        public ICollection<Bank> Banks { get; set; }
     }
 }

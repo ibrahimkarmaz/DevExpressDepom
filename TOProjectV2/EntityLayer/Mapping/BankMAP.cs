@@ -24,25 +24,27 @@ namespace EntityLayer.Mapping
 
             //BENZERSİZ ALANLAR
             this.HasIndex(x => x.IBAN).IsUnique();
-            this.HasIndex(x => x.BankAccountName).IsUnique();
+            this.HasIndex(x => x.BankPhone).IsUnique();
 
 
 
             //EN FAZLA KARAKTER SAYILARI
 
-            this.Property(x => x.BankAccountName).HasMaxLength(30);
+            this.Property(x => x.BankName).HasMaxLength(30);
+            this.Property(x => x.BankAccountNo).HasMaxLength(30);
             this.Property(x => x.BankBranch).HasMaxLength(30);
             this.Property(x => x.IBAN).HasMaxLength(30);
-            this.Property(x => x.BankAccountName).HasMaxLength(20);
             this.Property(x => x.BankOfficial).HasMaxLength(30);
             this.Property(x => x.BankAccountType).HasMaxLength(20);
+            this.Property(x => x.BankPhone).HasMaxLength(15);
+            
 
 
             //BOŞ GEÇİLEMEZ ALANLAR
 
             this.Property(y => y.BankName).IsRequired();
             this.Property(y => y.IBAN).IsRequired();
-            this.Property(y => y.BankAccountName).IsRequired();
+            this.Property(y => y.BankAccountNo).IsRequired();
             this.Property(y => y.BankOfficial).IsRequired();
             this.Property(y => y.BankDate).IsRequired();
             this.Property(y => y.BankAccountType).IsRequired();
@@ -56,13 +58,17 @@ namespace EntityLayer.Mapping
 
             this.Property(z => z.BankID).HasColumnName("BankID");
             this.Property(z => z.BankName).HasColumnName("BankName");
+            this.Property(z => z.CountyID).HasColumnName("CountyID");
+            this.Property(z => z.DistrictID).HasColumnName("DistrictID");
             this.Property(z => z.BankBranch).HasColumnName("BankBranch");
             this.Property(z => z.IBAN).HasColumnName("IBAN");
-            this.Property(z => z.BankAccountName).HasColumnName("BankAccountName");
+            this.Property(z => z.BankAccountNo).HasColumnName("BankAccountNo");
             this.Property(z => z.BankOfficial).HasColumnName("BankOfficial");
             this.Property(z => z.BankDate).HasColumnName("BankDate");
             this.Property(z => z.BankAccountType).HasColumnName("BankAccountType");
+            this.Property(z => z.BankPhone).HasColumnName("BankPhone");
             this.Property(z => z.BankArchive).HasColumnName("BankArchive");
+            this.Property(z => z.CompanyID).HasColumnName("CompanyID");
 
 
             //VERİ TİPLERİ
