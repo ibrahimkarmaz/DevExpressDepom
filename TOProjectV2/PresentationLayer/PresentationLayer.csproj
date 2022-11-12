@@ -111,12 +111,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JointTransactions\AccountType.cs" />
+    <Compile Include="JointTransactions\BankName.cs" />
     <Compile Include="JointTransactions\DragDropProvider.cs" />
     <Compile Include="JointTransactions\ExpenseType.cs" />
     <Compile Include="JointTransactions\MailMessegeApi.cs" />
     <Compile Include="JointTransactions\SmsService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinFormList\BankWF\BankAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\BankWF\BankAddWF.Designer.cs">
+      <DependentUpon>BankAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\BankWF\BankExpandWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\BankWF\BankExpandWF.Designer.cs">
+      <DependentUpon>BankExpandWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\BankWF\BankWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +160,12 @@
     </Compile>
     <Compile Include="WinFormList\CompanyWF\CompanyGetAllListWF.Designer.cs">
       <DependentUpon>CompanyGetAllListWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CompanyWF\CompanySelectWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CompanyWF\CompanySelectWF.Designer.cs">
+      <DependentUpon>CompanySelectWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\CompanyWF\CompanyUpdateWF.cs">
       <SubType>Form</SubType>
@@ -383,6 +403,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WinFormList\BankWF\BankAddWF.resx">
+      <DependentUpon>BankAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\BankWF\BankExpandWF.resx">
+      <DependentUpon>BankExpandWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankWF.resx">
       <DependentUpon>BankWF.cs</DependentUpon>
     </EmbeddedResource>
@@ -397,6 +423,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyGetAllListWF.resx">
       <DependentUpon>CompanyGetAllListWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CompanyWF\CompanySelectWF.resx">
+      <DependentUpon>CompanySelectWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyUpdateWF.resx">
       <DependentUpon>CompanyUpdateWF.cs</DependentUpon>

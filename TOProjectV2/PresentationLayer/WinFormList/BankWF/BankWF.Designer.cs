@@ -30,17 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BankWF));
             this.xtraTabCompanyControl = new DevExpress.XtraTab.XtraTabControl();
-            this.TabPageCompany = new DevExpress.XtraTab.XtraTabPage();
-            this.GControlCompany = new DevExpress.XtraGrid.GridControl();
-            this.GViewCompany = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ColumnCompanyID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TabPageBank = new DevExpress.XtraTab.XtraTabPage();
+            this.GControlBank = new DevExpress.XtraGrid.GridControl();
+            this.GViewBank = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ColumnBankID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnBankName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnCountyName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnDistrinct = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnBankBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnCompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnSectorName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCompanyNameSurname = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnOfficialStatus = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnPhone1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCompanyMail = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TabPageCompanyArchive = new DevExpress.XtraTab.XtraTabPage();
+            this.TabPageBankArchive = new DevExpress.XtraTab.XtraTabPage();
             this.GControlCompanyArchive = new DevExpress.XtraGrid.GridControl();
             this.GViewCompanyArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,24 +49,24 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.accordionControlCompanyArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyGetAllList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyFullList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlNewCompany = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlCompanyProcess = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankGetAllList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankFullList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlNewBank = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlBankProcess = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabCompanyControl)).BeginInit();
             this.xtraTabCompanyControl.SuspendLayout();
-            this.TabPageCompany.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCompany)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCompany)).BeginInit();
-            this.TabPageCompanyArchive.SuspendLayout();
+            this.TabPageBank.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlBank)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewBank)).BeginInit();
+            this.TabPageBankArchive.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyArchive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyArchive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -85,133 +84,121 @@
             this.xtraTabCompanyControl.Name = "xtraTabCompanyControl";
             this.xtraTabCompanyControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
             this.xtraTabCompanyControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.xtraTabCompanyControl.SelectedTabPage = this.TabPageCompany;
+            this.xtraTabCompanyControl.SelectedTabPage = this.TabPageBank;
             this.xtraTabCompanyControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
             this.xtraTabCompanyControl.Size = new System.Drawing.Size(985, 491);
             this.xtraTabCompanyControl.TabIndex = 11;
             this.xtraTabCompanyControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.TabPageCompany,
-            this.TabPageCompanyArchive});
+            this.TabPageBank,
+            this.TabPageBankArchive});
             // 
-            // TabPageCompany
+            // TabPageBank
             // 
-            this.TabPageCompany.Controls.Add(this.GControlCompany);
-            this.TabPageCompany.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCompany.ImageOptions.Image")));
-            this.TabPageCompany.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
-            this.TabPageCompany.Name = "TabPageCompany";
-            this.TabPageCompany.Size = new System.Drawing.Size(983, 439);
-            this.TabPageCompany.Text = "ÜRÜNLER LİSTESİ";
+            this.TabPageBank.Controls.Add(this.GControlBank);
+            this.TabPageBank.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageBank.ImageOptions.Image")));
+            this.TabPageBank.ImageOptions.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.Full;
+            this.TabPageBank.Name = "TabPageBank";
+            this.TabPageBank.Size = new System.Drawing.Size(983, 447);
+            this.TabPageBank.Text = "ÜRÜNLER LİSTESİ";
             // 
-            // GControlCompany
+            // GControlBank
             // 
-            this.GControlCompany.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlCompany.Location = new System.Drawing.Point(0, 0);
-            this.GControlCompany.MainView = this.GViewCompany;
-            this.GControlCompany.Name = "GControlCompany";
-            this.GControlCompany.Size = new System.Drawing.Size(983, 439);
-            this.GControlCompany.TabIndex = 0;
-            this.GControlCompany.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewCompany});
+            this.GControlBank.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlBank.Location = new System.Drawing.Point(0, 0);
+            this.GControlBank.MainView = this.GViewBank;
+            this.GControlBank.Name = "GControlBank";
+            this.GControlBank.Size = new System.Drawing.Size(983, 447);
+            this.GControlBank.TabIndex = 2;
+            this.GControlBank.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewBank});
             // 
-            // GViewCompany
+            // GViewBank
             // 
-            this.GViewCompany.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColumnCompanyID,
-            this.ColumnCompanyName,
-            this.ColumnSectorName,
-            this.ColumnCompanyNameSurname,
-            this.ColumnOfficialStatus,
-            this.ColumnPhone1,
-            this.ColumnCompanyMail});
-            this.GViewCompany.DetailHeight = 303;
-            this.GViewCompany.GridControl = this.GControlCompany;
-            this.GViewCompany.Name = "GViewCompany";
-            this.GViewCompany.OptionsBehavior.Editable = false;
-            this.GViewCompany.OptionsBehavior.ReadOnly = true;
-            this.GViewCompany.OptionsView.ShowGroupPanel = false;
+            this.GViewBank.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ColumnBankID,
+            this.ColumnBankName,
+            this.ColumnCountyName,
+            this.ColumnDistrinct,
+            this.ColumnBankBranch,
+            this.ColumnCompanyName});
+            this.GViewBank.DetailHeight = 303;
+            this.GViewBank.GridControl = this.GControlBank;
+            this.GViewBank.Name = "GViewBank";
+            this.GViewBank.OptionsBehavior.Editable = false;
+            this.GViewBank.OptionsBehavior.ReadOnly = true;
+            this.GViewBank.OptionsView.ShowGroupPanel = false;
             // 
-            // ColumnCompanyID
+            // ColumnBankID
             // 
-            this.ColumnCompanyID.Caption = "ID";
-            this.ColumnCompanyID.FieldName = "CompanyID";
-            this.ColumnCompanyID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCompanyID.ImageOptions.Image")));
-            this.ColumnCompanyID.MinWidth = 18;
-            this.ColumnCompanyID.Name = "ColumnCompanyID";
-            this.ColumnCompanyID.Visible = true;
-            this.ColumnCompanyID.VisibleIndex = 0;
-            this.ColumnCompanyID.Width = 86;
+            this.ColumnBankID.Caption = "ID";
+            this.ColumnBankID.FieldName = "BankID";
+            this.ColumnBankID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBankID.ImageOptions.Image")));
+            this.ColumnBankID.MinWidth = 18;
+            this.ColumnBankID.Name = "ColumnBankID";
+            this.ColumnBankID.Visible = true;
+            this.ColumnBankID.VisibleIndex = 0;
+            this.ColumnBankID.Width = 60;
+            // 
+            // ColumnBankName
+            // 
+            this.ColumnBankName.Caption = "Banka Adı";
+            this.ColumnBankName.FieldName = "BankName";
+            this.ColumnBankName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBankName.ImageOptions.Image")));
+            this.ColumnBankName.MinWidth = 40;
+            this.ColumnBankName.Name = "ColumnBankName";
+            this.ColumnBankName.Visible = true;
+            this.ColumnBankName.VisibleIndex = 2;
+            this.ColumnBankName.Width = 200;
+            // 
+            // ColumnCountyName
+            // 
+            this.ColumnCountyName.Caption = "İL";
+            this.ColumnCountyName.FieldName = "CountyName";
+            this.ColumnCountyName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCountyName.ImageOptions.Image")));
+            this.ColumnCountyName.MinWidth = 18;
+            this.ColumnCountyName.Name = "ColumnCountyName";
+            this.ColumnCountyName.Visible = true;
+            this.ColumnCountyName.VisibleIndex = 3;
+            this.ColumnCountyName.Width = 80;
+            // 
+            // ColumnDistrinct
+            // 
+            this.ColumnDistrinct.Caption = "İLÇE";
+            this.ColumnDistrinct.FieldName = "DistrictName";
+            this.ColumnDistrinct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnDistrinct.ImageOptions.Image")));
+            this.ColumnDistrinct.Name = "ColumnDistrinct";
+            this.ColumnDistrinct.Visible = true;
+            this.ColumnDistrinct.VisibleIndex = 4;
+            this.ColumnDistrinct.Width = 80;
+            // 
+            // ColumnBankBranch
+            // 
+            this.ColumnBankBranch.Caption = "Banka Şübesi";
+            this.ColumnBankBranch.FieldName = "BankBranch";
+            this.ColumnBankBranch.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBankBranch.ImageOptions.Image")));
+            this.ColumnBankBranch.MinWidth = 15;
+            this.ColumnBankBranch.Name = "ColumnBankBranch";
+            this.ColumnBankBranch.Visible = true;
+            this.ColumnBankBranch.VisibleIndex = 5;
+            this.ColumnBankBranch.Width = 150;
             // 
             // ColumnCompanyName
             // 
             this.ColumnCompanyName.Caption = "Firma Adı";
             this.ColumnCompanyName.FieldName = "CompanyName";
             this.ColumnCompanyName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCompanyName.ImageOptions.Image")));
-            this.ColumnCompanyName.MinWidth = 40;
             this.ColumnCompanyName.Name = "ColumnCompanyName";
             this.ColumnCompanyName.Visible = true;
             this.ColumnCompanyName.VisibleIndex = 1;
-            this.ColumnCompanyName.Width = 172;
+            this.ColumnCompanyName.Width = 180;
             // 
-            // ColumnSectorName
+            // TabPageBankArchive
             // 
-            this.ColumnSectorName.Caption = "Sektör Adı";
-            this.ColumnSectorName.FieldName = "SectorName";
-            this.ColumnSectorName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnSectorName.ImageOptions.Image")));
-            this.ColumnSectorName.MinWidth = 18;
-            this.ColumnSectorName.Name = "ColumnSectorName";
-            this.ColumnSectorName.Visible = true;
-            this.ColumnSectorName.VisibleIndex = 2;
-            this.ColumnSectorName.Width = 105;
-            // 
-            // ColumnCompanyNameSurname
-            // 
-            this.ColumnCompanyNameSurname.Caption = "Yetkili";
-            this.ColumnCompanyNameSurname.FieldName = "CompanyOfficialNameSurName";
-            this.ColumnCompanyNameSurname.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCompanyNameSurname.ImageOptions.Image")));
-            this.ColumnCompanyNameSurname.Name = "ColumnCompanyNameSurname";
-            this.ColumnCompanyNameSurname.Visible = true;
-            this.ColumnCompanyNameSurname.VisibleIndex = 3;
-            this.ColumnCompanyNameSurname.Width = 125;
-            // 
-            // ColumnOfficialStatus
-            // 
-            this.ColumnOfficialStatus.Caption = "Yetkili Statüsü";
-            this.ColumnOfficialStatus.FieldName = "CompanyOfficialStatus";
-            this.ColumnOfficialStatus.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnOfficialStatus.ImageOptions.Image")));
-            this.ColumnOfficialStatus.MinWidth = 15;
-            this.ColumnOfficialStatus.Name = "ColumnOfficialStatus";
-            this.ColumnOfficialStatus.Visible = true;
-            this.ColumnOfficialStatus.VisibleIndex = 4;
-            this.ColumnOfficialStatus.Width = 121;
-            // 
-            // ColumnPhone1
-            // 
-            this.ColumnPhone1.Caption = "Telefon";
-            this.ColumnPhone1.FieldName = "CompanyPhone1";
-            this.ColumnPhone1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnPhone1.ImageOptions.Image")));
-            this.ColumnPhone1.Name = "ColumnPhone1";
-            this.ColumnPhone1.Visible = true;
-            this.ColumnPhone1.VisibleIndex = 5;
-            this.ColumnPhone1.Width = 119;
-            // 
-            // ColumnCompanyMail
-            // 
-            this.ColumnCompanyMail.Caption = "E-Posta Adresi";
-            this.ColumnCompanyMail.FieldName = "CompanyMail";
-            this.ColumnCompanyMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCompanyMail.ImageOptions.Image")));
-            this.ColumnCompanyMail.MinWidth = 40;
-            this.ColumnCompanyMail.Name = "ColumnCompanyMail";
-            this.ColumnCompanyMail.Visible = true;
-            this.ColumnCompanyMail.VisibleIndex = 6;
-            this.ColumnCompanyMail.Width = 210;
-            // 
-            // TabPageCompanyArchive
-            // 
-            this.TabPageCompanyArchive.Controls.Add(this.GControlCompanyArchive);
-            this.TabPageCompanyArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageCompanyArchive.ImageOptions.Image")));
-            this.TabPageCompanyArchive.Name = "TabPageCompanyArchive";
-            this.TabPageCompanyArchive.Size = new System.Drawing.Size(968, 430);
-            this.TabPageCompanyArchive.Text = "ÜRÜNLER ARŞİV LİSTESİ";
+            this.TabPageBankArchive.Controls.Add(this.GControlCompanyArchive);
+            this.TabPageBankArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageBankArchive.ImageOptions.Image")));
+            this.TabPageBankArchive.Name = "TabPageBankArchive";
+            this.TabPageBankArchive.Size = new System.Drawing.Size(983, 447);
+            this.TabPageBankArchive.Text = "ÜRÜNLER ARŞİV LİSTESİ";
             // 
             // GControlCompanyArchive
             // 
@@ -219,7 +206,7 @@
             this.GControlCompanyArchive.Location = new System.Drawing.Point(0, 0);
             this.GControlCompanyArchive.MainView = this.GViewCompanyArchive;
             this.GControlCompanyArchive.Name = "GControlCompanyArchive";
-            this.GControlCompanyArchive.Size = new System.Drawing.Size(968, 430);
+            this.GControlCompanyArchive.Size = new System.Drawing.Size(983, 447);
             this.GControlCompanyArchive.TabIndex = 1;
             this.GControlCompanyArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GViewCompanyArchive});
@@ -316,100 +303,102 @@
             this.gridColumn7.VisibleIndex = 6;
             this.gridColumn7.Width = 210;
             // 
-            // accordionControlCompanyArchiveList
+            // accordionControlBankArchiveList
             // 
-            this.accordionControlCompanyArchiveList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyArchiveList.ImageOptions.Image")));
-            this.accordionControlCompanyArchiveList.Name = "accordionControlCompanyArchiveList";
-            this.accordionControlCompanyArchiveList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyArchiveList.Text = "FİRMA ARŞİV LİSTESİ";
+            this.accordionControlBankArchiveList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankArchiveList.ImageOptions.Image")));
+            this.accordionControlBankArchiveList.Name = "accordionControlBankArchiveList";
+            this.accordionControlBankArchiveList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankArchiveList.Text = "BANKA ARŞİV LİSTESİ";
             // 
-            // accordionControlCompanyArchiveQuit
+            // accordionControlBankArchiveQuit
             // 
-            this.accordionControlCompanyArchiveQuit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyArchiveQuit.ImageOptions.Image")));
-            this.accordionControlCompanyArchiveQuit.Name = "accordionControlCompanyArchiveQuit";
-            this.accordionControlCompanyArchiveQuit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyArchiveQuit.Text = "FİRMA ARŞİVDEN ÇIKAR";
+            this.accordionControlBankArchiveQuit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankArchiveQuit.ImageOptions.Image")));
+            this.accordionControlBankArchiveQuit.Name = "accordionControlBankArchiveQuit";
+            this.accordionControlBankArchiveQuit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankArchiveQuit.Text = "BANKA ARŞİVDEN ÇIKAR";
             // 
             // accordionControlArchive
             // 
             this.accordionControlArchive.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlCompanyArchiveQuit,
-            this.accordionControlCompanyArchiveList,
-            this.accordionControlCompanyGetAllList});
+            this.accordionControlBankArchiveQuit,
+            this.accordionControlBankArchiveList,
+            this.accordionControlBankGetAllList});
             this.accordionControlArchive.Expanded = true;
             this.accordionControlArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlArchive.ImageOptions.Image")));
             this.accordionControlArchive.Name = "accordionControlArchive";
             this.accordionControlArchive.Text = "FİRMA ARŞİV İŞLEMLERİ";
             // 
-            // accordionControlCompanyGetAllList
+            // accordionControlBankGetAllList
             // 
-            this.accordionControlCompanyGetAllList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyGetAllList.ImageOptions.Image")));
-            this.accordionControlCompanyGetAllList.Name = "accordionControlCompanyGetAllList";
-            this.accordionControlCompanyGetAllList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyGetAllList.Text = "ARŞİV LİSTESİNİ GENİŞLET";
+            this.accordionControlBankGetAllList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankGetAllList.ImageOptions.Image")));
+            this.accordionControlBankGetAllList.Name = "accordionControlBankGetAllList";
+            this.accordionControlBankGetAllList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankGetAllList.Text = "ARŞİV LİSTESİNİ GENİŞLET";
             // 
-            // accordionControlCompanyFullList
+            // accordionControlBankFullList
             // 
-            this.accordionControlCompanyFullList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyFullList.ImageOptions.Image")));
-            this.accordionControlCompanyFullList.Name = "accordionControlCompanyFullList";
-            this.accordionControlCompanyFullList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyFullList.Text = "LİSTEYİ GENİŞLET";
+            this.accordionControlBankFullList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankFullList.ImageOptions.Image")));
+            this.accordionControlBankFullList.Name = "accordionControlBankFullList";
+            this.accordionControlBankFullList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankFullList.Text = "LİSTEYİ GENİŞLET";
+            this.accordionControlBankFullList.Click += new System.EventHandler(this.accordionControlBankFullList_Click);
             // 
-            // accordionControlCompanyList
+            // accordionControlBankList
             // 
-            this.accordionControlCompanyList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyList.ImageOptions.Image")));
-            this.accordionControlCompanyList.Name = "accordionControlCompanyList";
-            this.accordionControlCompanyList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyList.Text = "FİRMA LİSTESİ";
+            this.accordionControlBankList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankList.ImageOptions.Image")));
+            this.accordionControlBankList.Name = "accordionControlBankList";
+            this.accordionControlBankList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankList.Text = "BANKA LİSTESİ";
             // 
-            // accordionControlCompanyArchive
+            // accordionControlBankArchive
             // 
-            this.accordionControlCompanyArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyArchive.ImageOptions.Image")));
-            this.accordionControlCompanyArchive.Name = "accordionControlCompanyArchive";
-            this.accordionControlCompanyArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyArchive.Text = "FİRMA BİLGİLERİNİ ARŞİVLE";
+            this.accordionControlBankArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankArchive.ImageOptions.Image")));
+            this.accordionControlBankArchive.Name = "accordionControlBankArchive";
+            this.accordionControlBankArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankArchive.Text = "BANKA BİLGİLERİNİ ARŞİVLE";
             // 
-            // accordionControlCompanyDelete
+            // accordionControlBankDelete
             // 
-            this.accordionControlCompanyDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyDelete.ImageOptions.Image")));
-            this.accordionControlCompanyDelete.Name = "accordionControlCompanyDelete";
-            this.accordionControlCompanyDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyDelete.Text = "FİRMA BİLGİLERİNİ SİL";
+            this.accordionControlBankDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankDelete.ImageOptions.Image")));
+            this.accordionControlBankDelete.Name = "accordionControlBankDelete";
+            this.accordionControlBankDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankDelete.Text = "BANKA BİLGİLERİNİ SİL";
             // 
-            // accordionControlCompanyUpdate
+            // accordionControlBankUpdate
             // 
-            this.accordionControlCompanyUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyUpdate.ImageOptions.Image")));
-            this.accordionControlCompanyUpdate.Name = "accordionControlCompanyUpdate";
-            this.accordionControlCompanyUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlCompanyUpdate.Text = "FİRMA BİLGİLERİNİ DÜZENLE";
+            this.accordionControlBankUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankUpdate.ImageOptions.Image")));
+            this.accordionControlBankUpdate.Name = "accordionControlBankUpdate";
+            this.accordionControlBankUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlBankUpdate.Text = "BANKA BİLGİLERİNİ DÜZENLE";
             // 
-            // accordionControlNewCompany
+            // accordionControlNewBank
             // 
-            this.accordionControlNewCompany.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlNewCompany.ImageOptions.Image")));
-            this.accordionControlNewCompany.Name = "accordionControlNewCompany";
-            this.accordionControlNewCompany.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlNewCompany.Text = "YENİ FİRMA";
+            this.accordionControlNewBank.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlNewBank.ImageOptions.Image")));
+            this.accordionControlNewBank.Name = "accordionControlNewBank";
+            this.accordionControlNewBank.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlNewBank.Text = "YENİ BANKA";
+            this.accordionControlNewBank.Click += new System.EventHandler(this.accordionControlNewBank_Click);
             // 
-            // accordionControlCompanyProcess
+            // accordionControlBankProcess
             // 
-            this.accordionControlCompanyProcess.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlNewCompany,
-            this.accordionControlCompanyUpdate,
-            this.accordionControlCompanyDelete,
-            this.accordionControlCompanyArchive,
-            this.accordionControlCompanyList,
-            this.accordionControlCompanyFullList});
-            this.accordionControlCompanyProcess.Expanded = true;
-            this.accordionControlCompanyProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlCompanyProcess.ImageOptions.Image")));
-            this.accordionControlCompanyProcess.Name = "accordionControlCompanyProcess";
-            this.accordionControlCompanyProcess.Text = "FİRMA İŞLEMLERİ";
+            this.accordionControlBankProcess.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlNewBank,
+            this.accordionControlBankUpdate,
+            this.accordionControlBankDelete,
+            this.accordionControlBankArchive,
+            this.accordionControlBankList,
+            this.accordionControlBankFullList});
+            this.accordionControlBankProcess.Expanded = true;
+            this.accordionControlBankProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankProcess.ImageOptions.Image")));
+            this.accordionControlBankProcess.Name = "accordionControlBankProcess";
+            this.accordionControlBankProcess.Text = "FİRMA İŞLEMLERİ";
             // 
             // accordionControl1
             // 
             this.accordionControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlCompanyProcess,
+            this.accordionControlBankProcess,
             this.accordionControlArchive});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
@@ -430,12 +419,13 @@
             this.Name = "BankWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BANKA İŞLEMLERİ";
+            this.Load += new System.EventHandler(this.BankWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabCompanyControl)).EndInit();
             this.xtraTabCompanyControl.ResumeLayout(false);
-            this.TabPageCompany.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCompany)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCompany)).EndInit();
-            this.TabPageCompanyArchive.ResumeLayout(false);
+            this.TabPageBank.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GControlBank)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewBank)).EndInit();
+            this.TabPageBankArchive.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyArchive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyArchive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
@@ -446,17 +436,8 @@
         #endregion
 
         private DevExpress.XtraTab.XtraTabControl xtraTabCompanyControl;
-        private DevExpress.XtraTab.XtraTabPage TabPageCompany;
-        private DevExpress.XtraGrid.GridControl GControlCompany;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewCompany;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyID;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnSectorName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyNameSurname;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnOfficialStatus;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnPhone1;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyMail;
-        private DevExpress.XtraTab.XtraTabPage TabPageCompanyArchive;
+        private DevExpress.XtraTab.XtraTabPage TabPageBank;
+        private DevExpress.XtraTab.XtraTabPage TabPageBankArchive;
         private DevExpress.XtraGrid.GridControl GControlCompanyArchive;
         private DevExpress.XtraGrid.Views.Grid.GridView GViewCompanyArchive;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -466,17 +447,25 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyArchiveList;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyArchiveQuit;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankArchiveList;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankArchiveQuit;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlArchive;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyGetAllList;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyFullList;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyList;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyArchive;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyDelete;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyUpdate;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlNewCompany;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlCompanyProcess;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankGetAllList;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankFullList;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankList;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankArchive;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankDelete;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankUpdate;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlNewBank;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankProcess;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
+        private DevExpress.XtraGrid.GridControl GControlBank;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewBank;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnBankID;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnBankName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnCountyName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnDistrinct;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnBankBranch;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyName;
     }
 }

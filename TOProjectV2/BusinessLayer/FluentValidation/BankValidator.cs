@@ -23,7 +23,7 @@ namespace BusinessLayer.FluentValidation
                 .MinimumLength(2).WithMessage("BANKA ŞUBESİ EN AZ 2 KARAKTER İÇERMELİ.")
                 .MaximumLength(30).WithMessage("BANKA ŞUBESİ EN FAZLA 30 KARAKTER OLMALI.");
 
-            RuleFor(x => x.BankBranch).NotEmpty().WithMessage("IBAN BOŞ GEÇİLEMEZ.")
+            RuleFor(x => x.IBAN).NotEmpty().WithMessage("IBAN BOŞ GEÇİLEMEZ.")
                 .MinimumLength(2).WithMessage("IBAN EN AZ 2 KARAKTER İÇERMELİ.")
                 .MaximumLength(30).WithMessage("IBAN EN FAZLA 30 KARAKTER OLMALI.");
 

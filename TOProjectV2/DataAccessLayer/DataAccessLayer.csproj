@@ -74,10 +74,13 @@
     <Compile Include="Abstract\IStockDAL.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="DTO\AutoMapperProfiles.cs" />
+    <Compile Include="DTO\BankINCountyDistrintAndCompanyDTO.cs" />
     <Compile Include="DTO\CompanyINCountyDistrintAndSectorDTO.cs" />
+    <Compile Include="DTO\CompanySelectDTO.cs" />
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
     <Compile Include="DTO\EmployeeINCountyDistrintAndDepartmentDTO.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
+    <Compile Include="EntityFramework\EFBankDAL.cs" />
     <Compile Include="EntityFramework\EFBlandDAL.cs" />
     <Compile Include="EntityFramework\EFCompanyDAL.cs" />
     <Compile Include="EntityFramework\EFCountyDAL.cs" />

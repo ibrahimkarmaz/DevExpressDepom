@@ -56,6 +56,7 @@
             this.BarSector = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonDepartment = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonTranslate = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItemExpenseContent = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -83,7 +84,6 @@
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barButtonItemExpenseContent = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -210,8 +210,10 @@
             // 
             this.barBanks.Caption = "BANKALAR";
             this.barBanks.Id = 9;
-            this.barBanks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBanks.ImageOptions.LargeImage")));
+            this.barBanks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBanks.ImageOptions.Image")));
             this.barBanks.Name = "barBanks";
+            this.barBanks.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barBanks.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBanks_ItemClick);
             // 
             // barDirectory
             // 
@@ -346,6 +348,15 @@
             this.barButtonTranslate.Name = "barButtonTranslate";
             this.barButtonTranslate.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonTranslate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonTranslate_ItemClick);
+            // 
+            // barButtonItemExpenseContent
+            // 
+            this.barButtonItemExpenseContent.Caption = "GİDER İÇERİĞİ";
+            this.barButtonItemExpenseContent.Id = 25;
+            this.barButtonItemExpenseContent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemExpenseContent.ImageOptions.Image")));
+            this.barButtonItemExpenseContent.Name = "barButtonItemExpenseContent";
+            this.barButtonItemExpenseContent.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItemExpenseContent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemExpenseContent_ItemClick);
             // 
             // ribbonHome
             // 
@@ -538,15 +549,6 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // barButtonItemExpenseContent
-            // 
-            this.barButtonItemExpenseContent.Caption = "GİDER İÇERİĞİ";
-            this.barButtonItemExpenseContent.Id = 25;
-            this.barButtonItemExpenseContent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItemExpenseContent.Name = "barButtonItemExpenseContent";
-            this.barButtonItemExpenseContent.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItemExpenseContent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemExpenseContent_ItemClick);
             // 
             // CommercialAutomation
             // 

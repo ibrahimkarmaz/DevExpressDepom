@@ -1,28 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using System.Xml.Linq;
+﻿using DevExpress.XtraBars.Helpers;
 using PresentationLayer.WinFormList;
-using PresentationLayer.WinFormList.CustomerWF;
-using PresentationLayer.WinFormList.ProductWF;
-using DevExpress.XtraBars.Helpers;
-using DevExpress.LookAndFeel;
-using PresentationLayer.WinFormList.SectorWF;
+using PresentationLayer.WinFormList.BankWF;
 using PresentationLayer.WinFormList.CompanyWF;
-using PresentationLayer.WinFormList.DepartmenWF;
-using PresentationLayer.WinFormList.EmployeeWF;
-using EntityLayer.Concrete;
+using PresentationLayer.WinFormList.CustomerWF;
 using PresentationLayer.WinFormList.DepartmentWF;
-using PresentationLayer.WinFormList.GuidesWF;
+using PresentationLayer.WinFormList.EmployeeWF;
 using PresentationLayer.WinFormList.ExpenseWF;
 using PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF;
+using PresentationLayer.WinFormList.GuidesWF;
+using PresentationLayer.WinFormList.ProductWF;
+using PresentationLayer.WinFormList.SectorWF;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace PresentationLayer
 {
@@ -41,9 +33,9 @@ namespace PresentationLayer
             var Heat = Weather.Descendants("temperature").ElementAt(0).Attribute("value").Value;
             var icon = Weather.Descendants("weather").ElementAt(0).Attribute("icon").Value;
             var Status = Weather.Descendants("weather").ElementAt(0).Attribute("value").Value;
-            BarWeather.Caption ="İSTANBUL\n"+ Heat + " ºC";
+            BarWeather.Caption = "İSTANBUL\n" + Heat + " ºC";
             Console.WriteLine(Status.ToString());
-            if (Status.ToUpper()=="AÇIK")
+            if (Status.ToUpper() == "AÇIK")
             {
                 BarWeather.ImageOptions.Image = Image.FromFile(@"image\Common\Sumer32.png");
             }
@@ -62,18 +54,18 @@ namespace PresentationLayer
         ProductWF productWF;
         private void barProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (productWF==null || productWF.IsDisposed)
+            if (productWF == null || productWF.IsDisposed)
             {
                 productWF = new ProductWF();
                 productWF.MdiParent = this;
                 productWF.Show();
             }
-           
+
         }
         BlandTypeList productTypeList;
         private void barProductTypeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (productTypeList==null || productTypeList.IsDisposed)
+            if (productTypeList == null || productTypeList.IsDisposed)
             {
                 productTypeList = new BlandTypeList();
                 productTypeList.MdiParent = this;
@@ -83,7 +75,7 @@ namespace PresentationLayer
         CustomerWF customerWF;
         private void barCustomers_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (customerWF==null || customerWF.IsDisposed)
+            if (customerWF == null || customerWF.IsDisposed)
             {
                 customerWF = new CustomerWF();
                 customerWF.MdiParent = this;
@@ -113,7 +105,7 @@ namespace PresentationLayer
         SectorWF sectorWF;
         private void BarSector_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (sectorWF==null || sectorWF.IsDisposed)
+            if (sectorWF == null || sectorWF.IsDisposed)
             {
                 sectorWF = new SectorWF();
                 sectorWF.MdiParent = this;
@@ -124,7 +116,7 @@ namespace PresentationLayer
         CompanyWF companyWF;
         private void barCompanys_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (companyWF==null || companyWF.IsDisposed)
+            if (companyWF == null || companyWF.IsDisposed)
             {
                 companyWF = new CompanyWF();
                 companyWF.MdiParent = this;
@@ -134,7 +126,7 @@ namespace PresentationLayer
         DepartmentWF departmentWF;
         private void barButtonDepartment_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (departmentWF==null || departmentWF.IsDisposed)
+            if (departmentWF == null || departmentWF.IsDisposed)
             {
                 departmentWF = new DepartmentWF();
                 departmentWF.MdiParent = this;
@@ -145,7 +137,7 @@ namespace PresentationLayer
         EmployeeWF employeeWF;
         private void barEmployees_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (employeeWF==null || employeeWF.IsDisposed)
+            if (employeeWF == null || employeeWF.IsDisposed)
             {
                 employeeWF = new EmployeeWF();
                 employeeWF.MdiParent = this;
@@ -155,7 +147,7 @@ namespace PresentationLayer
         EmployeeGuideWF employeeGuideWF;
         private void barEmployeeDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (employeeGuideWF==null || employeeGuideWF.IsDisposed)
+            if (employeeGuideWF == null || employeeGuideWF.IsDisposed)
             {
                 employeeGuideWF = new EmployeeGuideWF();
                 employeeGuideWF.MdiParent = this;
@@ -171,7 +163,7 @@ namespace PresentationLayer
         CustomerGuideWF customerGuideWF;
         private void barCustomerDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (customerGuideWF==null || customerGuideWF.IsDisposed)
+            if (customerGuideWF == null || customerGuideWF.IsDisposed)
             {
                 customerGuideWF = new CustomerGuideWF();
                 customerGuideWF.MdiParent = this;
@@ -181,7 +173,7 @@ namespace PresentationLayer
         CompanyGuideWF companyGuideWF;
         private void barCompanyDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (companyGuideWF==null || companyGuideWF.IsDisposed)
+            if (companyGuideWF == null || companyGuideWF.IsDisposed)
             {
                 companyGuideWF = new CompanyGuideWF();
                 companyGuideWF.MdiParent = this;
@@ -191,7 +183,7 @@ namespace PresentationLayer
         ExpenseWF expenseWF;
         private void barExpenses_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (expenseWF==null || expenseWF.IsDisposed)
+            if (expenseWF == null || expenseWF.IsDisposed)
             {
                 expenseWF = new ExpenseWF();
                 expenseWF.MdiParent = this;
@@ -207,6 +199,17 @@ namespace PresentationLayer
                 expenseContentWF.MdiParent = this;
                 expenseContentWF.Show();
             }
+        }
+        BankWF bankWF;
+        private void barBanks_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (bankWF == null || bankWF.IsDisposed)
+            {
+                bankWF = new BankWF();
+                bankWF.MdiParent = this;
+                bankWF.Show();
+            }
+
         }
     }
 }

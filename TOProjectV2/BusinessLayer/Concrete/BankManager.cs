@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.DTO;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,11 @@ namespace BusinessLayer.Concrete
         public BankManager(IBankDAL bankDAL)
         {
             _bankDAL = bankDAL;
+        }
+
+        public List<BankINCountyDistrintAndCompanyDTO> GetAllBank(Expression<Func<BankINCountyDistrintAndCompanyDTO, bool>> filter = null)
+        {
+            return _bankDAL.GetAllBank(filter);
         }
 
         public List<Bank> GetAllList()
