@@ -28,6 +28,10 @@ namespace PresentationLayer.WinFormList.BankWF
         private void BankExpandWF_Load(object sender, EventArgs e)
         {
             GetAllBank();
+            if (Archive==false)
+            {
+                this.Text = "ARŞİV BANKA LİSTESİ";
+            }
         }
     }
 }

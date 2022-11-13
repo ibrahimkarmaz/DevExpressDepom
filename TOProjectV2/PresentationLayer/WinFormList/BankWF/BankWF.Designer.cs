@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BankWF));
-            this.xtraTabCompanyControl = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabBankControl = new DevExpress.XtraTab.XtraTabControl();
             this.TabPageBank = new DevExpress.XtraTab.XtraTabPage();
             this.GControlBank = new DevExpress.XtraGrid.GridControl();
             this.GViewBank = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -40,15 +40,6 @@
             this.ColumnBankBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ColumnCompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TabPageBankArchive = new DevExpress.XtraTab.XtraTabPage();
-            this.GControlCompanyArchive = new DevExpress.XtraGrid.GridControl();
-            this.GViewCompanyArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.accordionControlBankArchiveList = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlBankArchiveQuit = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlArchive = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -61,36 +52,45 @@
             this.accordionControlNewBank = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlBankProcess = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabCompanyControl)).BeginInit();
-            this.xtraTabCompanyControl.SuspendLayout();
+            this.GControlBankArchive = new DevExpress.XtraGrid.GridControl();
+            this.GViewBankArchive = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabBankControl)).BeginInit();
+            this.xtraTabBankControl.SuspendLayout();
             this.TabPageBank.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GControlBank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewBank)).BeginInit();
             this.TabPageBankArchive.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyArchive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyArchive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlBankArchive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewBankArchive)).BeginInit();
             this.SuspendLayout();
             // 
-            // xtraTabCompanyControl
+            // xtraTabBankControl
             // 
-            this.xtraTabCompanyControl.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.Teal;
-            this.xtraTabCompanyControl.AppearancePage.HeaderActive.Options.UseBackColor = true;
-            this.xtraTabCompanyControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.xtraTabCompanyControl.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.xtraTabCompanyControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabCompanyControl.Location = new System.Drawing.Point(250, 0);
-            this.xtraTabCompanyControl.MultiLine = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabCompanyControl.Name = "xtraTabCompanyControl";
-            this.xtraTabCompanyControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
-            this.xtraTabCompanyControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.xtraTabCompanyControl.SelectedTabPage = this.TabPageBank;
-            this.xtraTabCompanyControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabCompanyControl.Size = new System.Drawing.Size(985, 491);
-            this.xtraTabCompanyControl.TabIndex = 11;
-            this.xtraTabCompanyControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabBankControl.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.Teal;
+            this.xtraTabBankControl.AppearancePage.HeaderActive.Options.UseBackColor = true;
+            this.xtraTabBankControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.xtraTabBankControl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.xtraTabBankControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabBankControl.Location = new System.Drawing.Point(250, 0);
+            this.xtraTabBankControl.MultiLine = DevExpress.Utils.DefaultBoolean.True;
+            this.xtraTabBankControl.Name = "xtraTabBankControl";
+            this.xtraTabBankControl.PageImagePosition = DevExpress.XtraTab.TabPageImagePosition.Center;
+            this.xtraTabBankControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.xtraTabBankControl.SelectedTabPage = this.TabPageBank;
+            this.xtraTabBankControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
+            this.xtraTabBankControl.Size = new System.Drawing.Size(985, 491);
+            this.xtraTabBankControl.TabIndex = 11;
+            this.xtraTabBankControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.TabPageBank,
             this.TabPageBankArchive});
+            this.xtraTabBankControl.Click += new System.EventHandler(this.xtraTabCompanyControl_Click);
             // 
             // TabPageBank
             // 
@@ -194,114 +194,11 @@
             // 
             // TabPageBankArchive
             // 
-            this.TabPageBankArchive.Controls.Add(this.GControlCompanyArchive);
+            this.TabPageBankArchive.Controls.Add(this.GControlBankArchive);
             this.TabPageBankArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabPageBankArchive.ImageOptions.Image")));
             this.TabPageBankArchive.Name = "TabPageBankArchive";
             this.TabPageBankArchive.Size = new System.Drawing.Size(983, 447);
             this.TabPageBankArchive.Text = "ÜRÜNLER ARŞİV LİSTESİ";
-            // 
-            // GControlCompanyArchive
-            // 
-            this.GControlCompanyArchive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlCompanyArchive.Location = new System.Drawing.Point(0, 0);
-            this.GControlCompanyArchive.MainView = this.GViewCompanyArchive;
-            this.GControlCompanyArchive.Name = "GControlCompanyArchive";
-            this.GControlCompanyArchive.Size = new System.Drawing.Size(983, 447);
-            this.GControlCompanyArchive.TabIndex = 1;
-            this.GControlCompanyArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewCompanyArchive});
-            // 
-            // GViewCompanyArchive
-            // 
-            this.GViewCompanyArchive.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
-            this.GViewCompanyArchive.DetailHeight = 303;
-            this.GViewCompanyArchive.GridControl = this.GControlCompanyArchive;
-            this.GViewCompanyArchive.Name = "GViewCompanyArchive";
-            this.GViewCompanyArchive.OptionsBehavior.Editable = false;
-            this.GViewCompanyArchive.OptionsBehavior.ReadOnly = true;
-            this.GViewCompanyArchive.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "ID";
-            this.gridColumn1.FieldName = "CompanyID";
-            this.gridColumn1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn1.ImageOptions.Image")));
-            this.gridColumn1.MinWidth = 18;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 86;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Firma Adı";
-            this.gridColumn2.FieldName = "CompanyName";
-            this.gridColumn2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn2.ImageOptions.Image")));
-            this.gridColumn2.MinWidth = 40;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 172;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Sektör Adı";
-            this.gridColumn3.FieldName = "SectorName";
-            this.gridColumn3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn3.ImageOptions.Image")));
-            this.gridColumn3.MinWidth = 18;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 105;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "Yetkili";
-            this.gridColumn4.FieldName = "CompanyOfficialNameSurName";
-            this.gridColumn4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn4.ImageOptions.Image")));
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 125;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Yetkili Statüsü";
-            this.gridColumn5.FieldName = "CompanyOfficialStatus";
-            this.gridColumn5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn5.ImageOptions.Image")));
-            this.gridColumn5.MinWidth = 15;
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 121;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "Telefon";
-            this.gridColumn6.FieldName = "CompanyPhone1";
-            this.gridColumn6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn6.ImageOptions.Image")));
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 119;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "E-Posta Adresi";
-            this.gridColumn7.FieldName = "CompanyMail";
-            this.gridColumn7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn7.ImageOptions.Image")));
-            this.gridColumn7.MinWidth = 40;
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
-            this.gridColumn7.Width = 210;
             // 
             // accordionControlBankArchiveList
             // 
@@ -309,6 +206,7 @@
             this.accordionControlBankArchiveList.Name = "accordionControlBankArchiveList";
             this.accordionControlBankArchiveList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankArchiveList.Text = "BANKA ARŞİV LİSTESİ";
+            this.accordionControlBankArchiveList.Click += new System.EventHandler(this.accordionControlBankArchiveList_Click);
             // 
             // accordionControlBankArchiveQuit
             // 
@@ -316,6 +214,7 @@
             this.accordionControlBankArchiveQuit.Name = "accordionControlBankArchiveQuit";
             this.accordionControlBankArchiveQuit.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankArchiveQuit.Text = "BANKA ARŞİVDEN ÇIKAR";
+            this.accordionControlBankArchiveQuit.Click += new System.EventHandler(this.accordionControlBankArchiveQuit_Click);
             // 
             // accordionControlArchive
             // 
@@ -327,6 +226,7 @@
             this.accordionControlArchive.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlArchive.ImageOptions.Image")));
             this.accordionControlArchive.Name = "accordionControlArchive";
             this.accordionControlArchive.Text = "FİRMA ARŞİV İŞLEMLERİ";
+            this.accordionControlArchive.Click += new System.EventHandler(this.accordionControlArchive_Click);
             // 
             // accordionControlBankGetAllList
             // 
@@ -334,6 +234,7 @@
             this.accordionControlBankGetAllList.Name = "accordionControlBankGetAllList";
             this.accordionControlBankGetAllList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankGetAllList.Text = "ARŞİV LİSTESİNİ GENİŞLET";
+            this.accordionControlBankGetAllList.Click += new System.EventHandler(this.accordionControlBankGetAllList_Click);
             // 
             // accordionControlBankFullList
             // 
@@ -349,6 +250,7 @@
             this.accordionControlBankList.Name = "accordionControlBankList";
             this.accordionControlBankList.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankList.Text = "BANKA LİSTESİ";
+            this.accordionControlBankList.Click += new System.EventHandler(this.accordionControlBankList_Click);
             // 
             // accordionControlBankArchive
             // 
@@ -356,6 +258,7 @@
             this.accordionControlBankArchive.Name = "accordionControlBankArchive";
             this.accordionControlBankArchive.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankArchive.Text = "BANKA BİLGİLERİNİ ARŞİVLE";
+            this.accordionControlBankArchive.Click += new System.EventHandler(this.accordionControlBankArchive_Click);
             // 
             // accordionControlBankDelete
             // 
@@ -363,6 +266,7 @@
             this.accordionControlBankDelete.Name = "accordionControlBankDelete";
             this.accordionControlBankDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankDelete.Text = "BANKA BİLGİLERİNİ SİL";
+            this.accordionControlBankDelete.Click += new System.EventHandler(this.accordionControlBankDelete_Click);
             // 
             // accordionControlBankUpdate
             // 
@@ -370,6 +274,7 @@
             this.accordionControlBankUpdate.Name = "accordionControlBankUpdate";
             this.accordionControlBankUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlBankUpdate.Text = "BANKA BİLGİLERİNİ DÜZENLE";
+            this.accordionControlBankUpdate.Click += new System.EventHandler(this.accordionControlBankUpdate_Click);
             // 
             // accordionControlNewBank
             // 
@@ -392,6 +297,7 @@
             this.accordionControlBankProcess.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlBankProcess.ImageOptions.Image")));
             this.accordionControlBankProcess.Name = "accordionControlBankProcess";
             this.accordionControlBankProcess.Text = "FİRMA İŞLEMLERİ";
+            this.accordionControlBankProcess.Click += new System.EventHandler(this.accordionControlBankProcess_Click);
             // 
             // accordionControl1
             // 
@@ -409,44 +315,126 @@
             this.accordionControl1.TabIndex = 10;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
+            // GControlBankArchive
+            // 
+            this.GControlBankArchive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlBankArchive.Location = new System.Drawing.Point(0, 0);
+            this.GControlBankArchive.MainView = this.GViewBankArchive;
+            this.GControlBankArchive.Name = "GControlBankArchive";
+            this.GControlBankArchive.Size = new System.Drawing.Size(983, 447);
+            this.GControlBankArchive.TabIndex = 3;
+            this.GControlBankArchive.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewBankArchive});
+            // 
+            // GViewBankArchive
+            // 
+            this.GViewBankArchive.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6});
+            this.GViewBankArchive.DetailHeight = 303;
+            this.GViewBankArchive.GridControl = this.GControlBankArchive;
+            this.GViewBankArchive.Name = "GViewBankArchive";
+            this.GViewBankArchive.OptionsBehavior.Editable = false;
+            this.GViewBankArchive.OptionsBehavior.ReadOnly = true;
+            this.GViewBankArchive.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "ID";
+            this.gridColumn1.FieldName = "BankID";
+            this.gridColumn1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn1.ImageOptions.Image")));
+            this.gridColumn1.MinWidth = 18;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 60;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Banka Adı";
+            this.gridColumn2.FieldName = "BankName";
+            this.gridColumn2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn2.ImageOptions.Image")));
+            this.gridColumn2.MinWidth = 40;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.Width = 200;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "İL";
+            this.gridColumn3.FieldName = "CountyName";
+            this.gridColumn3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn3.ImageOptions.Image")));
+            this.gridColumn3.MinWidth = 18;
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.Width = 80;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "İLÇE";
+            this.gridColumn4.FieldName = "DistrictName";
+            this.gridColumn4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn4.ImageOptions.Image")));
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 4;
+            this.gridColumn4.Width = 80;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Banka Şübesi";
+            this.gridColumn5.FieldName = "BankBranch";
+            this.gridColumn5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn5.ImageOptions.Image")));
+            this.gridColumn5.MinWidth = 15;
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.Width = 150;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Firma Adı";
+            this.gridColumn6.FieldName = "CompanyName";
+            this.gridColumn6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gridColumn6.ImageOptions.Image")));
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 1;
+            this.gridColumn6.Width = 180;
+            // 
             // BankWF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 491);
-            this.Controls.Add(this.xtraTabCompanyControl);
+            this.Controls.Add(this.xtraTabBankControl);
             this.Controls.Add(this.accordionControl1);
             this.Name = "BankWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BANKA İŞLEMLERİ";
             this.Load += new System.EventHandler(this.BankWF_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabCompanyControl)).EndInit();
-            this.xtraTabCompanyControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabBankControl)).EndInit();
+            this.xtraTabBankControl.ResumeLayout(false);
             this.TabPageBank.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GControlBank)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GViewBank)).EndInit();
             this.TabPageBankArchive.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyArchive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyArchive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlBankArchive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewBankArchive)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraTab.XtraTabControl xtraTabCompanyControl;
+        private DevExpress.XtraTab.XtraTabControl xtraTabBankControl;
         private DevExpress.XtraTab.XtraTabPage TabPageBank;
         private DevExpress.XtraTab.XtraTabPage TabPageBankArchive;
-        private DevExpress.XtraGrid.GridControl GControlCompanyArchive;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewCompanyArchive;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankArchiveList;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlBankArchiveQuit;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlArchive;
@@ -467,5 +455,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn ColumnDistrinct;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnBankBranch;
         private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyName;
+        private DevExpress.XtraGrid.GridControl GControlBankArchive;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewBankArchive;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
     }
 }

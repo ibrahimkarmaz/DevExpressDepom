@@ -131,6 +131,12 @@
     <Compile Include="WinFormList\BankWF\BankExpandWF.Designer.cs">
       <DependentUpon>BankExpandWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\BankWF\BankUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\BankWF\BankUpdateWF.Designer.cs">
+      <DependentUpon>BankUpdateWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\BankWF\BankWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -408,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankExpandWF.resx">
       <DependentUpon>BankExpandWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\BankWF\BankUpdateWF.resx">
+      <DependentUpon>BankUpdateWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankWF.resx">
       <DependentUpon>BankWF.cs</DependentUpon>
