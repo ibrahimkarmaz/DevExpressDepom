@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraBars.Helpers;
 using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
+using PresentationLayer.WinFormList.CompanyMovement;
 using PresentationLayer.WinFormList.CompanyWF;
 using PresentationLayer.WinFormList.CustomerWF;
 using PresentationLayer.WinFormList.DepartmentWF;
@@ -211,9 +212,19 @@ namespace PresentationLayer
             }
 
         }
+        CompanyMovementWF companyMovementWF;
+        private void barCompanyMovements_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (companyMovementWF==null || companyMovementWF.IsDisposed)
+            {
+                companyMovementWF = new CompanyMovementWF();
+                companyMovementWF.MdiParent = this;
+                companyMovementWF.Show();
+            }
+        }
     }
 }
-/*KAYNAK KOD
+/*KAYNAKLAR VE KOD
  https://www.cgtytpl.com/openweathermap-ile-hava-durumu-cekme
 
 Kişiye Özel Api Adresi: (Siteye üye olunarak alınıyor.)

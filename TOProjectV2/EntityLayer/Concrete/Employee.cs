@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace EntityLayer.Concrete
 {
@@ -25,5 +27,8 @@ namespace EntityLayer.Concrete
         public Department Department { get; set; }
 
         public bool EmployeeArchive { get; set; }
+
+
+        public ICollection<CompanyMovement> CompanyMovements { get; set; }
     }
 }

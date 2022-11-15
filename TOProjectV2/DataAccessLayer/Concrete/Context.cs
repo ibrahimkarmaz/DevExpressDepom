@@ -32,6 +32,8 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new DepartmentMAP());
             modelBuilder.Configurations.Add(new ExpenseHeaderMAP());
             modelBuilder.Configurations.Add(new ExpenseContentMAP());
+            modelBuilder.Configurations.Add(new CompanyMovementMAP());
+            modelBuilder.Configurations.Add(new CompanyMovementDetailMAP());
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -51,6 +53,8 @@ namespace DataAccessLayer.Concrete
         public DbSet<Department> Departments { get; set; }
         public DbSet<ExpenseHeader> ExpenseHeaders { get; set; }
         public DbSet<ExpenseContent> ExpenseContents { get; set; }
+        public DbSet<CompanyMovement> CompanyMovements { get; set; }
+        public DbSet<CompanyMovementDetail> CompanyMovementDetails { get; set; }
 
     }
 }

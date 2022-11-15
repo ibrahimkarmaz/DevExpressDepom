@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Abstract\IBankService.cs" />
     <Compile Include="Abstract\IBlandService.cs" />
+    <Compile Include="Abstract\ICompanyMovementDetailService.cs" />
+    <Compile Include="Abstract\ICompanyMovementService.cs" />
     <Compile Include="Abstract\ICompanyService.cs" />
     <Compile Include="Abstract\ICountyService.cs" />
     <Compile Include="Abstract\ICustomerService.cs" />
@@ -77,6 +79,8 @@
     <Compile Include="Concrete\BankManager.cs" />
     <Compile Include="Concrete\BlandManager.cs" />
     <Compile Include="Concrete\CompanyManager.cs" />
+    <Compile Include="Concrete\CompanyMovementDetailManager.cs" />
+    <Compile Include="Concrete\CompanyMovementManager.cs" />
     <Compile Include="Concrete\CountyManager.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
     <Compile Include="Concrete\DepartmentManager.cs" />
@@ -89,6 +93,8 @@
     <Compile Include="Concrete\SectorManager.cs" />
     <Compile Include="FluentValidation\BankValidator.cs" />
     <Compile Include="FluentValidation\BlandValidator.cs" />
+    <Compile Include="FluentValidation\CompanyMovementDetailValidator.cs" />
+    <Compile Include="FluentValidation\CompanyMovementValidator.cs" />
     <Compile Include="FluentValidation\CompanyValidator.cs" />
     <Compile Include="FluentValidation\CustomerValidator.cs" />
     <Compile Include="FluentValidation\DepartmentValidator.cs" />

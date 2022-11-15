@@ -12,7 +12,7 @@ namespace DataAccessLayer.DTO
       * 
       * 
       */
-        public int CompanyID { get; set; }
+        public int? CompanyID { get; set; }
         public string CompanyName { get; set; }
     }
 }

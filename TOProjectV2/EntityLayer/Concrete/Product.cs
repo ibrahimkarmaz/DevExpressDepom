@@ -24,5 +24,7 @@ namespace EntityLayer.Concrete
         public Bland Bland { get; set; }
         public bool ProductArchive { get; set; }
 
+        public ICollection<CompanyMovementDetail> CompanyMovementDetails { get; set; }
+
     }
 }

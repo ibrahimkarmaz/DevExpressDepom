@@ -32,5 +32,6 @@ namespace EntityLayer.Concrete
         public District District { get; set; }
 
         public ICollection<Bank> Banks { get; set; }
+        public ICollection<CompanyMovement> CompanyMovements { get; set; }
     }
 }

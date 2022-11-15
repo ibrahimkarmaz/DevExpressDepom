@@ -54,6 +54,8 @@
     <Compile Include="Concrete\Bank.cs" />
     <Compile Include="Concrete\Bland.cs" />
     <Compile Include="Concrete\Company.cs" />
+    <Compile Include="Concrete\CompanyMovement.cs" />
+    <Compile Include="Concrete\CompanyMovementDetail.cs" />
     <Compile Include="Concrete\County.cs" />
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="Concrete\Department.cs" />
@@ -71,6 +73,8 @@
     <Compile Include="Mapping\BankMAP.cs" />
     <Compile Include="Mapping\BlandMAP.cs" />
     <Compile Include="Mapping\CompanyMAP.cs" />
+    <Compile Include="Mapping\CompanyMovementDetailMAP.cs" />
+    <Compile Include="Mapping\CompanyMovementMAP.cs" />
     <Compile Include="Mapping\CountyMAP.cs" />
     <Compile Include="Mapping\CustomerMAP.cs" />
     <Compile Include="Mapping\DepartmentMAP.cs" />

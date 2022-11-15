@@ -37,25 +37,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.1.UI, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Pdf.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v22.1.Drawing, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.1.Export, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1.UI, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.Extensions, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.Wizard, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraNavBar.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.1.CodeCompletion, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.1.Extensions, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -92,6 +110,7 @@
     <Compile Include="CommonValidationControls\BankCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\BlandCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\CompanyCommonValidatorControl.cs" />
+    <Compile Include="CommonValidationControls\CompanyMovementCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CustomerCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\DepartmentCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\EmployeeCommonValidatorControl.cs" />
@@ -154,6 +173,18 @@
     </Compile>
     <Compile Include="WinFormList\BlandUpdateWF.Designer.cs">
       <DependentUpon>BlandUpdateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CompanyMovementWF\CompanyMovementAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CompanyMovementWF\CompanyMovementAddWF.Designer.cs">
+      <DependentUpon>CompanyMovementAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CompanyMovementWF\CompanyMovementWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CompanyMovementWF\CompanyMovementWF.Designer.cs">
+      <DependentUpon>CompanyMovementWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\CompanyWF\CompanyAddWF.cs">
       <SubType>Form</SubType>
@@ -233,6 +264,12 @@
     <Compile Include="WinFormList\EmployeeWF\EmployeeExpandWF.Designer.cs">
       <DependentUpon>EmployeeExpandWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeSelectWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\EmployeeWF\EmployeeSelectWF.Designer.cs">
+      <DependentUpon>EmployeeSelectWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\EmployeeWF\EmployeeUpdateWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +323,12 @@
     </Compile>
     <Compile Include="WinFormList\ExpenseWF\ExpenseWF.Designer.cs">
       <DependentUpon>ExpenseWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\GuidesWF\CompanyGuideWF.cs">
       <SubType>Form</SubType>
@@ -359,6 +402,12 @@
     <Compile Include="WinFormList\ProductWF\ProductAddXWF.Designer.cs">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductSelectWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductSelectWF.Designer.cs">
+      <DependentUpon>ProductSelectWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ProductWF\ProductStockUpdateWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +444,12 @@
     <Compile Include="WinFormList\SectorWF\SectorWF.Designer.cs">
       <DependentUpon>SectorWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormList\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -426,6 +481,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BlandUpdateWF.resx">
       <DependentUpon>BlandUpdateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CompanyMovementWF\CompanyMovementAddWF.resx">
+      <DependentUpon>CompanyMovementAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CompanyMovementWF\CompanyMovementWF.resx">
+      <DependentUpon>CompanyMovementWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyAddWF.resx">
       <DependentUpon>CompanyAddWF.cs</DependentUpon>
@@ -466,6 +527,9 @@
     <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeExpandWF.resx">
       <DependentUpon>EmployeeExpandWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeSelectWF.resx">
+      <DependentUpon>EmployeeSelectWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\EmployeeWF\EmployeeUpdateWF.resx">
       <DependentUpon>EmployeeUpdateWF.cs</DependentUpon>
     </EmbeddedResource>
@@ -492,6 +556,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ExpenseWF\ExpenseWF.resx">
       <DependentUpon>ExpenseWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\GuidesWF\CompanyGuideWF.resx">
       <DependentUpon>CompanyGuideWF.cs</DependentUpon>
@@ -529,6 +596,9 @@
     <EmbeddedResource Include="WinFormList\ProductWF\ProductAddXWF.resx">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductSelectWF.resx">
+      <DependentUpon>ProductSelectWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductStockUpdateWF.resx">
       <DependentUpon>ProductStockUpdateWF.cs</DependentUpon>
     </EmbeddedResource>
@@ -546,6 +616,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\SectorWF\SectorWF.resx">
       <DependentUpon>SectorWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\TCInformationControl\KPSPublic.wsdl" />
     <None Include="Connected Services\TCInformationControl\PresentationLayer.TCInformationControl.TCKimlikNoDogrulaResponse.datasource">

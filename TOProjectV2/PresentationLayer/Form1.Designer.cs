@@ -57,6 +57,7 @@
             this.barButtonDepartment = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonTranslate = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemExpenseContent = new DevExpress.XtraBars.BarButtonItem();
+            this.barCompanyMovements = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -71,6 +72,7 @@
             this.ribbonCompany = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonEmployee = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -119,9 +121,10 @@
             this.BarSector,
             this.barButtonDepartment,
             this.barButtonTranslate,
-            this.barButtonItemExpenseContent});
+            this.barButtonItemExpenseContent,
+            this.barCompanyMovements});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 26;
+            this.ribbonControlAutomation.MaxItemId = 27;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonHome,
@@ -358,6 +361,15 @@
             this.barButtonItemExpenseContent.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItemExpenseContent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemExpenseContent_ItemClick);
             // 
+            // barCompanyMovements
+            // 
+            this.barCompanyMovements.Caption = "FİRMA HAREKETLERİ";
+            this.barCompanyMovements.Id = 26;
+            this.barCompanyMovements.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCompanyMovement.ImageOptions.Image")));
+            this.barCompanyMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCompanyMovement.ImageOptions.LargeImage")));
+            this.barCompanyMovements.Name = "barCompanyMovements";
+            this.barCompanyMovements.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCompanyMovements_ItemClick);
+            // 
             // ribbonHome
             // 
             this.ribbonHome.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -403,7 +415,7 @@
             this.ribbonPageGroup13});
             this.ribbonProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonProduct.ImageOptions.Image")));
             this.ribbonProduct.Name = "ribbonProduct";
-            this.ribbonProduct.Text = "ÜRÜNLER";
+            this.ribbonProduct.Text = "ÜRÜN İŞLEMLERİ";
             // 
             // ribbonPageGroup1
             // 
@@ -430,7 +442,7 @@
             this.ribbonPageGroup2});
             this.ribbonCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonCustomer.ImageOptions.Image")));
             this.ribbonCustomer.Name = "ribbonCustomer";
-            this.ribbonCustomer.Text = "MÜŞTERİLER";
+            this.ribbonCustomer.Text = "MÜŞTERİ İŞLEMLERİ";
             // 
             // ribbonPageGroup2
             // 
@@ -443,15 +455,16 @@
             // 
             this.ribbonCompany.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3,
-            this.ribbonPageGroup15});
+            this.ribbonPageGroup15,
+            this.ribbonPageGroup7});
             this.ribbonCompany.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonCompany.ImageOptions.Image")));
             this.ribbonCompany.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
             this.ribbonCompany.Name = "ribbonCompany";
-            this.ribbonCompany.Text = "FİRMALAR";
+            this.ribbonCompany.Text = "FİRMA İŞLEMLERİ";
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barCompanys);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barCompanyMovements);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
@@ -461,6 +474,12 @@
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "ribbonPageGroup15";
             // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barCompanys);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            // 
             // ribbonEmployee
             // 
             this.ribbonEmployee.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -468,7 +487,7 @@
             this.ribbonPageGroup16});
             this.ribbonEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonEmployee.ImageOptions.Image")));
             this.ribbonEmployee.Name = "ribbonEmployee";
-            this.ribbonEmployee.Text = "PERSONELLER";
+            this.ribbonEmployee.Text = "PERSONEL İŞLEMLERİ";
             // 
             // ribbonPageGroup5
             // 
@@ -490,7 +509,7 @@
             this.ribbonPageGroup9});
             this.ribbonFinance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonFinance.ImageOptions.Image")));
             this.ribbonFinance.Name = "ribbonFinance";
-            this.ribbonFinance.Text = "FİNANS";
+            this.ribbonFinance.Text = "FİNANS İŞLEMLERİ";
             // 
             // ribbonPageGroup6
             // 
@@ -517,7 +536,7 @@
             this.ribbonPageGroup4});
             this.ribbonRaportandChart.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonRaportandChart.ImageOptions.Image")));
             this.ribbonRaportandChart.Name = "ribbonRaportandChart";
-            this.ribbonRaportandChart.Text = "RAPORLAR & GRAFİKLER";
+            this.ribbonRaportandChart.Text = "RAPORLAR";
             // 
             // ribbonPageGroup4
             // 
@@ -626,6 +645,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonTranslate;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
         private DevExpress.XtraBars.BarButtonItem barButtonItemExpenseContent;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraBars.BarButtonItem barCompanyMovements;
     }
 }
 
