@@ -138,3 +138,4 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLa
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.CompanyMovementAndProductPKFKUpdate1.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.CompanyMovementDetailsAndPKFKUpdate2.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.CompanyMovementColumnTypeUPDATE.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.CompanyMovementQueUPDATE.resources

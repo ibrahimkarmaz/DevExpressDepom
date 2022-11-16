@@ -15,8 +15,8 @@ namespace EntityLayer.Concrete
         public Product Product { get; set; }
         //------
         public int? CompanyMovementDetailPiece { get; set; }
-        public decimal CompanyMovementDetailPrice { get; set; }
-        public decimal CompanyMovementDetailTotalPrice { get; set; }
+        public decimal? CompanyMovementDetailPrice { get; set; }
+        public decimal? CompanyMovementDetailTotalPrice { get; set; }
         //FİRMA HAREKET
         //------
         public int? CompanyMovementID { get; set; }

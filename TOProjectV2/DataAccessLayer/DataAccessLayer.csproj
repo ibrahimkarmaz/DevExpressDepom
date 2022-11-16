@@ -78,11 +78,13 @@
     <Compile Include="DTO\AutoMapperProfiles.cs" />
     <Compile Include="DTO\BankINCountyDistrintAndCompanyDTO.cs" />
     <Compile Include="DTO\CompanyINCountyDistrintAndSectorDTO.cs" />
+    <Compile Include="DTO\CompanyMovementDetailDTO.cs" />
     <Compile Include="DTO\CompanySelectDTO.cs" />
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
     <Compile Include="DTO\EmployeeINCountyDistrintAndDepartmentDTO.cs" />
     <Compile Include="DTO\EmployeeSelectDTO.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
+    <Compile Include="DTO\ProductSelectDTO.cs" />
     <Compile Include="EntityFramework\EFBankDAL.cs" />
     <Compile Include="EntityFramework\EFBlandDAL.cs" />
     <Compile Include="EntityFramework\EFCompanyDAL.cs" />
@@ -462,6 +464,10 @@
     <Compile Include="Migrations\202211151945237_CompanyMovementColumnTypeUPDATE.designer.cs">
       <DependentUpon>202211151945237_CompanyMovementColumnTypeUPDATE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211161513543_CompanyMovementQueUPDATE.cs" />
+    <Compile Include="Migrations\202211161513543_CompanyMovementQueUPDATE.designer.cs">
+      <DependentUpon>202211161513543_CompanyMovementQueUPDATE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -749,6 +755,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211151945237_CompanyMovementColumnTypeUPDATE.resx">
       <DependentUpon>202211151945237_CompanyMovementColumnTypeUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211161513543_CompanyMovementQueUPDATE.resx">
+      <DependentUpon>202211161513543_CompanyMovementQueUPDATE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

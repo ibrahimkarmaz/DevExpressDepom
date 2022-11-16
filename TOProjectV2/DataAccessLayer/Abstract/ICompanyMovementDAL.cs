@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface ICompanyMovementDAL:IGenericDAL<CompanyMovement>
     {
+        int RecentlyAddedMovementID();
     }
 }

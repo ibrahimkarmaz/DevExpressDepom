@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface ICompanyMovementService:IGenericService<CompanyMovement>
     {
+        int RecentlyAddedMovementID();
     }
 }

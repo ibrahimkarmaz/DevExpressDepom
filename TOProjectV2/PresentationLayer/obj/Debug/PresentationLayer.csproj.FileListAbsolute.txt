@@ -265,3 +265,5 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\Presentation
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.CompanyMovement.CompanyMovementWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductSelectWF.resources
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.EmployeeWF.EmployeeSelectWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductMovementWF.ProductMovementAddWF.resources
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\PresentationLayer\obj\Debug\PresentationLayer.WinFormList.ProductWF.ProductMovementWF.ProductMovementUpdateWF.resources

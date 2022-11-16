@@ -57,6 +57,7 @@
             this.SBCancel.Size = new System.Drawing.Size(100, 40);
             this.SBCancel.TabIndex = 21;
             this.SBCancel.Text = "İptal Et";
+            this.SBCancel.Click += new System.EventHandler(this.SBCancel_Click);
             // 
             // SBtnSelect
             // 
@@ -69,6 +70,7 @@
             this.SBtnSelect.Size = new System.Drawing.Size(150, 40);
             this.SBtnSelect.TabIndex = 20;
             this.SBtnSelect.Text = "Personel Seç";
+            this.SBtnSelect.Click += new System.EventHandler(this.SBtnSelect_Click);
             // 
             // GControlProduct
             // 
@@ -101,6 +103,7 @@
             this.GViewProduct.OptionsBehavior.Editable = false;
             this.GViewProduct.OptionsBehavior.ReadOnly = true;
             this.GViewProduct.OptionsView.ShowGroupPanel = false;
+            this.GViewProduct.DoubleClick += new System.EventHandler(this.GViewProduct_DoubleClick);
             // 
             // ColumnProductID
             // 

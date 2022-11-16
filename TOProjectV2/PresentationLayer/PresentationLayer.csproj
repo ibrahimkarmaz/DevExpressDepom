@@ -111,6 +111,7 @@
     <Compile Include="CommonValidationControls\BlandCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\CompanyCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CompanyMovementCommonValidatorControl.cs" />
+    <Compile Include="CommonValidationControls\CompanyMovementDetailCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CustomerCommonValidationControl.cs" />
     <Compile Include="CommonValidationControls\DepartmentCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\EmployeeCommonValidatorControl.cs" />
@@ -402,6 +403,18 @@
     <Compile Include="WinFormList\ProductWF\ProductAddXWF.Designer.cs">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductMovementWF\ProductMovementAddWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductMovementWF\ProductMovementAddWF.Designer.cs">
+      <DependentUpon>ProductMovementAddWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductMovementWF\ProductMovementUpdateWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductWF\ProductMovementWF\ProductMovementUpdateWF.Designer.cs">
+      <DependentUpon>ProductMovementUpdateWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ProductWF\ProductSelectWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -595,6 +608,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductAddXWF.resx">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductMovementWF\ProductMovementAddWF.resx">
+      <DependentUpon>ProductMovementAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductWF\ProductMovementWF\ProductMovementUpdateWF.resx">
+      <DependentUpon>ProductMovementUpdateWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductSelectWF.resx">
       <DependentUpon>ProductSelectWF.cs</DependentUpon>

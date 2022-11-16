@@ -34,6 +34,11 @@ namespace BusinessLayer.Concrete
             return _companyMovementDAL.GetById(id);
         }
 
+        public int RecentlyAddedMovementID()
+        {
+            return _companyMovementDAL.RecentlyAddedMovementID();
+        }
+
         public void TAdd(CompanyMovement t)
         {
             _companyMovementDAL.Insert(t);

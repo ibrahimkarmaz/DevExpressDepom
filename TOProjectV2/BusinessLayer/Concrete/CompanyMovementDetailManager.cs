@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.DTO;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,11 @@ namespace BusinessLayer.Concrete
         public CompanyMovementDetailManager(ICompanyMovementDetailDAL companyMovementDetailDAL)
         {
             _companyMovementDetailDAL = companyMovementDetailDAL;
+        }
+
+        public List<CompanyMovementDetailDTO> GetAllCompanyMovementDetail(Expression<Func<CompanyMovementDetailDTO, bool>> filter = null)
+        {
+            return _companyMovementDetailDAL.GetAllCompanyMovementDetail(filter);
         }
 
         public List<CompanyMovementDetail> GetAllList()

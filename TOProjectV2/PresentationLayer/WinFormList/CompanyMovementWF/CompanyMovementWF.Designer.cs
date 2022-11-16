@@ -51,17 +51,19 @@
             this.accordionControlUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.GroupControlFin = new DevExpress.XtraEditors.GroupControl();
-            this.SBtnInvoice = new DevExpress.XtraEditors.SimpleButton();
+            this.SBtnInvoiceCreate = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.GControlCompanyMovement = new DevExpress.XtraGrid.GridControl();
-            this.GViewCompanyMovement = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ColumnBankID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnBankName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCountyName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnDistrinct = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnBankBranch = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColumnCompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GControlCompanyMovementDetail = new DevExpress.XtraGrid.GridControl();
+            this.GViewCompanyMovementDetail = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ColumnID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnProductName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnBlandName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnModelName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnPiece = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnPrice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnTotalPrice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColumnProductID = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlCompanyMovement)).BeginInit();
             this.GroupControlCompanyMovement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
@@ -76,8 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControlProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlFin)).BeginInit();
             this.GroupControlFin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyMovement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyMovement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyMovementDetail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyMovementDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupControlCompanyMovement
@@ -101,7 +103,7 @@
             this.GroupControlCompanyMovement.Dock = System.Windows.Forms.DockStyle.Top;
             this.GroupControlCompanyMovement.Location = new System.Drawing.Point(0, 0);
             this.GroupControlCompanyMovement.Name = "GroupControlCompanyMovement";
-            this.GroupControlCompanyMovement.Size = new System.Drawing.Size(1053, 142);
+            this.GroupControlCompanyMovement.Size = new System.Drawing.Size(1151, 142);
             this.GroupControlCompanyMovement.TabIndex = 16;
             this.GroupControlCompanyMovement.Text = "FİRMA HAREKETLERİ";
             // 
@@ -110,7 +112,7 @@
             this.SBtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SBtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBtnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCancel.ImageOptions.Image")));
-            this.SBtnCancel.Location = new System.Drawing.Point(684, 32);
+            this.SBtnCancel.Location = new System.Drawing.Point(782, 32);
             this.SBtnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnCancel.Name = "SBtnCancel";
             this.SBtnCancel.Size = new System.Drawing.Size(97, 23);
@@ -136,7 +138,7 @@
             this.SBtnCompanyMovement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SBtnCompanyMovement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBtnCompanyMovement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCompanyMovement.ImageOptions.Image")));
-            this.SBtnCompanyMovement.Location = new System.Drawing.Point(789, 32);
+            this.SBtnCompanyMovement.Location = new System.Drawing.Point(887, 32);
             this.SBtnCompanyMovement.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnCompanyMovement.Name = "SBtnCompanyMovement";
             this.SBtnCompanyMovement.Size = new System.Drawing.Size(251, 23);
@@ -155,7 +157,7 @@
             this.MMENote.Properties.NullText = "Firma Hareketleri İçin Bilgi Girebilirsiniz.";
             this.MMENote.Properties.NullValuePrompt = "Firma Hareketleri İçin Bilgi Girebilirsiniz.";
             this.MMENote.Properties.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.MMENote.Size = new System.Drawing.Size(599, 73);
+            this.MMENote.Size = new System.Drawing.Size(697, 73);
             this.MMENote.TabIndex = 269;
             // 
             // labelControl8
@@ -327,13 +329,15 @@
             this.accordionControlAdd.Name = "accordionControlAdd";
             this.accordionControlAdd.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlAdd.Text = "YENİ ÜRÜN ";
+            this.accordionControlAdd.Click += new System.EventHandler(this.accordionControlAdd_Click);
             // 
             // accordionControlUpdate
             // 
             this.accordionControlUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlUpdate.ImageOptions.Image")));
             this.accordionControlUpdate.Name = "accordionControlUpdate";
             this.accordionControlUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlUpdate.Text = "ÜRÜN BİLGİLERİNİ DÜZENLE";
+            this.accordionControlUpdate.Text = "ÜRÜN ADET BİLGİSİNİ DÜZENLE";
+            this.accordionControlUpdate.Click += new System.EventHandler(this.accordionControlUpdate_Click);
             // 
             // accordionControlDelete
             // 
@@ -341,31 +345,32 @@
             this.accordionControlDelete.Name = "accordionControlDelete";
             this.accordionControlDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlDelete.Text = "ÜRÜN BİLGİLERİNİ SİL";
+            this.accordionControlDelete.Click += new System.EventHandler(this.accordionControlDelete_Click);
             // 
             // GroupControlFin
             // 
-            this.GroupControlFin.Controls.Add(this.SBtnInvoice);
+            this.GroupControlFin.Controls.Add(this.SBtnInvoiceCreate);
             this.GroupControlFin.Controls.Add(this.simpleButton5);
             this.GroupControlFin.Controls.Add(this.simpleButton6);
             this.GroupControlFin.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GroupControlFin.Enabled = false;
             this.GroupControlFin.Location = new System.Drawing.Point(250, 430);
             this.GroupControlFin.Name = "GroupControlFin";
-            this.GroupControlFin.Size = new System.Drawing.Size(803, 76);
+            this.GroupControlFin.Size = new System.Drawing.Size(901, 76);
             this.GroupControlFin.TabIndex = 20;
             this.GroupControlFin.Text = "SONUÇLANDIRMA İŞLEMLERİ";
             // 
-            // SBtnInvoice
+            // SBtnInvoiceCreate
             // 
-            this.SBtnInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SBtnInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SBtnInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnInvoice.ImageOptions.Image")));
-            this.SBtnInvoice.Location = new System.Drawing.Point(583, 32);
-            this.SBtnInvoice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SBtnInvoice.Name = "SBtnInvoice";
-            this.SBtnInvoice.Size = new System.Drawing.Size(214, 39);
-            this.SBtnInvoice.TabIndex = 262;
-            this.SBtnInvoice.Text = "Fatura Oluştur";
+            this.SBtnInvoiceCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SBtnInvoiceCreate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SBtnInvoiceCreate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnInvoiceCreate.ImageOptions.Image")));
+            this.SBtnInvoiceCreate.Location = new System.Drawing.Point(681, 32);
+            this.SBtnInvoiceCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SBtnInvoiceCreate.Name = "SBtnInvoiceCreate";
+            this.SBtnInvoiceCreate.Size = new System.Drawing.Size(214, 39);
+            this.SBtnInvoiceCreate.TabIndex = 262;
+            this.SBtnInvoiceCreate.Text = "Fatura Oluştur";
             // 
             // simpleButton5
             // 
@@ -389,111 +394,119 @@
             this.simpleButton6.TabIndex = 260;
             this.simpleButton6.Text = "Kaydet";
             // 
-            // GControlCompanyMovement
+            // GControlCompanyMovementDetail
             // 
-            this.GControlCompanyMovement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GControlCompanyMovement.Enabled = false;
-            this.GControlCompanyMovement.Location = new System.Drawing.Point(250, 142);
-            this.GControlCompanyMovement.MainView = this.GViewCompanyMovement;
-            this.GControlCompanyMovement.Name = "GControlCompanyMovement";
-            this.GControlCompanyMovement.Size = new System.Drawing.Size(803, 288);
-            this.GControlCompanyMovement.TabIndex = 21;
-            this.GControlCompanyMovement.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.GViewCompanyMovement});
+            this.GControlCompanyMovementDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GControlCompanyMovementDetail.Enabled = false;
+            this.GControlCompanyMovementDetail.Location = new System.Drawing.Point(250, 142);
+            this.GControlCompanyMovementDetail.MainView = this.GViewCompanyMovementDetail;
+            this.GControlCompanyMovementDetail.Name = "GControlCompanyMovementDetail";
+            this.GControlCompanyMovementDetail.Size = new System.Drawing.Size(901, 288);
+            this.GControlCompanyMovementDetail.TabIndex = 21;
+            this.GControlCompanyMovementDetail.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GViewCompanyMovementDetail});
+            this.GControlCompanyMovementDetail.Click += new System.EventHandler(this.GControlCompanyMovement_Click);
             // 
-            // GViewCompanyMovement
+            // GViewCompanyMovementDetail
             // 
-            this.GViewCompanyMovement.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColumnBankID,
-            this.ColumnBankName,
-            this.ColumnCountyName,
-            this.ColumnDistrinct,
-            this.ColumnBankBranch,
-            this.ColumnCompanyName});
-            this.GViewCompanyMovement.DetailHeight = 303;
-            this.GViewCompanyMovement.GridControl = this.GControlCompanyMovement;
-            this.GViewCompanyMovement.Name = "GViewCompanyMovement";
-            this.GViewCompanyMovement.OptionsBehavior.Editable = false;
-            this.GViewCompanyMovement.OptionsBehavior.ReadOnly = true;
-            this.GViewCompanyMovement.OptionsView.ShowGroupPanel = false;
+            this.GViewCompanyMovementDetail.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ColumnID,
+            this.ColumnProductName,
+            this.ColumnBlandName,
+            this.ColumnModelName,
+            this.ColumnPiece,
+            this.ColumnPrice,
+            this.ColumnTotalPrice,
+            this.ColumnProductID});
+            this.GViewCompanyMovementDetail.DetailHeight = 303;
+            this.GViewCompanyMovementDetail.GridControl = this.GControlCompanyMovementDetail;
+            this.GViewCompanyMovementDetail.Name = "GViewCompanyMovementDetail";
+            this.GViewCompanyMovementDetail.OptionsBehavior.Editable = false;
+            this.GViewCompanyMovementDetail.OptionsBehavior.ReadOnly = true;
+            this.GViewCompanyMovementDetail.OptionsView.ShowFooter = true;
+            this.GViewCompanyMovementDetail.OptionsView.ShowGroupPanel = false;
             // 
-            // ColumnBankID
+            // ColumnID
             // 
-            this.ColumnBankID.Caption = "ID";
-            this.ColumnBankID.FieldName = "BankID";
-            this.ColumnBankID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBankID.ImageOptions.Image")));
-            this.ColumnBankID.MinWidth = 18;
-            this.ColumnBankID.Name = "ColumnBankID";
-            this.ColumnBankID.Visible = true;
-            this.ColumnBankID.VisibleIndex = 0;
-            this.ColumnBankID.Width = 60;
+            this.ColumnID.Caption = "ID";
+            this.ColumnID.FieldName = "CompanyMovementDetailID";
+            this.ColumnID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnID.ImageOptions.Image")));
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.Visible = true;
+            this.ColumnID.VisibleIndex = 0;
             // 
-            // ColumnBankName
+            // ColumnProductName
             // 
-            this.ColumnBankName.Caption = "Banka Adı";
-            this.ColumnBankName.FieldName = "BankName";
-            this.ColumnBankName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBankName.ImageOptions.Image")));
-            this.ColumnBankName.MinWidth = 40;
-            this.ColumnBankName.Name = "ColumnBankName";
-            this.ColumnBankName.Visible = true;
-            this.ColumnBankName.VisibleIndex = 2;
-            this.ColumnBankName.Width = 200;
+            this.ColumnProductName.Caption = "Ürün Adı";
+            this.ColumnProductName.FieldName = "ProductName";
+            this.ColumnProductName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnProductName.ImageOptions.Image")));
+            this.ColumnProductName.Name = "ColumnProductName";
+            this.ColumnProductName.Visible = true;
+            this.ColumnProductName.VisibleIndex = 1;
             // 
-            // ColumnCountyName
+            // ColumnBlandName
             // 
-            this.ColumnCountyName.Caption = "İL";
-            this.ColumnCountyName.FieldName = "CountyName";
-            this.ColumnCountyName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCountyName.ImageOptions.Image")));
-            this.ColumnCountyName.MinWidth = 18;
-            this.ColumnCountyName.Name = "ColumnCountyName";
-            this.ColumnCountyName.Visible = true;
-            this.ColumnCountyName.VisibleIndex = 3;
-            this.ColumnCountyName.Width = 80;
+            this.ColumnBlandName.Caption = "Marka Adı";
+            this.ColumnBlandName.FieldName = "BlandName";
+            this.ColumnBlandName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBlandName.ImageOptions.Image")));
+            this.ColumnBlandName.Name = "ColumnBlandName";
+            this.ColumnBlandName.Visible = true;
+            this.ColumnBlandName.VisibleIndex = 2;
             // 
-            // ColumnDistrinct
+            // ColumnModelName
             // 
-            this.ColumnDistrinct.Caption = "İLÇE";
-            this.ColumnDistrinct.FieldName = "DistrictName";
-            this.ColumnDistrinct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnDistrinct.ImageOptions.Image")));
-            this.ColumnDistrinct.Name = "ColumnDistrinct";
-            this.ColumnDistrinct.Visible = true;
-            this.ColumnDistrinct.VisibleIndex = 4;
-            this.ColumnDistrinct.Width = 80;
+            this.ColumnModelName.Caption = "Model Adı";
+            this.ColumnModelName.FieldName = "ModelName";
+            this.ColumnModelName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnModelName.ImageOptions.Image")));
+            this.ColumnModelName.Name = "ColumnModelName";
+            this.ColumnModelName.Visible = true;
+            this.ColumnModelName.VisibleIndex = 3;
             // 
-            // ColumnBankBranch
+            // ColumnPiece
             // 
-            this.ColumnBankBranch.Caption = "Banka Şübesi";
-            this.ColumnBankBranch.FieldName = "BankBranch";
-            this.ColumnBankBranch.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnBankBranch.ImageOptions.Image")));
-            this.ColumnBankBranch.MinWidth = 15;
-            this.ColumnBankBranch.Name = "ColumnBankBranch";
-            this.ColumnBankBranch.Visible = true;
-            this.ColumnBankBranch.VisibleIndex = 5;
-            this.ColumnBankBranch.Width = 150;
+            this.ColumnPiece.Caption = "Adet";
+            this.ColumnPiece.FieldName = "CompanyMovementDetailPiece";
+            this.ColumnPiece.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnPiece.ImageOptions.Image")));
+            this.ColumnPiece.Name = "ColumnPiece";
+            this.ColumnPiece.Visible = true;
+            this.ColumnPiece.VisibleIndex = 4;
             // 
-            // ColumnCompanyName
+            // ColumnPrice
             // 
-            this.ColumnCompanyName.Caption = "Firma Adı";
-            this.ColumnCompanyName.FieldName = "CompanyName";
-            this.ColumnCompanyName.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnCompanyName.ImageOptions.Image")));
-            this.ColumnCompanyName.Name = "ColumnCompanyName";
-            this.ColumnCompanyName.Visible = true;
-            this.ColumnCompanyName.VisibleIndex = 1;
-            this.ColumnCompanyName.Width = 180;
+            this.ColumnPrice.Caption = "Ürün Fiyati";
+            this.ColumnPrice.FieldName = "CompanyMovementDetailPrice";
+            this.ColumnPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnPrice.ImageOptions.Image")));
+            this.ColumnPrice.Name = "ColumnPrice";
+            this.ColumnPrice.Visible = true;
+            this.ColumnPrice.VisibleIndex = 5;
+            // 
+            // ColumnTotalPrice
+            // 
+            this.ColumnTotalPrice.Caption = "Toplam Fiyat";
+            this.ColumnTotalPrice.FieldName = "CompanyMovementDetailTotalPrice";
+            this.ColumnTotalPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnTotalPrice.ImageOptions.Image")));
+            this.ColumnTotalPrice.Name = "ColumnTotalPrice";
+            this.ColumnTotalPrice.Visible = true;
+            this.ColumnTotalPrice.VisibleIndex = 6;
+            // 
+            // ColumnProductID
+            // 
+            this.ColumnProductID.Caption = "ProductID";
+            this.ColumnProductID.FieldName = "ProductID";
+            this.ColumnProductID.Name = "ColumnProductID";
             // 
             // CompanyMovementWF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 506);
-            this.Controls.Add(this.GControlCompanyMovement);
+            this.ClientSize = new System.Drawing.Size(1151, 506);
+            this.Controls.Add(this.GControlCompanyMovementDetail);
             this.Controls.Add(this.GroupControlFin);
             this.Controls.Add(this.accordionControlProduct);
             this.Controls.Add(this.GroupControlCompanyMovement);
             this.Name = "CompanyMovementWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FİRMA HAREKETLERİ";
-            this.Load += new System.EventHandler(this.CompanyMovementWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlCompanyMovement)).EndInit();
             this.GroupControlCompanyMovement.ResumeLayout(false);
             this.GroupControlCompanyMovement.PerformLayout();
@@ -509,8 +522,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControlProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlFin)).EndInit();
             this.GroupControlFin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyMovement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyMovement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GControlCompanyMovementDetail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GViewCompanyMovementDetail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -537,17 +550,19 @@
         private DevExpress.XtraEditors.GroupControl GroupControlFin;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraGrid.GridControl GControlCompanyMovement;
-        private DevExpress.XtraGrid.Views.Grid.GridView GViewCompanyMovement;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnBankID;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnBankName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCountyName;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnDistrinct;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnBankBranch;
-        private DevExpress.XtraGrid.Columns.GridColumn ColumnCompanyName;
-        private DevExpress.XtraEditors.SimpleButton SBtnInvoice;
+        private DevExpress.XtraGrid.GridControl GControlCompanyMovementDetail;
+        private DevExpress.XtraGrid.Views.Grid.GridView GViewCompanyMovementDetail;
+        private DevExpress.XtraEditors.SimpleButton SBtnInvoiceCreate;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlAdd;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlUpdate;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlDelete;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnID;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnProductName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnBlandName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnModelName;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnPiece;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnPrice;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnTotalPrice;
+        private DevExpress.XtraGrid.Columns.GridColumn ColumnProductID;
     }
 }
