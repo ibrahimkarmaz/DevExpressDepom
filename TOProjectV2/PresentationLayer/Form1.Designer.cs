@@ -45,7 +45,7 @@
             this.barCustomerDirectory = new DevExpress.XtraBars.BarButtonItem();
             this.barCompanyDirectory = new DevExpress.XtraBars.BarButtonItem();
             this.barEmployeeDirectory = new DevExpress.XtraBars.BarButtonItem();
-            this.barInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.barCustomerInvoice = new DevExpress.XtraBars.BarButtonItem();
             this.barDefaultTheme = new DevExpress.XtraBars.BarButtonItem();
             this.barDarkTheme = new DevExpress.XtraBars.BarButtonItem();
             this.barProductTypeList = new DevExpress.XtraBars.BarButtonItem();
@@ -86,6 +86,8 @@
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barCompanyInvoice = new DevExpress.XtraBars.BarButtonItem();
+            this.barDayStatus = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -111,7 +113,7 @@
             this.barCustomerDirectory,
             this.barCompanyDirectory,
             this.barEmployeeDirectory,
-            this.barInvoice,
+            this.barCustomerInvoice,
             this.barDefaultTheme,
             this.barDarkTheme,
             this.barProductTypeList,
@@ -122,9 +124,11 @@
             this.barButtonDepartment,
             this.barButtonTranslate,
             this.barButtonItemExpenseContent,
-            this.barCompanyMovements});
+            this.barCompanyMovements,
+            this.barCompanyInvoice,
+            this.barDayStatus});
             this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlAutomation.MaxItemId = 27;
+            this.ribbonControlAutomation.MaxItemId = 29;
             this.ribbonControlAutomation.Name = "ribbonControlAutomation";
             this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonHome,
@@ -257,13 +261,13 @@
             this.barEmployeeDirectory.Name = "barEmployeeDirectory";
             this.barEmployeeDirectory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barEmployeeDirectory_ItemClick);
             // 
-            // barInvoice
+            // barCustomerInvoice
             // 
-            this.barInvoice.Caption = "FATURALAR";
-            this.barInvoice.Id = 15;
-            this.barInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barInvoice.ImageOptions.Image")));
-            this.barInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barInvoice.ImageOptions.LargeImage")));
-            this.barInvoice.Name = "barInvoice";
+            this.barCustomerInvoice.Caption = "MÜŞTERİ FATURALARI";
+            this.barCustomerInvoice.Id = 15;
+            this.barCustomerInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barInvoice.ImageOptions.Image")));
+            this.barCustomerInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barInvoice.ImageOptions.LargeImage")));
+            this.barCustomerInvoice.Name = "barCustomerInvoice";
             // 
             // barDefaultTheme
             // 
@@ -287,7 +291,7 @@
             // 
             // barProductTypeList
             // 
-            this.barProductTypeList.Caption = "ÜRÜN TÜR LİSTESİ";
+            this.barProductTypeList.Caption = "MARKA-MODEL LİSTESİ";
             this.barProductTypeList.Id = 18;
             this.barProductTypeList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barProductTypeList.ImageOptions.Image")));
             this.barProductTypeList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barProductTypeList.ImageOptions.LargeImage")));
@@ -365,8 +369,8 @@
             // 
             this.barCompanyMovements.Caption = "FİRMA HAREKETLERİ";
             this.barCompanyMovements.Id = 26;
-            this.barCompanyMovements.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCompanyMovement.ImageOptions.Image")));
-            this.barCompanyMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCompanyMovement.ImageOptions.LargeImage")));
+            this.barCompanyMovements.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCompanyMovements.ImageOptions.Image")));
+            this.barCompanyMovements.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCompanyMovements.ImageOptions.LargeImage")));
             this.barCompanyMovements.Name = "barCompanyMovements";
             this.barCompanyMovements.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCompanyMovements_ItemClick);
             // 
@@ -396,8 +400,9 @@
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.barNote);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barDayStatus);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "NOTLAR";
+            this.ribbonPageGroup8.Text = "HATIRLATMA";
             // 
             // ribbonPageGroup10
             // 
@@ -426,7 +431,8 @@
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barInvoice);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barCustomerInvoice);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barCompanyInvoice);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "ribbonPageGroup11";
             // 
@@ -569,6 +575,22 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // barCompanyInvoice
+            // 
+            this.barCompanyInvoice.Caption = "FİRMA FATURALARI";
+            this.barCompanyInvoice.Id = 27;
+            this.barCompanyInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barCompanyInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barCompanyInvoice.Name = "barCompanyInvoice";
+            // 
+            // barDayStatus
+            // 
+            this.barDayStatus.Caption = "KİMİN DOĞUM GÜNÜ ?";
+            this.barDayStatus.Id = 28;
+            this.barDayStatus.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image1")));
+            this.barDayStatus.Name = "barDayStatus";
+            this.barDayStatus.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // CommercialAutomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,7 +632,7 @@
         private DevExpress.XtraBars.BarButtonItem barCustomerDirectory;
         private DevExpress.XtraBars.BarButtonItem barCompanyDirectory;
         private DevExpress.XtraBars.BarButtonItem barEmployeeDirectory;
-        private DevExpress.XtraBars.BarButtonItem barInvoice;
+        private DevExpress.XtraBars.BarButtonItem barCustomerInvoice;
         private DevExpress.XtraBars.BarButtonItem barDefaultTheme;
         private DevExpress.XtraBars.BarButtonItem barDarkTheme;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonHome;
@@ -647,6 +669,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItemExpenseContent;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.BarButtonItem barCompanyMovements;
+        private DevExpress.XtraBars.BarButtonItem barCompanyInvoice;
+        private DevExpress.XtraBars.BarButtonItem barDayStatus;
     }
 }
 

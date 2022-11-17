@@ -68,7 +68,6 @@
     <Compile Include="Abstract\IExpenseHeaderDAL.cs" />
     <Compile Include="Abstract\IGenericDAL.cs" />
     <Compile Include="Abstract\IInvoiceDAL.cs" />
-    <Compile Include="Abstract\IInvoiceDetailDAL.cs" />
     <Compile Include="Abstract\IModelDAL.cs" />
     <Compile Include="Abstract\INoteMAP.cs" />
     <Compile Include="Abstract\IProductDAL.cs" />
@@ -97,6 +96,7 @@
     <Compile Include="EntityFramework\EFEmployeeDAL.cs" />
     <Compile Include="EntityFramework\EFExpenseContentDAL.cs" />
     <Compile Include="EntityFramework\EFExpenseHeaderDAL.cs" />
+    <Compile Include="EntityFramework\EFInvoiceDAL.cs" />
     <Compile Include="EntityFramework\EFModelDAL.cs" />
     <Compile Include="EntityFramework\EFProductDAL.cs" />
     <Compile Include="EntityFramework\EFSectorDAL.cs" />
@@ -468,6 +468,14 @@
     <Compile Include="Migrations\202211161513543_CompanyMovementQueUPDATE.designer.cs">
       <DependentUpon>202211161513543_CompanyMovementQueUPDATE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211171521263_EntityUpdateInvoiceAndMap.cs" />
+    <Compile Include="Migrations\202211171521263_EntityUpdateInvoiceAndMap.designer.cs">
+      <DependentUpon>202211171521263_EntityUpdateInvoiceAndMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211171525479_EntityInvoiceDELETE.cs" />
+    <Compile Include="Migrations\202211171525479_EntityInvoiceDELETE.designer.cs">
+      <DependentUpon>202211171525479_EntityInvoiceDELETE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -758,6 +766,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211161513543_CompanyMovementQueUPDATE.resx">
       <DependentUpon>202211161513543_CompanyMovementQueUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211171521263_EntityUpdateInvoiceAndMap.resx">
+      <DependentUpon>202211171521263_EntityUpdateInvoiceAndMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211171525479_EntityInvoiceDELETE.resx">
+      <DependentUpon>202211171525479_EntityInvoiceDELETE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

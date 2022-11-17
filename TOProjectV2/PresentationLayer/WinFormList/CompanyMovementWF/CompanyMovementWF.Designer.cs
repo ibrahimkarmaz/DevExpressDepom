@@ -371,6 +371,7 @@
             this.SBtnInvoiceCreate.Size = new System.Drawing.Size(214, 39);
             this.SBtnInvoiceCreate.TabIndex = 262;
             this.SBtnInvoiceCreate.Text = "Fatura Oluştur";
+            this.SBtnInvoiceCreate.Click += new System.EventHandler(this.SBtnInvoiceCreate_Click);
             // 
             // simpleButton5
             // 
@@ -477,6 +478,7 @@
             this.ColumnPrice.FieldName = "CompanyMovementDetailPrice";
             this.ColumnPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnPrice.ImageOptions.Image")));
             this.ColumnPrice.Name = "ColumnPrice";
+            this.ColumnPrice.UnboundDataType = typeof(decimal);
             this.ColumnPrice.Visible = true;
             this.ColumnPrice.VisibleIndex = 5;
             // 
@@ -486,6 +488,9 @@
             this.ColumnTotalPrice.FieldName = "CompanyMovementDetailTotalPrice";
             this.ColumnTotalPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnTotalPrice.ImageOptions.Image")));
             this.ColumnTotalPrice.Name = "ColumnTotalPrice";
+            this.ColumnTotalPrice.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CompanyMovementDetailTotalPrice", "Toplam={0:C2}")});
+            this.ColumnTotalPrice.UnboundDataType = typeof(decimal);
             this.ColumnTotalPrice.Visible = true;
             this.ColumnTotalPrice.VisibleIndex = 6;
             // 
@@ -507,6 +512,7 @@
             this.Name = "CompanyMovementWF";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FİRMA HAREKETLERİ";
+            this.Load += new System.EventHandler(this.CompanyMovementWF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GroupControlCompanyMovement)).EndInit();
             this.GroupControlCompanyMovement.ResumeLayout(false);
             this.GroupControlCompanyMovement.PerformLayout();

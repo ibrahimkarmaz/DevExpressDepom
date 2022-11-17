@@ -23,5 +23,6 @@ namespace EntityLayer.Concrete
         public bool CompanyMovemenArchive { get; set; }
 
         public ICollection<CompanyMovementDetail> CompanyMovementDetails { get; set; }
+        public ICollection<Invoice> Invoices { get; set; }
     }
 }

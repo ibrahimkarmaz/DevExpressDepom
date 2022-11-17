@@ -20,7 +20,7 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new BankMAP());
             modelBuilder.Configurations.Add(new StockMAP());
             modelBuilder.Configurations.Add(new InvoiceMAP());
-            modelBuilder.Configurations.Add(new InvoiceDetailMAP());
+            //modelBuilder.Configurations.Add(new InvoiceDetailMAP());
             modelBuilder.Configurations.Add(new NoteMAP());
           //  modelBuilder.Configurations.Add(new ExpenseMAP());
             modelBuilder.Configurations.Add(new ProductMAP());
@@ -41,7 +41,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Bank> Banks { get; set; }
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
-        public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
+       // public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
         public DbSet<Note> Notes { get; set; }
      //   public DbSet<Expense> Expenses { get; set; }
         public DbSet<Product> Products { get; set; }

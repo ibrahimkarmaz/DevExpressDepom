@@ -139,6 +139,30 @@
     <Compile Include="JointTransactions\SmsService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CompanyMovementReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CompanyMovementReport.Designer.cs">
+      <DependentUpon>CompanyMovementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InvoiceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\InvoiceReport.Designer.cs">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InvReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\InvReport.Designer.cs">
+      <DependentUpon>InvReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\BankWF\BankAddWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -477,6 +501,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\CompanyMovementReport.resx">
+      <DependentUpon>CompanyMovementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceReport.resx">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvReport.resx">
+      <DependentUpon>InvReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankAddWF.resx">
       <DependentUpon>BankAddWF.cs</DependentUpon>
     </EmbeddedResource>

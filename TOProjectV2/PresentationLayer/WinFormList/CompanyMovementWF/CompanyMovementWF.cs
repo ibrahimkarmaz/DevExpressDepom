@@ -2,8 +2,10 @@
 using DataAccessLayer.DTO;
 using DataAccessLayer.EntityFramework;
 using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using EntityLayer.Concrete;
 using PresentationLayer.CommonValidationControls;
+using PresentationLayer.Reports;
 using PresentationLayer.WinFormList.CompanyWF;
 using PresentationLayer.WinFormList.EmployeeWF;
 using PresentationLayer.WinFormList.ProductWF;
@@ -31,6 +33,7 @@ namespace PresentationLayer.WinFormList.CompanyMovement
         }
         CompanyMovementManager _companyMovementManager = new CompanyMovementManager(new EFCompanyMovementDAL());
         CompanyMovementDetailManager _companyMovementDetailManager = new CompanyMovementDetailManager(new EFCompanyMovementDetailDAL());
+        InvoiceManager _invoiceManager = new InvoiceManager(new EFInvoiceDAL());
         CompanySelectDTO companySelect=new CompanySelectDTO();
         private void BECompany_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
@@ -165,5 +168,46 @@ namespace PresentationLayer.WinFormList.CompanyMovement
                 XtraMessageBox.Show("ÜRÜN SEÇİNİZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void CompanyMovementWF_Load(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void SBtnInvoiceCreate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EntityLayer.Concrete.CompanyMovement companyMovement = _companyMovementManager.GetById(CompanyMovementIDINFO);
+                companyMovement.CompanyMovemenArchive = false;
+                _companyMovementManager.TUpdate(companyMovement);
+
+                //SERİ NO MANTIĞI:YIL+GÜN+SAAT+DAKİKA+FİRMA HAREKET ID ÖRNEK:2022 17 18 52 23 (BİRLEŞİK AMA :))
+                DateTime Date = DateTime.Now;
+                Invoice invoiceDATA = new Invoice();
+                invoiceDATA.InvoiceSeries = Date.Year.ToString() + Date.Day.ToString() + Date.Hour + Date.Minute + CompanyMovementIDINFO.ToString();
+                invoiceDATA.CompanyMovementID = CompanyMovementIDINFO;
+                _invoiceManager.TAdd(invoiceDATA);
+
+                CompanyMovementReport.IDInfo = CompanyMovementIDINFO.ToString();
+                CompanyMovementReport companyMovementReportOpen = new CompanyMovementReport();
+                companyMovementReportOpen.RequestParameters = false;
+                companyMovementReportOpen.ShowPreviewDialog();
+                this.Close();
+
+            }
+            catch (Exception)
+            {
+                // XtraMessageBox.Show("ÜRÜN SEÇİNİZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
+/*KAYNAKÇA
+ * https://docs.devexpress.com/WindowsForms/114624/controls-and-libraries/data-grid/getting-started/walkthroughs/summaries/tutorial-total-summaries
+ * 
+ * 
+ * 
+ * 
+ */

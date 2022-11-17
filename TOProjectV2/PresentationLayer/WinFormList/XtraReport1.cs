@@ -18,7 +18,6 @@ namespace PresentationLayer.WinFormList
         private void XtraReport1_ParametersRequestBeforeShow(object sender, DevExpress.XtraReports.Parameters.ParametersRequestEventArgs e)
         {
             this.Parameters["ProductIDSet"].Value = IDInfo.ToString();
-            Console.WriteLine(this.Parameters["ProductIDSet"].Value);
             
         }
     }

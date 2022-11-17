@@ -73,6 +73,7 @@
     <Compile Include="Abstract\IExpenseContentService.cs" />
     <Compile Include="Abstract\IExpenseHeaderService.cs" />
     <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\IInvoiceService.cs" />
     <Compile Include="Abstract\IModelService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\ISectorService.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Concrete\EmployeeManager.cs" />
     <Compile Include="Concrete\ExpenseContentManager.cs" />
     <Compile Include="Concrete\ExpenseHeaderManager.cs" />
+    <Compile Include="Concrete\InvoiceManager.cs" />
     <Compile Include="Concrete\ModelManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Concrete\SectorManager.cs" />
