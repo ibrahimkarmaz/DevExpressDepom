@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.DTO;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,11 @@ namespace BusinessLayer.Concrete
         public InvoiceManager(IInvoiceDAL invoiceDAL)
         {
             _invoiceDAL = invoiceDAL;
+        }
+
+        public List<CompanyMovementInvoiceDTO> GetAllCompanyMovementInvoice(Expression<Func<CompanyMovementInvoiceDTO, bool>> filter = null)
+        {
+            return _invoiceDAL.GetAllCompanyMovementInvoice(filter);
         }
 
         public List<Invoice> GetAllList()

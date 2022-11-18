@@ -118,6 +118,7 @@
             this.SBtnCancel.Size = new System.Drawing.Size(97, 23);
             this.SBtnCancel.TabIndex = 231;
             this.SBtnCancel.Text = "İptal Et";
+            this.SBtnCancel.Click += new System.EventHandler(this.SBtnCancel_Click);
             // 
             // pictureEdit8
             // 

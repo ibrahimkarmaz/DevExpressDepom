@@ -35,6 +35,11 @@ namespace BusinessLayer.Concrete
             return _companyMovementDetailDAL.GetAll(filter);
         }
 
+        public List<CompanyMovementDetail> GetByFilter(Expression<Func<CompanyMovementDetail, bool>> filter = null)
+        {
+            return _companyMovementDetailDAL.GetByFilter(filter);
+        }
+
         public CompanyMovementDetail GetById(int id)
         {
             return _companyMovementDetailDAL.GetById(id);

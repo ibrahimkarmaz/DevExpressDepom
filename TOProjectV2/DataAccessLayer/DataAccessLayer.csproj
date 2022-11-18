@@ -78,6 +78,7 @@
     <Compile Include="DTO\BankINCountyDistrintAndCompanyDTO.cs" />
     <Compile Include="DTO\CompanyINCountyDistrintAndSectorDTO.cs" />
     <Compile Include="DTO\CompanyMovementDetailDTO.cs" />
+    <Compile Include="DTO\CompanyMovementInvoiceDTO.cs" />
     <Compile Include="DTO\CompanySelectDTO.cs" />
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
     <Compile Include="DTO\EmployeeINCountyDistrintAndDepartmentDTO.cs" />

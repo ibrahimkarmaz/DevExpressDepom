@@ -110,6 +110,13 @@ namespace PresentationLayer.WinFormList.CompanyMovement
                     SBtnCompanyMovement.Text = "Firma Hareketini Bilgisini Düzenle";
                     CompanyMovementIDINFO = _companyMovementManager.RecentlyAddedMovementID();//SON HAREKET ID'SI
                     GetAllCompanyMovementDetails();
+
+                    //SERİ NO MANTIĞI:YIL+GÜN+SAAT+DAKİKA+FİRMA HAREKET ID ÖRNEK:2022 17 18 52 23 (BİRLEŞİK AMA :))
+                    DateTime Date = DateTime.Now;
+                    Invoice invoiceDATA = new Invoice();
+                    invoiceDATA.InvoiceSeries = Date.Year.ToString() + Date.Day.ToString() + Date.Hour + Date.Minute + CompanyMovementIDINFO.ToString();
+                    invoiceDATA.CompanyMovementID = CompanyMovementIDINFO;
+                    _invoiceManager.TAdd(invoiceDATA);
                 }
             }
             catch (Exception)
@@ -183,12 +190,6 @@ namespace PresentationLayer.WinFormList.CompanyMovement
                 companyMovement.CompanyMovemenArchive = false;
                 _companyMovementManager.TUpdate(companyMovement);
 
-                //SERİ NO MANTIĞI:YIL+GÜN+SAAT+DAKİKA+FİRMA HAREKET ID ÖRNEK:2022 17 18 52 23 (BİRLEŞİK AMA :))
-                DateTime Date = DateTime.Now;
-                Invoice invoiceDATA = new Invoice();
-                invoiceDATA.InvoiceSeries = Date.Year.ToString() + Date.Day.ToString() + Date.Hour + Date.Minute + CompanyMovementIDINFO.ToString();
-                invoiceDATA.CompanyMovementID = CompanyMovementIDINFO;
-                _invoiceManager.TAdd(invoiceDATA);
 
                 CompanyMovementReport.IDInfo = CompanyMovementIDINFO.ToString();
                 CompanyMovementReport companyMovementReportOpen = new CompanyMovementReport();
@@ -201,6 +202,31 @@ namespace PresentationLayer.WinFormList.CompanyMovement
             {
                 // XtraMessageBox.Show("ÜRÜN SEÇİNİZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void SBtnCancel_Click(object sender, EventArgs e)
+        {/*DİKKAT: DAHA İYİ BİR KOD DİZİMİ KULLANILMALI GÜVENLİK AÇISINDAN SORUN OLUŞTURABİLİR.*/
+            List<CompanyMovementDetail> DetailDATA = _companyMovementDetailManager.GetByFilter(x => x.CompanyMovementID == CompanyMovementIDINFO);
+            Product product;
+
+            //ÜRÜNLERİN ADETİ İADE EDİLDİ.
+            //FİRMA HAREKET DETAYLARI SİLİNDİ.
+            foreach (var UpdateAndDelete in DetailDATA)
+            {
+                product=_productManager.GetById((int)UpdateAndDelete.ProductID);
+                product.ProductPiece = (product.ProductPiece + (int)UpdateAndDelete.CompanyMovementDetailPiece);
+                _productManager.TUpdate(product);
+                _companyMovementDetailManager.TRemove(_companyMovementDetailManager.GetById(UpdateAndDelete.CompanyMovementDetailID));
+            }
+
+            //FATURA SİLİNDİ.
+            Invoice invoiceDATA = _invoiceManager.GetById(_invoiceManager.GetAllList().Max(x=>x.InvoiceID));//EN SON EKLENEN GETİRİLDİ VE SİLİNDİ
+            _invoiceManager.TRemove(invoiceDATA);
+
+            // FİRMA HAREKETLERİ SİLİNDİ.
+            EntityLayer.Concrete.CompanyMovement companyMovement = _companyMovementManager.GetById(CompanyMovementIDINFO);
+            _companyMovementManager.TRemove(companyMovement);
+            this.Close();
         }
     }
 }

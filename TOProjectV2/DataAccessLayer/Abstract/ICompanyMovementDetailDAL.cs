@@ -13,5 +13,6 @@ namespace DataAccessLayer.Abstract
     public interface ICompanyMovementDetailDAL:IGenericDAL<CompanyMovementDetail>
     {
         List<CompanyMovementDetailDTO> GetAllCompanyMovementDetail(Expression<Func<CompanyMovementDetailDTO,bool>> filter=null);
+        List<CompanyMovementDetail> GetByFilter(Expression<Func<CompanyMovementDetail, bool>> filter = null);
     }
 }
