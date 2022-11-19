@@ -103,7 +103,7 @@
             this.GroupControlCompanyMovement.Dock = System.Windows.Forms.DockStyle.Top;
             this.GroupControlCompanyMovement.Location = new System.Drawing.Point(0, 0);
             this.GroupControlCompanyMovement.Name = "GroupControlCompanyMovement";
-            this.GroupControlCompanyMovement.Size = new System.Drawing.Size(1151, 142);
+            this.GroupControlCompanyMovement.Size = new System.Drawing.Size(1227, 142);
             this.GroupControlCompanyMovement.TabIndex = 16;
             this.GroupControlCompanyMovement.Text = "FİRMA HAREKETLERİ";
             // 
@@ -112,7 +112,7 @@
             this.SBtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SBtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBtnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCancel.ImageOptions.Image")));
-            this.SBtnCancel.Location = new System.Drawing.Point(782, 32);
+            this.SBtnCancel.Location = new System.Drawing.Point(858, 32);
             this.SBtnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnCancel.Name = "SBtnCancel";
             this.SBtnCancel.Size = new System.Drawing.Size(97, 23);
@@ -139,7 +139,7 @@
             this.SBtnCompanyMovement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SBtnCompanyMovement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBtnCompanyMovement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCompanyMovement.ImageOptions.Image")));
-            this.SBtnCompanyMovement.Location = new System.Drawing.Point(887, 32);
+            this.SBtnCompanyMovement.Location = new System.Drawing.Point(963, 32);
             this.SBtnCompanyMovement.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnCompanyMovement.Name = "SBtnCompanyMovement";
             this.SBtnCompanyMovement.Size = new System.Drawing.Size(251, 23);
@@ -158,7 +158,7 @@
             this.MMENote.Properties.NullText = "Firma Hareketleri İçin Bilgi Girebilirsiniz.";
             this.MMENote.Properties.NullValuePrompt = "Firma Hareketleri İçin Bilgi Girebilirsiniz.";
             this.MMENote.Properties.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.MMENote.Size = new System.Drawing.Size(697, 73);
+            this.MMENote.Size = new System.Drawing.Size(773, 73);
             this.MMENote.TabIndex = 269;
             // 
             // labelControl8
@@ -320,7 +320,7 @@
             this.accordionControlProduct.Name = "accordionControlProduct";
             this.accordionControlProduct.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Fluent;
             this.accordionControlProduct.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControlProduct.Size = new System.Drawing.Size(250, 364);
+            this.accordionControlProduct.Size = new System.Drawing.Size(250, 373);
             this.accordionControlProduct.TabIndex = 18;
             this.accordionControlProduct.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -355,9 +355,9 @@
             this.GroupControlFin.Controls.Add(this.simpleButton6);
             this.GroupControlFin.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GroupControlFin.Enabled = false;
-            this.GroupControlFin.Location = new System.Drawing.Point(250, 430);
+            this.GroupControlFin.Location = new System.Drawing.Point(250, 439);
             this.GroupControlFin.Name = "GroupControlFin";
-            this.GroupControlFin.Size = new System.Drawing.Size(901, 76);
+            this.GroupControlFin.Size = new System.Drawing.Size(977, 76);
             this.GroupControlFin.TabIndex = 20;
             this.GroupControlFin.Text = "SONUÇLANDIRMA İŞLEMLERİ";
             // 
@@ -366,7 +366,7 @@
             this.SBtnInvoiceCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SBtnInvoiceCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SBtnInvoiceCreate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnInvoiceCreate.ImageOptions.Image")));
-            this.SBtnInvoiceCreate.Location = new System.Drawing.Point(681, 32);
+            this.SBtnInvoiceCreate.Location = new System.Drawing.Point(757, 32);
             this.SBtnInvoiceCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SBtnInvoiceCreate.Name = "SBtnInvoiceCreate";
             this.SBtnInvoiceCreate.Size = new System.Drawing.Size(214, 39);
@@ -403,7 +403,7 @@
             this.GControlCompanyMovementDetail.Location = new System.Drawing.Point(250, 142);
             this.GControlCompanyMovementDetail.MainView = this.GViewCompanyMovementDetail;
             this.GControlCompanyMovementDetail.Name = "GControlCompanyMovementDetail";
-            this.GControlCompanyMovementDetail.Size = new System.Drawing.Size(901, 288);
+            this.GControlCompanyMovementDetail.Size = new System.Drawing.Size(977, 297);
             this.GControlCompanyMovementDetail.TabIndex = 21;
             this.GControlCompanyMovementDetail.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GViewCompanyMovementDetail});
@@ -505,7 +505,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 506);
+            this.ClientSize = new System.Drawing.Size(1227, 515);
             this.Controls.Add(this.GControlCompanyMovementDetail);
             this.Controls.Add(this.GroupControlFin);
             this.Controls.Add(this.accordionControlProduct);

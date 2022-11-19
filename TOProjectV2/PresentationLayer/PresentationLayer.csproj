@@ -241,6 +241,12 @@
     <Compile Include="WinFormList\CompanyWF\CompanyWF.Designer.cs">
       <DependentUpon>CompanyWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\CustomerMovementWF\CustomerMovementWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CustomerMovementWF\CustomerMovementWF.Designer.cs">
+      <DependentUpon>CustomerMovementWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\CustomerWF\CustomerAddWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -390,6 +396,12 @@
     </Compile>
     <Compile Include="WinFormList\GuidesWF\TranslateWF.Designer.cs">
       <DependentUpon>TranslateWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\InvoiceWF\CompanyMovementDetailsInvoiceWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\InvoiceWF\CompanyMovementDetailsInvoiceWF.Designer.cs">
+      <DependentUpon>CompanyMovementDetailsInvoiceWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\InvoiceWF\CompanyMovementInvoiceWF.cs">
       <SubType>Form</SubType>
@@ -558,6 +570,9 @@
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyWF.resx">
       <DependentUpon>CompanyWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CustomerMovementWF\CustomerMovementWF.resx">
+      <DependentUpon>CustomerMovementWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CustomerWF\CustomerAddWF.resx">
       <DependentUpon>CustomerAddWF.cs</DependentUpon>
     </EmbeddedResource>
@@ -632,6 +647,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\GuidesWF\TranslateWF.resx">
       <DependentUpon>TranslateWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\InvoiceWF\CompanyMovementDetailsInvoiceWF.resx">
+      <DependentUpon>CompanyMovementDetailsInvoiceWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\InvoiceWF\CompanyMovementInvoiceWF.resx">
       <DependentUpon>CompanyMovementInvoiceWF.cs</DependentUpon>

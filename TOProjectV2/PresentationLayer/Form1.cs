@@ -3,12 +3,14 @@ using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
 using PresentationLayer.WinFormList.CompanyMovement;
 using PresentationLayer.WinFormList.CompanyWF;
+using PresentationLayer.WinFormList.CustomerMovementWF;
 using PresentationLayer.WinFormList.CustomerWF;
 using PresentationLayer.WinFormList.DepartmentWF;
 using PresentationLayer.WinFormList.EmployeeWF;
 using PresentationLayer.WinFormList.ExpenseWF;
 using PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF;
 using PresentationLayer.WinFormList.GuidesWF;
+using PresentationLayer.WinFormList.InvoiceWF;
 using PresentationLayer.WinFormList.ProductWF;
 using PresentationLayer.WinFormList.SectorWF;
 using System;
@@ -220,6 +222,48 @@ namespace PresentationLayer
                 companyMovementWF = new CompanyMovementWF();
                 companyMovementWF.MdiParent = this;
                 companyMovementWF.Show();
+            }
+        }
+
+        CompanyMovementInvoiceWF companyMovementInvoiceWF;
+        private void barCompanyMovementInvoice_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
+            if (companyMovementInvoiceWF==null || companyMovementInvoiceWF.IsDisposed)
+            {
+                companyMovementInvoiceWF = new CompanyMovementInvoiceWF();
+                companyMovementInvoiceWF.MdiParent = this;
+                companyMovementInvoiceWF.Show();
+            }
+        }
+        CustomerMovementWF customerMovementWF;
+        private void barCustomerMovement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (customerMovementWF==null || customerMovementWF.IsDisposed)
+            {
+                customerMovementWF = new CustomerMovementWF();
+                customerMovementWF.MdiParent = this;
+                customerMovementWF.Show();
+            }
+        }
+
+        private void barDirectory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (customerGuideWF == null || customerGuideWF.IsDisposed)
+            {
+                customerGuideWF = new CustomerGuideWF();
+                customerGuideWF.MdiParent = this;
+                customerGuideWF.Show();
+            }
+        }
+
+        private void BarEmployeePhone_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (employeeGuideWF == null || employeeGuideWF.IsDisposed)
+            {
+                employeeGuideWF = new EmployeeGuideWF();
+                employeeGuideWF.MdiParent = this;
+                employeeGuideWF.Show();
             }
         }
     }
