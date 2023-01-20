@@ -61,6 +61,8 @@
     <Compile Include="Abstract\ICompanyMovementDetailDAL.cs" />
     <Compile Include="Abstract\ICountyDAL.cs" />
     <Compile Include="Abstract\ICustomerDAL.cs" />
+    <Compile Include="Abstract\ICustomerMovementDAL.cs" />
+    <Compile Include="Abstract\ICustomerMovementDetailDAL.cs" />
     <Compile Include="Abstract\IDepartmentDAL.cs" />
     <Compile Include="Abstract\IDistrictDAL.cs" />
     <Compile Include="Abstract\IEmployeeDAL.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="DTO\CompanyMovementInvoiceDTO.cs" />
     <Compile Include="DTO\CompanySelectDTO.cs" />
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
+    <Compile Include="DTO\CustomerSelectDTO.cs" />
     <Compile Include="DTO\EmployeeINCountyDistrintAndDepartmentDTO.cs" />
     <Compile Include="DTO\EmployeeSelectDTO.cs" />
     <Compile Include="DTO\ProductINBlandAndModelDTO.cs" />
@@ -92,6 +95,8 @@
     <Compile Include="EntityFramework\EFCompanyMovementDetailDAL.cs" />
     <Compile Include="EntityFramework\EFCountyDAL.cs" />
     <Compile Include="EntityFramework\EFCustomerDAL.cs" />
+    <Compile Include="EntityFramework\EFCustomerMovementDAL.cs" />
+    <Compile Include="EntityFramework\EFCustomerMovementDetailDAL.cs" />
     <Compile Include="EntityFramework\EFDepartmentDAL.cs" />
     <Compile Include="EntityFramework\EFDistrictDAL.cs" />
     <Compile Include="EntityFramework\EFEmployeeDAL.cs" />
@@ -477,6 +482,34 @@
     <Compile Include="Migrations\202211171525479_EntityInvoiceDELETE.designer.cs">
       <DependentUpon>202211171525479_EntityInvoiceDELETE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301201320405_NewTableCustomerMovement.cs" />
+    <Compile Include="Migrations\202301201320405_NewTableCustomerMovement.designer.cs">
+      <DependentUpon>202301201320405_NewTableCustomerMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301201322179_NewTableCustomerMovementUpdate.cs" />
+    <Compile Include="Migrations\202301201322179_NewTableCustomerMovementUpdate.designer.cs">
+      <DependentUpon>202301201322179_NewTableCustomerMovementUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301201342092_ColumnEditCustomerMovementMAP1.cs" />
+    <Compile Include="Migrations\202301201342092_ColumnEditCustomerMovementMAP1.designer.cs">
+      <DependentUpon>202301201342092_ColumnEditCustomerMovementMAP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301201347265_NewTableCustomerMovementDetails.cs" />
+    <Compile Include="Migrations\202301201347265_NewTableCustomerMovementDetails.designer.cs">
+      <DependentUpon>202301201347265_NewTableCustomerMovementDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301201355441_CustomerMovementORCustomerANDProductUpdate.cs" />
+    <Compile Include="Migrations\202301201355441_CustomerMovementORCustomerANDProductUpdate.designer.cs">
+      <DependentUpon>202301201355441_CustomerMovementORCustomerANDProductUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301201409027_NewPKFKCustomerMovement.cs" />
+    <Compile Include="Migrations\202301201409027_NewPKFKCustomerMovement.designer.cs">
+      <DependentUpon>202301201409027_NewPKFKCustomerMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301201610394_CustomerMovementDetailUPDATE.cs" />
+    <Compile Include="Migrations\202301201610394_CustomerMovementDetailUPDATE.designer.cs">
+      <DependentUpon>202301201610394_CustomerMovementDetailUPDATE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
@@ -773,6 +806,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211171525479_EntityInvoiceDELETE.resx">
       <DependentUpon>202211171525479_EntityInvoiceDELETE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201320405_NewTableCustomerMovement.resx">
+      <DependentUpon>202301201320405_NewTableCustomerMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201322179_NewTableCustomerMovementUpdate.resx">
+      <DependentUpon>202301201322179_NewTableCustomerMovementUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201342092_ColumnEditCustomerMovementMAP1.resx">
+      <DependentUpon>202301201342092_ColumnEditCustomerMovementMAP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201347265_NewTableCustomerMovementDetails.resx">
+      <DependentUpon>202301201347265_NewTableCustomerMovementDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201355441_CustomerMovementORCustomerANDProductUpdate.resx">
+      <DependentUpon>202301201355441_CustomerMovementORCustomerANDProductUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201409027_NewPKFKCustomerMovement.resx">
+      <DependentUpon>202301201409027_NewPKFKCustomerMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301201610394_CustomerMovementDetailUPDATE.resx">
+      <DependentUpon>202301201610394_CustomerMovementDetailUPDATE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

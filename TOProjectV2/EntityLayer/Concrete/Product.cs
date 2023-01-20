@@ -25,6 +25,7 @@ namespace EntityLayer.Concrete
         public bool ProductArchive { get; set; }
 
         public ICollection<CompanyMovementDetail> CompanyMovementDetails { get; set; }
+        public ICollection<CustomerMovementDetail> CustomerMovementDetails { get; set; }
 
     }
 }

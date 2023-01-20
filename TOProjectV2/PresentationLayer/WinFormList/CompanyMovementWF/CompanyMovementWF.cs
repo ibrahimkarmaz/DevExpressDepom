@@ -228,7 +228,12 @@ namespace PresentationLayer.WinFormList.CompanyMovement
             _companyMovementManager.TRemove(companyMovement);
             this.Close();
         }
-    }
+
+		private void BEEmployee_EditValueChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
 /*KAYNAKÇA
  * https://docs.devexpress.com/WindowsForms/114624/controls-and-libraries/data-grid/getting-started/walkthroughs/summaries/tutorial-total-summaries

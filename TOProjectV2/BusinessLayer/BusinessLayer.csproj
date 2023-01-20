@@ -66,6 +66,8 @@
     <Compile Include="Abstract\ICompanyMovementService.cs" />
     <Compile Include="Abstract\ICompanyService.cs" />
     <Compile Include="Abstract\ICountyService.cs" />
+    <Compile Include="Abstract\ICustomerMovementDetailService.cs" />
+    <Compile Include="Abstract\ICustomerMovementService.cs" />
     <Compile Include="Abstract\ICustomerService.cs" />
     <Compile Include="Abstract\IDepartmentService.cs" />
     <Compile Include="Abstract\IDistrictService.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Concrete\CompanyMovementManager.cs" />
     <Compile Include="Concrete\CountyManager.cs" />
     <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\CustomerMovementManager.cs" />
     <Compile Include="Concrete\DepartmentManager.cs" />
     <Compile Include="Concrete\DistrictManager.cs" />
     <Compile Include="Concrete\EmployeeManager.cs" />
@@ -98,6 +101,8 @@
     <Compile Include="FluentValidation\CompanyMovementDetailValidator.cs" />
     <Compile Include="FluentValidation\CompanyMovementValidator.cs" />
     <Compile Include="FluentValidation\CompanyValidator.cs" />
+    <Compile Include="FluentValidation\CustomerMovementDetailValidator.cs" />
+    <Compile Include="FluentValidation\CustomerMovementValidator.cs" />
     <Compile Include="FluentValidation\CustomerValidator.cs" />
     <Compile Include="FluentValidation\DepartmentValidator.cs" />
     <Compile Include="FluentValidation\EmployeeValidator.cs" />

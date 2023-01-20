@@ -30,5 +30,6 @@ namespace EntityLayer.Concrete
 
 
         public ICollection<CompanyMovement> CompanyMovements { get; set; }
+        public ICollection<CustomerMovement> CustomerMovements { get; set; }
     }
 }

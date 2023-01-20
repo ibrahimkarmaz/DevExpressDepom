@@ -253,6 +253,12 @@
     <Compile Include="WinFormList\CustomerWF\CustomerAddWF.Designer.cs">
       <DependentUpon>CustomerAddWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\CustomerWF\CustomerSelectWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CustomerWF\CustomerSelectWF.Designer.cs">
+      <DependentUpon>CustomerSelectWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\CustomerWF\CustomerUpdateWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -575,6 +581,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CustomerWF\CustomerAddWF.resx">
       <DependentUpon>CustomerAddWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CustomerWF\CustomerSelectWF.resx">
+      <DependentUpon>CustomerSelectWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CustomerWF\CustomerUpdateWF.resx">
       <DependentUpon>CustomerUpdateWF.cs</DependentUpon>

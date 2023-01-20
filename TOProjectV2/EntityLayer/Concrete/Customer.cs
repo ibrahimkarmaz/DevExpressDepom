@@ -28,5 +28,9 @@ namespace EntityLayer.Concrete
 
         public int? DistrictID { get; set; }
         public District District { get; set; }
+
+
+        //FK
+        public ICollection<CustomerMovement> CustomerMovements { get; set; }
     }
 }
