@@ -32,7 +32,7 @@
 			this.ColumnTotalPrice = new DevExpress.XtraGrid.Columns.GridColumn();
 			this.accordionControlUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
 			this.accordionControlDelete = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-			this.SBtnInvoiceCreate = new DevExpress.XtraEditors.SimpleButton();
+			this.SBtnCustomerInvoiceCreate = new DevExpress.XtraEditors.SimpleButton();
 			this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
 			this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
 			this.accordionControlAdd = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -85,11 +85,11 @@
 			// ColumnTotalPrice
 			// 
 			this.ColumnTotalPrice.Caption = "Toplam Fiyat";
-			this.ColumnTotalPrice.FieldName = "CompanyMovementDetailTotalPrice";
+			this.ColumnTotalPrice.FieldName = "CustomerMovementDetailTotalPrice";
 			this.ColumnTotalPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnTotalPrice.ImageOptions.Image")));
 			this.ColumnTotalPrice.Name = "ColumnTotalPrice";
 			this.ColumnTotalPrice.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CompanyMovementDetailTotalPrice", "Toplam={0:C2}")});
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "CustomerMovementDetailTotalPrice", "Toplam={0:C2}")});
 			this.ColumnTotalPrice.UnboundDataType = typeof(decimal);
 			this.ColumnTotalPrice.Visible = true;
 			this.ColumnTotalPrice.VisibleIndex = 6;
@@ -100,6 +100,7 @@
 			this.accordionControlUpdate.Name = "accordionControlUpdate";
 			this.accordionControlUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlUpdate.Text = "ÜRÜN ADET BİLGİSİNİ DÜZENLE";
+			this.accordionControlUpdate.Click += new System.EventHandler(this.accordionControlUpdate_Click);
 			// 
 			// accordionControlDelete
 			// 
@@ -108,17 +109,17 @@
 			this.accordionControlDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlDelete.Text = "ÜRÜN BİLGİLERİNİ SİL";
 			// 
-			// SBtnInvoiceCreate
+			// SBtnCustomerInvoiceCreate
 			// 
-			this.SBtnInvoiceCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.SBtnInvoiceCreate.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.SBtnInvoiceCreate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnInvoiceCreate.ImageOptions.Image")));
-			this.SBtnInvoiceCreate.Location = new System.Drawing.Point(762, 32);
-			this.SBtnInvoiceCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.SBtnInvoiceCreate.Name = "SBtnInvoiceCreate";
-			this.SBtnInvoiceCreate.Size = new System.Drawing.Size(214, 39);
-			this.SBtnInvoiceCreate.TabIndex = 262;
-			this.SBtnInvoiceCreate.Text = "Fatura Oluştur";
+			this.SBtnCustomerInvoiceCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.SBtnCustomerInvoiceCreate.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.SBtnCustomerInvoiceCreate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCustomerInvoiceCreate.ImageOptions.Image")));
+			this.SBtnCustomerInvoiceCreate.Location = new System.Drawing.Point(762, 32);
+			this.SBtnCustomerInvoiceCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.SBtnCustomerInvoiceCreate.Name = "SBtnCustomerInvoiceCreate";
+			this.SBtnCustomerInvoiceCreate.Size = new System.Drawing.Size(214, 39);
+			this.SBtnCustomerInvoiceCreate.TabIndex = 262;
+			this.SBtnCustomerInvoiceCreate.Text = "Fatura Oluştur";
 			// 
 			// simpleButton5
 			// 
@@ -148,6 +149,7 @@
 			this.accordionControlAdd.Name = "accordionControlAdd";
 			this.accordionControlAdd.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlAdd.Text = "YENİ ÜRÜN ";
+			this.accordionControlAdd.Click += new System.EventHandler(this.accordionControlAdd_Click);
 			// 
 			// GControlCustomerMovementDetail
 			// 
@@ -183,7 +185,7 @@
 			// ColumnID
 			// 
 			this.ColumnID.Caption = "ID";
-			this.ColumnID.FieldName = "CompanyMovementDetailID";
+			this.ColumnID.FieldName = "CustomerMovementDetailID";
 			this.ColumnID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnID.ImageOptions.Image")));
 			this.ColumnID.Name = "ColumnID";
 			this.ColumnID.Visible = true;
@@ -219,7 +221,7 @@
 			// ColumnPiece
 			// 
 			this.ColumnPiece.Caption = "Adet";
-			this.ColumnPiece.FieldName = "CompanyMovementDetailPiece";
+			this.ColumnPiece.FieldName = "CustomerMovementDetailPiece";
 			this.ColumnPiece.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnPiece.ImageOptions.Image")));
 			this.ColumnPiece.Name = "ColumnPiece";
 			this.ColumnPiece.Visible = true;
@@ -228,7 +230,7 @@
 			// ColumnPrice
 			// 
 			this.ColumnPrice.Caption = "Ürün Fiyati";
-			this.ColumnPrice.FieldName = "CompanyMovementDetailPrice";
+			this.ColumnPrice.FieldName = "CustomerMovementDetailPrice";
 			this.ColumnPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ColumnPrice.ImageOptions.Image")));
 			this.ColumnPrice.Name = "ColumnPrice";
 			this.ColumnPrice.UnboundDataType = typeof(decimal);
@@ -243,7 +245,7 @@
 			// 
 			// GroupControlFin
 			// 
-			this.GroupControlFin.Controls.Add(this.SBtnInvoiceCreate);
+			this.GroupControlFin.Controls.Add(this.SBtnCustomerInvoiceCreate);
 			this.GroupControlFin.Controls.Add(this.simpleButton5);
 			this.GroupControlFin.Controls.Add(this.simpleButton6);
 			this.GroupControlFin.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -326,12 +328,14 @@
 			// 
 			this.SBtnCustomerMovement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.SBtnCustomerMovement.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.SBtnCustomerMovement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCustomerMovement.ImageOptions.Image")));
 			this.SBtnCustomerMovement.Location = new System.Drawing.Point(968, 32);
 			this.SBtnCustomerMovement.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.SBtnCustomerMovement.Name = "SBtnCustomerMovement";
 			this.SBtnCustomerMovement.Size = new System.Drawing.Size(251, 23);
 			this.SBtnCustomerMovement.TabIndex = 230;
 			this.SBtnCustomerMovement.Text = "Müşteri Hareketi Oluştur";
+			this.SBtnCustomerMovement.Click += new System.EventHandler(this.SBtnCustomerMovement_Click);
 			// 
 			// MMENote
 			// 
@@ -506,6 +510,7 @@
 			this.Name = "CustomerMovementWF";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "MÜŞTERİ HAREKETLERİ";
+			this.Load += new System.EventHandler(this.CustomerMovementWF_Load);
 			((System.ComponentModel.ISupportInitialize)(this.GControlCustomerMovementDetail)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.GViewCustomerMovementDetail)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.GroupControlFin)).EndInit();
@@ -532,7 +537,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn ColumnTotalPrice;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlUpdate;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlDelete;
-        private DevExpress.XtraEditors.SimpleButton SBtnInvoiceCreate;
+        private DevExpress.XtraEditors.SimpleButton SBtnCustomerInvoiceCreate;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlAdd;

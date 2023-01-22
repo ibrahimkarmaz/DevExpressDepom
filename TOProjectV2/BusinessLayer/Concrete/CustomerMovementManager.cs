@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Abstract;
+﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -9,20 +10,21 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class CustomerMovementManager : ICustomerMovementDAL
+	public class CustomerMovementManager : ICustomerMovementService
 	{
 		ICustomerMovementDAL _customerMovementDAL;
-		public void Delete(CustomerMovement t)
+
+		public CustomerMovementManager(ICustomerMovementDAL customerMovementDAL)
 		{
-			_customerMovementDAL.Delete(t);
+			_customerMovementDAL = customerMovementDAL;
 		}
 
-		public List<CustomerMovement> GetAll()
+		public List<CustomerMovement> GetAllList()
 		{
 			return _customerMovementDAL.GetAll();
 		}
 
-		public List<CustomerMovement> GetAll(Expression<Func<CustomerMovement, bool>> filter = null)
+		public List<CustomerMovement> GetAllList(Expression<Func<CustomerMovement, bool>> filter = null)
 		{
 			return _customerMovementDAL.GetAll(filter);
 		}
@@ -32,12 +34,22 @@ namespace BusinessLayer.Concrete
 			return _customerMovementDAL.GetById(id);
 		}
 
-		public void Insert(CustomerMovement t)
+		public int RecentlyAddedMovementCustomerID()
+		{
+			return _customerMovementDAL.RecentlyAddedMovementCustomerID();
+		}
+
+		public void TAdd(CustomerMovement t)
 		{
 			_customerMovementDAL.Insert(t);
 		}
 
-		public void Update(CustomerMovement t)
+		public void TRemove(CustomerMovement t)
+		{
+			_customerMovementDAL.Delete(t);
+		}
+
+		public void TUpdate(CustomerMovement t)
 		{
 			_customerMovementDAL.Update(t);
 		}

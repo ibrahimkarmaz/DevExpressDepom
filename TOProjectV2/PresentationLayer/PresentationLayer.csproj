@@ -113,6 +113,8 @@
     <Compile Include="CommonValidationControls\CompanyMovementCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CompanyMovementDetailCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\CustomerCommonValidationControl.cs" />
+    <Compile Include="CommonValidationControls\CustomerMovementCommonValidationControl.cs" />
+    <Compile Include="CommonValidationControls\CustomerMovementDetailCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\DepartmentCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\EmployeeCommonValidatorControl.cs" />
     <Compile Include="CommonValidationControls\ExpenseContentCommonValidationControl.cs" />

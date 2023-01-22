@@ -36,6 +36,7 @@ namespace DataAccessLayer.Concrete
             modelBuilder.Configurations.Add(new CompanyMovementDetailMAP());
             modelBuilder.Configurations.Add(new CustomerMovementMAP());
             modelBuilder.Configurations.Add(new CustomerMovementDetailMAP());
+            modelBuilder.Configurations.Add(new CustomerMovementInvoiceMAP());
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -59,6 +60,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<CompanyMovementDetail> CompanyMovementDetails { get; set; }
         public DbSet<CustomerMovement> CustomerMovements { get; set; }
         public DbSet<CustomerMovementDetail> CustomerMovementDetails { get; set; }
+        public DbSet<CustomerMovementInvoice> CustomerMovementInvoices { get; set; }
 
     }
 }

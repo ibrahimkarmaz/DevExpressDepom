@@ -26,5 +26,6 @@ namespace EntityLayer.Concrete
 
 
 		public ICollection<CustomerMovementDetail> CustomerMovementDetails { get; set; }
+		public ICollection<CustomerMovementInvoice> CustomerMovementInvoices { get; set; }
 	}
 }

@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
 	public interface ICustomerMovementDAL: IGenericDAL<CustomerMovement>
 	{
+		int RecentlyAddedMovementCustomerID();
 	}
 }

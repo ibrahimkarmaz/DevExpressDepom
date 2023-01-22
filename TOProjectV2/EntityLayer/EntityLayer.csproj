@@ -60,6 +60,7 @@
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="Concrete\CustomerMovement.cs" />
     <Compile Include="Concrete\CustomerMovementDetail.cs" />
+    <Compile Include="Concrete\CustomerMovementInvoice.cs" />
     <Compile Include="Concrete\Department.cs" />
     <Compile Include="Concrete\District.cs" />
     <Compile Include="Concrete\Employee.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Mapping\CountyMAP.cs" />
     <Compile Include="Mapping\CustomerMAP.cs" />
     <Compile Include="Mapping\CustomerMovementDetailMAP.cs" />
+    <Compile Include="Mapping\CustomerMovementInvoiceMAP.cs" />
     <Compile Include="Mapping\CustomerMovementMAP.cs" />
     <Compile Include="Mapping\DepartmentMAP.cs" />
     <Compile Include="Mapping\DistrictMAP.cs" />

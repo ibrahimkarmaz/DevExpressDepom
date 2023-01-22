@@ -6,6 +6,7 @@ using EntityLayer.Concrete;
 using PresentationLayer.CommonValidationControls;
 using PresentationLayer.WinFormList.CompanyMovement;
 using PresentationLayer.WinFormList.CompanyWF;
+using PresentationLayer.WinFormList.CustomerMovementWF;
 using PresentationLayer.WinFormList.EmployeeWF;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace PresentationLayer.WinFormList.ProductWF.ProductMovementWF
 {
     public partial class ProductMovementAddWF : DevExpress.XtraEditors.XtraForm
     {
+		/*NOT:DÜZELTME YAPILACAK BURADA BİR ÜRÜN ALINDIĞINDA KODLARLA İŞLEM YAPILIP VERİTABANİNA KAYDEDİLİYOR.
+		 BU İŞLEMİ VERİTABANİ TARAFINDA TRİGGER İLE OTOMATİKLEŞTİRİLECEK.*/
         public ProductMovementAddWF()
         {
             InitializeComponent();
@@ -31,6 +34,7 @@ namespace PresentationLayer.WinFormList.ProductWF.ProductMovementWF
 
         }
         ProductSelectDTO productSelect = new ProductSelectDTO();
+        public static bool CustomerMovementCame;//****TRUE İSE MÜŞTERİ HAREKETLERİNDEN GELDİĞİ BELLİ EDER. (NOT:AÇARKEN TRUE SONRA KAPANDIĞINDA FALSE YAPILMALI.)
         private void BEProduct_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             ProductSelectWF.productSelectStatus = false;
@@ -73,60 +77,118 @@ namespace PresentationLayer.WinFormList.ProductWF.ProductMovementWF
             this.Close();
         }
         CompanyMovementDetailManager _companyMovementDetailManager = new CompanyMovementDetailManager(new EFCompanyMovementDetailDAL());
+		CustomerMovementDetailManager _customerMovementDetailManager = new CustomerMovementDetailManager(new EFCustomerMovementDetailDAL());
         ProductManager _productManager = new ProductManager(new EFProductDAL());
         private void SBSave_Click(object sender, EventArgs e)
         {
             try
             {
-                CompanyMovementDetail companyMovementDetail = new CompanyMovementDetail();
-               
-                if (productSelect.ProductID!= null)
+                if (CustomerMovementCame)//EĞER MÜŞTERİ HAREKETLERDEN GELİYORSA İLK KISMA GİRER.
                 {
-                    companyMovementDetail.ProductID = productSelect.ProductID;
-                }
+                    CustomerMovementDetail customerMovementDetail = new CustomerMovementDetail();
+					if (productSelect.ProductID != null)
+					{
+						customerMovementDetail.ProductID = productSelect.ProductID;
+					}
+					else
+					{
+						customerMovementDetail.ProductID = null;
+					}
+
+					if (CBEPiece.Text != null)
+					{
+						customerMovementDetail.CustomerMovementDetailPiece = (int)CBEPiece.SelectedItem;
+					}
+					else
+					{
+						customerMovementDetail.CustomerMovementDetailPiece = null;
+					}
+
+					if (productSelect.ProductPrice != null)
+					{
+						customerMovementDetail.CustomerMovementDetailPrice = Convert.ToDecimal(TEPrice.Text.Replace('.', ','));
+					}
+					else
+					{
+						customerMovementDetail.CustomerMovementDetailPrice = null;
+					}
+					if (TETotalPrice.Text != null)
+					{
+						customerMovementDetail.CustomerMovementDetailTotalPrice = Convert.ToDecimal(TETotalPrice.Text.Replace('.', ','));
+					}
+					else
+					{
+						customerMovementDetail.CustomerMovementDetailTotalPrice = null;
+					}
+
+					customerMovementDetail.CustomerMovementID = CustomerMovementWF.CustomerMovementWF.CustomerrMovementIDINFO;
+
+					Product product;
+					if (new CustomerMovementDetailCommonValidatorControl().CustomerMovementDetailValidatorAndMessage(customerMovementDetail))
+					{
+
+						_customerMovementDetailManager.TAdd(customerMovementDetail);
+						product = _productManager.GetById((int)productSelect.ProductID);
+						product.ProductPiece = (product.ProductPiece - ((int)CBEPiece.SelectedItem));
+						_productManager.TUpdate(product);
+						XtraMessageBox.Show("YENİ ÜRÜN EKLENDİ.", "BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						this.Close();
+					}
+
+				}
                 else
                 {
-                    companyMovementDetail.ProductID = null;
-                }
+					CompanyMovementDetail companyMovementDetail = new CompanyMovementDetail();
 
-                if (CBEPiece.Text!=null)
-                {
-                    companyMovementDetail.CompanyMovementDetailPiece = (int)CBEPiece.SelectedItem;
-                }
-                else
-                {
-                    companyMovementDetail.CompanyMovementDetailPiece = null;
-                }
+					if (productSelect.ProductID != null)
+					{
+						companyMovementDetail.ProductID = productSelect.ProductID;
+					}
+					else
+					{
+						companyMovementDetail.ProductID = null;
+					}
 
-                if (productSelect.ProductPrice!=null)
-                {
-                    companyMovementDetail.CompanyMovementDetailPrice = Convert.ToDecimal(TEPrice.Text.Replace('.', ','));
-                }
-                else
-                {
-                    companyMovementDetail.CompanyMovementDetailPrice = null;
-                }
-                if (TETotalPrice.Text!=null)
-                {
-                    companyMovementDetail.CompanyMovementDetailTotalPrice=Convert.ToDecimal(TETotalPrice.Text.Replace('.', ','));
-                }
-                else
-                {
-                    companyMovementDetail.CompanyMovementDetailTotalPrice = null;
-                }
+					if (CBEPiece.Text != null)
+					{
+						companyMovementDetail.CompanyMovementDetailPiece = (int)CBEPiece.SelectedItem;
+					}
+					else
+					{
+						companyMovementDetail.CompanyMovementDetailPiece = null;
+					}
 
-                companyMovementDetail.CompanyMovementID = CompanyMovementWF.CompanyMovementIDINFO;
+					if (productSelect.ProductPrice != null)
+					{
+						companyMovementDetail.CompanyMovementDetailPrice = Convert.ToDecimal(TEPrice.Text.Replace('.', ','));
+					}
+					else
+					{
+						companyMovementDetail.CompanyMovementDetailPrice = null;
+					}
+					if (TETotalPrice.Text != null)
+					{
+						companyMovementDetail.CompanyMovementDetailTotalPrice = Convert.ToDecimal(TETotalPrice.Text.Replace('.', ','));
+					}
+					else
+					{
+						companyMovementDetail.CompanyMovementDetailTotalPrice = null;
+					}
 
-                Product product;
-               if (new CompanyMovementDetailCommonValidatorControl().CompanyMovementDetailValidatorAndMessage(companyMovementDetail))
-                {
-                    _companyMovementDetailManager.TAdd(companyMovementDetail);
-                    product=_productManager.GetById((int)productSelect.ProductID);
-                    product.ProductPiece = (product.ProductPiece - ((int)CBEPiece.SelectedItem));
-                    _productManager.TUpdate(product);
-                    XtraMessageBox.Show("YENİ ÜRÜN EKLENDİ.", "BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
+					companyMovementDetail.CompanyMovementID = CompanyMovementWF.CompanyMovementIDINFO;
+
+					Product product;
+					if (new CompanyMovementDetailCommonValidatorControl().CompanyMovementDetailValidatorAndMessage(companyMovementDetail))
+					{
+						_companyMovementDetailManager.TAdd(companyMovementDetail);
+						product = _productManager.GetById((int)productSelect.ProductID);
+						product.ProductPiece = (product.ProductPiece - ((int)CBEPiece.SelectedItem));
+						_productManager.TUpdate(product);
+						XtraMessageBox.Show("YENİ ÜRÜN EKLENDİ.", "BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						this.Close();
+					}
+				}
+              
             }
             catch (Exception)
             {

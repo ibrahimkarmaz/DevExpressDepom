@@ -40,7 +40,7 @@ namespace PresentationLayer.WinFormList.InvoiceWF
         }
 
         private void SBtnInvoiceCreate_Click(object sender, EventArgs e)
-        {
+        {//FATURA GÖSTERME İŞLEMLERİ
             try
             {
                 CompanyMovementReport.IDInfo = CompanyMovementIDINFO.ToString();
