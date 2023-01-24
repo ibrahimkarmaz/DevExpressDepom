@@ -41,5 +41,10 @@ namespace DataAccessLayer.EntityFramework
 					}
 				   ).Where(filter).ToList();
 		}
+
+		public List<CustomerMovementDetail> GetByFilter(Expression<Func<CustomerMovementDetail, bool>> filter = null)
+		{
+			return _context.CustomerMovementDetails.Where(filter).ToList();
+		}
 	}
 }

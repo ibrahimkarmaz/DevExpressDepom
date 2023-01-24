@@ -2,8 +2,10 @@
 using DataAccessLayer.DTO;
 using DataAccessLayer.EntityFramework;
 using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using EntityLayer.Concrete;
 using PresentationLayer.CommonValidationControls;
+using PresentationLayer.Reports;
 using PresentationLayer.WinFormList.CustomerWF;
 using PresentationLayer.WinFormList.EmployeeWF;
 using PresentationLayer.WinFormList.ProductWF.ProductMovementWF;
@@ -115,10 +117,12 @@ namespace PresentationLayer.WinFormList.CustomerMovementWF
 
 					//SERİ NO MANTIĞI:YIL+GÜN+SAAT+DAKİKA+MÜŞTERİ HAREKET ID ÖRNEK:2022 17 18 52 23 (BİRLEŞİK AMA :))
 					DateTime Date = DateTime.Now;
-					CustomerMovementInvoice customerMovementInvoiceData = new CustomerMovementInvoice();
+					EntityLayer.Concrete.CustomerMovementInvoice customerMovementInvoiceData = new EntityLayer.Concrete.CustomerMovementInvoice();
 					customerMovementInvoiceData.CustomerMovementInvoiceSeries = Date.Year.ToString() + Date.Day.ToString() + Date.Hour + Date.Minute + CustomerrMovementIDINFO.ToString();
 					customerMovementInvoiceData.CustomerMovementID = CustomerrMovementIDINFO;
 					_customerMovementInvoiceManager.TAdd(customerMovementInvoiceData);
+
+					SBtnCancel.Enabled = true;
 				}
 			}
 			catch (Exception)
@@ -156,6 +160,77 @@ namespace PresentationLayer.WinFormList.CustomerMovementWF
 			catch (Exception)
 			{
 				XtraMessageBox.Show("ÜRÜN SEÇİNİZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+		Product product;
+		CustomerMovementDetail customerMovementDetail;
+		ProductManager _productManager = new ProductManager(new EFProductDAL());
+		private void accordionControlDelete_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				customerMovementDetail = _customerMovementDetailManager.GetById((int)GViewCustomerMovementDetail.GetRowCellValue(GViewCustomerMovementDetail.FocusedRowHandle, GViewCustomerMovementDetail.Columns[0]));
+				product = _productManager.GetById((int)customerMovementDetail.ProductID);
+				product.ProductPiece = (int)(product.ProductPiece + customerMovementDetail.CustomerMovementDetailPiece);
+				_productManager.TUpdate(product);
+				_customerMovementDetailManager.TRemove(customerMovementDetail);
+				GetAllCustomerMovementDetails();
+				XtraMessageBox.Show("ÜRÜN BİLGİSİ SİLİNDİ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			catch (Exception)
+			{
+				XtraMessageBox.Show("ÜRÜN SEÇİNİZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+
+		private void SBtnCancel_Click(object sender, EventArgs e)
+		{
+			/*DİKKAT: DAHA İYİ BİR KOD DİZİMİ KULLANILMALI GÜVENLİK AÇISINDAN SORUN OLUŞTURABİLİR.*/
+			List<CustomerMovementDetail> DetailDATA = _customerMovementDetailManager.GetByFilter(x => x.CustomerMovementID == CustomerrMovementIDINFO);
+			Product product;
+
+			//ÜRÜNLERİN ADETİ İADE EDİLDİ.
+			//FİRMA HAREKET DETAYLARI SİLİNDİ.
+			foreach (var UpdateAndDelete in DetailDATA)
+			{
+				product = _productManager.GetById((int)UpdateAndDelete.ProductID);
+				product.ProductPiece = (product.ProductPiece + (int)UpdateAndDelete.CustomerMovementDetailPiece);
+				_productManager.TUpdate(product);
+				_customerMovementDetailManager.TRemove(_customerMovementDetailManager.GetById(UpdateAndDelete.CustomerMovementDetailID));
+			}
+
+			//FATURA SİLİNDİ.
+			
+			EntityLayer.Concrete.CustomerMovementInvoice invoiceDATA = _customerMovementInvoiceManager.GetById(_customerMovementInvoiceManager.GetAllList().Max(x => x.CustomerMovementInvoiceID));//EN SON EKLENEN GETİRİLDİ VE SİLİNDİ
+			_customerMovementInvoiceManager.TRemove(invoiceDATA);
+
+			// MÜŞTERİ HAREKETLERİ SİLİNDİ.
+			CustomerMovement customerMovement = _customerMovementManager.GetById(CustomerrMovementIDINFO);
+			_customerMovementManager.TRemove(customerMovement);
+			this.Close();
+		}
+
+		private void SBtnCustomerInvoiceCreate_Click(object sender, EventArgs e)
+		{
+			{
+				try
+				{
+					CustomerMovement customerMovement = _customerMovementManager.GetById(CustomerrMovementIDINFO);
+					customerMovement.CustomerMovemenArchive = false;
+					_customerMovementManager.TUpdate(customerMovement);
+
+
+					CustomerMovementReportX.IDInfo = CustomerrMovementIDINFO.ToString();
+					CustomerMovementReportX customerMovementReportX = new CustomerMovementReportX();
+					customerMovementReportX.RequestParameters = false;
+					customerMovementReportX.ShowPreviewDialog();
+					this.Close();
+
+				}
+				catch (Exception)
+				{
+					// XtraMessageBox.Show("ÜRÜN SEÇİNİZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
 			}
 		}
 	}

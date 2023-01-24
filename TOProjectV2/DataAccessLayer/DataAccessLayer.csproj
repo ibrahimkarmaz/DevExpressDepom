@@ -85,6 +85,7 @@
     <Compile Include="DTO\CompanySelectDTO.cs" />
     <Compile Include="DTO\CustomerINCountyAndDistrintDTO.cs" />
     <Compile Include="DTO\CustomerMovementDetailDTO.cs" />
+    <Compile Include="DTO\CustomerMovementInvoiceDTO.cs" />
     <Compile Include="DTO\CustomerSelectDTO.cs" />
     <Compile Include="DTO\EmployeeINCountyDistrintAndDepartmentDTO.cs" />
     <Compile Include="DTO\EmployeeSelectDTO.cs" />

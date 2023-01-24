@@ -12,5 +12,6 @@ namespace DataAccessLayer.Abstract
 	public interface ICustomerMovementDetailDAL : IGenericDAL<CustomerMovementDetail>
 	{
 		List<CustomerMovementDetailDTO> GetAllCustomerMovementDetail(Expression<Func<CustomerMovementDetailDTO, bool>> filter = null);
+		List<CustomerMovementDetail> GetByFilter(Expression<Func<CustomerMovementDetail, bool>> filter = null);
 	}
 }

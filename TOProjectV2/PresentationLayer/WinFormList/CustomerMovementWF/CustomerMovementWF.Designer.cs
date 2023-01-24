@@ -108,6 +108,7 @@
 			this.accordionControlDelete.Name = "accordionControlDelete";
 			this.accordionControlDelete.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlDelete.Text = "ÜRÜN BİLGİLERİNİ SİL";
+			this.accordionControlDelete.Click += new System.EventHandler(this.accordionControlDelete_Click);
 			// 
 			// SBtnCustomerInvoiceCreate
 			// 
@@ -120,6 +121,7 @@
 			this.SBtnCustomerInvoiceCreate.Size = new System.Drawing.Size(214, 39);
 			this.SBtnCustomerInvoiceCreate.TabIndex = 262;
 			this.SBtnCustomerInvoiceCreate.Text = "Fatura Oluştur";
+			this.SBtnCustomerInvoiceCreate.Click += new System.EventHandler(this.SBtnCustomerInvoiceCreate_Click);
 			// 
 			// simpleButton5
 			// 
@@ -302,6 +304,7 @@
 			// 
 			this.SBtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.SBtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.SBtnCancel.Enabled = false;
 			this.SBtnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnCancel.ImageOptions.Image")));
 			this.SBtnCancel.Location = new System.Drawing.Point(863, 32);
 			this.SBtnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -309,6 +312,7 @@
 			this.SBtnCancel.Size = new System.Drawing.Size(97, 23);
 			this.SBtnCancel.TabIndex = 231;
 			this.SBtnCancel.Text = "İptal Et";
+			this.SBtnCancel.Click += new System.EventHandler(this.SBtnCancel_Click);
 			// 
 			// pictureEdit8
 			// 

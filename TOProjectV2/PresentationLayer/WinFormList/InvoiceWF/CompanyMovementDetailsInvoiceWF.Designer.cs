@@ -80,7 +80,7 @@
 			// 
 			this.SBtnInvoiceShow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.SBtnInvoiceShow.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.SBtnInvoiceShow.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnInvoiceCreate.ImageOptions.Image")));
+			this.SBtnInvoiceShow.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SBtnInvoiceShow.ImageOptions.Image")));
 			this.SBtnInvoiceShow.Location = new System.Drawing.Point(838, 32);
 			this.SBtnInvoiceShow.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.SBtnInvoiceShow.Name = "SBtnInvoiceShow";
@@ -223,7 +223,7 @@
 			this.Controls.Add(this.GroupControlFin);
 			this.Name = "CompanyMovementDetailsInvoiceWF";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FİRMA HAREKET DETAYLARI";
+			this.Text = "FİRMA HAREKETLERİ FATURA DETAYLARI";
 			this.Load += new System.EventHandler(this.CompanyMovementDetailsInvoiceWF_Load);
 			((System.ComponentModel.ISupportInitialize)(this.GroupControlFin)).EndInit();
 			this.GroupControlFin.ResumeLayout(false);

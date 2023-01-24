@@ -1,8 +1,10 @@
 ﻿using DevExpress.XtraBars.Helpers;
+using EntityLayer.Concrete;
 using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
 using PresentationLayer.WinFormList.CompanyMovement;
 using PresentationLayer.WinFormList.CompanyWF;
+using PresentationLayer.WinFormList.CustomerMovementInvoice;
 using PresentationLayer.WinFormList.CustomerMovementWF;
 using PresentationLayer.WinFormList.CustomerWF;
 using PresentationLayer.WinFormList.DepartmentWF;
@@ -266,7 +268,18 @@ namespace PresentationLayer
                 employeeGuideWF.Show();
             }
         }
-    }
+
+        CustomerMovementInvoiceWF customerMovementInvoiceWF;
+		private void barCustomerInvoice_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+            if (customerMovementInvoiceWF==null || customerMovementInvoiceWF.IsDisposed)
+            {
+                customerMovementInvoiceWF = new CustomerMovementInvoiceWF();
+                customerMovementInvoiceWF.MdiParent = this;
+                customerMovementInvoiceWF.Show();
+            }
+		}
+	}
 }
 /*KAYNAKLAR VE KOD
  https://www.cgtytpl.com/openweathermap-ile-hava-durumu-cekme

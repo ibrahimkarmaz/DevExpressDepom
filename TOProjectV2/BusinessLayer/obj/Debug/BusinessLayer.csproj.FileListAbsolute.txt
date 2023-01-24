@@ -26,6 +26,7 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLaye
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\FluentValidation.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\AutoMapper.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\EntityLayer.pdb
@@ -35,10 +36,9 @@ C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLaye
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\FluentValidation.xml
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\AutoMapper.xml
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\obj\Debug\BusinessLayer.pdb
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\AutoMapper.dll
-C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\TOProjectV2\BusinessLayer\bin\Debug\AutoMapper.xml

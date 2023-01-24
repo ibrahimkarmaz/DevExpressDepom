@@ -147,6 +147,18 @@
     <Compile Include="Reports\CompanyMovementReport.Designer.cs">
       <DependentUpon>CompanyMovementReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\CustomerMovementReportX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerMovementReportX.Designer.cs">
+      <DependentUpon>CustomerMovementReportX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerMovemetReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerMovemetReport.Designer.cs">
+      <DependentUpon>CustomerMovemetReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\InvoiceReport.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -164,6 +176,12 @@
     </Compile>
     <Compile Include="Reports\Report1.Designer.cs">
       <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\BankWF\BankAddWF.cs">
       <SubType>Form</SubType>
@@ -242,6 +260,18 @@
     </Compile>
     <Compile Include="WinFormList\CompanyWF\CompanyWF.Designer.cs">
       <DependentUpon>CompanyWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CustomerMovementInvoiceWF\CustomerMovementDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CustomerMovementInvoiceWF\CustomerMovementDetail.Designer.cs">
+      <DependentUpon>CustomerMovementDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\CustomerMovementInvoiceWF\CustomerMovementInvoiceWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\CustomerMovementInvoiceWF\CustomerMovementInvoiceWF.Designer.cs">
+      <DependentUpon>CustomerMovementInvoiceWF.cs</DependentUpon>
     </Compile>
     <Compile Include="WinFormList\CustomerMovementWF\CustomerMovementWF.cs">
       <SubType>Form</SubType>
@@ -530,6 +560,12 @@
     <EmbeddedResource Include="Reports\CompanyMovementReport.resx">
       <DependentUpon>CompanyMovementReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerMovementReportX.resx">
+      <DependentUpon>CustomerMovementReportX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerMovemetReport.resx">
+      <DependentUpon>CustomerMovemetReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\InvoiceReport.resx">
       <DependentUpon>InvoiceReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -538,6 +574,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report1.resx">
       <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankAddWF.resx">
       <DependentUpon>BankAddWF.cs</DependentUpon>
@@ -577,6 +616,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CompanyWF\CompanyWF.resx">
       <DependentUpon>CompanyWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CustomerMovementInvoiceWF\CustomerMovementDetail.resx">
+      <DependentUpon>CustomerMovementDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\CustomerMovementInvoiceWF\CustomerMovementInvoiceWF.resx">
+      <DependentUpon>CustomerMovementInvoiceWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\CustomerMovementWF\CustomerMovementWF.resx">
       <DependentUpon>CustomerMovementWF.cs</DependentUpon>

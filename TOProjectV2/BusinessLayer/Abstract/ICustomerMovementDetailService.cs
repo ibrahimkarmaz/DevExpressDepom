@@ -12,5 +12,6 @@ namespace BusinessLayer.Abstract
 	public interface ICustomerMovementDetailService:IGenericService<CustomerMovementDetail>
 	{
 		List<CustomerMovementDetailDTO> GetAllCustomerMovementDetail(Expression<Func<CustomerMovementDetailDTO, bool>> filter = null);
+		List<CustomerMovementDetail> GetByFilter(Expression<Func<CustomerMovementDetail, bool>> filter = null);
 	}
 }
