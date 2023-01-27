@@ -65,6 +65,8 @@
 			this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
 			this.barCustomerMovement = new DevExpress.XtraBars.BarButtonItem();
 			this.BarEmployeePhone = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+			this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
 			this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -138,10 +140,13 @@
             this.barButtonItem2,
             this.barButtonItem3,
             this.barCustomerMovement,
-            this.BarEmployeePhone});
+            this.BarEmployeePhone,
+            this.barButtonItem5});
 			this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-			this.ribbonControlAutomation.MaxItemId = 34;
+			this.ribbonControlAutomation.MaxItemId = 35;
 			this.ribbonControlAutomation.Name = "ribbonControlAutomation";
+			this.ribbonControlAutomation.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
+            this.ribbonPageCategory1});
 			this.ribbonControlAutomation.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonHome,
             this.ribbonProduct,
@@ -172,6 +177,7 @@
 			this.barStocks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barStocks.ImageOptions.Image")));
 			this.barStocks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barStocks.ImageOptions.LargeImage")));
 			this.barStocks.Name = "barStocks";
+			this.barStocks.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStocks_ItemClick);
 			// 
 			// barCustomers
 			// 
@@ -404,6 +410,7 @@
 			this.barDayStatus.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barDayStatus.ImageOptions.Image")));
 			this.barDayStatus.Name = "barDayStatus";
 			this.barDayStatus.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+			this.barDayStatus.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barDayStatus_ItemClick);
 			// 
 			// barButtonItem1
 			// 
@@ -443,6 +450,17 @@
 			this.BarEmployeePhone.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarEmployeePhone.ImageOptions.LargeImage")));
 			this.BarEmployeePhone.Name = "BarEmployeePhone";
 			this.BarEmployeePhone.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarEmployeePhone_ItemClick);
+			// 
+			// barButtonItem5
+			// 
+			this.barButtonItem5.Caption = "barButtonItem5";
+			this.barButtonItem5.Id = 34;
+			this.barButtonItem5.Name = "barButtonItem5";
+			// 
+			// ribbonPageCategory1
+			// 
+			this.ribbonPageCategory1.Name = "ribbonPageCategory1";
+			this.ribbonPageCategory1.Text = "ribbonPageCategory1";
 			// 
 			// ribbonHome
 			// 
@@ -749,6 +767,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
         private DevExpress.XtraBars.BarButtonItem BarEmployeePhone;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-    }
+		private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+		private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
+	}
 }
 

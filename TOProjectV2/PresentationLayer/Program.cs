@@ -1,6 +1,7 @@
 ﻿using PresentationLayer.Reports;
 using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
+using PresentationLayer.WinFormList.BirthdayWF;
 using System;
 using System.Collections.Generic;
 using System.Linq;

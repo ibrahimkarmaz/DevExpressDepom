@@ -53,5 +53,14 @@ namespace DataAccessLayer.EntityFramework
                 return false;
             }
         }
-    }
+
+		public List<Customer> GetListWhoIsBirthday(Expression<Func<Customer, bool>> filter = null)
+		{
+            if (filter==null)
+            {
+				return _context.Customers.ToList();
+			}
+            return _context.Customers.Where(filter).ToList();
+		}
+	}
 }

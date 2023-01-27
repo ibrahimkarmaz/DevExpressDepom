@@ -13,5 +13,6 @@ namespace BusinessLayer.Abstract
     {
         bool GetByTC(Expression<Func<Customer, bool>> filter = null);
         List<CustomerINCountyAndDistrintDTO> CustomerGetList(Expression<Func<CustomerINCountyAndDistrintDTO, bool>> filter = null);
-    }
+		List<Customer> GetListWhoIsBirthday(Expression<Func<Customer, bool>> filter = null);
+	}
 }

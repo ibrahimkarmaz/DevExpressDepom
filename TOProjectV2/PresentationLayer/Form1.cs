@@ -2,6 +2,7 @@
 using EntityLayer.Concrete;
 using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
+using PresentationLayer.WinFormList.BirthdayWF;
 using PresentationLayer.WinFormList.CompanyMovement;
 using PresentationLayer.WinFormList.CompanyWF;
 using PresentationLayer.WinFormList.CustomerMovementInvoice;
@@ -13,6 +14,7 @@ using PresentationLayer.WinFormList.ExpenseWF;
 using PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF;
 using PresentationLayer.WinFormList.GuidesWF;
 using PresentationLayer.WinFormList.InvoiceWF;
+using PresentationLayer.WinFormList.ProductStockWF;
 using PresentationLayer.WinFormList.ProductWF;
 using PresentationLayer.WinFormList.SectorWF;
 using System;
@@ -278,6 +280,22 @@ namespace PresentationLayer
                 customerMovementInvoiceWF.MdiParent = this;
                 customerMovementInvoiceWF.Show();
             }
+		}
+        ProductStocksWF productStocksWF;
+		private void barStocks_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+            if (productStocksWF==null ||productStocksWF.IsDisposed)
+            {
+                productStocksWF = new ProductStocksWF();
+                productStocksWF.MdiParent = this;
+                productStocksWF.Show();
+            }
+		}
+
+		private void barDayStatus_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+            BirthdayNowWF birthdayNowWF = new BirthdayNowWF();
+            birthdayNowWF.ShowDialog();
 		}
 	}
 }

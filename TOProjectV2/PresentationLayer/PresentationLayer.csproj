@@ -207,6 +207,12 @@
     <Compile Include="WinFormList\BankWF\BankWF.Designer.cs">
       <DependentUpon>BankWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\BirthdayWF\BirthdayNowWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\BirthdayWF\BirthdayNowWF.Designer.cs">
+      <DependentUpon>BirthdayNowWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\BlandArchiveListWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -477,6 +483,12 @@
     <Compile Include="WinFormList\BlandTypeList.Designer.cs">
       <DependentUpon>BlandTypeList.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\ProductStockWF\ProductStocksWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\ProductStockWF\ProductStocksWF.Designer.cs">
+      <DependentUpon>ProductStocksWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ProductWF\ProductAddXWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -589,6 +601,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankWF.resx">
       <DependentUpon>BankWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\BirthdayWF\BirthdayNowWF.resx">
+      <DependentUpon>BirthdayNowWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BlandArchiveListWF.resx">
       <DependentUpon>BlandArchiveListWF.cs</DependentUpon>
@@ -724,6 +739,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BlandTypeList.resx">
       <DependentUpon>BlandTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\ProductStockWF\ProductStocksWF.resx">
+      <DependentUpon>ProductStocksWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ProductWF\ProductAddXWF.resx">
       <DependentUpon>ProductAddXWF.cs</DependentUpon>

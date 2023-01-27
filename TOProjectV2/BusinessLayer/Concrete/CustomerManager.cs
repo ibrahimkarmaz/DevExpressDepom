@@ -45,7 +45,12 @@ namespace BusinessLayer.Concrete
           return  _customerDAL.GetByTC(filter);
         }
 
-        public void TAdd(Customer t)
+		public List<Customer> GetListWhoIsBirthday(Expression<Func<Customer, bool>> filter = null)
+		{
+            return _customerDAL.GetListWhoIsBirthday(filter);
+		}
+
+		public void TAdd(Customer t)
         {
             _customerDAL.Insert(t);
         }
