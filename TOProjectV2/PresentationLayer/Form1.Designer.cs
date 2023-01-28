@@ -97,6 +97,7 @@
 			this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
 			this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+			this.barStockControl = new DevExpress.XtraBars.BarButtonItem();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -141,9 +142,10 @@
             this.barButtonItem3,
             this.barCustomerMovement,
             this.BarEmployeePhone,
-            this.barButtonItem5});
+            this.barButtonItem5,
+            this.barStockControl});
 			this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-			this.ribbonControlAutomation.MaxItemId = 35;
+			this.ribbonControlAutomation.MaxItemId = 36;
 			this.ribbonControlAutomation.Name = "ribbonControlAutomation";
 			this.ribbonControlAutomation.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -172,7 +174,7 @@
 			// 
 			// barStocks
 			// 
-			this.barStocks.Caption = "STOKLAR";
+			this.barStocks.Caption = "AZALAN STOKLAR";
 			this.barStocks.Id = 2;
 			this.barStocks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barStocks.ImageOptions.Image")));
 			this.barStocks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barStocks.ImageOptions.LargeImage")));
@@ -515,6 +517,7 @@
 			// 
 			this.ribbonPageGroup1.ItemLinks.Add(this.barProducts);
 			this.ribbonPageGroup1.ItemLinks.Add(this.barStocks);
+			this.ribbonPageGroup1.ItemLinks.Add(this.barStockControl);
 			this.ribbonPageGroup1.Name = "ribbonPageGroup1";
 			this.ribbonPageGroup1.Text = "ÜRÜN İŞLEMLERİ";
 			// 
@@ -680,6 +683,15 @@
 			this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
 			this.barButtonItem4.Name = "barButtonItem4";
 			// 
+			// barStockControl
+			// 
+			this.barStockControl.Caption = "STOK KONTROL";
+			this.barStockControl.Id = 35;
+			this.barStockControl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+			this.barStockControl.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+			this.barStockControl.Name = "barStockControl";
+			this.barStockControl.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStockControl_ItemClick);
+			// 
 			// CommercialAutomation
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -769,6 +781,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem5;
 		private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
+		private DevExpress.XtraBars.BarButtonItem barStockControl;
 	}
 }
 

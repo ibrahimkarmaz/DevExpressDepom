@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="tr-TR">
+  <Title Text="STOK KONTROL" IncludeMasterFilterState="false" />
+  <DataSources>
+    <SqlDataSource Name="SQL Data Source 1" ComponentName="dashboardSqlDataSource1">
+      <Connection Name="localhost_DBTO_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value=".\SQLEXPRESS" />
+          <Parameter Name="database" Value="DBTO" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="SelectQuery" Name="Products">
+        <Tables>
+          <Table Name="Products" X="30" Y="30" Width="125" Height="246" />
+          <Table Name="Blands" X="185" Y="30" Width="125" Height="126" />
+          <Table Name="Models" X="240" Y="190" Width="125" Height="166" />
+          <Relation Type="Inner" Parent="Products" Nested="Blands">
+            <KeyColumn Parent="BlandID" Nested="BlandID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Blands" Nested="Models">
+            <KeyColumn Parent="BlandID" Nested="BlandID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Products" Nested="Models">
+            <KeyColumn Parent="ModelID" Nested="ModelID" />
+          </Relation>
+        </Tables>
+        <Columns>
+          <Column Table="Blands" Name="BlandName" />
+          <Column Table="Products" Name="ProductName" />
+          <Column Table="Products" Name="ProductPiece" />
+          <Column Table="Models" Name="ModelName" />
+        </Columns>
+        <Filter>[Products.ProductArchive] = True</Filter>
+        <GroupFilter></GroupFilter>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Products">
+            <Field Name="BlandName" Type="String" />
+            <Field Name="ProductName" Type="String" />
+            <Field Name="ProductPiece" Type="Int32" />
+            <Field Name="ModelName" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="SEÇİLEN MARKANIN ÜRÜNLERİNİN YÜZDELİK DAĞILIMI" DataSource="dashboardSqlDataSource1" DataMember="Products" LabelContentType="ArgumentValueAndPercent" TooltipContentType="None" ShowPieCaptions="false">
+      <InteractivityOptions MasterFilterMode="Multiple" IsDrillDownEnabled="true" />
+      <DataItems>
+        <Measure DataMember="ProductPiece" DefaultId="DataItem1">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" CustomFormatString="" />
+        </Measure>
+        <Dimension DataMember="ProductName" DefaultId="DataItem0" />
+        <Dimension DataMember="ModelName" SortOrder="Descending" DefaultId="DataItem2" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+        <Argument DefaultId="DataItem2" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem1" />
+      </Values>
+    </Pie>
+    <Chart ComponentName="chartDashboardItem1" Name="MARKALAR VE ÜRÜN ADETLERİ GRAFİĞİ" DataSource="dashboardSqlDataSource1" DataMember="Products">
+      <InteractivityOptions MasterFilterMode="Multiple" TargetDimensions="Series" />
+      <DataItems>
+        <Measure DataMember="ProductPiece" DefaultId="DataItem1">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" IncludeGroupSeparator="true" CustomFormatString="" />
+        </Measure>
+        <Dimension DataMember="BlandName" DefaultId="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem2" />
+      </SeriesDimensions>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Grid ComponentName="gridDashboardItem1" Name="SEÇİLEN MARKANIN ÜRÜNLERİ" DataSource="dashboardSqlDataSource1" DataMember="Products">
+      <DataItems>
+        <Dimension DataMember="ProductName" SortOrder="Descending" DefaultId="DataItem0" />
+        <Measure DataMember="ProductPiece" DefaultId="DataItem1">
+          <NumericFormat FormatType="Currency" Unit="Ones" IncludeGroupSeparator="true" CustomFormatString="" />
+        </Measure>
+        <Dimension DataMember="ModelName" DefaultId="DataItem2" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Name="ÜRÜN ADI" Weight="89.312977099236647">
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridMeasureColumn Name="ÜRÜN FİYATI" Weight="68.129770992366417">
+          <Measure DefaultId="DataItem1" />
+        </GridMeasureColumn>
+        <GridDimensionColumn Name="MODEL ADI" Weight="67.55725190839695">
+          <Dimension DefaultId="DataItem2" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="Manual" />
+      <ColumnFilterOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Weight="100">
+      <LayoutGroup Orientation="Vertical" Weight="41.541353383458649">
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="50" />
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="50" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="pieDashboardItem1" Weight="58.458646616541351" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

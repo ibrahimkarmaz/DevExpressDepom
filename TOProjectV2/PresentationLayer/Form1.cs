@@ -297,6 +297,17 @@ namespace PresentationLayer
             BirthdayNowWF birthdayNowWF = new BirthdayNowWF();
             birthdayNowWF.ShowDialog();
 		}
+        ProductStocksControlWF productStocksControlWF;
+		private void barStockControl_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+            if (productStocksControlWF==null ||productStocksControlWF.IsDisposed)
+            {
+                productStocksControlWF = new ProductStocksControlWF();
+                productStocksControlWF.MdiParent = this;
+                productStocksControlWF.Show();
+
+			}
+		}
 	}
 }
 /*KAYNAKLAR VE KOD
