@@ -1,6 +1,7 @@
 ﻿using PresentationLayer.Reports;
 using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
+using PresentationLayer.WinFormList.BeginWF;
 using PresentationLayer.WinFormList.BirthdayWF;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace PresentationLayer
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CommercialAutomation());
+            Application.Run(new LoginLoadingWF());
         }
     }
 }

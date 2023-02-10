@@ -217,6 +217,12 @@
     <Compile Include="WinFormList\BankWF\BankWF.Designer.cs">
       <DependentUpon>BankWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\BeginWF\LoginLoadingWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\BeginWF\LoginLoadingWF.Designer.cs">
+      <DependentUpon>LoginLoadingWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\BirthdayWF\BirthdayNowWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -623,6 +629,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BankWF\BankWF.resx">
       <DependentUpon>BankWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\BeginWF\LoginLoadingWF.resx">
+      <DependentUpon>LoginLoadingWF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\BirthdayWF\BirthdayNowWF.resx">
       <DependentUpon>BirthdayNowWF.cs</DependentUpon>
