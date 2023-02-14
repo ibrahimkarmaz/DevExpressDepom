@@ -14,7 +14,6 @@ namespace PresentationLayer.WinFormList.BeginWF
 		public LoginLoadingWF()
 		{
 			InitializeComponent();
-			this.labelCopyright.Text = "Copyright © 1998-" + DateTime.Now.Year.ToString();
 		}
 
 		#region Overrides
@@ -28,6 +27,27 @@ namespace PresentationLayer.WinFormList.BeginWF
 
 		public enum SplashScreenCommand
 		{
+		}
+
+		private void LoginLoadingWF_Load(object sender, EventArgs e)
+		{
+			labelCopyright.Text = "©2016-" + DateTime.Now.Year + " Tüm Hakları Saklıdır.";
+			LoginTime.Interval = 50;
+			LoginTime.Start();
+		}
+
+		int sayac = 0;
+		private void LoginTime_Tick(object sender, EventArgs e)
+		{
+			progressBarControl1.EditValue = sayac;
+			if (Convert.ToInt32(progressBarControl1.EditValue)== 100)
+			{
+				LoginTime.Stop();
+				CommercialAutomation commercialAutomation = new CommercialAutomation();
+				commercialAutomation.Show();
+				this.Hide();
+			}
+			sayac++;
 		}
 	}
 }

@@ -26,7 +26,19 @@ namespace PresentationLayer.WinFormList.CompanyWF
         {
             this.Close();
         }
+        /*KAYIT YAPERKEN HATA OLUŞUYOR.
+         ÇÖZÜLEMEDİ.
+        YAPILANLAR;
+        - VERİ KONTROL
+        -WACTH YAPILDI(DÜZGÜN ÇALIŞIYOR).
 
+
+        NOT:VERİLERDE SORUN OLUNCA EKLEMİYOR OLABİLİR.  
+         
+         
+         
+         
+         */
         CompanyManager _companyManager = new CompanyManager(new EFCompanyDAL());
         CountyManager _countyManager = new CountyManager(new EFCountyDAL());
         DistrictManager _districtManager = new DistrictManager(new EFDistrictDAL());
@@ -56,8 +68,8 @@ namespace PresentationLayer.WinFormList.CompanyWF
         Company company;
         private void SBtnSave_Click(object sender, EventArgs e)
         {
-            try
-            {
+           /* try
+            {*/
                 company = new Company();
                 company.CompanyName = TECompanyName.Text;
                 if (LUESector.EditValue != null)
@@ -102,11 +114,11 @@ namespace PresentationLayer.WinFormList.CompanyWF
                     XtraMessageBox.Show("YENİ FİRMA KAYDEDİLDİ.", "BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
-            }
+           /* }
             catch (Exception)
             {
                 XtraMessageBox.Show("FİRMA BİLGİLERİNİ DOLDURUNUZ.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
     }
 }
