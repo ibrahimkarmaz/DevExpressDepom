@@ -24,7 +24,7 @@ namespace PresentationLayer
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginWF());
+            Application.Run(new AdministratorWF());
         }
     }
 }
