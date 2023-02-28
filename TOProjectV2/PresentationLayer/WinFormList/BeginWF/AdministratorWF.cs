@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using PresentationLayer.WinFormList.MapControlListWF.EmployeeMapControlWF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,18 @@ namespace PresentationLayer.WinFormList.BeginWF
 		private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
 
+		}
+
+
+		EmployeeMapControlWF employeeMapControlWF;
+		private void barEmployeeDistrictMAP_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			if (employeeMapControlWF==null || employeeMapControlWF.IsDisposed)
+			{
+				employeeMapControlWF = new EmployeeMapControlWF();
+				employeeMapControlWF.MdiParent = this;
+				employeeMapControlWF.Show();
+			}
 		}
 	}
 }

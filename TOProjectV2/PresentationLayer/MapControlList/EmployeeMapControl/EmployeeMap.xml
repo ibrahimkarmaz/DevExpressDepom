@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="tr-TR">
+  <Title Visible="false" Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource Name="SQL Data Source 1" ComponentName="dashboardSqlDataSource1">
+      <Connection Name="localhost_DBTO_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value=".\SQLEXPRESS" />
+          <Parameter Name="database" Value="DBTO" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="SelectQuery" Name="Employees">
+        <Tables>
+          <Table Name="Employees" X="30" Y="30" Width="190" Height="346" />
+          <Table Name="Countys" X="250" Y="30" Width="125" Height="106" />
+          <Table Name="Districts" X="405" Y="30" Width="135" Height="126" />
+          <Table Name="Departments" X="330" Y="250" Width="160" Height="126" />
+          <Relation Type="Inner" Parent="Employees" Nested="Countys">
+            <KeyColumn Parent="CountyID" Nested="CountyID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Employees" Nested="Districts">
+            <KeyColumn Parent="DistrictID" Nested="DistrictID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Employees" Nested="Departments">
+            <KeyColumn Parent="DepartmentID" Nested="DepartmentID" />
+          </Relation>
+        </Tables>
+        <Columns>
+          <Column Table="Employees" Name="EmployeeTC" />
+          <Column Table="Employees" Name="EmployeeName" />
+          <Column Table="Employees" Name="EmployeeSurName" />
+          <Column Table="Employees" Name="EmployeePhone" />
+          <Column Table="Employees" Name="EmployeeMail" />
+          <Column Table="Employees" Name="EmployeeHomeAddress" />
+          <Column Table="Departments" Name="DepartmentName" />
+          <Column Table="Districts" Name="DistrictName" />
+          <Column Table="Countys" Name="CountyName" />
+        </Columns>
+        <Filter>[Employees.EmployeeArchive] = True</Filter>
+        <GroupFilter></GroupFilter>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Employees">
+            <Field Name="EmployeeTC" Type="String" />
+            <Field Name="EmployeeName" Type="String" />
+            <Field Name="EmployeeSurName" Type="String" />
+            <Field Name="EmployeePhone" Type="String" />
+            <Field Name="EmployeeMail" Type="String" />
+            <Field Name="EmployeeHomeAddress" Type="String" />
+            <Field Name="DepartmentName" Type="String" />
+            <Field Name="DistrictName" Type="String" />
+            <Field Name="CountyName" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <ChoroplethMap ComponentName="choroplethMapDashboardItem1" Name="PERSONEL HARİTASİ" DataSource="dashboardSqlDataSource1" DataMember="Employees" ShapefileArea="Custom" ShapeTitleAttributeName="adm2_tr" AttributeName="adm2_tr">
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <DataItems>
+        <Dimension DataMember="DistrictName" DefaultId="DataItem0" />
+        <Measure DataMember="EmployeeTC" SummaryType="Count" DefaultId="DataItem1" />
+      </DataItems>
+      <CustomShapefile Url="C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\DashBoardKullanimi\XmlOrnekDersler\tur_polbna_adm2.shp" />
+      <ViewArea TopLatitude="42.104785700000036" BottomLatitude="35.808419300000025" LeftLongitude="25.668508999000039" RightLongitude="44.817931000000044" CenterPointLatitude="39.026655275226695" CenterPointLongitude="35.243219999500049" />
+      <MapLegend Visible="true" Position="BottomRight" Orientation="Horizontal" />
+      <WeightedLegend />
+      <AttributeDimension DefaultId="DataItem0" />
+      <Maps>
+        <ValueMap Name="Personel Sayısı" ValueName="Personel Sayısı">
+          <Value DefaultId="DataItem1" />
+          <UniformScale />
+        </ValueMap>
+      </Maps>
+    </ChoroplethMap>
+    <Grid ComponentName="gridDashboardItem1" Name="SEÇİLEN İLÇEDEKİ PERSONELLER" DataSource="dashboardSqlDataSource1" DataMember="Employees">
+      <DataItems>
+        <Dimension DataMember="EmployeeName" DefaultId="DataItem0" />
+        <Dimension DataMember="EmployeeSurName" DefaultId="DataItem1" />
+        <Dimension DataMember="EmployeeTC" DefaultId="DataItem2" />
+        <Dimension DataMember="EmployeePhone" DefaultId="DataItem3" />
+        <Dimension DataMember="EmployeeMail" DefaultId="DataItem4" />
+        <Dimension DataMember="EmployeeHomeAddress" DefaultId="DataItem5" />
+        <Dimension DataMember="DepartmentName" DefaultId="DataItem6" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Name="DEPARTMAN ADI">
+          <Dimension DefaultId="DataItem6" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="T.C">
+          <Dimension DefaultId="DataItem2" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="ADI">
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="SOYADI">
+          <Dimension DefaultId="DataItem1" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="TELEFONU">
+          <Dimension DefaultId="DataItem3" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="E-POSTA ADRESİ">
+          <Dimension DefaultId="DataItem4" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="EV ADRESİ">
+          <Dimension DefaultId="DataItem5" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions />
+      <ColumnFilterOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Weight="100">
+      <LayoutGroup Orientation="Vertical" Weight="78.211009174311926">
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="25.35211267605634" />
+        <LayoutItem DashboardItem="choroplethMapDashboardItem1" Weight="74.647887323943664" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

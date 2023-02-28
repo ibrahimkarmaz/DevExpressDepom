@@ -66,6 +66,9 @@
 			this.barCustomerMovement = new DevExpress.XtraBars.BarButtonItem();
 			this.BarEmployeePhone = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+			this.barStockControl = new DevExpress.XtraBars.BarButtonItem();
+			this.barCompanyMap = new DevExpress.XtraBars.BarButtonItem();
+			this.barCustomerMap = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
 			this.ribbonHome = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -97,7 +100,6 @@
 			this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
 			this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-			this.barStockControl = new DevExpress.XtraBars.BarButtonItem();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControlAutomation)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -143,9 +145,11 @@
             this.barCustomerMovement,
             this.BarEmployeePhone,
             this.barButtonItem5,
-            this.barStockControl});
+            this.barStockControl,
+            this.barCompanyMap,
+            this.barCustomerMap});
 			this.ribbonControlAutomation.Location = new System.Drawing.Point(0, 0);
-			this.ribbonControlAutomation.MaxItemId = 36;
+			this.ribbonControlAutomation.MaxItemId = 38;
 			this.ribbonControlAutomation.Name = "ribbonControlAutomation";
 			this.ribbonControlAutomation.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -459,6 +463,33 @@
 			this.barButtonItem5.Id = 34;
 			this.barButtonItem5.Name = "barButtonItem5";
 			// 
+			// barStockControl
+			// 
+			this.barStockControl.Caption = "STOK KONTROL";
+			this.barStockControl.Id = 35;
+			this.barStockControl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barStockControl.ImageOptions.Image")));
+			this.barStockControl.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barStockControl.ImageOptions.LargeImage")));
+			this.barStockControl.Name = "barStockControl";
+			this.barStockControl.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStockControl_ItemClick);
+			// 
+			// barCompanyMap
+			// 
+			this.barCompanyMap.Caption = "FİRMA HARİTASİ";
+			this.barCompanyMap.Id = 36;
+			this.barCompanyMap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCompanyMap.ImageOptions.Image")));
+			this.barCompanyMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCompanyMap.ImageOptions.LargeImage")));
+			this.barCompanyMap.Name = "barCompanyMap";
+			this.barCompanyMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCompanyMap_ItemClick);
+			// 
+			// barCustomerMap
+			// 
+			this.barCustomerMap.Caption = "MÜŞTERİ HARİTASİ";
+			this.barCustomerMap.Id = 37;
+			this.barCustomerMap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCustomerMap.ImageOptions.Image")));
+			this.barCustomerMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCustomerMap.ImageOptions.LargeImage")));
+			this.barCustomerMap.Name = "barCustomerMap";
+			this.barCustomerMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCustomerMap_ItemClick);
+			// 
 			// ribbonPageCategory1
 			// 
 			this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -547,6 +578,7 @@
 			// 
 			this.ribbonPageGroup2.ItemLinks.Add(this.barCustomers);
 			this.ribbonPageGroup2.ItemLinks.Add(this.barDirectory);
+			this.ribbonPageGroup2.ItemLinks.Add(this.barCustomerMap);
 			this.ribbonPageGroup2.Name = "ribbonPageGroup2";
 			this.ribbonPageGroup2.Text = "MÜŞTERİ İŞLEMLERİ";
 			// 
@@ -570,6 +602,7 @@
 			// ribbonPageGroup7
 			// 
 			this.ribbonPageGroup7.ItemLinks.Add(this.barCompanys);
+			this.ribbonPageGroup7.ItemLinks.Add(this.barCompanyMap);
 			this.ribbonPageGroup7.Name = "ribbonPageGroup7";
 			this.ribbonPageGroup7.Text = "FİRMA İŞLEMLERİ";
 			// 
@@ -683,15 +716,6 @@
 			this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
 			this.barButtonItem4.Name = "barButtonItem4";
 			// 
-			// barStockControl
-			// 
-			this.barStockControl.Caption = "STOK KONTROL";
-			this.barStockControl.Id = 35;
-			this.barStockControl.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-			this.barStockControl.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-			this.barStockControl.Name = "barStockControl";
-			this.barStockControl.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStockControl_ItemClick);
-			// 
 			// CommercialAutomation
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -782,6 +806,8 @@
 		private DevExpress.XtraBars.BarButtonItem barButtonItem5;
 		private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
 		private DevExpress.XtraBars.BarButtonItem barStockControl;
+		private DevExpress.XtraBars.BarButtonItem barCompanyMap;
+		private DevExpress.XtraBars.BarButtonItem barCustomerMap;
 	}
 }
 

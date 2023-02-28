@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="tr-TR">
+  <Title Visible="false" Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource Name="SQL Data Source 1" ComponentName="dashboardSqlDataSource1">
+      <Connection Name="localhost_DBTO_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value=".\SQLEXPRESS" />
+          <Parameter Name="database" Value="DBTO" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+        </Parameters>
+      </Connection>
+      <Query Type="SelectQuery" Name="Customers">
+        <Tables>
+          <Table Name="Customers" X="50" Y="30" Width="200" Height="346" />
+          <Table Name="Countys" X="350" Y="200" Width="125" Height="106" />
+          <Table Name="Districts" X="340" Y="30" Width="125" Height="126" />
+          <Relation Type="Inner" Parent="Customers" Nested="Countys">
+            <KeyColumn Parent="CountyID" Nested="CountyID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Customers" Nested="Districts">
+            <KeyColumn Parent="DistrictID" Nested="DistrictID" />
+          </Relation>
+        </Tables>
+        <Columns>
+          <Column Table="Customers" Name="CustomerTC" />
+          <Column Table="Customers" Name="CustomerName" />
+          <Column Table="Customers" Name="CustomerSurName" />
+          <Column Table="Customers" Name="CustomerMobilePhone" />
+          <Column Table="Customers" Name="CustomerMail" />
+          <Column Table="Customers" Name="CustomerHomeAddress" />
+          <Column Table="Countys" Name="CountyName" />
+          <Column Table="Districts" Name="DistrictName" />
+        </Columns>
+        <Filter>[Customers.CustomerArchive] = True</Filter>
+        <GroupFilter></GroupFilter>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Customers">
+            <Field Name="CustomerTC" Type="String" />
+            <Field Name="CustomerName" Type="String" />
+            <Field Name="CustomerSurName" Type="String" />
+            <Field Name="CustomerMobilePhone" Type="String" />
+            <Field Name="CustomerMail" Type="String" />
+            <Field Name="CustomerHomeAddress" Type="String" />
+            <Field Name="CountyName" Type="String" />
+            <Field Name="DistrictName" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <ChoroplethMap ComponentName="choroplethMapDashboardItem1" Name="MÜŞTERİ İL HARİTASİ" DataSource="dashboardSqlDataSource1" DataMember="Customers" ShapefileArea="Custom" ShapeTitleAttributeName="adm1_tr" AttributeName="adm1_tr">
+      <DataItems>
+        <Dimension DataMember="CountyName" DefaultId="DataItem0" />
+        <Measure DataMember="CustomerName" SummaryType="Count" DefaultId="DataItem1" />
+      </DataItems>
+      <CustomShapefile Url="C:\Users\ibrah\OneDrive\Belgeler\GitHub\DevExpressDepom\DashBoardKullanimi\XmlOrnekDersler\tur_polbnda_adm1.shp" />
+      <ViewArea TopLatitude="42.104785700000036" BottomLatitude="35.808419300000025" LeftLongitude="25.668508999000039" RightLongitude="44.817931000000044" CenterPointLatitude="39.026655275226695" CenterPointLongitude="35.243219999500049" />
+      <MapLegend />
+      <WeightedLegend />
+      <AttributeDimension DefaultId="DataItem0" />
+      <Maps>
+        <ValueMap Name="Müşteri Sayısı" ValueName="Müşteri Sayısı">
+          <Value DefaultId="DataItem1" />
+          <UniformScale />
+        </ValueMap>
+      </Maps>
+    </ChoroplethMap>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="choroplethMapDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

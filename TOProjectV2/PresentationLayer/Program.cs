@@ -3,6 +3,7 @@ using PresentationLayer.WinFormList;
 using PresentationLayer.WinFormList.BankWF;
 using PresentationLayer.WinFormList.BeginWF;
 using PresentationLayer.WinFormList.BirthdayWF;
+using PresentationLayer.WinFormList.MapControlListWF.EmployeeMapControlWF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,14 +18,14 @@ namespace PresentationLayer
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main() 
         {//https://www.youtube.com/watch?v=SUXvAHw6osw
             DevExpress.UserSkins.BonusSkins.Register();
             DevExpress.Skins.SkinManager.EnableFormSkins();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdministratorWF());
+            Application.Run(new CommercialAutomation());
         }
     }
 }

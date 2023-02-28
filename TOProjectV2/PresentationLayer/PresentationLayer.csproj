@@ -481,6 +481,36 @@
     <Compile Include="WinFormList\InvoiceWF\CompanyMovementInvoiceWF.Designer.cs">
       <DependentUpon>CompanyMovementInvoiceWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinFormList\MapControlListWF\CompanyMapControlWF\CompanyMapControlWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\CompanyMapControlWF\CompanyMapControlWF.Designer.cs">
+      <DependentUpon>CompanyMapControlWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\CustomerMapControlWF\CustomerMapControlWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\CustomerMapControlWF\CustomerMapControlWF.Designer.cs">
+      <DependentUpon>CustomerMapControlWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\CustomerMapControlWF\Dashboard1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\CustomerMapControlWF\Dashboard1.Designer.cs">
+      <DependentUpon>Dashboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\EmployeeMapControlWF\Dashboard1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\EmployeeMapControlWF\Dashboard1.Designer.cs">
+      <DependentUpon>Dashboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\EmployeeMapControlWF\EmployeeMapControlWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormList\MapControlListWF\EmployeeMapControlWF\EmployeeMapControlWF.Designer.cs">
+      <DependentUpon>EmployeeMapControlWF.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinFormList\ModelWF\ModelArchiveListWF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -774,6 +804,15 @@
     <EmbeddedResource Include="WinFormList\InvoiceWF\CompanyMovementInvoiceWF.resx">
       <DependentUpon>CompanyMovementInvoiceWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\MapControlListWF\CompanyMapControlWF\CompanyMapControlWF.resx">
+      <DependentUpon>CompanyMapControlWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\MapControlListWF\CustomerMapControlWF\CustomerMapControlWF.resx">
+      <DependentUpon>CustomerMapControlWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormList\MapControlListWF\EmployeeMapControlWF\EmployeeMapControlWF.resx">
+      <DependentUpon>EmployeeMapControlWF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinFormList\ModelWF\ModelArchiveListWF.resx">
       <DependentUpon>ModelArchiveListWF.cs</DependentUpon>
     </EmbeddedResource>
@@ -885,6 +924,13 @@
     <None Include="bin\Debug\Image\Common\Sumer32.png" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="MapControlList\CompanyMapControl\CompanyCountyMapControl.xml" />
+    <Content Include="MapControlList\CompanyMapControl\CompanyDistrictMapControl.xml" />
+    <Content Include="MapControlList\CustomerMapControl\CustomerCountMapControl.xml" />
+    <Content Include="MapControlList\CustomerMapControl\CustomerDistrictMapControl.xml" />
+    <Content Include="MapControlList\EmployeeMapControl\EmployeeMap.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

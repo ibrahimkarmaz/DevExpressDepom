@@ -14,6 +14,8 @@ using PresentationLayer.WinFormList.ExpenseWF;
 using PresentationLayer.WinFormList.ExpenseWF.ExpenseContentWF;
 using PresentationLayer.WinFormList.GuidesWF;
 using PresentationLayer.WinFormList.InvoiceWF;
+using PresentationLayer.WinFormList.MapControlListWF.CompanyMapControlWF;
+using PresentationLayer.WinFormList.MapControlListWF.CustomerMapControlWF;
 using PresentationLayer.WinFormList.ProductStockWF;
 using PresentationLayer.WinFormList.ProductWF;
 using PresentationLayer.WinFormList.SectorWF;
@@ -305,6 +307,29 @@ namespace PresentationLayer
                 productStocksControlWF = new ProductStocksControlWF();
                 productStocksControlWF.MdiParent = this;
                 productStocksControlWF.Show();
+
+			}
+		}
+
+        CompanyMapControlWF companyMapControlWF;
+		private void barCompanyMap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+            if (companyMapControlWF==null || companyMapControlWF.IsDisposed)
+            {
+                companyMapControlWF = new CompanyMapControlWF();
+                companyMapControlWF.MdiParent = this;
+                companyMapControlWF.Show();
+
+			}
+		}
+        CustomerMapControlWF customerMapControlWF;
+		private void barCustomerMap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+            if (customerMapControlWF==null || customerMapControlWF.IsDisposed)
+            {
+                customerMapControlWF = new CustomerMapControlWF();
+                customerMapControlWF.MdiParent = this;
+                customerMapControlWF.Show();
 
 			}
 		}

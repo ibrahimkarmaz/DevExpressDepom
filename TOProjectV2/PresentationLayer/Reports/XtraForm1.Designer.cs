@@ -35,7 +35,7 @@
 			// 
 			this.simpleButton2.Location = new System.Drawing.Point(111, 47);
 			this.simpleButton2.Name = "simpleButton2";
-			this.simpleButton2.Size = new System.Drawing.Size(115, 112);
+			this.simpleButton2.Size = new System.Drawing.Size(117, 112);
 			this.simpleButton2.TabIndex = 1;
 			this.simpleButton2.Text = "simpleButton2";
 			this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
